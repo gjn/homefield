@@ -1,0 +1,30 @@
+{
+    "name": "homefield",
+    "version": "0.0.1",
+    "description": "NFL Team statistics and power ranking utitlity",
+    "main": "index.js",
+    "scripts": {
+        "test": "tap test/*.js"
+    },
+    "dependencies": {
+        "underscore": "1.4.4"
+    },
+    "devDependencies": {
+        "tap" : "~0.4.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gjn/homefield.git"
+    },
+    "keywords": [
+        "statistics",
+        "nfl"
+    ],
+    "author": {
+        "name": "Gilbert Jeiziner",
+        "email": "gjn@space.ch"
+    },
+    "license": "MIT",
+    "readmeFilename": "README.md",
+    "gitHead": "cbca17903b5b722d28190871998669470fb797f2"
+}
