@@ -1,0 +1,13 @@
+Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TOL
+WildCard,Sat,January 5,2013,boxscore,Green Bay Packers,,Minnesota Vikings,24,10,326,0,324,3
+WildCard,Sat,January 5,2013,boxscore,Houston Texans,,Cincinnati Bengals,19,13,420,1,198,1
+WildCard,Sun,January 6,2013,boxscore,Seattle Seahawks,@,Washington Redskins,24,14,380,1,203,2
+WildCard,Sun,January 6,2013,boxscore,Baltimore Ravens,,Indianapolis Colts,24,9,439,2,419,2
+Division,Sat,January 12,2013,boxscore,Baltimore Ravens,@,Denver Broncos,38,35,479,1,398,3
+Division,Sat,January 12,2013,boxscore,San Francisco 49ers,,Green Bay Packers,45,31,579,1,352,2
+Division,Sun,January 13,2013,boxscore,Atlanta Falcons,,Seattle Seahawks,30,28,417,2,491,2
+Division,Sun,January 13,2013,boxscore,New England Patriots,,Houston Texans,41,28,457,0,425,1
+ConfChamp,Sun,January 20,2013,boxscore,San Francisco 49ers,@,Atlanta Falcons,28,24,373,1,477,2
+ConfChamp,Sun,January 20,2013,boxscore,Baltimore Ravens,@,New England Patriots,28,13,356,0,428,3
+SuperBowl,Sun,February 3,2013,boxscore,Baltimore Ravens,@,San Francisco 49ers,34,31,367,1,468,2
+
