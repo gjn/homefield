@@ -1,18 +1,4 @@
 Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TOL
-5,Thu,October 4,2012,boxscore,St. Louis Rams,,Arizona Cardinals,17,3,242,1,282,1
-5,Sun,October 7,2012,boxscore,Indianapolis Colts,,Green Bay Packers,30,27,464,1,356,1
-5,Sun,October 7,2012,boxscore,Baltimore Ravens,@,Kansas City Chiefs,9,6,298,2,338,4
-5,Sun,October 7,2012,boxscore,New York Giants,,Cleveland Browns,41,27,502,2,375,3
-5,Sun,October 7,2012,boxscore,San Francisco 49ers,,Buffalo Bills,45,3,621,1,204,2
-5,Sun,October 7,2012,boxscore,New Orleans Saints,,San Diego Chargers,31,24,404,1,427,2
-5,Sun,October 7,2012,boxscore,Chicago Bears,@,Jacksonville Jaguars,41,3,501,1,189,3
-5,Sun,October 7,2012,boxscore,Miami Dolphins,@,Cincinnati Bengals,17,13,279,2,298,3
-5,Sun,October 7,2012,boxscore,New England Patriots,,Denver Broncos,31,21,444,1,394,3
-5,Sun,October 7,2012,boxscore,Minnesota Vikings,,Tennessee Titans,30,7,433,2,267,2
-5,Sun,October 7,2012,boxscore,Seattle Seahawks,@,Carolina Panthers,16,12,310,3,190,2
-5,Sun,October 7,2012,boxscore,Pittsburgh Steelers,,Philadelphia Eagles,16,14,343,0,246,2
-5,Sun,October 7,2012,boxscore,Atlanta Falcons,@,Washington Redskins,24,17,421,2,316,2
-5,Mon,October 8,2012,boxscore,Houston Texans,@,New York Jets,23,17,378,1,286,2
 6,Thu,October 11,2012,boxscore,Tennessee Titans,,Pittsburgh Steelers,26,23,359,1,412,1
 6,Sun,October 14,2012,boxscore,Detroit Lions,@,Philadelphia Eagles,26,23,449,1,357,3
 6,Sun,October 14,2012,boxscore,New York Jets,,Indianapolis Colts,35,9,351,0,298,4
@@ -266,4 +252,18 @@ SuperBowl,Sun,February 3,2013,boxscore,Baltimore Ravens,@,San Francisco 49ers,34
 4,Sun,September 29,2013,boxscore,San Diego Chargers,,Dallas Cowboys,30,21,506,1,317,1
 4,Sun,September 29,2013,boxscore,Cleveland Browns,,Cincinnati Bengals,17,6,336,0,266,2
 4,Mon,September 30,2013,boxscore,New Orleans Saints,,Miami Dolphins,38,17,465,1,331,4
+5,Thu,October 3,2013,boxscore,Cleveland Browns,,Buffalo Bills,37,24,290,0,343,1
+5,Sun,October 6,2013,boxscore,Arizona Cardinals,,Carolina Panthers,22,6,250,3,353,4
+5,Sun,October 6,2013,boxscore,San Francisco 49ers,,Houston Texans,34,3,284,0,313,4
+5,Sun,October 6,2013,boxscore,Baltimore Ravens,@,Miami Dolphins,26,23,384,2,294,0
+5,Sun,October 6,2013,boxscore,Indianapolis Colts,,Seattle Seahawks,34,28,317,2,423,2
+5,Sun,October 6,2013,boxscore,Philadelphia Eagles,@,New York Giants,36,21,439,0,383,4
+5,Sun,October 6,2013,boxscore,Denver Broncos,@,Dallas Cowboys,51,48,517,2,522,2
+5,Sun,October 6,2013,boxscore,Oakland Raiders,,San Diego Chargers,27,17,299,0,423,5
+5,Sun,October 6,2013,boxscore,Cincinnati Bengals,,New England Patriots,13,6,341,2,248,2
+5,Sun,October 6,2013,boxscore,New Orleans Saints,@,Chicago Bears,26,18,347,0,434,1
+5,Sun,October 6,2013,boxscore,St. Louis Rams,,Jacksonville Jaguars,34,20,351,0,363,3
+5,Sun,October 6,2013,boxscore,Green Bay Packers,,Detroit Lions,22,9,449,0,286,0
+5,Sun,October 6,2013,boxscore,Kansas City Chiefs,@,Tennessee Titans,26,17,353,2,339,3
+5,Mon,October 7,2013,boxscore,New York Jets,@,Atlanta Falcons,30,28,288,0,363,1
 
