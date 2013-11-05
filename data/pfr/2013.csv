@@ -76,4 +76,60 @@ Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TO
 5,Sun,October 6,2013,boxscore,Green Bay Packers,,Detroit Lions,22,9,449,0,286,0
 5,Sun,October 6,2013,boxscore,Kansas City Chiefs,@,Tennessee Titans,26,17,353,2,339,3
 5,Mon,October 7,2013,boxscore,New York Jets,@,Atlanta Falcons,30,28,288,0,363,1
+6,Thu,October 10,2013,boxscore,Chicago Bears,,New York Giants,27,21,372,0,355,3
+6,Sun,October 13,2013,boxscore,Green Bay Packers,@,Baltimore Ravens,19,17,438,2,360,1
+6,Sun,October 13,2013,boxscore,Carolina Panthers,@,Minnesota Vikings,35,10,367,0,290,2
+6,Sun,October 13,2013,boxscore,St. Louis Rams,@,Houston Texans,38,13,216,0,420,4
+6,Sun,October 13,2013,boxscore,San Francisco 49ers,,Arizona Cardinals,32,20,387,2,403,4
+6,Sun,October 13,2013,boxscore,Seattle Seahawks,,Tennessee Titans,20,13,404,2,223,2
+6,Sun,October 13,2013,boxscore,Philadelphia Eagles,@,Tampa Bay Buccaneers,31,20,425,1,351,1
+6,Sun,October 13,2013,boxscore,Denver Broncos,,Jacksonville Jaguars,35,19,407,3,362,2
+6,Sun,October 13,2013,boxscore,Detroit Lions,@,Cleveland Browns,31,17,366,1,395,2
+6,Sun,October 13,2013,boxscore,Kansas City Chiefs,,Oakland Raiders,24,7,216,1,274,3
+6,Sun,October 13,2013,boxscore,Dallas Cowboys,,Washington Redskins,31,16,213,1,433,2
+6,Sun,October 13,2013,boxscore,Cincinnati Bengals,@,Buffalo Bills,27,24,483,1,322,1
+6,Sun,October 13,2013,boxscore,New England Patriots,,New Orleans Saints,30,27,376,1,361,2
+6,Sun,October 13,2013,boxscore,Pittsburgh Steelers,@,New York Jets,19,6,328,0,267,2
+6,Mon,October 14,2013,boxscore,San Diego Chargers,,Indianapolis Colts,19,9,374,0,267,1
+7,Thu,October 17,2013,boxscore,Seattle Seahawks,@,Arizona Cardinals,34,22,344,2,234,2
+7,Sun,October 20,2013,boxscore,Atlanta Falcons,,Tampa Bay Buccaneers,31,23,291,1,337,1
+7,Sun,October 20,2013,boxscore,Carolina Panthers,,St. Louis Rams,30,15,282,0,317,3
+7,Sun,October 20,2013,boxscore,Pittsburgh Steelers,,Baltimore Ravens,19,16,286,1,287,0
+7,Sun,October 20,2013,boxscore,Dallas Cowboys,@,Philadelphia Eagles,17,3,368,2,278,3
+7,Sun,October 20,2013,boxscore,Green Bay Packers,,Cleveland Browns,31,13,357,0,216,1
+7,Sun,October 20,2013,boxscore,Cincinnati Bengals,@,Detroit Lions,27,24,421,0,434,0
+7,Sun,October 20,2013,boxscore,San Diego Chargers,@,Jacksonville Jaguars,24,6,434,0,353,1
+7,Sun,October 20,2013,boxscore,Kansas City Chiefs,,Houston Texans,17,16,357,2,294,1
+7,Sun,October 20,2013,boxscore,Indianapolis Colts,,Denver Broncos,39,33,334,1,429,3
+7,Sun,October 20,2013,boxscore,New York Jets,,New England Patriots,30,27,383,1,295,1
+7,Sun,October 20,2013,boxscore,Washington Redskins,,Chicago Bears,45,41,499,1,359,1
+7,Sun,October 20,2013,boxscore,Buffalo Bills,@,Miami Dolphins,23,21,268,1,293,3
+7,Sun,October 20,2013,boxscore,San Francisco 49ers,@,Tennessee Titans,31,17,349,0,368,2
+7,Mon,October 21,2013,boxscore,New York Giants,,Minnesota Vikings,23,7,257,1,206,3
+8,Thu,October 24,2013,boxscore,Carolina Panthers,@,Tampa Bay Buccaneers,31,13,324,0,297,1
+8,Sun,October 27,2013,boxscore,Oakland Raiders,,Pittsburgh Steelers,21,18,279,3,276,2
+8,Sun,October 27,2013,boxscore,Arizona Cardinals,,Atlanta Falcons,27,13,348,1,292,4
+8,Sun,October 27,2013,boxscore,Green Bay Packers,@,Minnesota Vikings,44,31,464,0,243,0
+8,Sun,October 27,2013,boxscore,New England Patriots,,Miami Dolphins,27,17,252,1,301,3
+8,Sun,October 27,2013,boxscore,Denver Broncos,,Washington Redskins,45,21,446,4,266,5
+8,Sun,October 27,2013,boxscore,San Francisco 49ers,@,Jacksonville Jaguars,42,10,398,1,318,1
+8,Sun,October 27,2013,boxscore,New York Giants,@,Philadelphia Eagles,15,7,325,1,200,3
+8,Sun,October 27,2013,boxscore,Cincinnati Bengals,,New York Jets,49,9,402,1,240,2
+8,Sun,October 27,2013,boxscore,Kansas City Chiefs,,Cleveland Browns,23,17,331,0,340,1
+8,Sun,October 27,2013,boxscore,New Orleans Saints,,Buffalo Bills,35,17,386,0,299,3
+8,Sun,October 27,2013,boxscore,Detroit Lions,,Dallas Cowboys,31,30,623,4,268,0
+8,Mon,October 28,2013,boxscore,Seattle Seahawks,@,St. Louis Rams,14,9,135,0,339,2
+9,Thu,October 31,2013,boxscore,Miami Dolphins,,Cincinnati Bengals,22,20,345,1,465,4
+9,Sun,November 3,2013,boxscore,New York Jets,,New Orleans Saints,26,20,338,0,407,2
+9,Sun,November 3,2013,boxscore,Indianapolis Colts,@,Houston Texans,27,24,314,0,483,0
+9,Sun,November 3,2013,boxscore,Carolina Panthers,,Atlanta Falcons,34,10,373,2,289,4
+9,Sun,November 3,2013,boxscore,Washington Redskins,,San Diego Chargers,30,24,500,1,410,2
+9,Sun,November 3,2013,boxscore,Tennessee Titans,@,St. Louis Rams,28,21,363,2,363,2
+9,Sun,November 3,2013,boxscore,Kansas City Chiefs,@,Buffalo Bills,23,13,210,0,470,3
+9,Sun,November 3,2013,boxscore,Dallas Cowboys,,Minnesota Vikings,27,23,350,1,393,2
+9,Sun,November 3,2013,boxscore,Philadelphia Eagles,@,Oakland Raiders,49,20,542,0,560,2
+9,Sun,November 3,2013,boxscore,New England Patriots,,Pittsburgh Steelers,55,31,610,1,479,3
+9,Sun,November 3,2013,boxscore,Cleveland Browns,,Baltimore Ravens,24,18,315,1,278,2
+9,Sun,November 3,2013,boxscore,Seattle Seahawks,,Tampa Bay Buccaneers,27,24,415,3,350,0
+9,Mon,November 4,2013,boxscore,Chicago Bears,@,Green Bay Packers,27,20,442,0,312,1
 
