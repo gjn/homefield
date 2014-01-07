@@ -5,7 +5,7 @@ lib-cov
 *.out
 *.pid
 *.gz
-
+results-*-*.csv
 pids
 logs
 results
