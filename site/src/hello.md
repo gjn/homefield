@@ -1,5 +1,7 @@
 ---
 title: The Introduction
+dir: nfl-season-2014
+subdir: week-1
 date: 2014-04-30
 template: post.html
 ---
