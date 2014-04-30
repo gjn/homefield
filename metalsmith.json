@@ -15,9 +15,13 @@
       "directory": "./site/templates"
     },
     "metalsmith-ignore": [
-        "*.swp",
-        "drafts/*"
-    ]
+      "*.swp",
+      "drafts/*"
+    ],
+    "metalsmith-assets": {
+      "source": "./results",
+      "destination": "./data"
+    }
   }
 }
 

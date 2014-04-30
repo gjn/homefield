@@ -5,10 +5,8 @@ lib-cov
 *.out
 *.pid
 *.gz
-results-*-*.csv
 pids
 logs
-results
 *.swp
 npm-debug.log
 _site
