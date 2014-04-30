@@ -16,6 +16,5 @@ in the future. For now, there's nothing more the see here and you can either:
 2. Play with the algorithm and create the results yourself by getting the code
 from [here] https://github.com/gjn/homefield
 
-Have fun.
-
+SKOL!
 

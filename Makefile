@@ -1,4 +1,14 @@
 .PHONY: all
+
+publish: site
+	cd _site; \
+	rm -rf .git; \
+	git init .; \
+	git add .; \
+	git commit -m "Publish"; \
+	git push git@github.com:gjn/homefield master:gh-pages --force; \
+	rm -rf .git;
+
 all: site
 
 allgames: node_modules
