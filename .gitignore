@@ -9,7 +9,7 @@ results-*-*.csv
 pids
 logs
 results
-
+*.swp
 npm-debug.log
-
+_site
 node_modules
