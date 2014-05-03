@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Homefield - The Open Source NFL Power Rankings",
-    "description": "An algorithm based, un-opinionated NFL power ranking system providing beaztiful and exciting graphs for you to disagree with."
+    "title": "Homefield - The Unopinionated NFL Power Rankings",
+    "description": "An algorithm based, un-opinionated NFL power ranking system providing beautiful and exciting graphs for you to disagree with."
   },
   "source": "./site/src",
   "destination": "./_site",
@@ -19,7 +19,7 @@
       "drafts/*"
     ],
     "metalsmith-assets": {
-      "source": "./results",
+      "source": "./site/src",
       "destination": "./data"
     }
   }
