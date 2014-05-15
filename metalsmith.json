@@ -19,7 +19,7 @@
       "drafts/*"
     ],
     "metalsmith-assets": {
-      "source": "./site/src",
+      "source": "./results",
       "destination": "./data"
     }
   }
