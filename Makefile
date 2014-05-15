@@ -11,11 +11,14 @@ publish: site
 
 all: site
 
-site: allgames
+site: games
 	node_modules/.bin/metalsmith
 
+games: node_modules
+	node index.js -f data/pfr/all.csv
+
 allgames: node_modules
-	node index.js data/pfr/all.csv
+	node index.js -f data/pfr/all.csv -t all
 
 node_modules: package.json
 		npm install

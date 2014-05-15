@@ -1,0 +1,6061 @@
+{
+  "alpha": 0.1594692862154749,
+  "N": 11.541599999999999,
+  "hl": 3.9999999999999996,
+  "prediction": {
+    "wl": {
+      "right": 154,
+      "wrong": 106
+    },
+    "pts": {
+      "right": 172,
+      "wrong": 88
+    }
+  },
+  "averages": {
+    "all": {
+      "winloss": 0.5,
+      "pts": 22.66923076923077,
+      "yards": 347.06538461538463,
+      "to": 1.5557692307692308
+    },
+    "home": {
+      "winloss": 0.575,
+      "pts": 23.915384615384614,
+      "yards": 349.0346153846154,
+      "to": 1.5192307692307692
+    },
+    "away": {
+      "winloss": 0.425,
+      "pts": 21.423076923076923,
+      "yards": 345.09615384615387,
+      "to": 1.5923076923076922
+    }
+  },
+  "results": {
+    "all": [
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.42342193976437886,
+            "pts": 24.95981918808237,
+            "yards": 326.89110124738545,
+            "to": 1.0885077055246763,
+            "rankOfwinloss": 20,
+            "rankOfpts": 10,
+            "rankOfyards": 20,
+            "rankOfto": 11
+          },
+          "def": {
+            "winloss": 0.576578060235621,
+            "pts": 21.429630351897828,
+            "yards": 385.94197626919697,
+            "to": 1.0004814129785593,
+            "rankOfwinloss": 20,
+            "rankOfpts": 16,
+            "rankOfyards": 29,
+            "rankOfto": 24
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.42075176114906254,
+            "pts": 22.6678686837145,
+            "yards": 360.31853345837095,
+            "to": 1.7627962109960207,
+            "rankOfwinloss": 27,
+            "rankOfpts": 17,
+            "rankOfyards": 9,
+            "rankOfto": 28
+          },
+          "def": {
+            "winloss": 0.5792482388509369,
+            "pts": 24.220608382763643,
+            "yards": 341.338664995036,
+            "to": 1.3794842558295857,
+            "rankOfwinloss": 27,
+            "rankOfpts": 27,
+            "rankOfyards": 11,
+            "rankOfto": 26
+          }
+        },
+        "team": "NYG"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.4304858677266132,
+            "pts": 25.67892305234425,
+            "yards": 372.7284086869545,
+            "to": 1.5721343151708917,
+            "rankOfwinloss": 19,
+            "rankOfpts": 8,
+            "rankOfyards": 9,
+            "rankOfto": 21
+          },
+          "def": {
+            "winloss": 0.5695141322733867,
+            "pts": 25.77200782917177,
+            "yards": 387.31622921516066,
+            "to": 0.5891087840289849,
+            "rankOfwinloss": 19,
+            "rankOfpts": 26,
+            "rankOfyards": 30,
+            "rankOfto": 31
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5292562294078755,
+            "pts": 24.75519959358713,
+            "yards": 369.91461437887654,
+            "to": 1.6384793391831414,
+            "rankOfwinloss": 15,
+            "rankOfpts": 7,
+            "rankOfyards": 5,
+            "rankOfto": 23
+          },
+          "def": {
+            "winloss": 0.470743770592124,
+            "pts": 22.10585972874735,
+            "yards": 341.70050768151293,
+            "to": 1.6501708156452857,
+            "rankOfwinloss": 15,
+            "rankOfpts": 16,
+            "rankOfyards": 12,
+            "rankOfto": 13
+          }
+        },
+        "team": "DAL"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.12346073432691419,
+            "pts": 11.324884169368822,
+            "yards": 291.68148280742184,
+            "to": 2.6390205735728904,
+            "rankOfwinloss": 30,
+            "rankOfpts": 31,
+            "rankOfyards": 26,
+            "rankOfto": 31
+          },
+          "def": {
+            "winloss": 0.8765392656730855,
+            "pts": 23.994607782612967,
+            "yards": 312.10930420811655,
+            "to": 0.4541868620687357,
+            "rankOfwinloss": 30,
+            "rankOfpts": 21,
+            "rankOfyards": 5,
+            "rankOfto": 32
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.394515222373163,
+            "pts": 21.305188566924304,
+            "yards": 326.59306615703247,
+            "to": 1.9806256896864483,
+            "rankOfwinloss": 29,
+            "rankOfpts": 24,
+            "rankOfyards": 29,
+            "rankOfto": 31
+          },
+          "def": {
+            "winloss": 0.6054847776268365,
+            "pts": 24.58145448566222,
+            "yards": 343.04487699499856,
+            "to": 1.5955750244229359,
+            "rankOfwinloss": 29,
+            "rankOfpts": 30,
+            "rankOfyards": 14,
+            "rankOfto": 15
+          }
+        },
+        "team": "NYJ"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.404785722429312,
+            "pts": 22.08606036835196,
+            "yards": 348.0442420109436,
+            "to": 2.4319445785779887,
+            "rankOfwinloss": 22,
+            "rankOfpts": 16,
+            "rankOfyards": 14,
+            "rankOfto": 29
+          },
+          "def": {
+            "winloss": 0.595214277570688,
+            "pts": 23.98961154275322,
+            "yards": 347.27766020382387,
+            "to": 1.0721881230235473,
+            "rankOfwinloss": 22,
+            "rankOfpts": 20,
+            "rankOfyards": 21,
+            "rankOfto": 22
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4851675239119815,
+            "pts": 20.74084605701776,
+            "yards": 331.6018634213975,
+            "to": 1.5876431071299337,
+            "rankOfwinloss": 22,
+            "rankOfpts": 27,
+            "rankOfyards": 25,
+            "rankOfto": 18
+          },
+          "def": {
+            "winloss": 0.5148324760880179,
+            "pts": 20.467047083715432,
+            "yards": 337.90007711910806,
+            "to": 1.2863569739719165,
+            "rankOfwinloss": 22,
+            "rankOfpts": 4,
+            "rankOfyards": 10,
+            "rankOfto": 29
+          }
+        },
+        "team": "BUF"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7876456640705869,
+            "pts": 24.91427963602939,
+            "yards": 360.37611927998705,
+            "to": 1.4239199335115595,
+            "rankOfwinloss": 5,
+            "rankOfpts": 12,
+            "rankOfyards": 12,
+            "rankOfto": 17
+          },
+          "def": {
+            "winloss": 0.21235433592941297,
+            "pts": 18.470794850261655,
+            "yards": 329.7002416856359,
+            "to": 1.7159561679892172,
+            "rankOfwinloss": 5,
+            "rankOfpts": 9,
+            "rankOfyards": 14,
+            "rankOfto": 14
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.7097837811912877,
+            "pts": 26.910231923294074,
+            "yards": 366.58320740082956,
+            "to": 0.9186956387901417,
+            "rankOfwinloss": 1,
+            "rankOfpts": 1,
+            "rankOfyards": 6,
+            "rankOfto": 1
+          },
+          "def": {
+            "winloss": 0.2902162188087118,
+            "pts": 20.277208609942253,
+            "yards": 334.1737294592374,
+            "to": 1.5778819257871812,
+            "rankOfwinloss": 1,
+            "rankOfpts": 3,
+            "rankOfyards": 7,
+            "rankOfto": 16
+          }
+        },
+        "team": "MIN"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.1548824945176848,
+            "pts": 14.010135978418564,
+            "yards": 355.75037137526203,
+            "to": 1.9922431768307802,
+            "rankOfwinloss": 29,
+            "rankOfpts": 29,
+            "rankOfyards": 13,
+            "rankOfto": 25
+          },
+          "def": {
+            "winloss": 0.8451175054823152,
+            "pts": 27.986231065180718,
+            "yards": 337.3932462033099,
+            "to": 1.1473312256054424,
+            "rankOfwinloss": 29,
+            "rankOfpts": 28,
+            "rankOfyards": 16,
+            "rankOfto": 19
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5980898102249687,
+            "pts": 23.354930401801226,
+            "yards": 332.0856918117803,
+            "to": 1.6537362720013489,
+            "rankOfwinloss": 6,
+            "rankOfpts": 12,
+            "rankOfyards": 24,
+            "rankOfto": 26
+          },
+          "def": {
+            "winloss": 0.4019101897750308,
+            "pts": 24.41824971571199,
+            "yards": 341.7427811894469,
+            "to": 1.6814962478861406,
+            "rankOfwinloss": 6,
+            "rankOfpts": 28,
+            "rankOfyards": 13,
+            "rankOfto": 12
+          }
+        },
+        "team": "JAC"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.2507449803011532,
+            "pts": 17.71020332212707,
+            "yards": 328.7913640216327,
+            "to": 2.1387493652189704,
+            "rankOfwinloss": 25,
+            "rankOfpts": 25,
+            "rankOfyards": 19,
+            "rankOfto": 27
+          },
+          "def": {
+            "winloss": 0.7492550196988467,
+            "pts": 25.4091935264673,
+            "yards": 339.4975136227018,
+            "to": 1.0417348438218976,
+            "rankOfwinloss": 25,
+            "rankOfpts": 23,
+            "rankOfyards": 17,
+            "rankOfto": 23
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.493226520779066,
+            "pts": 22.2789526731881,
+            "yards": 344.630340368555,
+            "to": 1.5986068978543364,
+            "rankOfwinloss": 20,
+            "rankOfpts": 19,
+            "rankOfyards": 16,
+            "rankOfto": 19
+          },
+          "def": {
+            "winloss": 0.5067734792209337,
+            "pts": 21.24533162278771,
+            "yards": 324.5400995961695,
+            "to": 1.4358977258352352,
+            "rankOfwinloss": 20,
+            "rankOfpts": 9,
+            "rankOfyards": 2,
+            "rankOfto": 23
+          }
+        },
+        "team": "CLE"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.09417420859978576,
+            "pts": 15.648844472864166,
+            "yards": 324.1964122575721,
+            "to": 2.1173912058616393,
+            "rankOfwinloss": 31,
+            "rankOfpts": 27,
+            "rankOfyards": 21,
+            "rankOfto": 26
+          },
+          "def": {
+            "winloss": 0.905825791400214,
+            "pts": 31.326974995886133,
+            "yards": 344.0354775999681,
+            "to": 0.9052286970499728,
+            "rankOfwinloss": 31,
+            "rankOfpts": 31,
+            "rankOfyards": 19,
+            "rankOfto": 28
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.48034366716397625,
+            "pts": 24.42665825854475,
+            "yards": 348.339364183834,
+            "to": 1.217890030558368,
+            "rankOfwinloss": 23,
+            "rankOfpts": 8,
+            "rankOfyards": 12,
+            "rankOfto": 4
+          },
+          "def": {
+            "winloss": 0.5196563328360233,
+            "pts": 22.897807405626395,
+            "yards": 359.90050065153923,
+            "to": 1.4810042297056945,
+            "rankOfwinloss": 23,
+            "rankOfpts": 23,
+            "rankOfyards": 30,
+            "rankOfto": 19
+          }
+        },
+        "team": "PHI"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.4629736904662272,
+            "pts": 18.878395228528014,
+            "yards": 320.44483230912823,
+            "to": 1.0471131284777826,
+            "rankOfwinloss": 18,
+            "rankOfpts": 22,
+            "rankOfyards": 23,
+            "rankOfto": 8
+          },
+          "def": {
+            "winloss": 0.5370263095337726,
+            "pts": 21.790905879639066,
+            "yards": 327.40097603051714,
+            "to": 2.262097600187954,
+            "rankOfwinloss": 18,
+            "rankOfpts": 18,
+            "rankOfyards": 11,
+            "rankOfto": 3
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.35256915735695693,
+            "pts": 20.57410900245303,
+            "yards": 336.2687193488448,
+            "to": 1.9860572723186016,
+            "rankOfwinloss": 30,
+            "rankOfpts": 28,
+            "rankOfyards": 20,
+            "rankOfto": 32
+          },
+          "def": {
+            "winloss": 0.6474308426430425,
+            "pts": 25.69172059335271,
+            "yards": 349.3467034250345,
+            "to": 1.4366238981116959,
+            "rankOfwinloss": 30,
+            "rankOfpts": 31,
+            "rankOfyards": 23,
+            "rankOfto": 22
+          }
+        },
+        "team": "CHI"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5659474271636643,
+            "pts": 19.804561712932767,
+            "yards": 342.09224433890375,
+            "to": 1.6538752470312468,
+            "rankOfwinloss": 11,
+            "rankOfpts": 21,
+            "rankOfyards": 16,
+            "rankOfto": 22
+          },
+          "def": {
+            "winloss": 0.43405257283633536,
+            "pts": 23.56207066771077,
+            "yards": 416.9242130085631,
+            "to": 2.0622731070531644,
+            "rankOfwinloss": 11,
+            "rankOfpts": 19,
+            "rankOfyards": 32,
+            "rankOfto": 7
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4980362150704835,
+            "pts": 20.834121003857668,
+            "yards": 342.7516090260081,
+            "to": 1.2339560004149817,
+            "rankOfwinloss": 19,
+            "rankOfpts": 25,
+            "rankOfyards": 18,
+            "rankOfto": 6
+          },
+          "def": {
+            "winloss": 0.501963784929516,
+            "pts": 22.50067295885734,
+            "yards": 344.5888620954127,
+            "to": 1.1552346473851367,
+            "rankOfwinloss": 19,
+            "rankOfpts": 22,
+            "rankOfyards": 17,
+            "rankOfto": 31
+          }
+        },
+        "team": "IND"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7803482018878348,
+            "pts": 31.032862697822523,
+            "yards": 406.1631871755504,
+            "to": 1.2812514131628523,
+            "rankOfwinloss": 6,
+            "rankOfpts": 5,
+            "rankOfyards": 3,
+            "rankOfto": 14
+          },
+          "def": {
+            "winloss": 0.21965179811216487,
+            "pts": 16.529115667252757,
+            "yards": 244.3081202973881,
+            "to": 1.0765354737183672,
+            "rankOfwinloss": 6,
+            "rankOfpts": 3,
+            "rankOfyards": 1,
+            "rankOfto": 21
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.2941698738113593,
+            "pts": 18.014209614950357,
+            "yards": 333.2728556882857,
+            "to": 1.5785121008580358,
+            "rankOfwinloss": 32,
+            "rankOfpts": 32,
+            "rankOfyards": 22,
+            "rankOfto": 17
+          },
+          "def": {
+            "winloss": 0.7058301261886403,
+            "pts": 24.568178941773024,
+            "yards": 366.5310921946763,
+            "to": 1.2484885543837885,
+            "rankOfwinloss": 32,
+            "rankOfpts": 29,
+            "rankOfyards": 31,
+            "rankOfto": 30
+          }
+        },
+        "team": "DEN"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.4083345877682045,
+            "pts": 20.190935857849205,
+            "yards": 294.1539698797922,
+            "to": 1.8242856543432031,
+            "rankOfwinloss": 21,
+            "rankOfpts": 19,
+            "rankOfyards": 25,
+            "rankOfto": 24
+          },
+          "def": {
+            "winloss": 0.5916654122317953,
+            "pts": 18.33858147051204,
+            "yards": 316.5242061599573,
+            "to": 2.1280454813748957,
+            "rankOfwinloss": 21,
+            "rankOfpts": 8,
+            "rankOfyards": 6,
+            "rankOfto": 5
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.46700942528797756,
+            "pts": 21.91375504761258,
+            "yards": 334.2858776358589,
+            "to": 1.6499038453729848,
+            "rankOfwinloss": 24,
+            "rankOfpts": 21,
+            "rankOfyards": 21,
+            "rankOfto": 25
+          },
+          "def": {
+            "winloss": 0.5329905747120218,
+            "pts": 22.28025996238064,
+            "yards": 345.16923636703206,
+            "to": 1.6965406469042286,
+            "rankOfwinloss": 24,
+            "rankOfpts": 19,
+            "rankOfyards": 18,
+            "rankOfto": 11
+          }
+        },
+        "team": "PIT"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5413304004655908,
+            "pts": 22.453297366125206,
+            "yards": 268.35782717281825,
+            "to": 1.4250647852538667,
+            "rankOfwinloss": 13,
+            "rankOfpts": 15,
+            "rankOfyards": 30,
+            "rankOfto": 18
+          },
+          "def": {
+            "winloss": 0.45866959953440894,
+            "pts": 30.495112401427512,
+            "yards": 355.46458110406786,
+            "to": 1.9573504295677928,
+            "rankOfwinloss": 13,
+            "rankOfpts": 30,
+            "rankOfyards": 23,
+            "rankOfto": 8
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5377304848039348,
+            "pts": 19.845253593736714,
+            "yards": 347.4262408723457,
+            "to": 1.7192365907604064,
+            "rankOfwinloss": 14,
+            "rankOfpts": 30,
+            "rankOfyards": 14,
+            "rankOfto": 27
+          },
+          "def": {
+            "winloss": 0.4622695151960647,
+            "pts": 22.135196752255936,
+            "yards": 346.05480394940946,
+            "to": 1.4768341836737007,
+            "rankOfwinloss": 14,
+            "rankOfpts": 17,
+            "rankOfyards": 19,
+            "rankOfto": 21
+          }
+        },
+        "team": "TEN"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.8872196889528285,
+            "pts": 34.7615101247909,
+            "yards": 419.2090779901783,
+            "to": 1.3178237615765354,
+            "rankOfwinloss": 3,
+            "rankOfpts": 1,
+            "rankOfyards": 2,
+            "rankOfto": 16
+          },
+          "def": {
+            "winloss": 0.11278031104717137,
+            "pts": 18.502106826564095,
+            "yards": 363.7002365005852,
+            "to": 2.6508710471639723,
+            "rankOfwinloss": 3,
+            "rankOfpts": 10,
+            "rankOfyards": 25,
+            "rankOfto": 1
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5502090718389834,
+            "pts": 19.962323024448143,
+            "yards": 331.32601396114603,
+            "to": 1.2090576093474061,
+            "rankOfwinloss": 12,
+            "rankOfpts": 29,
+            "rankOfyards": 26,
+            "rankOfto": 3
+          },
+          "def": {
+            "winloss": 0.4497909281610162,
+            "pts": 19.659773113119382,
+            "yards": 350.46288913301674,
+            "to": 1.521760851338303,
+            "rankOfwinloss": 12,
+            "rankOfpts": 1,
+            "rankOfyards": 24,
+            "rankOfto": 18
+          }
+        },
+        "team": "NE"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7398881644650954,
+            "pts": 19.922653226066977,
+            "yards": 342.76788465400466,
+            "to": 1.056311725491749,
+            "rankOfwinloss": 8,
+            "rankOfpts": 20,
+            "rankOfyards": 15,
+            "rankOfto": 9
+          },
+          "def": {
+            "winloss": 0.26011183553490463,
+            "pts": 20.37709381544342,
+            "yards": 320.80718102668646,
+            "to": 1.076988486306036,
+            "rankOfwinloss": 8,
+            "rankOfpts": 14,
+            "rankOfyards": 8,
+            "rankOfto": 20
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.6746550279426323,
+            "pts": 23.592062821573755,
+            "yards": 315.33858794792707,
+            "to": 1.6028961962593098,
+            "rankOfwinloss": 2,
+            "rankOfpts": 10,
+            "rankOfyards": 32,
+            "rankOfto": 20
+          },
+          "def": {
+            "winloss": 0.3253449720573669,
+            "pts": 21.622275288502337,
+            "yards": 367.2595105935346,
+            "to": 1.7566698153528888,
+            "rankOfwinloss": 2,
+            "rankOfpts": 12,
+            "rankOfyards": 32,
+            "rankOfto": 6
+          }
+        },
+        "team": "HOU"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5253847994126822,
+            "pts": 13.667490768979073,
+            "yards": 285.83723069088734,
+            "to": 0.8735404647511784,
+            "rankOfwinloss": 16,
+            "rankOfpts": 30,
+            "rankOfyards": 27,
+            "rankOfto": 6
+          },
+          "def": {
+            "winloss": 0.47461520058731754,
+            "pts": 15.250145667403867,
+            "yards": 353.498973646686,
+            "to": 0.981104449734807,
+            "rankOfwinloss": 16,
+            "rankOfpts": 2,
+            "rankOfyards": 22,
+            "rankOfto": 25
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5872864057489798,
+            "pts": 26.452194719467492,
+            "yards": 362.5752664438586,
+            "to": 1.5550841757259433,
+            "rankOfwinloss": 8,
+            "rankOfpts": 3,
+            "rankOfyards": 7,
+            "rankOfto": 15
+          },
+          "def": {
+            "winloss": 0.41271359425101967,
+            "pts": 23.194282778779087,
+            "yards": 354.7080705655655,
+            "to": 1.9193391179961505,
+            "rankOfwinloss": 8,
+            "rankOfpts": 25,
+            "rankOfyards": 28,
+            "rankOfto": 3
+          }
+        },
+        "team": "MIA"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.9150391367083318,
+            "pts": 31.138548533896632,
+            "yards": 376.59460637587415,
+            "to": 0.36945723336054687,
+            "rankOfwinloss": 2,
+            "rankOfpts": 4,
+            "rankOfyards": 8,
+            "rankOfto": 2
+          },
+          "def": {
+            "winloss": 0.08496086329166802,
+            "pts": 16.70011664355683,
+            "yards": 326.7947851151947,
+            "to": 1.92287021138831,
+            "rankOfwinloss": 2,
+            "rankOfpts": 4,
+            "rankOfyards": 10,
+            "rankOfto": 9
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.6681929138085859,
+            "pts": 24.240675470637655,
+            "yards": 345.47772971287327,
+            "to": 1.3554697666549915,
+            "rankOfwinloss": 3,
+            "rankOfpts": 9,
+            "rankOfyards": 15,
+            "rankOfto": 10
+          },
+          "def": {
+            "winloss": 0.33180708619141347,
+            "pts": 21.78147999343218,
+            "yards": 343.0454124838134,
+            "to": 1.8748402379323228,
+            "rankOfwinloss": 3,
+            "rankOfpts": 14,
+            "rankOfyards": 15,
+            "rankOfto": 5
+          }
+        },
+        "team": "GB"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7342417951584533,
+            "pts": 26.17994111658414,
+            "yards": 361.9719460809666,
+            "to": 0.4833782371496176,
+            "rankOfwinloss": 9,
+            "rankOfpts": 7,
+            "rankOfyards": 11,
+            "rankOfto": 3
+          },
+          "def": {
+            "winloss": 0.2657582048415466,
+            "pts": 18.888916136033476,
+            "yards": 328.0156927310155,
+            "to": 1.770349888393191,
+            "rankOfwinloss": 9,
+            "rankOfpts": 11,
+            "rankOfyards": 12,
+            "rankOfto": 13
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5418427953363274,
+            "pts": 26.39078239874887,
+            "yards": 337.5699742125015,
+            "to": 1.549753700126135,
+            "rankOfwinloss": 13,
+            "rankOfpts": 4,
+            "rankOfyards": 19,
+            "rankOfto": 14
+          },
+          "def": {
+            "winloss": 0.45815720466367205,
+            "pts": 21.56285243602427,
+            "yards": 346.63065276961953,
+            "to": 2.021003296906468,
+            "rankOfwinloss": 13,
+            "rankOfpts": 11,
+            "rankOfyards": 20,
+            "rankOfto": 1
+          }
+        },
+        "team": "SF"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.3877139852691929,
+            "pts": 18.445202710222972,
+            "yards": 366.15150900384884,
+            "to": 2.2383558548922644,
+            "rankOfwinloss": 24,
+            "rankOfpts": 24,
+            "rankOfyards": 10,
+            "rankOfto": 28
+          },
+          "def": {
+            "winloss": 0.6122860147308069,
+            "pts": 25.350592831522324,
+            "yards": 323.72572456421824,
+            "to": 0.9194546959205498,
+            "rankOfwinloss": 24,
+            "rankOfpts": 22,
+            "rankOfyards": 9,
+            "rankOfto": 27
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4908855333502028,
+            "pts": 22.933925936408773,
+            "yards": 361.4194406415553,
+            "to": 1.5598584947066108,
+            "rankOfwinloss": 21,
+            "rankOfpts": 16,
+            "rankOfyards": 8,
+            "rankOfto": 16
+          },
+          "def": {
+            "winloss": 0.5091144666497968,
+            "pts": 22.331537531758485,
+            "yards": 354.50759788941843,
+            "to": 1.615376102326095,
+            "rankOfwinloss": 21,
+            "rankOfpts": 20,
+            "rankOfyards": 27,
+            "rankOfto": 14
+          }
+        },
+        "team": "TB"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7908890319816398,
+            "pts": 29.24567356222019,
+            "yards": 393.3078526519874,
+            "to": 0.858424881046574,
+            "rankOfwinloss": 4,
+            "rankOfpts": 6,
+            "rankOfyards": 5,
+            "rankOfto": 5
+          },
+          "def": {
+            "winloss": 0.20911096801836007,
+            "pts": 21.260748476735877,
+            "yards": 285.34119833728437,
+            "to": 1.2319285204801933,
+            "rankOfwinloss": 4,
+            "rankOfpts": 15,
+            "rankOfyards": 2,
+            "rankOfto": 18
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.46595194820789443,
+            "pts": 23.16003486740168,
+            "yards": 377.6142543339467,
+            "to": 1.6192887133013376,
+            "rankOfwinloss": 25,
+            "rankOfpts": 15,
+            "rankOfyards": 1,
+            "rankOfto": 21
+          },
+          "def": {
+            "winloss": 0.534048051792105,
+            "pts": 22.92456298670046,
+            "yards": 357.7297818455139,
+            "to": 1.7289445889315194,
+            "rankOfwinloss": 25,
+            "rankOfpts": 24,
+            "rankOfyards": 29,
+            "rankOfto": 9
+          }
+        },
+        "team": "CAR"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.0701981510725585,
+            "pts": 22.681882506094,
+            "yards": 392.58139010112006,
+            "to": 2.6420118904852883,
+            "rankOfwinloss": 32,
+            "rankOfpts": 14,
+            "rankOfyards": 6,
+            "rankOfto": 32
+          },
+          "def": {
+            "winloss": 0.9298018489274412,
+            "pts": 31.659904686541083,
+            "yards": 371.290258598614,
+            "to": 0.6599086957034692,
+            "rankOfwinloss": 32,
+            "rankOfpts": 32,
+            "rankOfyards": 27,
+            "rankOfto": 30
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5291605134090356,
+            "pts": 20.74558220578957,
+            "yards": 320.8758299620231,
+            "to": 1.5495012153116972,
+            "rankOfwinloss": 16,
+            "rankOfpts": 26,
+            "rankOfyards": 31,
+            "rankOfto": 13
+          },
+          "def": {
+            "winloss": 0.4708394865909638,
+            "pts": 21.18213178064402,
+            "yards": 352.49731212938514,
+            "to": 1.9016814919822629,
+            "rankOfwinloss": 16,
+            "rankOfpts": 8,
+            "rankOfyards": 25,
+            "rankOfto": 4
+          }
+        },
+        "team": "DET"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.538275950157023,
+            "pts": 21.360642034925405,
+            "yards": 336.29476040729685,
+            "to": 1.191888014605946,
+            "rankOfwinloss": 14,
+            "rankOfpts": 17,
+            "rankOfyards": 17,
+            "rankOfto": 13
+          },
+          "def": {
+            "winloss": 0.46172404984297677,
+            "pts": 17.0396752609284,
+            "yards": 345.2231020990428,
+            "to": 1.8513624058759952,
+            "rankOfwinloss": 14,
+            "rankOfpts": 5,
+            "rankOfyards": 20,
+            "rankOfto": 10
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.574585885976521,
+            "pts": 25.85089679940817,
+            "yards": 359.3504898032037,
+            "to": 1.2642811055191105,
+            "rankOfwinloss": 10,
+            "rankOfpts": 5,
+            "rankOfyards": 10,
+            "rankOfto": 7
+          },
+          "def": {
+            "winloss": 0.4254141140234783,
+            "pts": 20.49177386605495,
+            "yards": 343.07653952089316,
+            "to": 1.7441086452184338,
+            "rankOfwinloss": 10,
+            "rankOfpts": 5,
+            "rankOfyards": 16,
+            "rankOfto": 7
+          }
+        },
+        "team": "STL"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5226901043926604,
+            "pts": 33.36543434431862,
+            "yards": 470.4222972911636,
+            "to": 1.549293476305293,
+            "rankOfwinloss": 17,
+            "rankOfpts": 2,
+            "rankOfyards": 1,
+            "rankOfto": 20
+          },
+          "def": {
+            "winloss": 0.4773098956073395,
+            "pts": 28.513448812456826,
+            "yards": 416.25165599951686,
+            "to": 2.087997943305484,
+            "rankOfwinloss": 17,
+            "rankOfpts": 29,
+            "rankOfyards": 31,
+            "rankOfto": 6
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5708876327722786,
+            "pts": 25.007734466528554,
+            "yards": 371.73947245379725,
+            "to": 1.2724650250499836,
+            "rankOfwinloss": 11,
+            "rankOfpts": 6,
+            "rankOfyards": 3,
+            "rankOfto": 8
+          },
+          "def": {
+            "winloss": 0.429112367227721,
+            "pts": 22.136882315805362,
+            "yards": 333.4310295836329,
+            "to": 1.2920534602719047,
+            "rankOfwinloss": 11,
+            "rankOfpts": 18,
+            "rankOfyards": 6,
+            "rankOfto": 28
+          }
+        },
+        "team": "NO"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7455298852087865,
+            "pts": 25.65934441470474,
+            "yards": 321.84736632054694,
+            "to": 1.0822269432978988,
+            "rankOfwinloss": 7,
+            "rankOfpts": 9,
+            "rankOfyards": 22,
+            "rankOfto": 10
+          },
+          "def": {
+            "winloss": 0.25447011479121345,
+            "pts": 17.357551056691644,
+            "yards": 329.4079380107361,
+            "to": 2.1505395993958776,
+            "rankOfwinloss": 7,
+            "rankOfpts": 7,
+            "rankOfyards": 13,
+            "rankOfto": 4
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5889827926621855,
+            "pts": 26.907585233770874,
+            "yards": 373.7606441477472,
+            "to": 1.2206100996817655,
+            "rankOfwinloss": 7,
+            "rankOfpts": 2,
+            "rankOfyards": 2,
+            "rankOfto": 5
+          },
+          "def": {
+            "winloss": 0.4110172073378139,
+            "pts": 21.36541647944051,
+            "yards": 347.3016940449862,
+            "to": 1.5318089143997486,
+            "rankOfwinloss": 7,
+            "rankOfpts": 10,
+            "rankOfyards": 21,
+            "rankOfto": 17
+          }
+        },
+        "team": "WAS"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.17562915399592555,
+            "pts": 16.183606352122524,
+            "yards": 245.6330963175227,
+            "to": 2.5013825771082607,
+            "rankOfwinloss": 27,
+            "rankOfpts": 26,
+            "rankOfyards": 32,
+            "rankOfto": 30
+          },
+          "def": {
+            "winloss": 0.8243708460040742,
+            "pts": 25.57905578029662,
+            "yards": 358.1446373959178,
+            "to": 1.805855265724205,
+            "rankOfwinloss": 27,
+            "rankOfpts": 25,
+            "rankOfyards": 24,
+            "rankOfto": 12
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5155936172258743,
+            "pts": 23.298820655295238,
+            "yards": 348.1958938775996,
+            "to": 1.325271797934437,
+            "rankOfwinloss": 17,
+            "rankOfpts": 13,
+            "rankOfyards": 13,
+            "rankOfto": 9
+          },
+          "def": {
+            "winloss": 0.4844063827741253,
+            "pts": 21.77236432006353,
+            "yards": 337.8774941957871,
+            "to": 1.6971864623391053,
+            "rankOfwinloss": 17,
+            "rankOfpts": 13,
+            "rankOfyards": 9,
+            "rankOfto": 10
+          }
+        },
+        "team": "ARI"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 1.0632385783742861,
+            "pts": 33.344492623758796,
+            "yards": 401.32323575707716,
+            "to": 0.26168103279255417,
+            "rankOfwinloss": 1,
+            "rankOfpts": 3,
+            "rankOfyards": 4,
+            "rankOfto": 1
+          },
+          "def": {
+            "winloss": -0.06323857837428648,
+            "pts": 13.139399063769664,
+            "yards": 298.6195636027161,
+            "to": 2.2919735165187407,
+            "rankOfwinloss": 1,
+            "rankOfpts": 1,
+            "rankOfyards": 3,
+            "rankOfto": 2
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.6273967728410946,
+            "pts": 23.162028959938063,
+            "yards": 328.305253138784,
+            "to": 1.4537262052378375,
+            "rankOfwinloss": 4,
+            "rankOfpts": 14,
+            "rankOfyards": 27,
+            "rankOfto": 12
+          },
+          "def": {
+            "winloss": 0.3726032271589049,
+            "pts": 20.094960723608807,
+            "yards": 332.88188719851934,
+            "to": 1.9878587101504879,
+            "rankOfwinloss": 4,
+            "rankOfpts": 2,
+            "rankOfyards": 4,
+            "rankOfto": 2
+          }
+        },
+        "team": "SEA"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.16155612003818481,
+            "pts": 9.030824961779098,
+            "yards": 278.54725686873275,
+            "to": 1.28482875949061,
+            "rankOfwinloss": 28,
+            "rankOfpts": 32,
+            "rankOfyards": 28,
+            "rankOfto": 15
+          },
+          "def": {
+            "winloss": 0.8384438799618151,
+            "pts": 25.451827599994356,
+            "yards": 377.1856374215297,
+            "to": 0.7385148328439576,
+            "rankOfwinloss": 28,
+            "rankOfpts": 24,
+            "rankOfyards": 28,
+            "rankOfto": 29
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5833014975615012,
+            "pts": 23.44690071243527,
+            "yards": 355.95448303537967,
+            "to": 1.4287822584794239,
+            "rankOfwinloss": 9,
+            "rankOfpts": 11,
+            "rankOfyards": 11,
+            "rankOfto": 11
+          },
+          "def": {
+            "winloss": 0.41669850243849826,
+            "pts": 21.84636026895865,
+            "yards": 335.3251128730319,
+            "to": 1.4796356730514084,
+            "rankOfwinloss": 9,
+            "rankOfpts": 15,
+            "rankOfyards": 8,
+            "rankOfto": 20
+          }
+        },
+        "team": "KC"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.39350688976052717,
+            "pts": 20.253883531237797,
+            "yards": 332.44363602034326,
+            "to": 0.7947881045416301,
+            "rankOfwinloss": 23,
+            "rankOfpts": 18,
+            "rankOfyards": 18,
+            "rankOfto": 4
+          },
+          "def": {
+            "winloss": 0.6064931102394728,
+            "pts": 19.22221388699935,
+            "yards": 366.6657163489913,
+            "to": 1.4919299956267398,
+            "rankOfwinloss": 23,
+            "rankOfpts": 13,
+            "rankOfyards": 26,
+            "rankOfto": 15
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.3182266347121372,
+            "pts": 21.429947740739305,
+            "yards": 371.4380541572746,
+            "to": 1.9241660601750807,
+            "rankOfwinloss": 31,
+            "rankOfpts": 23,
+            "rankOfyards": 4,
+            "rankOfto": 30
+          },
+          "def": {
+            "winloss": 0.6817733652878623,
+            "pts": 26.872210897350147,
+            "yards": 354.2896904333505,
+            "to": 1.3395580261204116,
+            "rankOfwinloss": 31,
+            "rankOfpts": 32,
+            "rankOfyards": 26,
+            "rankOfto": 27
+          }
+        },
+        "team": "ATL"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.17981231491330243,
+            "pts": 15.632798436733523,
+            "yards": 318.0462328627873,
+            "to": 1.450253663026149,
+            "rankOfwinloss": 26,
+            "rankOfpts": 28,
+            "rankOfyards": 24,
+            "rankOfto": 19
+          },
+          "def": {
+            "winloss": 0.8201876850866975,
+            "pts": 21.46058590944761,
+            "yards": 304.2732695277867,
+            "to": 1.3464540774951408,
+            "rankOfwinloss": 26,
+            "rankOfpts": 17,
+            "rankOfyards": 4,
+            "rankOfto": 16
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5062180229197211,
+            "pts": 22.290026108010863,
+            "yards": 326.61276112456017,
+            "to": 1.1610725874989023,
+            "rankOfwinloss": 18,
+            "rankOfpts": 18,
+            "rankOfyards": 28,
+            "rankOfto": 2
+          },
+          "def": {
+            "winloss": 0.49378197708027854,
+            "pts": 22.440983186371948,
+            "yards": 327.424334735022,
+            "to": 1.4138137014797867,
+            "rankOfwinloss": 18,
+            "rankOfpts": 21,
+            "rankOfyards": 3,
+            "rankOfto": 24
+          }
+        },
+        "team": "OAK"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5490827644261614,
+            "pts": 23.54874979562971,
+            "yards": 271.60501088277437,
+            "to": 0.9182519283178135,
+            "rankOfwinloss": 12,
+            "rankOfpts": 13,
+            "rankOfyards": 29,
+            "rankOfto": 7
+          },
+          "def": {
+            "winloss": 0.45091723557383845,
+            "pts": 25.791205875057607,
+            "yards": 316.89728482840155,
+            "to": 1.2607921301383744,
+            "rankOfwinloss": 12,
+            "rankOfpts": 27,
+            "rankOfyards": 7,
+            "rankOfto": 17
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4161659728527788,
+            "pts": 19.006959773122343,
+            "yards": 332.7901392019819,
+            "to": 1.79593429595648,
+            "rankOfwinloss": 28,
+            "rankOfpts": 31,
+            "rankOfyards": 23,
+            "rankOfto": 29
+          },
+          "def": {
+            "winloss": 0.5838340271472207,
+            "pts": 20.788890887063673,
+            "yards": 315.11036081629123,
+            "to": 1.3801528443774123,
+            "rankOfwinloss": 28,
+            "rankOfpts": 6,
+            "rankOfyards": 1,
+            "rankOfto": 25
+          }
+        },
+        "team": "SD"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.6593589071321627,
+            "pts": 24.93323577160735,
+            "yards": 389.95221209984993,
+            "to": 1.1337099303173512,
+            "rankOfwinloss": 10,
+            "rankOfpts": 11,
+            "rankOfyards": 7,
+            "rankOfto": 12
+          },
+          "def": {
+            "winloss": 0.34064109286783717,
+            "pts": 19.13255456149673,
+            "yards": 342.3395087434844,
+            "to": 0.933655867682132,
+            "rankOfwinloss": 10,
+            "rankOfpts": 12,
+            "rankOfyards": 18,
+            "rankOfto": 26
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.6070565053176787,
+            "pts": 22.100806906308286,
+            "yards": 322.3870617095964,
+            "to": 1.6388667845487745,
+            "rankOfwinloss": 5,
+            "rankOfpts": 20,
+            "rankOfyards": 30,
+            "rankOfto": 24
+          },
+          "def": {
+            "winloss": 0.3929434946823208,
+            "pts": 20.87319721187055,
+            "yards": 349.0055258627369,
+            "to": 1.7313877467798564,
+            "rankOfwinloss": 5,
+            "rankOfpts": 7,
+            "rankOfyards": 22,
+            "rankOfto": 8
+          }
+        },
+        "team": "BAL"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5322086590922447,
+            "pts": 18.87399472240892,
+            "yards": 263.93321499235395,
+            "to": 1.75224189288246,
+            "rankOfwinloss": 15,
+            "rankOfpts": 23,
+            "rankOfyards": 31,
+            "rankOfto": 23
+          },
+          "def": {
+            "winloss": 0.46779134090775504,
+            "pts": 17.151131667212177,
+            "yards": 336.06526982585444,
+            "to": 1.8102816158123594,
+            "rankOfwinloss": 15,
+            "rankOfpts": 6,
+            "rankOfyards": 15,
+            "rankOfto": 11
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.434255567899952,
+            "pts": 21.490627652633385,
+            "yards": 344.2213703843242,
+            "to": 1.6253850703440056,
+            "rankOfwinloss": 26,
+            "rankOfpts": 22,
+            "rankOfyards": 17,
+            "rankOfto": 22
+          },
+          "def": {
+            "winloss": 0.5657444321000474,
+            "pts": 23.721020050952134,
+            "yards": 332.8841290247828,
+            "to": 1.0701655656819944,
+            "rankOfwinloss": 26,
+            "rankOfpts": 26,
+            "rankOfyards": 5,
+            "rankOfto": 32
+          }
+        },
+        "team": "CIN"
+      }
+    ],
+    "home": [
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7930091454083505,
+            "pts": 36.6432178353066,
+            "yards": 376.01522212277325,
+            "to": 1.3261212370013304,
+            "rankOfwinloss": 5,
+            "rankOfpts": 2,
+            "rankOfyards": 7,
+            "rankOfto": 13
+          },
+          "def": {
+            "winloss": 0.19266045826055558,
+            "pts": 18.03422323627173,
+            "yards": 353.388297155817,
+            "to": 2.293313950232677,
+            "rankOfwinloss": 5,
+            "rankOfpts": 8,
+            "rankOfyards": 23,
+            "rankOfto": 4
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4522534134956755,
+            "pts": 22.32474684714735,
+            "yards": 368.24336651666135,
+            "to": 1.5357217092214916,
+            "rankOfwinloss": 20,
+            "rankOfpts": 15,
+            "rankOfyards": 3,
+            "rankOfto": 14
+          },
+          "def": {
+            "winloss": 0.5498871632372315,
+            "pts": 24.260628062253943,
+            "yards": 350.5214789996336,
+            "to": 1.2277077154303269,
+            "rankOfwinloss": 20,
+            "rankOfpts": 25,
+            "rankOfyards": 19,
+            "rankOfto": 31
+          }
+        },
+        "team": "NYG"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.41651802264386223,
+            "pts": 27.39595261808713,
+            "yards": 420.3466704517653,
+            "to": 1.6925484414211303,
+            "rankOfwinloss": 20,
+            "rankOfpts": 7,
+            "rankOfyards": 3,
+            "rankOfto": 23
+          },
+          "def": {
+            "winloss": 0.5695838346205957,
+            "pts": 30.260274097504286,
+            "yards": 405.175360308697,
+            "to": 0.48043730862369777,
+            "rankOfwinloss": 20,
+            "rankOfpts": 32,
+            "rankOfyards": 31,
+            "rankOfto": 31
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4312106597730438,
+            "pts": 21.74277306643564,
+            "yards": 370.92990442625535,
+            "to": 2.1086298942035944,
+            "rankOfwinloss": 25,
+            "rankOfpts": 21,
+            "rankOfyards": 2,
+            "rankOfto": 32
+          },
+          "def": {
+            "winloss": 0.5704976633643112,
+            "pts": 24.19784025780006,
+            "yards": 342.9686794787236,
+            "to": 1.4125121650152168,
+            "rankOfwinloss": 25,
+            "rankOfpts": 23,
+            "rankOfyards": 7,
+            "rankOfto": 23
+          }
+        },
+        "team": "DAL"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.3319159698649152,
+            "pts": 16.326820040354722,
+            "yards": 309.21524070168834,
+            "to": 2.267851761655793,
+            "rankOfwinloss": 24,
+            "rankOfpts": 28,
+            "rankOfyards": 25,
+            "rankOfto": 30
+          },
+          "def": {
+            "winloss": 0.6535249295861564,
+            "pts": 22.19144438974407,
+            "yards": 275.8795532021599,
+            "to": 0.9692056301531586,
+            "rankOfwinloss": 24,
+            "rankOfpts": 22,
+            "rankOfyards": 2,
+            "rankOfto": 26
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4937685005850768,
+            "pts": 24.890355474195097,
+            "yards": 345.47606359079424,
+            "to": 1.5952795398736446,
+            "rankOfwinloss": 12,
+            "rankOfpts": 4,
+            "rankOfyards": 19,
+            "rankOfto": 19
+          },
+          "def": {
+            "winloss": 0.5086007803656648,
+            "pts": 22.634165757263137,
+            "yards": 337.97940004661496,
+            "to": 2.0139638720251862,
+            "rankOfwinloss": 12,
+            "rankOfpts": 11,
+            "rankOfyards": 3,
+            "rankOfto": 3
+          }
+        },
+        "team": "NYJ"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.45238154959246507,
+            "pts": 23.69779884972866,
+            "yards": 322.05111633917653,
+            "to": 2.0713085321574187,
+            "rankOfwinloss": 19,
+            "rankOfpts": 14,
+            "rankOfyards": 19,
+            "rankOfto": 27
+          },
+          "def": {
+            "winloss": 0.5336595423179651,
+            "pts": 25.53883330794634,
+            "yards": 361.96208211688423,
+            "to": 1.2713972521684407,
+            "rankOfwinloss": 19,
+            "rankOfpts": 29,
+            "rankOfyards": 26,
+            "rankOfto": 22
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.42398656315089805,
+            "pts": 20.51959232667523,
+            "yards": 332.1450540114686,
+            "to": 1.698670862827191,
+            "rankOfwinloss": 26,
+            "rankOfpts": 27,
+            "rankOfyards": 28,
+            "rankOfto": 26
+          },
+          "def": {
+            "winloss": 0.5777825253404847,
+            "pts": 22.522394283433844,
+            "yards": 356.53309615419727,
+            "to": 1.317350890227473,
+            "rankOfwinloss": 26,
+            "rankOfpts": 8,
+            "rankOfyards": 24,
+            "rankOfto": 29
+          }
+        },
+        "team": "BUF"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.8653091481456041,
+            "pts": 26.85286789111163,
+            "yards": 364.79012174453254,
+            "to": 0.8538837431565947,
+            "rankOfwinloss": 4,
+            "rankOfpts": 8,
+            "rankOfyards": 14,
+            "rankOfto": 7
+          },
+          "def": {
+            "winloss": 0.1199965678932757,
+            "pts": 22.965345926873216,
+            "yards": 394.6351987090105,
+            "to": 1.5926253419875296,
+            "rankOfwinloss": 4,
+            "rankOfpts": 23,
+            "rankOfyards": 30,
+            "rankOfto": 17
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4991321132755626,
+            "pts": 23.432102112940996,
+            "yards": 339.4273300040645,
+            "to": 1.4532805532470041,
+            "rankOfwinloss": 11,
+            "rankOfpts": 7,
+            "rankOfyards": 23,
+            "rankOfto": 11
+          },
+          "def": {
+            "winloss": 0.5033723510873708,
+            "pts": 23.86336083101297,
+            "yards": 343.1116309270519,
+            "to": 1.6630872189842842,
+            "rankOfwinloss": 11,
+            "rankOfpts": 21,
+            "rankOfyards": 8,
+            "rankOfto": 9
+          }
+        },
+        "team": "MIN"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.28713165339766666,
+            "pts": 14.637041131458354,
+            "yards": 324.0645250928242,
+            "to": 1.7804360148063607,
+            "rankOfwinloss": 25,
+            "rankOfpts": 31,
+            "rankOfyards": 18,
+            "rankOfto": 25
+          },
+          "def": {
+            "winloss": 0.6988457505983837,
+            "pts": 20.45718448909847,
+            "yards": 346.96506109374536,
+            "to": 1.740237156852353,
+            "rankOfwinloss": 25,
+            "rankOfpts": 15,
+            "rankOfyards": 19,
+            "rankOfto": 14
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.6082171652807756,
+            "pts": 25.283388533826948,
+            "yards": 351.7115649840647,
+            "to": 1.5459903348082038,
+            "rankOfwinloss": 1,
+            "rankOfpts": 2,
+            "rankOfyards": 11,
+            "rankOfto": 15
+          },
+          "def": {
+            "winloss": 0.393615611124987,
+            "pts": 22.53748973840994,
+            "yards": 355.76298770814486,
+            "to": 2.022579533380901,
+            "rankOfwinloss": 1,
+            "rankOfpts": 9,
+            "rankOfyards": 22,
+            "rankOfto": 2
+          }
+        },
+        "team": "JAC"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.47120707476544305,
+            "pts": 19.082319242969728,
+            "yards": 293.9244764671237,
+            "to": 1.3358723198879623,
+            "rankOfwinloss": 18,
+            "rankOfpts": 23,
+            "rankOfyards": 27,
+            "rankOfto": 14
+          },
+          "def": {
+            "winloss": 0.5151837974439983,
+            "pts": 21.709882373821326,
+            "yards": 326.5509977299034,
+            "to": 2.110446014790815,
+            "rankOfwinloss": 18,
+            "rankOfpts": 18,
+            "rankOfyards": 13,
+            "rankOfto": 7
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.45973569798030717,
+            "pts": 22.34658527375986,
+            "yards": 363.0990288142738,
+            "to": 1.6674363967077823,
+            "rankOfwinloss": 19,
+            "rankOfpts": 14,
+            "rankOfyards": 5,
+            "rankOfto": 24
+          },
+          "def": {
+            "winloss": 0.5416836102120645,
+            "pts": 25.106147801528856,
+            "yards": 347.4496376614418,
+            "to": 1.4832035312919674,
+            "rankOfwinloss": 19,
+            "rankOfpts": 30,
+            "rankOfyards": 15,
+            "rankOfto": 19
+          }
+        },
+        "team": "CLE"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.18383746656575936,
+            "pts": 19.603951532508347,
+            "yards": 336.1285191626267,
+            "to": 2.6386259223144117,
+            "rankOfwinloss": 30,
+            "rankOfpts": 20,
+            "rankOfyards": 17,
+            "rankOfto": 32
+          },
+          "def": {
+            "winloss": 0.8025690668561705,
+            "pts": 26.572007336465727,
+            "yards": 295.95109312848194,
+            "to": 1.276333234283893,
+            "rankOfwinloss": 30,
+            "rankOfpts": 30,
+            "rankOfyards": 4,
+            "rankOfto": 21
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5887100897299922,
+            "pts": 25.30158782758013,
+            "yards": 378.08515130373894,
+            "to": 1.2314605259783356,
+            "rankOfwinloss": 2,
+            "rankOfpts": 1,
+            "rankOfyards": 1,
+            "rankOfto": 3
+          },
+          "def": {
+            "winloss": 0.4126935572498911,
+            "pts": 22.43859721948168,
+            "yards": 348.89305792160513,
+            "to": 1.5405786863549273,
+            "rankOfwinloss": 2,
+            "rankOfpts": 7,
+            "rankOfyards": 18,
+            "rankOfto": 15
+          }
+        },
+        "team": "PHI"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.3377954167523655,
+            "pts": 16.723873410962735,
+            "yards": 274.0985873321435,
+            "to": 1.5964164911390242,
+            "rankOfwinloss": 23,
+            "rankOfpts": 27,
+            "rankOfyards": 31,
+            "rankOfto": 21
+          },
+          "def": {
+            "winloss": 0.6479490032238379,
+            "pts": 18.108655281920953,
+            "yards": 353.37685567012124,
+            "to": 2.340112967522029,
+            "rankOfwinloss": 23,
+            "rankOfpts": 9,
+            "rankOfyards": 22,
+            "rankOfto": 3
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4720489002873103,
+            "pts": 22.185869045865534,
+            "yards": 347.81730371616254,
+            "to": 1.3154031338472212,
+            "rankOfwinloss": 15,
+            "rankOfpts": 18,
+            "rankOfyards": 14,
+            "rankOfto": 4
+          },
+          "def": {
+            "winloss": 0.5300168601382995,
+            "pts": 23.719520415350058,
+            "yards": 346.8644022442618,
+            "to": 1.3365039114034545,
+            "rankOfwinloss": 15,
+            "rankOfpts": 20,
+            "rankOfyards": 14,
+            "rankOfto": 28
+          }
+        },
+        "team": "CHI"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.9210407709439492,
+            "pts": 24.06646594808385,
+            "yards": 316.5025318676602,
+            "to": 0.811171836760382,
+            "rankOfwinloss": 2,
+            "rankOfpts": 13,
+            "rankOfyards": 24,
+            "rankOfto": 6
+          },
+          "def": {
+            "winloss": 0.06450378868495552,
+            "pts": 20.124127563206763,
+            "yards": 358.2038686972353,
+            "to": 1.4598490877210024,
+            "rankOfwinloss": 2,
+            "rankOfpts": 13,
+            "rankOfyards": 25,
+            "rankOfto": 20
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4876220882921546,
+            "pts": 20.800134659324655,
+            "yards": 331.7492921532501,
+            "to": 1.425669032433106,
+            "rankOfwinloss": 13,
+            "rankOfpts": 24,
+            "rankOfyards": 29,
+            "rankOfto": 8
+          },
+          "def": {
+            "winloss": 0.5146435324807538,
+            "pts": 23.19704645737736,
+            "yards": 355.42224880054357,
+            "to": 1.7085921617003272,
+            "rankOfwinloss": 13,
+            "rankOfpts": 16,
+            "rankOfyards": 21,
+            "rankOfto": 8
+          }
+        },
+        "team": "IND"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7380722544184446,
+            "pts": 31.426785817353878,
+            "yards": 417.1161022052625,
+            "to": 1.537134098881842,
+            "rankOfwinloss": 9,
+            "rankOfpts": 5,
+            "rankOfyards": 5,
+            "rankOfto": 20
+          },
+          "def": {
+            "winloss": 0.24742136565806533,
+            "pts": 17.146412027381313,
+            "yards": 238.67219751362623,
+            "to": 1.00184593061157,
+            "rankOfwinloss": 9,
+            "rankOfpts": 6,
+            "rankOfyards": 1,
+            "rankOfto": 25
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.3047045113190447,
+            "pts": 18.747713291626486,
+            "yards": 340.1768612372148,
+            "to": 1.4942527211904926,
+            "rankOfwinloss": 32,
+            "rankOfpts": 32,
+            "rankOfyards": 22,
+            "rankOfto": 12
+          },
+          "def": {
+            "winloss": 0.6976120490062584,
+            "pts": 24.662285015389756,
+            "yards": 365.34471144380836,
+            "to": 1.1550637877659622,
+            "rankOfwinloss": 32,
+            "rankOfpts": 27,
+            "rankOfyards": 32,
+            "rankOfto": 32
+          }
+        },
+        "team": "DEN"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.41632757477331933,
+            "pts": 18.604517363726366,
+            "yards": 283.16520727072657,
+            "to": 1.5136510229237135,
+            "rankOfwinloss": 21,
+            "rankOfpts": 24,
+            "rankOfyards": 30,
+            "rankOfto": 19
+          },
+          "def": {
+            "winloss": 0.5698641737210278,
+            "pts": 17.50628524280838,
+            "yards": 284.71161395373775,
+            "to": 1.7260719468181667,
+            "rankOfwinloss": 21,
+            "rankOfpts": 7,
+            "rankOfyards": 3,
+            "rankOfto": 15
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.403124546382837,
+            "pts": 20.610557938554027,
+            "yards": 345.55330428949514,
+            "to": 1.9017815262358977,
+            "rankOfwinloss": 27,
+            "rankOfpts": 25,
+            "rankOfyards": 18,
+            "rankOfto": 29
+          },
+          "def": {
+            "winloss": 0.5984938855246289,
+            "pts": 23.038856103110803,
+            "yards": 345.2021173421714,
+            "to": 1.435817310679282,
+            "rankOfwinloss": 27,
+            "rankOfpts": 13,
+            "rankOfyards": 12,
+            "rankOfto": 22
+          }
+        },
+        "team": "PIT"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5605694549455639,
+            "pts": 21.48963009353146,
+            "yards": 284.82850718399106,
+            "to": 1.464085539251416,
+            "rankOfwinloss": 15,
+            "rankOfpts": 19,
+            "rankOfyards": 29,
+            "rankOfto": 17
+          },
+          "def": {
+            "winloss": 0.42488074342207915,
+            "pts": 24.57152597656993,
+            "yards": 370.2278598365332,
+            "to": 2.2219579745373492,
+            "rankOfwinloss": 15,
+            "rankOfpts": 25,
+            "rankOfyards": 27,
+            "rankOfto": 5
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4396541918524397,
+            "pts": 20.93760950575212,
+            "yards": 332.9524317029591,
+            "to": 1.6199873888077665,
+            "rankOfwinloss": 22,
+            "rankOfpts": 22,
+            "rankOfyards": 27,
+            "rankOfto": 21
+          },
+          "def": {
+            "winloss": 0.5627057901817304,
+            "pts": 24.4662303249139,
+            "yards": 363.2459340256116,
+            "to": 1.75939929729672,
+            "rankOfwinloss": 22,
+            "rankOfpts": 26,
+            "rankOfyards": 31,
+            "rankOfto": 6
+          }
+        },
+        "team": "TEN"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7518257945772676,
+            "pts": 37.30913023206267,
+            "yards": 440.7314765078881,
+            "to": 1.2891293109272397,
+            "rankOfwinloss": 7,
+            "rankOfpts": 1,
+            "rankOfyards": 1,
+            "rankOfto": 12
+          },
+          "def": {
+            "winloss": 0.23400783467999978,
+            "pts": 21.715529515197925,
+            "yards": 374.9533789763626,
+            "to": 2.0816498860831025,
+            "rankOfwinloss": 7,
+            "rankOfpts": 19,
+            "rankOfyards": 28,
+            "rankOfto": 10
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5147668315587381,
+            "pts": 20.033643432979133,
+            "yards": 318.10417779412364,
+            "to": 1.6241737455865053,
+            "rankOfwinloss": 9,
+            "rankOfpts": 29,
+            "rankOfyards": 31,
+            "rankOfto": 22
+          },
+          "def": {
+            "winloss": 0.48720971958580744,
+            "pts": 20.147719069989915,
+            "yards": 344.5951986821549,
+            "to": 1.45152102091744,
+            "rankOfwinloss": 9,
+            "rankOfpts": 2,
+            "rankOfyards": 10,
+            "rankOfto": 21
+          }
+        },
+        "team": "NE"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7637747110274,
+            "pts": 22.256460220721795,
+            "yards": 370.02020576843466,
+            "to": 1.0979121419019122,
+            "rankOfwinloss": 6,
+            "rankOfpts": 18,
+            "rankOfyards": 11,
+            "rankOfto": 9
+          },
+          "def": {
+            "winloss": 0.22182098210640194,
+            "pts": 19.981200861145233,
+            "yards": 306.1545317672809,
+            "to": 0.7130384186997717,
+            "rankOfwinloss": 6,
+            "rankOfpts": 12,
+            "rankOfyards": 5,
+            "rankOfto": 29
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5311716598180765,
+            "pts": 21.780185581231756,
+            "yards": 332.9943201145316,
+            "to": 1.9947165333494086,
+            "rankOfwinloss": 8,
+            "rankOfpts": 20,
+            "rankOfyards": 26,
+            "rankOfto": 30
+          },
+          "def": {
+            "winloss": 0.47080607048649015,
+            "pts": 23.091899390988264,
+            "yards": 357.5570693418911,
+            "to": 1.6541231464692032,
+            "rankOfwinloss": 8,
+            "rankOfpts": 14,
+            "rankOfyards": 26,
+            "rankOfto": 10
+          }
+        },
+        "team": "HOU"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5942579356190915,
+            "pts": 19.48906726536744,
+            "yards": 318.93731591299525,
+            "to": 0.697466551309313,
+            "rankOfwinloss": 14,
+            "rankOfpts": 21,
+            "rankOfyards": 23,
+            "rankOfto": 5
+          },
+          "def": {
+            "winloss": 0.3917805794967937,
+            "pts": 15.14305799984479,
+            "yards": 343.0009245987561,
+            "to": 1.5697206602983242,
+            "rankOfwinloss": 14,
+            "rankOfpts": 3,
+            "rankOfyards": 18,
+            "rankOfto": 18
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.3799663609986042,
+            "pts": 22.38077288279024,
+            "yards": 348.010700045426,
+            "to": 1.5610865008770671,
+            "rankOfwinloss": 28,
+            "rankOfpts": 12,
+            "rankOfyards": 13,
+            "rankOfto": 16
+          },
+          "def": {
+            "winloss": 0.6218053042873236,
+            "pts": 24.21945646733765,
+            "yards": 358.491232590703,
+            "to": 1.7761414150398496,
+            "rankOfwinloss": 28,
+            "rankOfpts": 24,
+            "rankOfyards": 28,
+            "rankOfto": 5
+          }
+        },
+        "team": "MIA"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.9201673087471507,
+            "pts": 30.00450074207205,
+            "yards": 369.78593996742643,
+            "to": 0.6653653410321568,
+            "rankOfwinloss": 3,
+            "rankOfpts": 6,
+            "rankOfyards": 12,
+            "rankOfto": 4
+          },
+          "def": {
+            "winloss": 0.06512968423014082,
+            "pts": 13.7325942635775,
+            "yards": 323.4863500847737,
+            "to": 2.0997039026540865,
+            "rankOfwinloss": 3,
+            "rankOfpts": 2,
+            "rankOfyards": 11,
+            "rankOfto": 9
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.46222137784897066,
+            "pts": 22.29151450588215,
+            "yards": 335.56586341231633,
+            "to": 1.6268066529651062,
+            "rankOfwinloss": 17,
+            "rankOfpts": 16,
+            "rankOfyards": 25,
+            "rankOfto": 23
+          },
+          "def": {
+            "winloss": 0.5400550526121066,
+            "pts": 23.972243087811822,
+            "yards": 340.71056353421824,
+            "to": 1.47601016205123,
+            "rankOfwinloss": 17,
+            "rankOfpts": 22,
+            "rankOfyards": 5,
+            "rankOfto": 20
+          }
+        },
+        "team": "GB"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7387724818072434,
+            "pts": 25.450950426678737,
+            "yards": 372.11967849630366,
+            "to": 0.13357940984816224,
+            "rankOfwinloss": 8,
+            "rankOfpts": 10,
+            "rankOfyards": 10,
+            "rankOfto": 2
+          },
+          "def": {
+            "winloss": 0.24674262767537725,
+            "pts": 16.952312061996192,
+            "yards": 317.3765935037972,
+            "to": 0.9423574134997275,
+            "rankOfwinloss": 8,
+            "rankOfpts": 5,
+            "rankOfyards": 8,
+            "rankOfto": 27
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.3722960887127249,
+            "pts": 19.270069531930684,
+            "yards": 294.2473880326129,
+            "to": 2.0802557950998306,
+            "rankOfwinloss": 29,
+            "rankOfpts": 31,
+            "rankOfyards": 32,
+            "rankOfto": 31
+          },
+          "def": {
+            "winloss": 0.6299989822064674,
+            "pts": 22.818298656488352,
+            "yards": 340.372218710287,
+            "to": 1.8075700804433406,
+            "rankOfwinloss": 29,
+            "rankOfpts": 12,
+            "rankOfyards": 4,
+            "rankOfto": 4
+          }
+        },
+        "team": "SF"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.1648585255319758,
+            "pts": 22.529859122484687,
+            "yards": 374.26208775192697,
+            "to": 1.7600847489670086,
+            "rankOfwinloss": 32,
+            "rankOfpts": 17,
+            "rankOfyards": 9,
+            "rankOfto": 24
+          },
+          "def": {
+            "winloss": 0.821207336014906,
+            "pts": 25.23251180896129,
+            "yards": 350.1560923584358,
+            "to": 1.8073088873172252,
+            "rankOfwinloss": 32,
+            "rankOfpts": 28,
+            "rankOfyards": 21,
+            "rankOfto": 12
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.45140882682280165,
+            "pts": 21.78494406296527,
+            "yards": 355.9867184992457,
+            "to": 1.37491519069171,
+            "rankOfwinloss": 21,
+            "rankOfpts": 19,
+            "rankOfyards": 7,
+            "rankOfto": 7
+          },
+          "def": {
+            "winloss": 0.5503354920321297,
+            "pts": 21.88448118892143,
+            "yards": 343.78693028759403,
+            "to": 1.498037829364064,
+            "rankOfwinloss": 21,
+            "rankOfpts": 6,
+            "rankOfyards": 9,
+            "rankOfto": 17
+          }
+        },
+        "team": "TB"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5196369650236695,
+            "pts": 17.50821803813131,
+            "yards": 321.9084808113255,
+            "to": 1.473554951090371,
+            "rankOfwinloss": 17,
+            "rankOfpts": 26,
+            "rankOfyards": 20,
+            "rankOfto": 18
+          },
+          "def": {
+            "winloss": 0.46586783303741125,
+            "pts": 19.12226818353357,
+            "yards": 308.81839488643504,
+            "to": 1.4988299193158188,
+            "rankOfwinloss": 17,
+            "rankOfpts": 11,
+            "rankOfyards": 7,
+            "rankOfto": 19
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4610396056896395,
+            "pts": 22.513751655558607,
+            "yards": 352.3624442668586,
+            "to": 1.588045164842559,
+            "rankOfwinloss": 18,
+            "rankOfpts": 10,
+            "rankOfyards": 10,
+            "rankOfto": 18
+          },
+          "def": {
+            "winloss": 0.5412657766510929,
+            "pts": 25.158981970445378,
+            "yards": 356.8586312158203,
+            "to": 1.5755622868150891,
+            "rankOfwinloss": 18,
+            "rankOfpts": 31,
+            "rankOfyards": 25,
+            "rankOfto": 14
+          }
+        },
+        "team": "CAR"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.16765628326733054,
+            "pts": 24.472259969791637,
+            "yards": 422.47296367637136,
+            "to": 2.5226473522829336,
+            "rankOfwinloss": 31,
+            "rankOfpts": 12,
+            "rankOfyards": 2,
+            "rankOfto": 31
+          },
+          "def": {
+            "winloss": 0.8180853969338262,
+            "pts": 27.56432911984846,
+            "yards": 381.90926751788766,
+            "to": 0.8793642309933091,
+            "rankOfwinloss": 31,
+            "rankOfpts": 31,
+            "rankOfyards": 29,
+            "rankOfto": 28
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5580310745788073,
+            "pts": 23.279607427620455,
+            "yards": 347.65051420495166,
+            "to": 1.4999107514163215,
+            "rankOfwinloss": 5,
+            "rankOfpts": 8,
+            "rankOfyards": 15,
+            "rankOfto": 13
+          },
+          "def": {
+            "winloss": 0.444037425621849,
+            "pts": 22.556655413546704,
+            "yards": 342.2629956286832,
+            "to": 1.6322335539563084,
+            "rankOfwinloss": 5,
+            "rankOfpts": 10,
+            "rankOfyards": 6,
+            "rankOfto": 11
+          }
+        },
+        "team": "DET"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.38649201535471356,
+            "pts": 18.50872279325063,
+            "yards": 343.0856052608343,
+            "to": 1.4061940194767804,
+            "rankOfwinloss": 22,
+            "rankOfpts": 25,
+            "rankOfyards": 16,
+            "rankOfto": 15
+          },
+          "def": {
+            "winloss": 0.5991935781974373,
+            "pts": 25.105991544479302,
+            "yards": 347.5604293786936,
+            "to": 0.6165142344569734,
+            "rankOfwinloss": 22,
+            "rankOfpts": 27,
+            "rankOfyards": 20,
+            "rankOfto": 30
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5330642856745657,
+            "pts": 24.134350454515506,
+            "yards": 341.9643347223324,
+            "to": 1.4376201218419478,
+            "rankOfwinloss": 7,
+            "rankOfpts": 5,
+            "rankOfyards": 20,
+            "rankOfto": 10
+          },
+          "def": {
+            "winloss": 0.46906030117509656,
+            "pts": 21.85833172577776,
+            "yards": 348.54514024877386,
+            "to": 1.7167191359284402,
+            "rankOfwinloss": 7,
+            "rankOfpts": 5,
+            "rankOfyards": 17,
+            "rankOfto": 7
+          }
+        },
+        "team": "STL"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5327938442436582,
+            "pts": 34.127006521773325,
+            "yards": 420.3207479116562,
+            "to": 1.1279220542128714,
+            "rankOfwinloss": 16,
+            "rankOfpts": 4,
+            "rankOfyards": 4,
+            "rankOfto": 10
+          },
+          "def": {
+            "winloss": 0.4531342008829825,
+            "pts": 23.134411431144777,
+            "yards": 427.3931021897855,
+            "to": 2.5412812317443514,
+            "rankOfwinloss": 16,
+            "rankOfpts": 24,
+            "rankOfyards": 32,
+            "rankOfto": 2
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5647839216439905,
+            "pts": 25.143466526157066,
+            "yards": 363.5294981430068,
+            "to": 1.2044230910500138,
+            "rankOfwinloss": 4,
+            "rankOfpts": 3,
+            "rankOfyards": 4,
+            "rankOfto": 2
+          },
+          "def": {
+            "winloss": 0.4370982136311817,
+            "pts": 21.292696766290995,
+            "yards": 326.26392014133353,
+            "to": 1.5246058652956473,
+            "rankOfwinloss": 4,
+            "rankOfpts": 4,
+            "rankOfyards": 2,
+            "rankOfto": 16
+          }
+        },
+        "team": "NO"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.6651407467806978,
+            "pts": 24.497059296446906,
+            "yards": 321.31097555409065,
+            "to": 1.0714476403013904,
+            "rankOfwinloss": 11,
+            "rankOfpts": 11,
+            "rankOfyards": 21,
+            "rankOfto": 8
+          },
+          "def": {
+            "winloss": 0.3211389358835447,
+            "pts": 20.167514496271586,
+            "yards": 340.5822665403309,
+            "to": 2.158941311695772,
+            "rankOfwinloss": 11,
+            "rankOfpts": 14,
+            "rankOfyards": 17,
+            "rankOfto": 6
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.577165625524563,
+            "pts": 23.601521298373832,
+            "yards": 358.00513450102295,
+            "to": 1.0967316174105501,
+            "rankOfwinloss": 3,
+            "rankOfpts": 6,
+            "rankOfyards": 6,
+            "rankOfto": 1
+          },
+          "def": {
+            "winloss": 0.4241281152495633,
+            "pts": 20.716802513739324,
+            "yards": 347.7572605318144,
+            "to": 1.4956642793711312,
+            "rankOfwinloss": 3,
+            "rankOfpts": 3,
+            "rankOfyards": 16,
+            "rankOfto": 18
+          }
+        },
+        "team": "WAS"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.28647186837723454,
+            "pts": 19.358488192255443,
+            "yards": 298.5786047472623,
+            "to": 2.1100924988454492,
+            "rankOfwinloss": 26,
+            "rankOfpts": 22,
+            "rankOfyards": 26,
+            "rankOfto": 28
+          },
+          "def": {
+            "winloss": 0.6989433311437863,
+            "pts": 21.881830900680207,
+            "yards": 325.61600031899206,
+            "to": 1.764754985196603,
+            "rankOfwinloss": 26,
+            "rankOfpts": 21,
+            "rankOfyards": 12,
+            "rankOfto": 13
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.43331453272821674,
+            "pts": 22.36148728474257,
+            "yards": 345.9557653899522,
+            "to": 1.6784797502760493,
+            "rankOfwinloss": 24,
+            "rankOfpts": 13,
+            "rankOfyards": 17,
+            "rankOfto": 25
+          },
+          "def": {
+            "winloss": 0.5690804481525755,
+            "pts": 23.17840778732182,
+            "yards": 322.7103566753136,
+            "to": 1.619188128231579,
+            "rankOfwinloss": 24,
+            "rankOfpts": 15,
+            "rankOfyards": 1,
+            "rankOfto": 13
+          }
+        },
+        "team": "ARI"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 1.0180364798273134,
+            "pts": 35.015867737954444,
+            "yards": 375.8499302522254,
+            "to": 0.06686280087706511,
+            "rankOfwinloss": 1,
+            "rankOfpts": 3,
+            "rankOfyards": 8,
+            "rankOfto": 1
+          },
+          "def": {
+            "winloss": -0.03224859111696688,
+            "pts": 11.793416768844889,
+            "yards": 307.8308337823054,
+            "to": 2.778910322321119,
+            "rankOfwinloss": 1,
+            "rankOfpts": 1,
+            "rankOfyards": 6,
+            "rankOfto": 1
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5478769636108792,
+            "pts": 22.531751500164695,
+            "yards": 327.0732089713336,
+            "to": 1.3727827907415537,
+            "rankOfwinloss": 6,
+            "rankOfpts": 9,
+            "rankOfyards": 30,
+            "rankOfto": 6
+          },
+          "def": {
+            "winloss": 0.4541453280805873,
+            "pts": 19.72873213650107,
+            "yards": 344.60418970605025,
+            "to": 2.248082333331305,
+            "rankOfwinloss": 6,
+            "rankOfpts": 1,
+            "rankOfyards": 11,
+            "rankOfto": 1
+          }
+        },
+        "team": "SEA"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.21819110689749183,
+            "pts": 13.642825215954641,
+            "yards": 365.61529432939557,
+            "to": 2.190072821892506,
+            "rankOfwinloss": 29,
+            "rankOfpts": 32,
+            "rankOfyards": 13,
+            "rankOfto": 29
+          },
+          "def": {
+            "winloss": 0.7674575790995337,
+            "pts": 21.72559081664351,
+            "yards": 335.0433811347616,
+            "to": 0.2815073571768937,
+            "rankOfwinloss": 29,
+            "rankOfpts": 20,
+            "rankOfyards": 15,
+            "rankOfto": 32
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4787431693997865,
+            "pts": 22.455850516426104,
+            "yards": 354.70401390960154,
+            "to": 1.7377669494858214,
+            "rankOfwinloss": 14,
+            "rankOfpts": 11,
+            "rankOfyards": 9,
+            "rankOfto": 27
+          },
+          "def": {
+            "winloss": 0.523418325005001,
+            "pts": 24.669382887641,
+            "yards": 355.7631313517661,
+            "to": 1.3866847467757302,
+            "rankOfwinloss": 14,
+            "rankOfpts": 28,
+            "rankOfyards": 23,
+            "rankOfto": 27
+          }
+        },
+        "team": "KC"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.6130680212100053,
+            "pts": 22.600532368976737,
+            "yards": 320.6848168264883,
+            "to": 1.2101074528671176,
+            "rankOfwinloss": 12,
+            "rankOfpts": 16,
+            "rankOfyards": 22,
+            "rankOfto": 11
+          },
+          "def": {
+            "winloss": 0.37250199479233304,
+            "pts": 16.85130400210972,
+            "yards": 331.507021447066,
+            "to": 2.1054382996737226,
+            "rankOfwinloss": 12,
+            "rankOfpts": 4,
+            "rankOfyards": 14,
+            "rankOfto": 8
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4366344968864561,
+            "pts": 20.844350144824574,
+            "yards": 354.96281986694316,
+            "to": 1.6006023115970718,
+            "rankOfwinloss": 23,
+            "rankOfpts": 23,
+            "rankOfyards": 8,
+            "rankOfto": 20
+          },
+          "def": {
+            "winloss": 0.5656056675130188,
+            "pts": 23.687646504101075,
+            "yards": 359.93796714250664,
+            "to": 1.3996355069234476,
+            "rankOfwinloss": 23,
+            "rankOfpts": 19,
+            "rankOfyards": 30,
+            "rankOfto": 24
+          }
+        },
+        "team": "ATL"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.25988266791674103,
+            "pts": 16.015399987059205,
+            "yards": 363.3081724555213,
+            "to": 1.9200709526654944,
+            "rankOfwinloss": 28,
+            "rankOfpts": 29,
+            "rankOfyards": 15,
+            "rankOfto": 26
+          },
+          "def": {
+            "winloss": 0.7258260615491015,
+            "pts": 21.425741034459588,
+            "yards": 322.7016009674875,
+            "to": 1.077478092545067,
+            "rankOfwinloss": 28,
+            "rankOfpts": 17,
+            "rankOfyards": 10,
+            "rankOfto": 23
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.34606997688285035,
+            "pts": 20.60692156495472,
+            "yards": 349.0064516584761,
+            "to": 1.5740016871640221,
+            "rankOfwinloss": 31,
+            "rankOfpts": 26,
+            "rankOfyards": 12,
+            "rankOfto": 17
+          },
+          "def": {
+            "winloss": 0.6560314740531203,
+            "pts": 24.74753478422354,
+            "yards": 359.3598145155016,
+            "to": 1.229052671734585,
+            "rankOfwinloss": 31,
+            "rankOfpts": 29,
+            "rankOfyards": 29,
+            "rankOfto": 30
+          }
+        },
+        "team": "OAK"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.27586857171193774,
+            "pts": 15.208497745819454,
+            "yards": 251.72256698351646,
+            "to": 1.5969302643683774,
+            "rankOfwinloss": 27,
+            "rankOfpts": 30,
+            "rankOfyards": 32,
+            "rankOfto": 22
+          },
+          "def": {
+            "winloss": 0.7100842540319937,
+            "pts": 24.760280277810917,
+            "yards": 340.53079388978654,
+            "to": 1.683262838190249,
+            "rankOfwinloss": 27,
+            "rankOfpts": 26,
+            "rankOfyards": 16,
+            "rankOfto": 16
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.35106216011179575,
+            "pts": 20.23981981464368,
+            "yards": 337.57277875587613,
+            "to": 1.4266903257361652,
+            "rankOfwinloss": 30,
+            "rankOfpts": 28,
+            "rankOfyards": 24,
+            "rankOfto": 9
+          },
+          "def": {
+            "winloss": 0.6507951945460861,
+            "pts": 25.262825929636662,
+            "yards": 346.6965910501667,
+            "to": 1.3895345136536457,
+            "rankOfwinloss": 30,
+            "rankOfpts": 32,
+            "rankOfyards": 13,
+            "rankOfto": 26
+          }
+        },
+        "team": "SD"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.6907253079306904,
+            "pts": 26.697528815521807,
+            "yards": 397.9537698461877,
+            "to": 1.4542964006183468,
+            "rankOfwinloss": 10,
+            "rankOfpts": 9,
+            "rankOfyards": 6,
+            "rankOfto": 16
+          },
+          "def": {
+            "winloss": 0.2948489273927729,
+            "pts": 21.00814228758342,
+            "yards": 357.18224291224476,
+            "to": 1.04802462790067,
+            "rankOfwinloss": 10,
+            "rankOfpts": 16,
+            "rankOfyards": 24,
+            "rankOfto": 24
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4642843513435945,
+            "pts": 19.90362479068349,
+            "yards": 340.2832689124148,
+            "to": 1.8601684692865648,
+            "rankOfwinloss": 16,
+            "rankOfpts": 30,
+            "rankOfyards": 21,
+            "rankOfto": 28
+          },
+          "def": {
+            "winloss": 0.5377148367713108,
+            "pts": 23.482901467550526,
+            "yards": 358.00011338661733,
+            "to": 1.3919346728647322,
+            "rankOfwinloss": 16,
+            "rankOfpts": 17,
+            "rankOfyards": 27,
+            "rankOfto": 25
+          }
+        },
+        "team": "BAL"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.6018338889672552,
+            "pts": 23.42210559307062,
+            "yards": 287.8160151274504,
+            "to": 0.5928146464041438,
+            "rankOfwinloss": 13,
+            "rankOfpts": 15,
+            "rankOfyards": 28,
+            "rankOfto": 3
+          },
+          "def": {
+            "winloss": 0.384173492699792,
+            "pts": 18.354825696012675,
+            "yards": 319.7132102867149,
+            "to": 1.8486552952207722,
+            "rankOfwinloss": 13,
+            "rankOfpts": 10,
+            "rankOfyards": 9,
+            "rankOfto": 11
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5000958047321722,
+            "pts": 22.23608891053214,
+            "yards": 346.39244799454804,
+            "to": 1.3673932270728348,
+            "rankOfwinloss": 10,
+            "rankOfpts": 17,
+            "rankOfyards": 16,
+            "rankOfto": 5
+          },
+          "def": {
+            "winloss": 0.5017069940025938,
+            "pts": 23.498762342227703,
+            "yards": 352.14647161450273,
+            "to": 1.6288708855726592,
+            "rankOfwinloss": 10,
+            "rankOfpts": 18,
+            "rankOfyards": 20,
+            "rankOfto": 12
+          }
+        },
+        "team": "CIN"
+      }
+    ],
+    "away": [
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5820007208811204,
+            "pts": 21.856757532632088,
+            "yards": 317.39346539348986,
+            "to": 1.2233641734574883,
+            "rankOfwinloss": 13,
+            "rankOfpts": 15,
+            "rankOfyards": 24,
+            "rankOfto": 12
+          },
+          "def": {
+            "winloss": 0.40342364078513904,
+            "pts": 21.219088860418655,
+            "yards": 348.2209900898588,
+            "to": 1.2248879836644753,
+            "rankOfwinloss": 13,
+            "rankOfpts": 11,
+            "rankOfyards": 20,
+            "rankOfto": 20
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.6159908098596483,
+            "pts": 24.453588000058424,
+            "yards": 355.78506840199617,
+            "to": 1.0982645359269634,
+            "rankOfwinloss": 11,
+            "rankOfpts": 13,
+            "rankOfyards": 14,
+            "rankOfto": 2
+          },
+          "def": {
+            "winloss": 0.3863950088759054,
+            "pts": 22.06814019317137,
+            "yards": 349.1281914510515,
+            "to": 1.7479191636535603,
+            "rankOfwinloss": 11,
+            "rankOfpts": 16,
+            "rankOfyards": 17,
+            "rankOfto": 9
+          }
+        },
+        "team": "DAL"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.2303088485869131,
+            "pts": 14.738777070787766,
+            "yards": 282.0670843550496,
+            "to": 1.2216921115037296,
+            "rankOfwinloss": 27,
+            "rankOfpts": 28,
+            "rankOfyards": 28,
+            "rankOfto": 11
+          },
+          "def": {
+            "winloss": 0.7554357105666473,
+            "pts": 24.32618121174115,
+            "yards": 401.5759221446897,
+            "to": 1.0584889801582924,
+            "rankOfwinloss": 27,
+            "rankOfpts": 20,
+            "rankOfyards": 31,
+            "rankOfto": 25
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5661785894564397,
+            "pts": 25.022366909534448,
+            "yards": 359.7123200169072,
+            "to": 1.5649136511555743,
+            "rankOfwinloss": 14,
+            "rankOfpts": 10,
+            "rankOfyards": 9,
+            "rankOfto": 19
+          },
+          "def": {
+            "winloss": 0.435887031791813,
+            "pts": 21.892527568637924,
+            "yards": 346.7532569028645,
+            "to": 1.6569695521806356,
+            "rankOfwinloss": 14,
+            "rankOfpts": 15,
+            "rankOfyards": 16,
+            "rankOfto": 10
+          }
+        },
+        "team": "NYG"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.2615325963114146,
+            "pts": 18.29314557467359,
+            "yards": 356.43252872442326,
+            "to": 2.6376841759967826,
+            "rankOfwinloss": 24,
+            "rankOfpts": 22,
+            "rankOfyards": 10,
+            "rankOfto": 29
+          },
+          "def": {
+            "winloss": 0.7241814111331953,
+            "pts": 25.066592261404196,
+            "yards": 335.35319806971984,
+            "to": 1.2692602807828108,
+            "rankOfwinloss": 24,
+            "rankOfpts": 23,
+            "rankOfyards": 12,
+            "rankOfto": 18
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.6383807645508133,
+            "pts": 23.09175920293014,
+            "yards": 350.9430362299128,
+            "to": 1.092910668933996,
+            "rankOfwinloss": 6,
+            "rankOfpts": 19,
+            "rankOfyards": 18,
+            "rankOfto": 1
+          },
+          "def": {
+            "winloss": 0.36371540840638983,
+            "pts": 19.773099100495003,
+            "yards": 344.08938610477,
+            "to": 1.3357447808832505,
+            "rankOfwinloss": 6,
+            "rankOfpts": 4,
+            "rankOfyards": 11,
+            "rankOfto": 29
+          }
+        },
+        "team": "BUF"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.2436221745711808,
+            "pts": 11.808240082378841,
+            "yards": 284.83967499732523,
+            "to": 2.650464883312874,
+            "rankOfwinloss": 26,
+            "rankOfpts": 31,
+            "rankOfyards": 26,
+            "rankOfto": 30
+          },
+          "def": {
+            "winloss": 0.7422375110463755,
+            "pts": 22.806904137727408,
+            "yards": 341.4084912472842,
+            "to": 0.8841600070489547,
+            "rankOfwinloss": 26,
+            "rankOfpts": 15,
+            "rankOfyards": 16,
+            "rankOfto": 29
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4434475479258082,
+            "pts": 20.226237973552053,
+            "yards": 326.65941551564833,
+            "to": 1.934510462530435,
+            "rankOfwinloss": 27,
+            "rankOfpts": 31,
+            "rankOfyards": 31,
+            "rankOfto": 31
+          },
+          "def": {
+            "winloss": 0.5585029468584488,
+            "pts": 24.964521511255054,
+            "yards": 356.8903685235651,
+            "to": 1.347657063836332,
+            "rankOfwinloss": 27,
+            "rankOfpts": 31,
+            "rankOfyards": 22,
+            "rankOfto": 27
+          }
+        },
+        "team": "NYJ"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.10845714845411067,
+            "pts": 17.72326066131403,
+            "yards": 332.88216456654027,
+            "to": 1.5331094795459062,
+            "rankOfwinloss": 30,
+            "rankOfpts": 23,
+            "rankOfyards": 21,
+            "rankOfto": 19
+          },
+          "def": {
+            "winloss": 0.8774760757043791,
+            "pts": 31.964626220749675,
+            "yards": 363.1197708616066,
+            "to": 1.264074241879708,
+            "rankOfwinloss": 30,
+            "rankOfpts": 31,
+            "rankOfyards": 23,
+            "rankOfto": 19
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5582082277203239,
+            "pts": 22.11544504919296,
+            "yards": 330.5969113075152,
+            "to": 1.4879351491491923,
+            "rankOfwinloss": 15,
+            "rankOfpts": 24,
+            "rankOfyards": 27,
+            "rankOfto": 12
+          },
+          "def": {
+            "winloss": 0.4436687285229993,
+            "pts": 22.73677097018662,
+            "yards": 346.40232550101877,
+            "to": 1.554315925671427,
+            "rankOfwinloss": 15,
+            "rankOfpts": 22,
+            "rankOfyards": 15,
+            "rankOfto": 18
+          }
+        },
+        "team": "JAC"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.6185333270278034,
+            "pts": 22.223124311723012,
+            "yards": 339.58817472475107,
+            "to": 1.8523289545843102,
+            "rankOfwinloss": 9,
+            "rankOfpts": 14,
+            "rankOfyards": 18,
+            "rankOfto": 24
+          },
+          "def": {
+            "winloss": 0.3676519739382085,
+            "pts": 17.863948260214205,
+            "yards": 316.591616370304,
+            "to": 1.4380479765910064,
+            "rankOfwinloss": 9,
+            "rankOfpts": 5,
+            "rankOfyards": 6,
+            "rankOfto": 14
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.7311421856938933,
+            "pts": 25.43554175693908,
+            "yards": 357.0383236091665,
+            "to": 1.2055108839029534,
+            "rankOfwinloss": 1,
+            "rankOfpts": 9,
+            "rankOfyards": 11,
+            "rankOfto": 5
+          },
+          "def": {
+            "winloss": 0.2702459367784637,
+            "pts": 19.248375257733937,
+            "yards": 334.1931313100328,
+            "to": 1.5231737225149686,
+            "rankOfwinloss": 1,
+            "rankOfpts": 3,
+            "rankOfyards": 9,
+            "rankOfto": 21
+          }
+        },
+        "team": "MIN"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.28957459333590585,
+            "pts": 15.871711002866661,
+            "yards": 332.4184205773664,
+            "to": 1.1731404252758486,
+            "rankOfwinloss": 22,
+            "rankOfpts": 26,
+            "rankOfyards": 22,
+            "rankOfto": 9
+          },
+          "def": {
+            "winloss": 0.6958463664565993,
+            "pts": 25.419799472227787,
+            "yards": 348.3994141629904,
+            "to": 0.533128876414727,
+            "rankOfwinloss": 22,
+            "rankOfpts": 24,
+            "rankOfyards": 21,
+            "rankOfto": 32
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5431891477064758,
+            "pts": 28.43922275834688,
+            "yards": 361.2992206323997,
+            "to": 1.3670202402262701,
+            "rankOfwinloss": 19,
+            "rankOfpts": 3,
+            "rankOfyards": 8,
+            "rankOfto": 9
+          },
+          "def": {
+            "winloss": 0.45920007290283216,
+            "pts": 22.55905443337299,
+            "yards": 361.8526342258011,
+            "to": 1.9325471193980075,
+            "rankOfwinloss": 19,
+            "rankOfpts": 21,
+            "rankOfyards": 27,
+            "rankOfto": 4
+          }
+        },
+        "team": "PHI"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.15858511467301636,
+            "pts": 16.28646544815321,
+            "yards": 367.3564072917771,
+            "to": 2.3505012122026687,
+            "rankOfwinloss": 29,
+            "rankOfpts": 25,
+            "rankOfyards": 7,
+            "rankOfto": 27
+          },
+          "def": {
+            "winloss": 0.827407220674365,
+            "pts": 24.95969808788547,
+            "yards": 341.8808738590302,
+            "to": 0.5728176637729464,
+            "rankOfwinloss": 29,
+            "rankOfpts": 22,
+            "rankOfyards": 17,
+            "rankOfto": 31
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.49827565145594227,
+            "pts": 23.21269696408998,
+            "yards": 354.8269270662812,
+            "to": 1.7740319845717816,
+            "rankOfwinloss": 23,
+            "rankOfpts": 18,
+            "rankOfyards": 16,
+            "rankOfto": 27
+          },
+          "def": {
+            "winloss": 0.5035421935984895,
+            "pts": 21.58277978219291,
+            "yards": 311.906804460913,
+            "to": 1.3409866756961288,
+            "rankOfwinloss": 23,
+            "rankOfpts": 14,
+            "rankOfyards": 3,
+            "rankOfto": 28
+          }
+        },
+        "team": "CLE"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.43152450450285534,
+            "pts": 16.608264445635584,
+            "yards": 356.40844744657716,
+            "to": 2.183645734671379,
+            "rankOfwinloss": 19,
+            "rankOfpts": 24,
+            "rankOfyards": 11,
+            "rankOfto": 25
+          },
+          "def": {
+            "winloss": 0.5545641921858687,
+            "pts": 23.44086190072372,
+            "yards": 405.5761378972975,
+            "to": 1.6305298030911104,
+            "rankOfwinloss": 19,
+            "rankOfpts": 17,
+            "rankOfyards": 32,
+            "rankOfto": 9
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5248560910963685,
+            "pts": 24.586976725708432,
+            "yards": 377.71038450149194,
+            "to": 1.4790791732883135,
+            "rankOfwinloss": 21,
+            "rankOfpts": 12,
+            "rankOfyards": 3,
+            "rankOfto": 11
+          },
+          "def": {
+            "winloss": 0.4766286356532761,
+            "pts": 24.20209891278173,
+            "yards": 357.74732152738807,
+            "to": 1.1171229568430339,
+            "rankOfwinloss": 20,
+            "rankOfpts": 28,
+            "rankOfyards": 23,
+            "rankOfto": 31
+          }
+        },
+        "team": "IND"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5871634053752719,
+            "pts": 23.557184621275493,
+            "yards": 334.1904885727445,
+            "to": 1.2261104648200067,
+            "rankOfwinloss": 12,
+            "rankOfpts": 11,
+            "rankOfyards": 20,
+            "rankOfto": 13
+          },
+          "def": {
+            "winloss": 0.3990136227130202,
+            "pts": 20.73059746562617,
+            "yards": 285.46494623421836,
+            "to": 2.5335461088278906,
+            "rankOfwinloss": 12,
+            "rankOfpts": 9,
+            "rankOfyards": 1,
+            "rankOfto": 2
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.41101914107195214,
+            "pts": 22.39486750241706,
+            "yards": 362.01919928847076,
+            "to": 1.8144818229359716,
+            "rankOfwinloss": 30,
+            "rankOfpts": 22,
+            "rankOfyards": 7,
+            "rankOfto": 29
+          },
+          "def": {
+            "winloss": 0.590614011241569,
+            "pts": 23.82196088776042,
+            "yards": 358.78188914910504,
+            "to": 1.4055050709204306,
+            "rankOfwinloss": 30,
+            "rankOfpts": 26,
+            "rankOfyards": 25,
+            "rankOfto": 24
+          }
+        },
+        "team": "CHI"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.45481568746311646,
+            "pts": 19.247202860405356,
+            "yards": 339.59168841198465,
+            "to": 2.9577967464140524,
+            "rankOfwinloss": 18,
+            "rankOfpts": 20,
+            "rankOfyards": 17,
+            "rankOfto": 32
+          },
+          "def": {
+            "winloss": 0.530715959821483,
+            "pts": 19.48365426363461,
+            "yards": 288.45542211159136,
+            "to": 1.1862562537210541,
+            "rankOfwinloss": 18,
+            "rankOfpts": 7,
+            "rankOfyards": 2,
+            "rankOfto": 21
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5574823085133647,
+            "pts": 26.344419717201507,
+            "yards": 367.8667439260204,
+            "to": 1.609802427409257,
+            "rankOfwinloss": 16,
+            "rankOfpts": 6,
+            "rankOfyards": 5,
+            "rankOfto": 23
+          },
+          "def": {
+            "winloss": 0.4447962246038492,
+            "pts": 25.486019482764497,
+            "yards": 365.8860729789173,
+            "to": 1.5868149091382797,
+            "rankOfwinloss": 16,
+            "rankOfpts": 32,
+            "rankOfyards": 29,
+            "rankOfto": 16
+          }
+        },
+        "team": "PIT"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7051969846776652,
+            "pts": 26.136171875917995,
+            "yards": 353.1625044307765,
+            "to": 1.3751584234801573,
+            "rankOfwinloss": 4,
+            "rankOfpts": 7,
+            "rankOfyards": 13,
+            "rankOfto": 17
+          },
+          "def": {
+            "winloss": 0.2807808557143245,
+            "pts": 17.461655479527977,
+            "yards": 296.83174389581586,
+            "to": 1.5554177951190176,
+            "rankOfwinloss": 4,
+            "rankOfpts": 3,
+            "rankOfyards": 3,
+            "rankOfto": 10
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.315750168101326,
+            "pts": 21.870098553285807,
+            "yards": 351.10844491814066,
+            "to": 1.8701650710673379,
+            "rankOfwinloss": 32,
+            "rankOfpts": 26,
+            "rankOfyards": 17,
+            "rankOfto": 30
+          },
+          "def": {
+            "winloss": 0.6860821719084975,
+            "pts": 24.654087985213202,
+            "yards": 365.84031125946564,
+            "to": 1.3593956923032304,
+            "rankOfwinloss": 32,
+            "rankOfpts": 29,
+            "rankOfyards": 28,
+            "rankOfto": 26
+          }
+        },
+        "team": "DEN"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.8042336013211727,
+            "pts": 31.06467833349076,
+            "yards": 393.98930988435956,
+            "to": 1.469280536219278,
+            "rankOfwinloss": 1,
+            "rankOfpts": 2,
+            "rankOfyards": 5,
+            "rankOfto": 18
+          },
+          "def": {
+            "winloss": 0.18126058577887993,
+            "pts": 21.248916543165127,
+            "yards": 394.2300132959691,
+            "to": 2.685738239033582,
+            "rankOfwinloss": 1,
+            "rankOfpts": 12,
+            "rankOfyards": 29,
+            "rankOfto": 1
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.46260737519007217,
+            "pts": 19.070670094731643,
+            "yards": 328.1600084719414,
+            "to": 1.5366798952060712,
+            "rankOfwinloss": 25,
+            "rankOfpts": 32,
+            "rankOfyards": 30,
+            "rankOfto": 16
+          },
+          "def": {
+            "winloss": 0.5397086181116884,
+            "pts": 22.451308848615508,
+            "yards": 350.9577835306239,
+            "to": 1.3809957352281201,
+            "rankOfwinloss": 25,
+            "rankOfpts": 18,
+            "rankOfyards": 18,
+            "rankOfto": 25
+          }
+        },
+        "team": "NE"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.31971259305797606,
+            "pts": 19.382842982852726,
+            "yards": 276.0286300432251,
+            "to": 1.7785262967153628,
+            "rankOfwinloss": 21,
+            "rankOfpts": 19,
+            "rankOfyards": 29,
+            "rankOfto": 22
+          },
+          "def": {
+            "winloss": 0.6661398585108046,
+            "pts": 33.825304289429695,
+            "yards": 363.61851077027666,
+            "to": 1.3657579103407644,
+            "rankOfwinloss": 21,
+            "rankOfpts": 32,
+            "rankOfyards": 24,
+            "rankOfto": 15
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.6294195129814759,
+            "pts": 22.27521852818489,
+            "yards": 341.1529525861571,
+            "to": 1.5355783904436715,
+            "rankOfwinloss": 9,
+            "rankOfpts": 23,
+            "rankOfyards": 22,
+            "rankOfto": 15
+          },
+          "def": {
+            "winloss": 0.37253821585155644,
+            "pts": 21.56399610657534,
+            "yards": 361.5296897320369,
+            "to": 1.4146434622226591,
+            "rankOfwinloss": 9,
+            "rankOfpts": 13,
+            "rankOfyards": 26,
+            "rankOfto": 23
+          }
+        },
+        "team": "TEN"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.27550362287422914,
+            "pts": 12.218361762160555,
+            "yards": 257.384287553805,
+            "to": 1.7059193347808692,
+            "rankOfwinloss": 23,
+            "rankOfpts": 30,
+            "rankOfyards": 30,
+            "rankOfto": 21
+          },
+          "def": {
+            "winloss": 0.7102468384470046,
+            "pts": 17.09098547389768,
+            "yards": 339.3439793889926,
+            "to": 0.7114578754267752,
+            "rankOfwinloss": 23,
+            "rankOfpts": 2,
+            "rankOfyards": 13,
+            "rankOfto": 30
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.6371526521634749,
+            "pts": 28.998806616890164,
+            "yards": 381.9737703649014,
+            "to": 1.3135260565012266,
+            "rankOfwinloss": 7,
+            "rankOfpts": 2,
+            "rankOfyards": 1,
+            "rankOfto": 8
+          },
+          "def": {
+            "winloss": 0.3649070669171044,
+            "pts": 22.51478332328352,
+            "yards": 354.0399713044522,
+            "to": 1.6133634607633833,
+            "rankOfwinloss": 7,
+            "rankOfpts": 20,
+            "rankOfyards": 19,
+            "rankOfto": 14
+          }
+        },
+        "team": "MIA"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.6224047398460922,
+            "pts": 18.83334504879202,
+            "yards": 334.46942259709743,
+            "to": 1.3009080494897396,
+            "rankOfwinloss": 8,
+            "rankOfpts": 21,
+            "rankOfyards": 19,
+            "rankOfto": 16
+          },
+          "def": {
+            "winloss": 0.3635541802140796,
+            "pts": 22.629960479104408,
+            "yards": 340.53001742065385,
+            "to": 1.7973005224473038,
+            "rankOfwinloss": 8,
+            "rankOfpts": 14,
+            "rankOfyards": 15,
+            "rankOfto": 7
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.67156337087329,
+            "pts": 25.51047270242398,
+            "yards": 348.7088189009422,
+            "to": 1.5014101880074753,
+            "rankOfwinloss": 4,
+            "rankOfpts": 8,
+            "rankOfyards": 19,
+            "rankOfto": 13
+          },
+          "def": {
+            "winloss": 0.33028788946835125,
+            "pts": 23.58749297655862,
+            "yards": 366.2758558870813,
+            "to": 1.5277044142646599,
+            "rankOfwinloss": 4,
+            "rankOfpts": 25,
+            "rankOfyards": 30,
+            "rankOfto": 20
+          }
+        },
+        "team": "HOU"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7056314047882751,
+            "pts": 25.848281438225975,
+            "yards": 344.5996506778743,
+            "to": 0.8971565478936764,
+            "rankOfwinloss": 3,
+            "rankOfpts": 8,
+            "rankOfyards": 15,
+            "rankOfto": 5
+          },
+          "def": {
+            "winloss": 0.2801049820253064,
+            "pts": 19.697979449021606,
+            "yards": 331.18188372326364,
+            "to": 2.240203156191048,
+            "rankOfwinloss": 3,
+            "rankOfpts": 8,
+            "rankOfyards": 10,
+            "rankOfto": 4
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.7306479061654216,
+            "pts": 29.989359852393147,
+            "yards": 367.6075531791312,
+            "to": 1.1190571773048394,
+            "rankOfwinloss": 2,
+            "rankOfpts": 1,
+            "rankOfyards": 6,
+            "rankOfto": 4
+          },
+          "def": {
+            "winloss": 0.27142588742280993,
+            "pts": 20.161798776578664,
+            "yards": 346.1680614238135,
+            "to": 2.227409322915758,
+            "rankOfwinloss": 2,
+            "rankOfpts": 6,
+            "rankOfyards": 14,
+            "rankOfto": 1
+          }
+        },
+        "team": "SF"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5691354994228199,
+            "pts": 27.381055814701014,
+            "yards": 360.6104601922409,
+            "to": 0.9770942240011271,
+            "rankOfwinloss": 15,
+            "rankOfpts": 5,
+            "rankOfyards": 9,
+            "rankOfto": 7
+          },
+          "def": {
+            "winloss": 0.41701673414778745,
+            "pts": 26.14124910104045,
+            "yards": 359.1218313998502,
+            "to": 1.1378700996319675,
+            "rankOfwinloss": 15,
+            "rankOfpts": 25,
+            "rankOfyards": 22,
+            "rankOfto": 23
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.6195213446303335,
+            "pts": 23.33906693972925,
+            "yards": 339.4268930141047,
+            "to": 1.3988565379292794,
+            "rankOfwinloss": 10,
+            "rankOfpts": 17,
+            "rankOfyards": 23,
+            "rankOfto": 10
+          },
+          "def": {
+            "winloss": 0.3821366022008726,
+            "pts": 20.380319786869794,
+            "yards": 357.8373664277033,
+            "to": 1.8239671457597024,
+            "rankOfwinloss": 10,
+            "rankOfpts": 8,
+            "rankOfyards": 24,
+            "rankOfto": 7
+          }
+        },
+        "team": "GB"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.641190975889528,
+            "pts": 31.983605944014897,
+            "yards": 400.1331216881357,
+            "to": 0.4412530130441722,
+            "rankOfwinloss": 7,
+            "rankOfpts": 1,
+            "rankOfyards": 3,
+            "rankOfto": 1
+          },
+          "def": {
+            "winloss": 0.34446315950433565,
+            "pts": 23.21854782751394,
+            "yards": 327.39576946011516,
+            "to": 1.2955905010879665,
+            "rankOfwinloss": 7,
+            "rankOfpts": 16,
+            "rankOfyards": 9,
+            "rankOfto": 17
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.450226989645635,
+            "pts": 23.394677334725564,
+            "yards": 346.6265048485527,
+            "to": 1.5653829223999696,
+            "rankOfwinloss": 26,
+            "rankOfpts": 16,
+            "rankOfyards": 20,
+            "rankOfto": 20
+          },
+          "def": {
+            "winloss": 0.5519290553623143,
+            "pts": 21.312576209089734,
+            "yards": 366.48904865362033,
+            "to": 1.9108398336173504,
+            "rankOfwinloss": 26,
+            "rankOfpts": 11,
+            "rankOfyards": 31,
+            "rankOfto": 5
+          }
+        },
+        "team": "CAR"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.6873738466559731,
+            "pts": 22.69649222648904,
+            "yards": 371.223024843958,
+            "to": 1.632868550220416,
+            "rankOfwinloss": 6,
+            "rankOfpts": 13,
+            "rankOfyards": 6,
+            "rankOfto": 20
+          },
+          "def": {
+            "winloss": 0.29868011709895537,
+            "pts": 23.50706297764033,
+            "yards": 346.8877432461155,
+            "to": 0.9050878750257165,
+            "rankOfwinloss": 6,
+            "rankOfpts": 18,
+            "rankOfyards": 19,
+            "rankOfto": 27
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.6517109456517217,
+            "pts": 25.688288615157813,
+            "yards": 355.61202253322756,
+            "to": 1.556870505340875,
+            "rankOfwinloss": 5,
+            "rankOfpts": 7,
+            "rankOfyards": 15,
+            "rankOfto": 18
+          },
+          "def": {
+            "winloss": 0.35004527099516314,
+            "pts": 19.917510881946903,
+            "yards": 344.10685372117877,
+            "to": 2.011967823983648,
+            "rankOfwinloss": 5,
+            "rankOfpts": 5,
+            "rankOfyards": 12,
+            "rankOfto": 3
+          }
+        },
+        "team": "TB"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.6014004086883368,
+            "pts": 23.02241171514713,
+            "yards": 342.12147072083064,
+            "to": 0.7140840467603773,
+            "rankOfwinloss": 10,
+            "rankOfpts": 12,
+            "rankOfyards": 16,
+            "rankOfto": 3
+          },
+          "def": {
+            "winloss": 0.38436952361937676,
+            "pts": 12.982677869376438,
+            "yards": 343.80703546430965,
+            "to": 2.4085924997016472,
+            "rankOfwinloss": 10,
+            "rankOfpts": 1,
+            "rankOfyards": 18,
+            "rankOfto": 3
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5938908728082246,
+            "pts": 27.39911901932756,
+            "yards": 355.9861402810658,
+            "to": 1.099829297395822,
+            "rankOfwinloss": 12,
+            "rankOfpts": 4,
+            "rankOfyards": 13,
+            "rankOfto": 3
+          },
+          "def": {
+            "winloss": 0.40814937528587514,
+            "pts": 19.115789373537396,
+            "yards": 331.70933003831726,
+            "to": 2.1017582090034774,
+            "rankOfwinloss": 12,
+            "rankOfpts": 2,
+            "rankOfyards": 8,
+            "rankOfto": 2
+          }
+        },
+        "team": "STL"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.19393405670114358,
+            "pts": 19.397424313601125,
+            "yards": 360.69126526568346,
+            "to": 2.309149229971799,
+            "rankOfwinloss": 28,
+            "rankOfpts": 18,
+            "rankOfyards": 8,
+            "rankOfto": 26
+          },
+          "def": {
+            "winloss": 0.7920468254178707,
+            "pts": 30.93322628195712,
+            "yards": 305.3647134996556,
+            "to": 0.8958371831540364,
+            "rankOfwinloss": 28,
+            "rankOfpts": 30,
+            "rankOfyards": 4,
+            "rankOfto": 28
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5249744842583771,
+            "pts": 20.819313183700874,
+            "yards": 333.5247529602041,
+            "to": 1.7165575235721313,
+            "rankOfwinloss": 20,
+            "rankOfpts": 29,
+            "rankOfyards": 26,
+            "rankOfto": 25
+          },
+          "def": {
+            "winloss": 0.47685481402442154,
+            "pts": 22.070972011918926,
+            "yards": 354.92485462438617,
+            "to": 1.6388700797756313,
+            "rankOfwinloss": 21,
+            "rankOfpts": 17,
+            "rankOfyards": 20,
+            "rankOfto": 11
+          }
+        },
+        "team": "DET"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7027091080793684,
+            "pts": 27.965526209285994,
+            "yards": 404.16800794373955,
+            "to": 1.043171420574269,
+            "rankOfwinloss": 5,
+            "rankOfpts": 4,
+            "rankOfyards": 2,
+            "rankOfto": 8
+          },
+          "def": {
+            "winloss": 0.28212162355403253,
+            "pts": 24.643429498413635,
+            "yards": 387.9768832448427,
+            "to": 1.5185550143923803,
+            "rankOfwinloss": 5,
+            "rankOfpts": 21,
+            "rankOfyards": 28,
+            "rankOfto": 12
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.46524664608984556,
+            "pts": 22.114312401881627,
+            "yards": 339.26131578258935,
+            "to": 1.9581968666849439,
+            "rankOfwinloss": 24,
+            "rankOfpts": 25,
+            "rankOfyards": 24,
+            "rankOfto": 32
+          },
+          "def": {
+            "winloss": 0.5377328026785666,
+            "pts": 23.443142344064803,
+            "yards": 320.51449266717304,
+            "to": 1.5930181125393852,
+            "rankOfwinloss": 24,
+            "rankOfpts": 24,
+            "rankOfyards": 5,
+            "rankOfto": 15
+          }
+        },
+        "team": "WAS"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5961466735126706,
+            "pts": 25.752605643813713,
+            "yards": 453.2528563326769,
+            "to": 1.8458323182495946,
+            "rankOfwinloss": 11,
+            "rankOfpts": 9,
+            "rankOfyards": 1,
+            "rankOfto": 23
+          },
+          "def": {
+            "winloss": 0.38993358788834315,
+            "pts": 27.945982735280154,
+            "yards": 377.20317010905904,
+            "to": 1.164016385406975,
+            "rankOfwinloss": 11,
+            "rankOfpts": 28,
+            "rankOfyards": 26,
+            "rankOfto": 22
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.633579602603028,
+            "pts": 27.051227190796972,
+            "yards": 379.9263884901658,
+            "to": 1.7203799193247333,
+            "rankOfwinloss": 8,
+            "rankOfpts": 5,
+            "rankOfyards": 2,
+            "rankOfto": 26
+          },
+          "def": {
+            "winloss": 0.36815031639777146,
+            "pts": 23.996640193546135,
+            "yards": 356.00782842470846,
+            "to": 1.5522948312880878,
+            "rankOfwinloss": 8,
+            "rankOfpts": 27,
+            "rankOfyards": 21,
+            "rankOfto": 19
+          }
+        },
+        "team": "NO"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7818437498033192,
+            "pts": 28.314612000006008,
+            "yards": 398.926418588277,
+            "to": 0.6592243365814545,
+            "rankOfwinloss": 2,
+            "rankOfpts": 3,
+            "rankOfyards": 4,
+            "rankOfto": 2
+          },
+          "def": {
+            "winloss": 0.2034765380734837,
+            "pts": 17.50347528242787,
+            "yards": 317.2278398530518,
+            "to": 1.6454965522162541,
+            "rankOfwinloss": 2,
+            "rankOfpts": 4,
+            "rankOfyards": 7,
+            "rankOfto": 8
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5910971884779361,
+            "pts": 22.785813028506436,
+            "yards": 337.62720893980844,
+            "to": 1.550911400139462,
+            "rankOfwinloss": 13,
+            "rankOfpts": 20,
+            "rankOfyards": 25,
+            "rankOfto": 17
+          },
+          "def": {
+            "winloss": 0.41115594708362957,
+            "pts": 21.366894663356426,
+            "yards": 334.83583615924397,
+            "to": 1.8321895996784003,
+            "rankOfwinloss": 13,
+            "rankOfpts": 12,
+            "rankOfyards": 10,
+            "rankOfto": 6
+          }
+        },
+        "team": "SEA"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.2514985555939273,
+            "pts": 14.6454781383201,
+            "yards": 256.72043842178635,
+            "to": 2.8631244072052837,
+            "rankOfwinloss": 25,
+            "rankOfpts": 29,
+            "rankOfyards": 31,
+            "rankOfto": 31
+          },
+          "def": {
+            "winloss": 0.734751317081083,
+            "pts": 27.11712370759968,
+            "yards": 369.93647309444447,
+            "to": 2.0709399127842554,
+            "rankOfwinloss": 25,
+            "rankOfpts": 27,
+            "rankOfyards": 25,
+            "rankOfto": 5
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.711645300239425,
+            "pts": 24.806430740870578,
+            "yards": 357.10574018755483,
+            "to": 1.2329080862678836,
+            "rankOfwinloss": 3,
+            "rankOfpts": 11,
+            "rankOfyards": 10,
+            "rankOfto": 7
+          },
+          "def": {
+            "winloss": 0.28991500748737775,
+            "pts": 18.42741495646223,
+            "yards": 318.59261962117245,
+            "to": 1.630247780677054,
+            "rankOfwinloss": 3,
+            "rankOfpts": 1,
+            "rankOfyards": 4,
+            "rankOfto": 12
+          }
+        },
+        "team": "ARI"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5419466187743044,
+            "pts": 24.108035267855755,
+            "yards": 354.3153230035794,
+            "to": 0.8256449197254438,
+            "rankOfwinloss": 16,
+            "rankOfpts": 10,
+            "rankOfyards": 12,
+            "rankOfto": 4
+          },
+          "def": {
+            "winloss": 0.44361285216073293,
+            "pts": 20.98025375131252,
+            "yards": 396.5800817807748,
+            "to": 1.4500951753088451,
+            "rankOfwinloss": 16,
+            "rankOfpts": 10,
+            "rankOfyards": 30,
+            "rankOfto": 13
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.40149688841668607,
+            "pts": 24.08099771208958,
+            "yards": 373.5378865544825,
+            "to": 1.5113595585391713,
+            "rankOfwinloss": 31,
+            "rankOfpts": 14,
+            "rankOfyards": 4,
+            "rankOfto": 14
+          },
+          "def": {
+            "winloss": 0.6007538210500897,
+            "pts": 24.71904282434,
+            "yards": 373.14601399143453,
+            "to": 1.5778676068065298,
+            "rankOfwinloss": 31,
+            "rankOfpts": 30,
+            "rankOfyards": 32,
+            "rankOfto": 17
+          }
+        },
+        "team": "ATL"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.10668154955929479,
+            "pts": 9.555198577052145,
+            "yards": 256.1572158424303,
+            "to": 1.1996143311261371,
+            "rankOfwinloss": 31,
+            "rankOfpts": 32,
+            "rankOfyards": 32,
+            "rankOfto": 10
+          },
+          "def": {
+            "winloss": 0.879011463120141,
+            "pts": 27.048852544805474,
+            "yards": 381.8026328298617,
+            "to": 0.9446382339257144,
+            "rankOfwinloss": 31,
+            "rankOfpts": 26,
+            "rankOfyards": 27,
+            "rankOfto": 26
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.556672840304562,
+            "pts": 23.40379113492139,
+            "yards": 356.2844355888363,
+            "to": 1.5965575349795984,
+            "rankOfwinloss": 17,
+            "rankOfpts": 15,
+            "rankOfyards": 12,
+            "rankOfto": 22
+          },
+          "def": {
+            "winloss": 0.44544432741781526,
+            "pts": 20.407565676254332,
+            "yards": 311.13705162337504,
+            "to": 1.5002383513195936,
+            "rankOfwinloss": 17,
+            "rankOfpts": 9,
+            "rankOfyards": 2,
+            "rankOfto": 22
+          }
+        },
+        "team": "KC"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5767848628183235,
+            "pts": 27.375485245605965,
+            "yards": 328.63706640708386,
+            "to": 1.265717621845778,
+            "rankOfwinloss": 14,
+            "rankOfpts": 6,
+            "rankOfyards": 23,
+            "rankOfto": 14
+          },
+          "def": {
+            "winloss": 0.40898784377067,
+            "pts": 24.15405442709818,
+            "yards": 307.25989623757596,
+            "to": 1.5383782408759175,
+            "rankOfwinloss": 14,
+            "rankOfpts": 19,
+            "rankOfyards": 5,
+            "rankOfto": 11
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5000420467243307,
+            "pts": 21.06014282137005,
+            "yards": 343.56424643673853,
+            "to": 1.7035525812172323,
+            "rankOfwinloss": 22,
+            "rankOfpts": 27,
+            "rankOfyards": 21,
+            "rankOfto": 24
+          },
+          "def": {
+            "winloss": 0.501995427088489,
+            "pts": 20.869526500734217,
+            "yards": 309.4354064666392,
+            "to": 1.2535551737219761,
+            "rankOfwinloss": 22,
+            "rankOfpts": 10,
+            "rankOfyards": 1,
+            "rankOfto": 30
+          }
+        },
+        "team": "SD"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.018032264575137257,
+            "pts": 15.797334412436477,
+            "yards": 283.67300137992873,
+            "to": 1.2674849902970458,
+            "rankOfwinloss": 32,
+            "rankOfpts": 27,
+            "rankOfyards": 27,
+            "rankOfto": 15
+          },
+          "def": {
+            "winloss": 0.9679466918564704,
+            "pts": 29.125007843603598,
+            "yards": 334.0812174464797,
+            "to": 1.0861310180846993,
+            "rankOfwinloss": 32,
+            "rankOfpts": 29,
+            "rankOfyards": 11,
+            "rankOfto": 24
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4311129883107361,
+            "pts": 20.8584849541026,
+            "yards": 323.25645722319985,
+            "to": 1.5668221798312854,
+            "rankOfwinloss": 28,
+            "rankOfpts": 28,
+            "rankOfyards": 32,
+            "rankOfto": 21
+          },
+          "def": {
+            "winloss": 0.5707182356594693,
+            "pts": 22.454342772899217,
+            "yards": 345.6156312731331,
+            "to": 1.7506062761712724,
+            "rankOfwinloss": 28,
+            "rankOfpts": 19,
+            "rankOfyards": 13,
+            "rankOfto": 8
+          }
+        },
+        "team": "OAK"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5164672465113622,
+            "pts": 19.6736809731619,
+            "yards": 301.7195324128233,
+            "to": 2.4317223915695934,
+            "rankOfwinloss": 17,
+            "rankOfpts": 17,
+            "rankOfyards": 25,
+            "rankOfto": 28
+          },
+          "def": {
+            "winloss": 0.46888494247549495,
+            "pts": 18.362539217003153,
+            "yards": 339.9416189755014,
+            "to": 1.927876063308343,
+            "rankOfwinloss": 17,
+            "rankOfpts": 6,
+            "rankOfyards": 14,
+            "rankOfto": 6
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4167892762577887,
+            "pts": 20.368075944783573,
+            "yards": 329.9085200975343,
+            "to": 1.774584701834863,
+            "rankOfwinloss": 29,
+            "rankOfpts": 30,
+            "rankOfyards": 29,
+            "rankOfto": 28
+          },
+          "def": {
+            "winloss": 0.5854319581937228,
+            "pts": 22.828686700818537,
+            "yards": 329.94088100864855,
+            "to": 1.0852283340831332,
+            "rankOfwinloss": 29,
+            "rankOfpts": 23,
+            "rankOfyards": 7,
+            "rankOfto": 32
+          }
+        },
+        "team": "CIN"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.41639257668460716,
+            "pts": 21.472292784981143,
+            "yards": 352.0649023655104,
+            "to": 0.967802359749623,
+            "rankOfwinloss": 20,
+            "rankOfpts": 16,
+            "rankOfyards": 14,
+            "rankOfto": 6
+          },
+          "def": {
+            "winloss": 0.5692258215521198,
+            "pts": 21.765485139004916,
+            "yards": 322.3616379443929,
+            "to": 1.3354798918298392,
+            "rankOfwinloss": 20,
+            "rankOfpts": 13,
+            "rankOfyards": 8,
+            "rankOfto": 16
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5433371096793695,
+            "pts": 22.638585369972724,
+            "yards": 330.2878381092959,
+            "to": 1.2285212719261596,
+            "rankOfwinloss": 18,
+            "rankOfpts": 21,
+            "rankOfyards": 28,
+            "rankOfto": 6
+          },
+          "def": {
+            "winloss": 0.45885467248571676,
+            "pts": 20.25438861170538,
+            "yards": 328.4628070514667,
+            "to": 1.6281490945525299,
+            "rankOfwinloss": 18,
+            "rankOfpts": 7,
+            "rankOfyards": 6,
+            "rankOfto": 13
+          }
+        },
+        "team": "BAL"
+      }
+    ],
+    "average": [
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5116589969976318,
+            "pts": 25.69099745304718,
+            "yards": 329.0411532389114,
+            "to": 1.27390667425253,
+            "rankOfwinloss": 15,
+            "rankOfpts": 7,
+            "rankOfyards": 21,
+            "rankOfto": 11
+          },
+          "def": {
+            "winloss": 0.4740480844136014,
+            "pts": 21.18020222400644,
+            "yards": 377.48210965025334,
+            "to": 1.6759014651954847,
+            "rankOfwinloss": 15,
+            "rankOfpts": 13,
+            "rankOfyards": 29,
+            "rankOfto": 10
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5092160014760576,
+            "pts": 23.673556878340897,
+            "yards": 363.97784326678425,
+            "to": 1.550317680188533,
+            "rankOfwinloss": 18,
+            "rankOfpts": 9,
+            "rankOfyards": 5,
+            "rankOfto": 15
+          },
+          "def": {
+            "winloss": 0.49288709751452225,
+            "pts": 23.076577815445933,
+            "yards": 348.6373679512491,
+            "to": 1.4423386338054813,
+            "rankOfwinloss": 18,
+            "rankOfpts": 19,
+            "rankOfyards": 18,
+            "rankOfto": 24
+          }
+        },
+        "team": "NYG"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.49925937176249136,
+            "pts": 24.62635507535961,
+            "yards": 368.8700679226276,
+            "to": 1.4579563074393094,
+            "rankOfwinloss": 16,
+            "rankOfpts": 10,
+            "rankOfyards": 8,
+            "rankOfto": 17
+          },
+          "def": {
+            "winloss": 0.48650373770286737,
+            "pts": 25.739681478961472,
+            "yards": 376.6981751992779,
+            "to": 0.8526626461440865,
+            "rankOfwinloss": 16,
+            "rankOfpts": 28,
+            "rankOfyards": 28,
+            "rankOfto": 31
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5236007348163461,
+            "pts": 23.09818053324703,
+            "yards": 363.3574864141258,
+            "to": 1.603447215065279,
+            "rankOfwinloss": 15,
+            "rankOfpts": 13,
+            "rankOfyards": 6,
+            "rankOfto": 25
+          },
+          "def": {
+            "winloss": 0.4784463361201083,
+            "pts": 23.132990225485713,
+            "yards": 346.0484354648876,
+            "to": 1.5802156643343885,
+            "rankOfwinloss": 15,
+            "rankOfpts": 20,
+            "rankOfyards": 14,
+            "rankOfto": 16
+          }
+        },
+        "team": "DAL"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.287769072218048,
+            "pts": 14.067530061366782,
+            "yards": 297.0274578495068,
+            "to": 2.4591583224843334,
+            "rankOfwinloss": 26,
+            "rankOfpts": 31,
+            "rankOfyards": 27,
+            "rankOfto": 31
+          },
+          "def": {
+            "winloss": 0.6978812203162659,
+            "pts": 22.49917426373574,
+            "yards": 308.64402222472205,
+            "to": 0.9266828186010567,
+            "rankOfwinloss": 26,
+            "rankOfpts": 19,
+            "rankOfyards": 3,
+            "rankOfto": 28
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4686080242554425,
+            "pts": 22.558296723873575,
+            "yards": 336.06773955322126,
+            "to": 1.76489500120204,
+            "rankOfwinloss": 25,
+            "rankOfpts": 21,
+            "rankOfyards": 28,
+            "rankOfto": 32
+          },
+          "def": {
+            "winloss": 0.5335518636120569,
+            "pts": 23.799343634259095,
+            "yards": 347.43488428509,
+            "to": 1.6808104679307592,
+            "rankOfwinloss": 25,
+            "rankOfpts": 29,
+            "rankOfyards": 15,
+            "rankOfto": 9
+          }
+        },
+        "team": "NYJ"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.35695707295193985,
+            "pts": 20.995472212201125,
+            "yards": 339.2418225317999,
+            "to": 2.3544963540771007,
+            "rankOfwinloss": 24,
+            "rankOfpts": 18,
+            "rankOfyards": 16,
+            "rankOfto": 29
+          },
+          "def": {
+            "winloss": 0.6289204767255803,
+            "pts": 25.30271278467527,
+            "yards": 348.657640093302,
+            "to": 1.2703287664756258,
+            "rankOfwinloss": 24,
+            "rankOfpts": 26,
+            "rankOfyards": 21,
+            "rankOfto": 23
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5311836638508557,
+            "pts": 21.805675764802686,
+            "yards": 341.5440451206907,
+            "to": 1.3957907658805935,
+            "rankOfwinloss": 14,
+            "rankOfpts": 25,
+            "rankOfyards": 19,
+            "rankOfto": 4
+          },
+          "def": {
+            "winloss": 0.47074896687343726,
+            "pts": 21.14774669196442,
+            "yards": 350.3112411294836,
+            "to": 1.326547835555362,
+            "rankOfwinloss": 14,
+            "rankOfpts": 5,
+            "rankOfyards": 20,
+            "rankOfto": 30
+          }
+        },
+        "team": "BUF"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7419212375867037,
+            "pts": 24.53799610141732,
+            "yards": 352.18914823464183,
+            "to": 1.3531063488704524,
+            "rankOfwinloss": 4,
+            "rankOfpts": 11,
+            "rankOfyards": 14,
+            "rankOfto": 12
+          },
+          "def": {
+            "winloss": 0.2438242709157421,
+            "pts": 20.41464709354371,
+            "yards": 355.61340753965726,
+            "to": 1.515336659289268,
+            "rankOfwinloss": 4,
+            "rankOfpts": 11,
+            "rankOfyards": 23,
+            "rankOfto": 15
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.615137149484728,
+            "pts": 24.43382193494004,
+            "yards": 348.23282680661555,
+            "to": 1.3293957185749787,
+            "rankOfwinloss": 1,
+            "rankOfpts": 6,
+            "rankOfyards": 17,
+            "rankOfto": 3
+          },
+          "def": {
+            "winloss": 0.3868091439329172,
+            "pts": 21.555868044373454,
+            "yards": 338.6523811185424,
+            "to": 1.5931304707496263,
+            "rankOfwinloss": 1,
+            "rankOfpts": 8,
+            "rankOfyards": 6,
+            "rankOfto": 13
+          }
+        },
+        "team": "MIN"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.19779440092588868,
+            "pts": 16.18015089638619,
+            "yards": 328.4733448296822,
+            "to": 1.6567727471761335,
+            "rankOfwinloss": 29,
+            "rankOfpts": 28,
+            "rankOfyards": 22,
+            "rankOfto": 23
+          },
+          "def": {
+            "winloss": 0.7881609131513814,
+            "pts": 26.210905354924073,
+            "yards": 355.042415977676,
+            "to": 1.5021556993660306,
+            "rankOfwinloss": 29,
+            "rankOfpts": 30,
+            "rankOfyards": 22,
+            "rankOfto": 17
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5832126965005497,
+            "pts": 23.699416791509954,
+            "yards": 341.1542381457899,
+            "to": 1.516962741978698,
+            "rankOfwinloss": 4,
+            "rankOfpts": 8,
+            "rankOfyards": 20,
+            "rankOfto": 12
+          },
+          "def": {
+            "winloss": 0.41864216982399316,
+            "pts": 22.63713035429828,
+            "yards": 351.0826566045818,
+            "to": 1.788447729526164,
+            "rankOfwinloss": 4,
+            "rankOfpts": 15,
+            "rankOfyards": 21,
+            "rankOfto": 4
+          }
+        },
+        "team": "JAC"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.3148960947192297,
+            "pts": 17.68439234556147,
+            "yards": 330.6404418794504,
+            "to": 1.8431867660453154,
+            "rankOfwinloss": 25,
+            "rankOfpts": 26,
+            "rankOfyards": 20,
+            "rankOfto": 26
+          },
+          "def": {
+            "winloss": 0.6712955090591817,
+            "pts": 23.3347902308534,
+            "yards": 334.21593579446676,
+            "to": 1.3416318392818807,
+            "rankOfwinloss": 25,
+            "rankOfpts": 20,
+            "rankOfyards": 13,
+            "rankOfto": 21
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4790056747181247,
+            "pts": 22.77964111892492,
+            "yards": 358.9629779402775,
+            "to": 1.720734190639782,
+            "rankOfwinloss": 24,
+            "rankOfpts": 18,
+            "rankOfyards": 7,
+            "rankOfto": 29
+          },
+          "def": {
+            "winloss": 0.522612901905277,
+            "pts": 23.344463791860882,
+            "yards": 329.6782210611774,
+            "to": 1.412095103494048,
+            "rankOfwinloss": 24,
+            "rankOfpts": 24,
+            "rankOfyards": 3,
+            "rankOfto": 27
+          }
+        },
+        "team": "CLE"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.23670602995083262,
+            "pts": 17.737831267687504,
+            "yards": 334.2734698699966,
+            "to": 1.90588317379513,
+            "rankOfwinloss": 28,
+            "rankOfpts": 25,
+            "rankOfyards": 19,
+            "rankOfto": 27
+          },
+          "def": {
+            "winloss": 0.7492077166563849,
+            "pts": 25.995903404346755,
+            "yards": 322.1752536457362,
+            "to": 0.90473105534931,
+            "rankOfwinloss": 28,
+            "rankOfpts": 29,
+            "rankOfyards": 7,
+            "rankOfto": 29
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.565949618718234,
+            "pts": 26.870405292963504,
+            "yards": 369.69218596806934,
+            "to": 1.299240383102303,
+            "rankOfwinloss": 7,
+            "rankOfpts": 1,
+            "rankOfyards": 2,
+            "rankOfto": 2
+          },
+          "def": {
+            "winloss": 0.4359468150763616,
+            "pts": 22.498825826427336,
+            "yards": 355.37284607370316,
+            "to": 1.7365629028764675,
+            "rankOfwinloss": 7,
+            "rankOfpts": 13,
+            "rankOfyards": 24,
+            "rankOfto": 7
+          }
+        },
+        "team": "PHI"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.46247941106381873,
+            "pts": 20.140529016119114,
+            "yards": 304.144537952444,
+            "to": 1.4112634779795155,
+            "rankOfwinloss": 18,
+            "rankOfpts": 23,
+            "rankOfyards": 26,
+            "rankOfto": 14
+          },
+          "def": {
+            "winloss": 0.523481312968429,
+            "pts": 19.41962637377356,
+            "yards": 319.4209009521698,
+            "to": 2.43682953817496,
+            "rankOfwinloss": 18,
+            "rankOfpts": 9,
+            "rankOfyards": 6,
+            "rankOfto": 1
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4415340206796312,
+            "pts": 22.290368274141297,
+            "yards": 354.91825150231665,
+            "to": 1.5649424783915964,
+            "rankOfwinloss": 28,
+            "rankOfpts": 23,
+            "rankOfyards": 11,
+            "rankOfto": 17
+          },
+          "def": {
+            "winloss": 0.5603154356899342,
+            "pts": 23.770740651555236,
+            "yards": 352.8231456966834,
+            "to": 1.3710044911619426,
+            "rankOfwinloss": 28,
+            "rankOfpts": 28,
+            "rankOfyards": 23,
+            "rankOfto": 28
+          }
+        },
+        "team": "CHI"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.6762826377234022,
+            "pts": 20.337365196859714,
+            "yards": 336.4554896571187,
+            "to": 1.4974087857158804,
+            "rankOfwinloss": 9,
+            "rankOfpts": 22,
+            "rankOfyards": 18,
+            "rankOfto": 19
+          },
+          "def": {
+            "winloss": 0.30953399043541213,
+            "pts": 21.782494731965244,
+            "yards": 381.8900032972664,
+            "to": 1.5451894454060564,
+            "rankOfwinloss": 9,
+            "rankOfpts": 17,
+            "rankOfyards": 30,
+            "rankOfto": 14
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5062390896942616,
+            "pts": 22.693555692516544,
+            "yards": 354.729838327371,
+            "to": 1.4523741028607098,
+            "rankOfwinloss": 20,
+            "rankOfpts": 19,
+            "rankOfyards": 12,
+            "rankOfto": 6
+          },
+          "def": {
+            "winloss": 0.495636084067015,
+            "pts": 23.699572685079545,
+            "yards": 356.5847851639658,
+            "to": 1.4128575592716806,
+            "rankOfwinloss": 20,
+            "rankOfpts": 27,
+            "rankOfyards": 27,
+            "rankOfto": 26
+          }
+        },
+        "team": "IND"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.721634619548055,
+            "pts": 28.781478846635935,
+            "yards": 385.13930331801953,
+            "to": 1.4561462611809997,
+            "rankOfwinloss": 6,
+            "rankOfpts": 4,
+            "rankOfyards": 5,
+            "rankOfto": 16
+          },
+          "def": {
+            "winloss": 0.2641011106861949,
+            "pts": 17.304033753454647,
+            "yards": 267.75197070472103,
+            "to": 1.2786318628652937,
+            "rankOfwinloss": 6,
+            "rankOfpts": 3,
+            "rankOfyards": 1,
+            "rankOfto": 22
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.31022733971018535,
+            "pts": 20.308905922456148,
+            "yards": 345.6426530776777,
+            "to": 1.6822088961289152,
+            "rankOfwinloss": 32,
+            "rankOfpts": 31,
+            "rankOfyards": 18,
+            "rankOfto": 28
+          },
+          "def": {
+            "winloss": 0.691847110457378,
+            "pts": 24.65818650030148,
+            "yards": 365.592511351637,
+            "to": 1.2572297400345964,
+            "rankOfwinloss": 32,
+            "rankOfpts": 32,
+            "rankOfyards": 31,
+            "rankOfto": 32
+          }
+        },
+        "team": "DEN"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.4355716311182179,
+            "pts": 18.925860112065862,
+            "yards": 311.37844784135564,
+            "to": 2.235723884668883,
+            "rankOfwinloss": 20,
+            "rankOfpts": 24,
+            "rankOfyards": 24,
+            "rankOfto": 28
+          },
+          "def": {
+            "winloss": 0.5502900667712554,
+            "pts": 18.494969753221497,
+            "yards": 286.58351803266453,
+            "to": 1.4561641002696104,
+            "rankOfwinloss": 20,
+            "rankOfpts": 6,
+            "rankOfyards": 2,
+            "rankOfto": 18
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.48030342744810084,
+            "pts": 23.477488827877767,
+            "yards": 356.71002410775776,
+            "to": 1.7557919768225774,
+            "rankOfwinloss": 23,
+            "rankOfpts": 12,
+            "rankOfyards": 8,
+            "rankOfto": 31
+          },
+          "def": {
+            "winloss": 0.5216450550642391,
+            "pts": 24.26243779293765,
+            "yards": 355.5440951605443,
+            "to": 1.5113161099087808,
+            "rankOfwinloss": 23,
+            "rankOfpts": 31,
+            "rankOfyards": 25,
+            "rankOfto": 19
+          }
+        },
+        "team": "PIT"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.44014102400176996,
+            "pts": 20.43623653819209,
+            "yards": 280.4285686136081,
+            "to": 1.6213059179833893,
+            "rankOfwinloss": 19,
+            "rankOfpts": 21,
+            "rankOfyards": 31,
+            "rankOfto": 22
+          },
+          "def": {
+            "winloss": 0.5455103009664419,
+            "pts": 29.198415132999813,
+            "yards": 366.9231853034049,
+            "to": 1.7938579424390568,
+            "rankOfwinloss": 19,
+            "rankOfpts": 31,
+            "rankOfyards": 27,
+            "rankOfto": 8
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5345368524169578,
+            "pts": 21.606414016968507,
+            "yards": 337.0526921445581,
+            "to": 1.5777828896257189,
+            "rankOfwinloss": 13,
+            "rankOfpts": 26,
+            "rankOfyards": 26,
+            "rankOfto": 22
+          },
+          "def": {
+            "winloss": 0.4676220030166434,
+            "pts": 23.01511321574462,
+            "yards": 362.3878118788242,
+            "to": 1.5870213797596895,
+            "rankOfwinloss": 13,
+            "rankOfpts": 17,
+            "rankOfyards": 30,
+            "rankOfto": 15
+          }
+        },
+        "team": "TEN"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7780296979492202,
+            "pts": 34.186904282776716,
+            "yards": 417.3603931961238,
+            "to": 1.3792049235732589,
+            "rankOfwinloss": 2,
+            "rankOfpts": 1,
+            "rankOfyards": 2,
+            "rankOfto": 13
+          },
+          "def": {
+            "winloss": 0.20763421022943984,
+            "pts": 21.482223029181526,
+            "yards": 384.59169613616587,
+            "to": 2.3836940625583423,
+            "rankOfwinloss": 2,
+            "rankOfpts": 16,
+            "rankOfyards": 31,
+            "rankOfto": 2
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.48868710337440513,
+            "pts": 19.552156763855386,
+            "yards": 323.1320931330325,
+            "to": 1.5804268203962883,
+            "rankOfwinloss": 22,
+            "rankOfpts": 32,
+            "rankOfyards": 32,
+            "rankOfto": 23
+          },
+          "def": {
+            "winloss": 0.5134591688487479,
+            "pts": 21.29951395930271,
+            "yards": 347.77649110638936,
+            "to": 1.4162583780727802,
+            "rankOfwinloss": 22,
+            "rankOfpts": 6,
+            "rankOfyards": 16,
+            "rankOfto": 25
+          }
+        },
+        "team": "NE"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.6930897254367461,
+            "pts": 20.54490263475691,
+            "yards": 352.24481418276605,
+            "to": 1.1994100956958258,
+            "rankOfwinloss": 7,
+            "rankOfpts": 20,
+            "rankOfyards": 13,
+            "rankOfto": 8
+          },
+          "def": {
+            "winloss": 0.29268758116024074,
+            "pts": 21.30558067012482,
+            "yards": 323.3422745939674,
+            "to": 1.2551694705735377,
+            "rankOfwinloss": 7,
+            "rankOfpts": 14,
+            "rankOfyards": 8,
+            "rankOfto": 24
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.6013675153456832,
+            "pts": 23.645329141827865,
+            "yards": 340.85156950773694,
+            "to": 1.748063360678442,
+            "rankOfwinloss": 2,
+            "rankOfpts": 10,
+            "rankOfyards": 21,
+            "rankOfto": 30
+          },
+          "def": {
+            "winloss": 0.4005469799774207,
+            "pts": 23.33969618377344,
+            "yards": 361.91646261448625,
+            "to": 1.5909137803669315,
+            "rankOfwinloss": 2,
+            "rankOfpts": 23,
+            "rankOfyards": 29,
+            "rankOfto": 14
+          }
+        },
+        "team": "HOU"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.4348807792466603,
+            "pts": 15.853714513763997,
+            "yards": 288.16080173340015,
+            "to": 1.201692943045091,
+            "rankOfwinloss": 21,
+            "rankOfpts": 30,
+            "rankOfyards": 30,
+            "rankOfto": 9
+          },
+          "def": {
+            "winloss": 0.5510137089718992,
+            "pts": 16.117021736871234,
+            "yards": 341.17245199387435,
+            "to": 1.1405892678625498,
+            "rankOfwinloss": 21,
+            "rankOfpts": 2,
+            "rankOfyards": 15,
+            "rankOfto": 26
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5085595065810395,
+            "pts": 25.6897897498402,
+            "yards": 364.9922352051637,
+            "to": 1.4373062786891468,
+            "rankOfwinloss": 19,
+            "rankOfpts": 4,
+            "rankOfyards": 3,
+            "rankOfto": 5
+          },
+          "def": {
+            "winloss": 0.493356185602214,
+            "pts": 23.367119895310587,
+            "yards": 356.2656019475776,
+            "to": 1.6947524379016166,
+            "rankOfwinloss": 19,
+            "rankOfpts": 25,
+            "rankOfyards": 26,
+            "rankOfto": 8
+          }
+        },
+        "team": "MIA"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7446514040849853,
+            "pts": 28.692778278386534,
+            "yards": 365.19820007983367,
+            "to": 0.8212297825166419,
+            "rankOfwinloss": 3,
+            "rankOfpts": 5,
+            "rankOfyards": 9,
+            "rankOfto": 3
+          },
+          "def": {
+            "winloss": 0.24107320918896413,
+            "pts": 19.936921682308977,
+            "yards": 341.3040907423119,
+            "to": 1.618787001143027,
+            "rankOfwinloss": 3,
+            "rankOfpts": 10,
+            "rankOfyards": 16,
+            "rankOfto": 11
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5408713612396521,
+            "pts": 22.8152907228057,
+            "yards": 337.4963782132105,
+            "to": 1.5128315954471927,
+            "rankOfwinloss": 12,
+            "rankOfpts": 17,
+            "rankOfyards": 25,
+            "rankOfto": 11
+          },
+          "def": {
+            "winloss": 0.4610958274064896,
+            "pts": 22.17628143734081,
+            "yards": 349.2739649809607,
+            "to": 1.6499886539054662,
+            "rankOfwinloss": 12,
+            "rankOfpts": 11,
+            "rankOfyards": 19,
+            "rankOfto": 10
+          }
+        },
+        "team": "GB"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.7222019432977593,
+            "pts": 25.649615932452356,
+            "yards": 358.359664587089,
+            "to": 0.5153679788709193,
+            "rankOfwinloss": 5,
+            "rankOfpts": 8,
+            "rankOfyards": 12,
+            "rankOfto": 2
+          },
+          "def": {
+            "winloss": 0.26342380485034184,
+            "pts": 18.3251457555089,
+            "yards": 324.2792386135304,
+            "to": 1.5912802848453875,
+            "rankOfwinloss": 5,
+            "rankOfpts": 4,
+            "rankOfyards": 10,
+            "rankOfto": 13
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5514719974390733,
+            "pts": 24.629714692161915,
+            "yards": 330.92747060587203,
+            "to": 1.599656486202335,
+            "rankOfwinloss": 10,
+            "rankOfpts": 5,
+            "rankOfyards": 31,
+            "rankOfto": 24
+          },
+          "def": {
+            "winloss": 0.4507124348146387,
+            "pts": 21.490048716533508,
+            "yards": 343.27014006705025,
+            "to": 2.0174897016795494,
+            "rankOfwinloss": 10,
+            "rankOfpts": 7,
+            "rankOfyards": 12,
+            "rankOfto": 2
+          }
+        },
+        "team": "SF"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.42611618609397445,
+            "pts": 22.61317567448686,
+            "yards": 372.7425562979425,
+            "to": 1.6964766495937122,
+            "rankOfwinloss": 23,
+            "rankOfpts": 14,
+            "rankOfyards": 7,
+            "rankOfto": 25
+          },
+          "def": {
+            "winloss": 0.5599437265569307,
+            "pts": 24.36978739330081,
+            "yards": 348.52191780227565,
+            "to": 1.3561983811714708,
+            "rankOfwinloss": 23,
+            "rankOfpts": 21,
+            "rankOfyards": 20,
+            "rankOfto": 20
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5515598862372617,
+            "pts": 23.73661633906154,
+            "yards": 355.79937051623665,
+            "to": 1.4658928480162925,
+            "rankOfwinloss": 9,
+            "rankOfpts": 7,
+            "rankOfyards": 9,
+            "rankOfto": 10
+          },
+          "def": {
+            "winloss": 0.45019038151364643,
+            "pts": 20.90099603543417,
+            "yards": 343.9468920043864,
+            "to": 1.7550028266738558,
+            "rankOfwinloss": 9,
+            "rankOfpts": 4,
+            "rankOfyards": 13,
+            "rankOfto": 5
+          }
+        },
+        "team": "TB"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5804139704565987,
+            "pts": 24.745911991073104,
+            "yards": 361.0208012497306,
+            "to": 0.9574039820672715,
+            "rankOfwinloss": 10,
+            "rankOfpts": 9,
+            "rankOfyards": 11,
+            "rankOfto": 4
+          },
+          "def": {
+            "winloss": 0.40516549627087345,
+            "pts": 21.170408005523754,
+            "yards": 318.1070821732751,
+            "to": 1.3972102102018926,
+            "rankOfwinloss": 10,
+            "rankOfpts": 12,
+            "rankOfyards": 5,
+            "rankOfto": 19
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.45563329766763727,
+            "pts": 22.954214495142086,
+            "yards": 349.49447455770564,
+            "to": 1.5767140436212643,
+            "rankOfwinloss": 27,
+            "rankOfpts": 14,
+            "rankOfyards": 14,
+            "rankOfto": 21
+          },
+          "def": {
+            "winloss": 0.5465974160067035,
+            "pts": 23.235779089767554,
+            "yards": 361.6738399347203,
+            "to": 1.7432010602162198,
+            "rankOfwinloss": 27,
+            "rankOfpts": 22,
+            "rankOfyards": 28,
+            "rankOfto": 6
+          }
+        },
+        "team": "CAR"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.18079516998423706,
+            "pts": 21.93484214169638,
+            "yards": 391.5821144710274,
+            "to": 2.415898291127366,
+            "rankOfwinloss": 30,
+            "rankOfpts": 15,
+            "rankOfyards": 3,
+            "rankOfto": 30
+          },
+          "def": {
+            "winloss": 0.8050661111758485,
+            "pts": 29.24877770090279,
+            "yards": 343.63699050877165,
+            "to": 0.8876007070736727,
+            "rankOfwinloss": 30,
+            "rankOfpts": 32,
+            "rankOfyards": 17,
+            "rankOfto": 30
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5415027794185923,
+            "pts": 22.049460305660666,
+            "yards": 340.5876335825779,
+            "to": 1.6082341374942264,
+            "rankOfwinloss": 11,
+            "rankOfpts": 24,
+            "rankOfyards": 22,
+            "rankOfto": 26
+          },
+          "def": {
+            "winloss": 0.46044611982313527,
+            "pts": 22.313813712732816,
+            "yards": 348.5939251265347,
+            "to": 1.63555181686597,
+            "rankOfwinloss": 11,
+            "rankOfpts": 12,
+            "rankOfyards": 17,
+            "rankOfto": 11
+          }
+        },
+        "team": "DET"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.49394621202152517,
+            "pts": 20.765567254198878,
+            "yards": 342.6035379908325,
+            "to": 1.060139033118579,
+            "rankOfwinloss": 17,
+            "rankOfpts": 19,
+            "rankOfyards": 15,
+            "rankOfto": 7
+          },
+          "def": {
+            "winloss": 0.49178155090840703,
+            "pts": 19.04433470692787,
+            "yards": 345.68373242150165,
+            "to": 1.5125533670793103,
+            "rankOfwinloss": 17,
+            "rankOfpts": 8,
+            "rankOfyards": 18,
+            "rankOfto": 16
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5634775792413951,
+            "pts": 25.766734736921535,
+            "yards": 348.9752375016991,
+            "to": 1.2687247096188847,
+            "rankOfwinloss": 8,
+            "rankOfpts": 3,
+            "rankOfyards": 15,
+            "rankOfto": 1
+          },
+          "def": {
+            "winloss": 0.43860483823048585,
+            "pts": 20.487060549657578,
+            "yards": 340.1272351435456,
+            "to": 1.9092386724659587,
+            "rankOfwinloss": 8,
+            "rankOfpts": 1,
+            "rankOfyards": 8,
+            "rankOfto": 3
+          }
+        },
+        "team": "STL"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5644702588781644,
+            "pts": 29.939806082793517,
+            "yards": 436.7868021221666,
+            "to": 1.4868771862312329,
+            "rankOfwinloss": 12,
+            "rankOfpts": 3,
+            "rankOfyards": 1,
+            "rankOfto": 18
+          },
+          "def": {
+            "winloss": 0.4215338943856628,
+            "pts": 25.540197083212465,
+            "yards": 402.29813614942225,
+            "to": 1.8526488085756632,
+            "rankOfwinloss": 12,
+            "rankOfpts": 27,
+            "rankOfyards": 32,
+            "rankOfto": 6
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5991817621235093,
+            "pts": 26.097346858477017,
+            "yards": 371.7279433165863,
+            "to": 1.4624015051873736,
+            "rankOfwinloss": 3,
+            "rankOfpts": 2,
+            "rankOfyards": 1,
+            "rankOfto": 9
+          },
+          "def": {
+            "winloss": 0.40262426501447657,
+            "pts": 22.644668479918565,
+            "yards": 341.135874283021,
+            "to": 1.5384503482918674,
+            "rankOfwinloss": 3,
+            "rankOfpts": 16,
+            "rankOfyards": 10,
+            "rankOfto": 18
+          }
+        },
+        "team": "NO"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.6839249274300331,
+            "pts": 26.23129275286645,
+            "yards": 362.7394917489151,
+            "to": 1.0573095304378297,
+            "rankOfwinloss": 8,
+            "rankOfpts": 6,
+            "rankOfyards": 10,
+            "rankOfto": 6
+          },
+          "def": {
+            "winloss": 0.30163027971878864,
+            "pts": 22.40547199734261,
+            "yards": 364.2795748925868,
+            "to": 1.838748163044076,
+            "rankOfwinloss": 8,
+            "rankOfpts": 18,
+            "rankOfyards": 26,
+            "rankOfto": 7
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5212061358072042,
+            "pts": 22.85791685012773,
+            "yards": 348.6332251418062,
+            "to": 1.527464242047747,
+            "rankOfwinloss": 16,
+            "rankOfpts": 16,
+            "rankOfyards": 16,
+            "rankOfto": 13
+          },
+          "def": {
+            "winloss": 0.48093045896406494,
+            "pts": 22.079972428902064,
+            "yards": 334.1358765994937,
+            "to": 1.5443411959552582,
+            "rankOfwinloss": 16,
+            "rankOfpts": 10,
+            "rankOfyards": 5,
+            "rankOfto": 17
+          }
+        },
+        "team": "WAS"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.2689852119855809,
+            "pts": 17.001983165287772,
+            "yards": 277.64952158452434,
+            "to": 2.4866084530253665,
+            "rankOfwinloss": 27,
+            "rankOfpts": 27,
+            "rankOfyards": 32,
+            "rankOfto": 32
+          },
+          "def": {
+            "winloss": 0.7168473241124347,
+            "pts": 24.499477304139944,
+            "yards": 347.77623670671824,
+            "to": 1.9178474489904291,
+            "rankOfwinloss": 27,
+            "rankOfpts": 24,
+            "rankOfyards": 19,
+            "rankOfto": 4
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5724799164838208,
+            "pts": 23.583959012806574,
+            "yards": 351.5307527887535,
+            "to": 1.4556939182719666,
+            "rankOfwinloss": 5,
+            "rankOfpts": 11,
+            "rankOfyards": 13,
+            "rankOfto": 7
+          },
+          "def": {
+            "winloss": 0.42949772781997664,
+            "pts": 20.802911371892023,
+            "yards": 320.65148814824306,
+            "to": 1.6247179544543164,
+            "rankOfwinloss": 5,
+            "rankOfpts": 3,
+            "rankOfyards": 1,
+            "rankOfto": 12
+          }
+        },
+        "team": "ARI"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.8999401148153163,
+            "pts": 31.665239868980226,
+            "yards": 387.3881744202512,
+            "to": 0.3630435687292598,
+            "rankOfwinloss": 1,
+            "rankOfpts": 2,
+            "rankOfyards": 4,
+            "rankOfto": 1
+          },
+          "def": {
+            "winloss": 0.08561397347825841,
+            "pts": 14.64844602563638,
+            "yards": 312.5293368176786,
+            "to": 2.2122034372686867,
+            "rankOfwinloss": 1,
+            "rankOfpts": 1,
+            "rankOfyards": 4,
+            "rankOfto": 3
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5694870760444077,
+            "pts": 22.658782264335564,
+            "yards": 332.350208955571,
+            "to": 1.4618470954405078,
+            "rankOfwinloss": 6,
+            "rankOfpts": 20,
+            "rankOfyards": 30,
+            "rankOfto": 8
+          },
+          "def": {
+            "winloss": 0.4326506375821084,
+            "pts": 20.54781339992875,
+            "yards": 339.72001293264714,
+            "to": 2.0401359665048524,
+            "rankOfwinloss": 6,
+            "rankOfpts": 2,
+            "rankOfyards": 7,
+            "rankOfto": 1
+          }
+        },
+        "team": "SEA"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.16243632822839332,
+            "pts": 11.599011896503393,
+            "yards": 310.8862550859129,
+            "to": 1.6948435765093215,
+            "rankOfwinloss": 31,
+            "rankOfpts": 32,
+            "rankOfyards": 25,
+            "rankOfto": 24
+          },
+          "def": {
+            "winloss": 0.8232345211098373,
+            "pts": 24.387221680724494,
+            "yards": 358.4230069823117,
+            "to": 0.613072795551304,
+            "rankOfwinloss": 31,
+            "rankOfpts": 22,
+            "rankOfyards": 24,
+            "rankOfto": 32
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5177080048521743,
+            "pts": 22.929820825673747,
+            "yards": 355.4942247492189,
+            "to": 1.66716224223271,
+            "rankOfwinloss": 17,
+            "rankOfpts": 15,
+            "rankOfyards": 10,
+            "rankOfto": 27
+          },
+          "def": {
+            "winloss": 0.4844313262114081,
+            "pts": 22.538474281947664,
+            "yards": 333.4500914875706,
+            "to": 1.4434615490476619,
+            "rankOfwinloss": 17,
+            "rankOfpts": 14,
+            "rankOfyards": 4,
+            "rankOfto": 23
+          }
+        },
+        "team": "KC"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5775073199921548,
+            "pts": 23.354283818416246,
+            "yards": 337.50006991503386,
+            "to": 1.0178761862962808,
+            "rankOfwinloss": 11,
+            "rankOfpts": 13,
+            "rankOfyards": 17,
+            "rankOfto": 5
+          },
+          "def": {
+            "winloss": 0.40805742347653295,
+            "pts": 18.915778876711123,
+            "yards": 364.0435516139204,
+            "to": 1.7777667374912838,
+            "rankOfwinloss": 11,
+            "rankOfpts": 7,
+            "rankOfyards": 25,
+            "rankOfto": 9
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.4190656926515711,
+            "pts": 22.46267392845708,
+            "yards": 364.25035321071283,
+            "to": 1.5559809350681215,
+            "rankOfwinloss": 30,
+            "rankOfpts": 22,
+            "rankOfyards": 4,
+            "rankOfto": 16
+          },
+          "def": {
+            "winloss": 0.5831797442815543,
+            "pts": 24.203344664220538,
+            "yards": 366.5419905669706,
+            "to": 1.4887515568649887,
+            "rankOfwinloss": 30,
+            "rankOfpts": 30,
+            "rankOfyards": 32,
+            "rankOfto": 22
+          }
+        },
+        "team": "ATL"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.13895746624593913,
+            "pts": 15.90636719974784,
+            "yards": 323.490586917725,
+            "to": 1.59377797148127,
+            "rankOfwinloss": 32,
+            "rankOfpts": 29,
+            "rankOfyards": 23,
+            "rankOfto": 21
+          },
+          "def": {
+            "winloss": 0.8468863767027859,
+            "pts": 25.275374439031594,
+            "yards": 328.39140920698355,
+            "to": 1.0818045553148832,
+            "rankOfwinloss": 32,
+            "rankOfpts": 25,
+            "rankOfyards": 11,
+            "rankOfto": 27
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.3885914825967932,
+            "pts": 20.732703259528662,
+            "yards": 336.13145444083796,
+            "to": 1.5704119334976538,
+            "rankOfwinloss": 31,
+            "rankOfpts": 29,
+            "rankOfyards": 27,
+            "rankOfto": 19
+          },
+          "def": {
+            "winloss": 0.6133748548562948,
+            "pts": 23.60093877856138,
+            "yards": 352.48772289431736,
+            "to": 1.4898294739529288,
+            "rankOfwinloss": 31,
+            "rankOfpts": 26,
+            "rankOfyards": 22,
+            "rankOfto": 21
+          }
+        },
+        "team": "OAK"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.4263267172651306,
+            "pts": 21.291991495712708,
+            "yards": 290.17981669530013,
+            "to": 1.4313239431070777,
+            "rankOfwinloss": 22,
+            "rankOfpts": 17,
+            "rankOfyards": 29,
+            "rankOfto": 15
+          },
+          "def": {
+            "winloss": 0.5595360489013319,
+            "pts": 24.457167352454547,
+            "yards": 323.89534506368125,
+            "to": 1.6108205395330832,
+            "rankOfwinloss": 22,
+            "rankOfpts": 23,
+            "rankOfyards": 9,
+            "rankOfto": 12
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.42555210341806327,
+            "pts": 20.649981318006866,
+            "yards": 340.5685125963073,
+            "to": 1.5651214534766988,
+            "rankOfwinloss": 29,
+            "rankOfpts": 30,
+            "rankOfyards": 23,
+            "rankOfto": 18
+          },
+          "def": {
+            "winloss": 0.5763953108172876,
+            "pts": 23.06617621518544,
+            "yards": 328.065998758403,
+            "to": 1.321544843687811,
+            "rankOfwinloss": 29,
+            "rankOfpts": 18,
+            "rankOfyards": 2,
+            "rankOfto": 31
+          }
+        },
+        "team": "SD"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5535589423076488,
+            "pts": 24.084910800251475,
+            "yards": 375.00933610584906,
+            "to": 1.2110493801839848,
+            "rankOfwinloss": 14,
+            "rankOfpts": 12,
+            "rankOfyards": 6,
+            "rankOfto": 10
+          },
+          "def": {
+            "winloss": 0.43203737447244633,
+            "pts": 21.386813713294167,
+            "yards": 339.7719404283188,
+            "to": 1.1917522598652546,
+            "rankOfwinloss": 14,
+            "rankOfpts": 15,
+            "rankOfyards": 14,
+            "rankOfto": 25
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.5038107305114821,
+            "pts": 21.271105080328105,
+            "yards": 335.2855535108554,
+            "to": 1.5443448706063623,
+            "rankOfwinloss": 21,
+            "rankOfpts": 28,
+            "rankOfyards": 29,
+            "rankOfto": 14
+          },
+          "def": {
+            "winloss": 0.4982847546285138,
+            "pts": 21.868645039627953,
+            "yards": 343.231460219042,
+            "to": 1.510041883708631,
+            "rankOfwinloss": 21,
+            "rankOfpts": 9,
+            "rankOfyards": 11,
+            "rankOfto": 20
+          }
+        },
+        "team": "BAL"
+      },
+      {
+        "stat": {
+          "off": {
+            "winloss": 0.5591505677393087,
+            "pts": 21.54789328311626,
+            "yards": 294.76777377013684,
+            "to": 1.5122685189868685,
+            "rankOfwinloss": 13,
+            "rankOfpts": 16,
+            "rankOfyards": 28,
+            "rankOfto": 20
+          },
+          "def": {
+            "winloss": 0.4265292175876435,
+            "pts": 18.358682456507914,
+            "yards": 329.8274146311081,
+            "to": 1.8882656792645576,
+            "rankOfwinloss": 13,
+            "rankOfpts": 5,
+            "rankOfyards": 12,
+            "rankOfto": 5
+          }
+        },
+        "oppstat": {
+          "off": {
+            "winloss": 0.45844254049498046,
+            "pts": 21.302082427657858,
+            "yards": 338.15048404604113,
+            "to": 1.570988964453849,
+            "rankOfwinloss": 26,
+            "rankOfpts": 27,
+            "rankOfyards": 24,
+            "rankOfto": 20
+          },
+          "def": {
+            "winloss": 0.5435694760981583,
+            "pts": 23.163724521523122,
+            "yards": 341.0436763115756,
+            "to": 1.3570496098278961,
+            "rankOfwinloss": 26,
+            "rankOfpts": 21,
+            "rankOfyards": 9,
+            "rankOfto": 29
+          }
+        },
+        "team": "CIN"
+      }
+    ]
+  }
+}
