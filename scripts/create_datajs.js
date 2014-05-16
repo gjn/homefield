@@ -2,7 +2,7 @@ var fs = require('fs');
 var util = require('util');
 var Handlebars = require('handlebars');
 
-var source = fs.readFileSync('scripts/statvar.hbar', {encoding: 'utf8'});
+var source = fs.readFileSync('scripts/templates/statvar.hbar', {encoding: 'utf8'});
 var template = Handlebars.compile(source);
 
 for (var i = 2; i < process.argv.length; i++) {

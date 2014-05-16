@@ -33,7 +33,7 @@ datajs: .artefacts/touch/datajs
 	node_modules/.bin/metalsmith
 	touch $@
 
-.artefacts/touch/datajs: .artefacts/touch/allgames scripts/create_datajs.js
+.artefacts/touch/datajs: .artefacts/touch/allgames scripts/create_datajs.js scripts/templates/statvar.hbar
 	mkdir -p .artefacts/data
 	node scripts/create_datajs.js $(shell find .artefacts/results -type f -name '*.json')
 

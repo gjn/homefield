@@ -1,0 +1,11 @@
+
+if (!homefield) {
+  homefield = {};
+}
+
+if (!homefield.stats) {
+  homefiled.stats = {};
+}
+
+homefield.stats.{{statName}} = {{&stat}}
+

@@ -19,8 +19,8 @@
       "drafts/*"
     ],
     "metalsmith-assets": {
-      "source": ".artefacts/results",
-      "destination": "./data"
+      "source": "./site/lib",
+      "destination": "./lib"
     }
   }
 }
