@@ -4,7 +4,7 @@
     "description": "An algorithm based, un-opinionated NFL power ranking system providing beautiful and exciting graphs for you to disagree with."
   },
   "source": "./site/src",
-  "destination": "./_site",
+  "destination": ".artefacts/site",
   "plugins": {
     "metalsmith-markdown": { },
     "metalsmith-permalinks": {
@@ -19,7 +19,7 @@
       "drafts/*"
     ],
     "metalsmith-assets": {
-      "source": "./results",
+      "source": ".artefacts/results",
       "destination": "./data"
     }
   }

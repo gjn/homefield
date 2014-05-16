@@ -1,44 +1,47 @@
+DUMMY := $(shell mkdir -p .artefacts/results)
 SRC_FILES := $(shell find . -type f -name '*.js' -not -path './node_modules/*')
-SITE_FILES := $(shell find ./site ./results -type f -name '*')
+SITE_FILES := $(shell find ./site .artefacts/results -type f -name '*')
 
 .PHONY: default
-default: _build/site
+default: .artefacts/touch/site
 
 .PHONY: publish
-publish: _build/publish
+publish: .artefacts/touch/publish
 
 .PHONY: games
-games: _build/games
+games: .artefacts/touch/games
 
 .PHONY: allgames
-allgames: _build/allgames
+allgames: .artefacts/touch/allgames
 
-_build/site: _build/allgames metalsmith.json $(SITE_FILES)
+.artefacts/touch/site: .artefacts/touch/allgames metalsmith.json $(SITE_FILES)
 	mkdir -p $(dir $@)
 	node_modules/.bin/metalsmith
 	touch $@
 
-_build/games: _build/g
+.artefacts/touch/games: .artefacts/touch/g
 	mkdir -p $(dir $@)
 	node index.js -f data/pfr/all.csv
+	touch $@
 
-_build/allgames: _build/g
+.artefacts/touch/allgames: .artefacts/touch/g
 	mkdir -p $(dir $@)
 	node index.js -f data/pfr/all.csv -t all
 	touch $@
 
-_build/g: node_modules data/pfr/all.csv $(SRC_FILES)
+.artefacts/touch/g: node_modules data/pfr/all.csv $(SRC_FILES) .artefacts/results
 	mkdir -p $(dir $@)
-	echo $(SRC_FILES)
-	echo "games have chanaged"
 	touch $@
+
+.artefacts/results:
+	mkdir -p $(dir $@)
 
 node_modules: package.json
 	npm install
 
-_build/publish: _build/site
+.artefacts/touch/publish: .artefacts/touch/site
 	mkdir -p $(dir $@)
-	cd _site; \
+	cd .artefacts/site; \
 	rm -rf .git; \
 	git init .; \
 	git add .; \
