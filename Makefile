@@ -1,6 +1,6 @@
 DUMMY := $(shell mkdir -p .artefacts/results)
-SRC_FILES := $(shell find . -type f -name '*.js' -not -path './node_modules/*' -not -path './scripts/*')
-SITE_FILES := $(shell find ./site -type f -name '*')
+CALC_JS_FILES := $(shell find ./lib -type f -name '*.js')
+SITE_FILES := $(shell find ./site -type f -name '*' -not -path './site/lib/2013-17.js')
 
 .PHONY: default
 default: .artefacts/touch/site
@@ -28,14 +28,16 @@ datajs: .artefacts/touch/datajs
 	rm -rf .git;
 	touch $@
 
-.artefacts/touch/site: .artefacts/touch/allgames metalsmith.json $(SITE_FILES)
+.artefacts/touch/site: metalsmith.json $(SITE_FILES) .artefacts/touch/datajs
 	mkdir -p $(dir $@)
 	node_modules/.bin/metalsmith
 	touch $@
 
-.artefacts/touch/datajs: .artefacts/touch/allgames scripts/create_datajs.js scripts/templates/statvar.hbar
+.artefacts/touch/datajs: scripts/create_datajs.js scripts/templates/statvar.hbar .artefacts/touch/allgames
 	mkdir -p .artefacts/data
 	node scripts/create_datajs.js $(shell find .artefacts/results -type f -name '*.json')
+	cp .artefacts/data/2013-17.js site/lib/2013-17.js
+	touch $@
 
 .artefacts/touch/games: .artefacts/touch/g
 	mkdir -p $(dir $@)
@@ -47,7 +49,7 @@ datajs: .artefacts/touch/datajs
 	node index.js -f data/pfr/all.csv -t all
 	touch $@
 
-.artefacts/touch/g: node_modules data/pfr/all.csv $(SRC_FILES)
+.artefacts/touch/g: node_modules data/pfr/all.csv $(CALC_JS_FILES)
 	mkdir -p .artefacts/results
 	mkdir -p $(dir $@)
 	touch $@
