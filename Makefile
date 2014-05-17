@@ -1,23 +1,25 @@
-DUMMY := $(shell mkdir -p .artefacts/results)
-CALC_JS_FILES := $(shell find ./lib -type f -name '*.js')
+BUILD_DIR := .artefacts
+TOUCH_DIR := $(BUILD_DIR)/touch
+MS := metalsmith.json
+MS_DIR := ms
+MS_SITE_CONFIG := ms/site.json
+ANALYSE_FILES := $(wildcard lib/*.js)
+ANALYSE_TARGET_DIR := $(BUILD_DIR)/res
+ANALYSE := $(TOUCH_DIR)/analysed
+DATAJS_TARGET_DIR := $(BUILD_DIR)/datajs
+DATAJS := $(TOUCH_DIR)/datajs
+#TODO: remove the special file stuff
 SITE_FILES := $(shell find ./site -type f -name '*' -not -path './site/lib/2013-17.js')
+SITE := $(TOUCH_DIR)/site
+PUBLISH := $(TOUCH_DIR)/publish
 
-.PHONY: default
-default: .artefacts/touch/site
+default: site
+publish: $(PUBLISH)
+site: $(SITE)
+datajs: $(DATAJS)
+analyse: $(ANALYSE)
 
-.PHONY: publish
-publish: .artefacts/touch/publish
-
-.PHONY: games
-games: .artefacts/touch/games
-
-.PHONY: allgames
-allgames: .artefacts/touch/allgames
-
-.PHONY: datajs
-datajs: .artefacts/touch/datajs
-
-.artefacts/touch/publish: .artefacts/touch/site
+$(PUBLISH): $(SITE)
 	mkdir -p $(dir $@)
 	cd .artefacts/site; \
 	rm -rf .git; \
@@ -28,33 +30,24 @@ datajs: .artefacts/touch/datajs
 	rm -rf .git;
 	touch $@
 
-.artefacts/touch/site: metalsmith.json $(SITE_FILES) .artefacts/touch/datajs
-	mkdir -p $(dir $@)
+$(SITE): $(MS_SITE_CONFIG) $(SITE_FILES) $(DATAJS)
+	cp $(MS_SITE_CONFIG) $(MS)
 	node_modules/.bin/metalsmith
 	touch $@
 
-.artefacts/touch/datajs: scripts/create_datajs.js scripts/templates/statvar.hbar .artefacts/touch/allgames
-	mkdir -p .artefacts/data
-	node scripts/create_datajs.js $(shell find .artefacts/results -type f -name '*.json')
-	cp .artefacts/data/2013-17.js site/lib/2013-17.js
+$(DATAJS): scripts/create_datajs.js scripts/templates/statvar.hbar $(ANALYSE)
+	mkdir -p $(DATAJS_TARGET_DIR)
+	node scripts/create_datajs.js $(wildcard .artefacts/res/*.json)
+#TODO: Remove copying of this file
+	cp $(DATAJS_TARGET_DIR)/2013-17.js site/lib/2013-17.js
 	touch $@
 
-.artefacts/touch/games: .artefacts/touch/g
-	mkdir -p $(dir $@)
-	node index.js -f data/pfr/all.csv
-	touch $@
-
-.artefacts/touch/allgames: .artefacts/touch/g
-	mkdir -p $(dir $@)
+$(ANALYSE): node_modules data/pfr/all.csv $(ANALYSE_FILES) index.js
+	mkdir -p $(ANALYSE_TARGET_DIR)
 	node index.js -f data/pfr/all.csv -t all
-	touch $@
-
-.artefacts/touch/g: node_modules data/pfr/all.csv $(CALC_JS_FILES)
-	mkdir -p .artefacts/results
-	mkdir -p $(dir $@)
+	mkdir -p $(TOUCH_DIR)
 	touch $@
 
 node_modules: package.json
 	npm install
-
 

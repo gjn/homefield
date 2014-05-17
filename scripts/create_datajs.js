@@ -12,7 +12,7 @@ for (var i = 2; i < process.argv.length; i++) {
   var regexRes = process.argv[i].match(/results-(\d{4})-(\d{1,2})/);
   context.statName = '_' + regexRes[1] + '_' + regexRes[2];
   var out = template(context);
-  var outName = '.artefacts/data/' + regexRes[1] + '-' + regexRes[2] + '.js';
+  var outName = '.artefacts/datajs/' + regexRes[1] + '-' + regexRes[2] + '.js';
   fs.writeFileSync(outName, out, {encoding: 'utf8'});
 }
 
