@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "template": "hf.js"
+  },
+  "source": "../../.artefacts/res",
+  "destination": "../../.artefacts/_site/lib",
+  "plugins": {
+    "metalsmith-templates": {
+      "engine": "handlebars",
+      "directory": "../../.artefacts/templates",
+      "default": "hf.js"
+    }
+  }
+}
+

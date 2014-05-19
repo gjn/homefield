@@ -1,0 +1,4 @@
+!function() {
+  var homefield = {
+    version: "0.0.1"
+  };

@@ -1,0 +1,1 @@
+homefield.stats = {{{contents}}};
