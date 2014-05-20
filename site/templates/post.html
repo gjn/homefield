@@ -1,13 +1,17 @@
 <html>
 <head>
-  <title>{{ title }}</title>
-  <script src="../../lib/d3.js"></script>
-  <script src="../../lib/{{ datafile }}"></script>
+  <title>{{title}}</title>
+{{#if debug}}
+  <script src="../../../lib/d3.js"></script>
+{{else}}
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.8/d3.min.js"></script>
+{{/if}}
+  <script src="../../../lib/{{season}}-{{week}}.js"></script>
 </head>
 <body>
-  <h1>{{ title }}</h1>
-  <time>{{ date }}</time>
-  {{{ contents }}}
+  <h1>{{title}}</h1>
+  <time>{{date}}</time>
+  {{{contents}}}
 </body>
 </html>
 
