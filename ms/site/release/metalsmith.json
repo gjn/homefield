@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "debug": "false",
+    "destination": "../../site",
+    "libdirectory": "../../_site/libmin"
+  },
+  "source": "../in",
+  "destination": "../../../.artefacts/ms/release",
+  "plugins": {
+    "metalsmith-templates": {
+      "engine": "handlebars",
+      "directory": "../template",
+      "default": "metalsmith.hbt"
+    }
+  }
+}
+

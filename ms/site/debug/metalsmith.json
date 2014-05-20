@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "debug": "true",
+    "destination": "../../sitedebug",
+    "libdirectory": "../../_site/lib"
+  },
+  "source": "../in",
+  "destination": "../../../.artefacts/ms/debug",
+  "plugins": {
+    "metalsmith-templates": {
+      "engine": "handlebars",
+      "directory": "../template",
+      "default": "metalsmith.hbt"
+    }
+  }
+}
+
