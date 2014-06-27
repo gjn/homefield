@@ -1,0 +1,5 @@
+
+SITE: Put chart javascript into seperate file and load it on demand
+SITE GENERATOR: using parts to include analytics and disques code into templates
+
+
