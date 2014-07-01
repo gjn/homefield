@@ -7,8 +7,7 @@ nv.addGraph(function() {
 
   chart.xAxis.tickFormat(d3.format('.02f'));
   chart.yAxis.tickFormat(d3.format('.02f'));
-  chart.scatter.onlyCircles(false);
-  var myData = randomData(4,40);
+  var myData = getGroupedFootballData();
 
   d3.select('#mychart')
     .datum(myData)
@@ -19,27 +18,31 @@ nv.addGraph(function() {
 
 });
 
-function randomData(groups, points) { //# groups,# points per group
-  var data = [],
-      shapes = ['circle', 'cross', 'triangle-up', 'triangle-down', 'diamond', 'square'],
-      random = d3.random.normal();
-
-  for (i = 0; i < groups; i++) {
-    data.push({
-      key: 'Group ' + i,
-      values: []
-    });
-
-    for (j = 0; j < points; j++) {
-      data[i].values.push({
-        x: random()
-      , y: random()
-      , size: Math.random()   //Configure the size of each scatter point
-      , shape: (Math.random() > 0.95) ? shapes[j % 6] : "circle"  //Configure the shape of each scatter point.
-      });
+function getGroupedFootballData() {
+  var data = [];
+  var stats = homefield.stats.results;
+  var refstats = stats.average;
+  var getStatsWith = function(other, team) {
+    for (var j = 0; j < other.length; j++) {
+      if (team == other[j].team) {
+        return other[j];
+      }
     }
+    return undefined;
   }
-
+  for (var i = 0; i < refstats.length; i++) {
+    var ref = refstats[i];
+    var home = getStatsWith(stats.home, ref.team);
+    var away = getStatsWith(stats.away, ref.team);
+    data.push({
+      key: ref.team,
+      values: [{
+        x: home.stat.off.winloss,
+        y: away.stat.off.winloss,
+        size: ref.stat.off.winloss
+      }]
+    });
+  }
   return data;
 }
 
