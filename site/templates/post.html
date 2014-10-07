@@ -12,7 +12,7 @@
   <!-- style to be put into css/less file -->
   <style>
     #chart div {
-      font: 10px sans-serif;
+      font: 15px sans-serif;
       background-color: steelblue;
       text-align: right;
       padding: 3px;
@@ -62,7 +62,8 @@
       .selectAll("div")
         .data(myData)
       .enter().append("div")
-        .style("width", function(d) { return (d[ownopp][offdef][stat] < 0.0 ? 0.0 : d[ownopp][offdef][stat]) * f[stat]['px'] + 50 + "px";})
+        .style("width", function(d) { return (d[ownopp][offdef][stat] < 0.0 ? 0.0
+        : d[ownopp][offdef][stat]) * f[stat]['px'] + 75 + "px";})
         .text(function(d) { return d.team + ' (' + ~~(d[ownopp][offdef][stat] * f[stat]['txt']) + ')'; });
   </script>
 
