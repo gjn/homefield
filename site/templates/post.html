@@ -9,6 +9,19 @@
   <script src="../../../lib/{{season}}-{{week}}.js"></script>
 </head>
 <body>
+  <!-- style to be put into css/less file -->
+  <style>
+    #chart div {
+      font: 10px sans-serif;
+      background-color: steelblue;
+      text-align: right;
+      padding: 3px;
+      margin: 1px;
+      color: white;
+      height: 20px;
+    }
+  </style>
+
   <h1>{{title}}</h1>
   <time>{{date}}</time>
   {{{contents}}}
@@ -17,7 +30,40 @@
   </div>
 
   <!-- Charting code, to be put into seperate file -->
-  <script type"text/javascript">
+  <script type="text/javascript">
+    var ownopp = 'stat';
+    var offdef = 'def';
+    var stat = 'pts';
+    var f = {
+      'winloss': {
+        px: 1000,
+        txt: 100
+      },
+      'pts': {
+        px: 30,
+        txt: 1
+      },
+      'yards': {
+        px: 3,
+        txt: 1
+      }
+    };
+    var myData = homefield.stats.results.away;
+    myData.sort(function(d1, d2) {
+      if (d1[ownopp][offdef][stat] > d2[ownopp][offdef][stat]) {
+        return offdef == 'off' ? -1 : 1;
+      } else if (d1[ownopp][offdef][stat] < d2[ownopp][offdef][stat]) {
+        return offdef == 'off' ? 1 : -1;
+      } else {
+        return 0
+      }
+    });
+    d3.select("#chart")
+      .selectAll("div")
+        .data(myData)
+      .enter().append("div")
+        .style("width", function(d) { return d[ownopp][offdef][stat] * f[stat]['px'] + 50 + "px";})
+        .text(function(d) { return d.team + ' (' + ~~(d[ownopp][offdef][stat] * f[stat]['txt']) + ')'; });
   </script>
 
   <!-- DISQUS -->

@@ -6,6 +6,10 @@
       "engine": "handlebars",
       "directory": "../../.artefacts/templates",
       "default": "hf.hbt"
+    },
+    "metalsmith-assets": {
+      "source": "../../site/lib",
+      "destination": "."
     }
   }
 }
