@@ -48,11 +48,11 @@
         txt: 1
       }
     };
-    var myData = homefield.stats.results.average;
+    var myData = d3.entries(homefield.stats.results.average);
     myData.sort(function(d1, d2) {
-      if (d1[ownopp][offdef][stat] > d2[ownopp][offdef][stat]) {
+      if (d1.value[ownopp][offdef][stat] > d2.value[ownopp][offdef][stat]) {
         return offdef == 'off' ? -1 : 1;
-      } else if (d1[ownopp][offdef][stat] < d2[ownopp][offdef][stat]) {
+      } else if (d1.value[ownopp][offdef][stat] < d2.value[ownopp][offdef][stat]) {
         return offdef == 'off' ? 1 : -1;
       } else {
         return 0
@@ -62,9 +62,9 @@
       .selectAll("div")
         .data(myData)
       .enter().append("div")
-        .style("width", function(d) { return (d[ownopp][offdef][stat] < 0.0 ? 0.0
-        : d[ownopp][offdef][stat]) * f[stat]['px'] + 75 + "px";})
-        .text(function(d) { return d.team + ' (' + ~~(d[ownopp][offdef][stat] * f[stat]['txt']) + ')'; });
+        .style("width", function(d) { return (d.value[ownopp][offdef][stat] < 0.0 ? 0.0
+            : d.value[ownopp][offdef][stat]) * f[stat]['px'] + 75 + "px";})
+        .text(function(d, i) { return (i+1) + '. ' + d.key + ' (' + ~~(d.value[ownopp][offdef][stat] * f[stat]['txt']) + ')'; });
   </script>
 
   <!-- DISQUS -->
