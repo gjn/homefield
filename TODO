@@ -1,5 +1,17 @@
-
-SITE: Put chart javascript into seperate file and load it on demand
-SITE GENERATOR: using parts to include analytics and disques code into templates
-
-
+- Move code from page into homefield library
+- Use iframe to display the graphic
+- Integrate knockout.js for data binding
+- Add configuration bar, disply only in iframe from verified sites
+- Make the kind of data displayed configurable
+- Assure configuration can be passed via query strings
+- Add embed link so anyone can embed his own graphic
+- Adapt bar graphic to better reflect d3 example (use SVG)
+- Color the bars according to team colors
+- Add other graphic types
+  - Bubble graph
+  - Stats over time
+- Add possibility to combine stats (weighted rankings based on a
+  specific formula)
+- Make the site beautiful
+- Think about a good catch phrase for the site
+- SEO
