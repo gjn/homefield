@@ -55,8 +55,8 @@ $(HOMEFIELD_MINJS): $(HOMEFIELD_JS) ms/jsmini/metalsmith.json
 
 $(HOMEFIELD_JS): $(ANALYSE) $(JS_FILES) ms/jsbuild/metalsmith.json
 	mkdir -p $(TEMPLATE_DIR)
-	node_modules/.bin/smash src/homefield.js > $(TEMPLATE_DIR)/hf.hbt
 	cd ms/jsbuild && ../../node_modules/.bin/metalsmith
+	node_modules/.bin/smash src/homefield.js > $(BUILD_DIR)/_site/lib/homefield.js
 	touch $@
 
 $(ANALYSE): node_modules data/pfr/all.csv $(ANALYSE_FILES) index.js

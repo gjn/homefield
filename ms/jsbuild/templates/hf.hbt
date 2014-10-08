@@ -1,0 +1,8 @@
+!function() {
+
+  var homefield = this.homefield || {};
+
+  homefield.stats = {{{contents}}};
+
+  this.homefield = homefield;
+}();

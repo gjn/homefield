@@ -4,7 +4,7 @@
   "plugins": {
     "metalsmith-templates": {
       "engine": "handlebars",
-      "directory": "../../.artefacts/templates",
+      "directory": "./templates",
       "default": "hf.hbt"
     },
     "metalsmith-assets": {
