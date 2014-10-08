@@ -31,19 +31,19 @@
 
   <!-- Charting code, to be put into seperate file -->
   <script type="text/javascript">
-    var ownopp = 'stat';
-    var offdef = 'off';
-    var stat = 'winloss';
+    var ownopp = 's';
+    var offdef = 'o';
+    var stat = 'w';
     var f = {
-      'winloss': {
+      'w': {
         px: 1000,
         txt: 100
       },
-      'pts': {
+      'p': {
         px: 30,
         txt: 1
       },
-      'yards': {
+      'y': {
         px: 3,
         txt: 1
       }
@@ -51,9 +51,9 @@
     var myData = d3.entries(homefield.stats.results.average);
     myData.sort(function(d1, d2) {
       if (d1.value[ownopp][offdef][stat] > d2.value[ownopp][offdef][stat]) {
-        return offdef == 'off' ? -1 : 1;
+        return offdef == 'o' ? -1 : 1;
       } else if (d1.value[ownopp][offdef][stat] < d2.value[ownopp][offdef][stat]) {
-        return offdef == 'off' ? 1 : -1;
+        return offdef == 'o' ? 1 : -1;
       } else {
         return 0
       }
