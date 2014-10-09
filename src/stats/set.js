@@ -23,6 +23,10 @@ var Set = function(s, w, t, own, off, stat) {
     return new Set(_season, _week - 1, _type, _ownopp, _offdef, _stat);
   };
 
+  this.getStatKey = function() {
+    return _stat;
+  };
+
   this.getStats = function() {
     var sk = getStatKey();
     if (!_data) {

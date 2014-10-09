@@ -30,38 +30,10 @@
   <div id="chart">
   </div>
 
-  <!-- Charting code, to be put into seperate file -->
   <script type="text/javascript">
+    var newGraph = new hf.graphs.Bar('#chart');
     var set = new hf.stats.Set({{season}}, {{week}}, 'average', 's', 'o', 'w');
-    var prevSet = set.getPreviousWeekSet();
-    var stat = 'w';
-    var f = {
-      'w': 1000,
-      'p': 30,
-      'y': 3
-    };
-    var myData = d3.entries(set.getStats());
-    myData.sort(function(d1, d2) {
-      return set.sortf(d1.key, d2.key);
-    });
-    d3.select("#chart")
-      .selectAll("div")
-        .data(myData)
-      .enter().append("div")
-        .style("width", function(d) {
-          var s = set.getTeamStat(d.key);
-          return (s < 0.0 ? 0.0 : s) * f[stat] + 75 + "px";
-        })
-        .text(function(d, i) {
-          var rank = set.getTeamStat(d.key, true);
-          var prevRank = prevSet.getTeamStat(d.key, true);
-          var rankString = rank + '. ';
-          if (prevRank) {
-            var move = prevRank - rank;
-            rankString += '(' + ((move == 0) ? '-' : (move > 0) ? ('+' + move) : move)  + ') ';
-          }
-          return rankString + d.key + ' [' + set.getTeamStat(d.key) + ']';
-        });
+    newGraph.create(set);
   </script>
 
   <!-- DISQUS -->
