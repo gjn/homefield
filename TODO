@@ -1,10 +1,12 @@
-- Move code from page into homefield library
-- Use iframe to display the graphic
 - Integrate knockout.js for data binding
-- Add configuration bar, disply only in iframe from verified sites
-- Make the kind of data displayed configurable
+- Add configuration bar
+- Make the kind of data displayed configurable (winloss, pts, yards, off, def,
+  opp, own)
 - Assure configuration can be passed via query strings
-- Add embed link so anyone can embed his own graphic
+- Use iframe to display the graphic
+- Add embed link so anyone can embed his own graphic. Configuration only on
+  verified sites
+    -> http://www.nczonline.net/blog/2013/04/16/getting-the-url-of-an-iframes-parent/
 - Adapt bar graphic to better reflect d3 example (use SVG)
 - Color the bars according to team colors
 - Add other graphic types
