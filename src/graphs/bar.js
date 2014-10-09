@@ -29,7 +29,7 @@ var Bar = function(element) {
       .enter().append("div")
         .style("width", function(d) {
           var s = set.getTeamStat(d.key);
-          return (s < 0.0 ? 0.0 : s) * f[set.getStatKey()] + 75 + "px";
+          return (s < 0.0 ? 0.0 : s) * f[set.getStatKey()] + 150 + "px";
         })
         .text(function(d, i) {
           var rank = set.getTeamStat(d.key, true);
