@@ -1,8 +1,10 @@
 !function() {
 
-  var homefield = this.homefield || {};
+  var hf = this.hf || {};
 
-  homefield.stats = {{{contents}}};
+  hf.stats = hf.stats || {};
 
-  this.homefield = homefield;
+  hf.stats.data = {{{contents}}};
+
+  this.hf = hf;
 }();

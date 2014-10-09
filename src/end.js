@@ -1,2 +1,2 @@
-  this.homefield = homefield;
+  this.hf = hf;
 }();

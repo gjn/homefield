@@ -32,55 +32,35 @@
 
   <!-- Charting code, to be put into seperate file -->
   <script type="text/javascript">
-    var type = 'average';
-    var ownopp = 's';
-    var offdef = 'o';
+    var set = new hf.stats.Set({{season}}, {{week}}, 'average', 's', 'o', 'w');
+    var prevSet = set.getPreviousWeekSet();
     var stat = 'w';
     var f = {
-      'w': {
-        px: 1000,
-        txt: 100
-      },
-      'p': {
-        px: 30,
-        txt: 1
-      },
-      'y': {
-        px: 3,
-        txt: 1
-      }
+      'w': 1000,
+      'p': 30,
+      'y': 3
     };
-    var myData = d3.entries(homefield.stats._{{season}}{{prefix}}{{week}}.stats[type]);
-    var prevWeek = {{week}} - 1;
-    var prevStat = undefined;
-    if (prevWeek > 0) {
-      prevStat = homefield.stats['_{{season}}{{prefix}}' + prevWeek].stats[type];
-    }
+    var myData = d3.entries(set.getStats());
     myData.sort(function(d1, d2) {
-      if (d1.value[ownopp][offdef][stat] > d2.value[ownopp][offdef][stat]) {
-        return offdef == 'o' ? -1 : 1;
-      } else if (d1.value[ownopp][offdef][stat] < d2.value[ownopp][offdef][stat]) {
-        return offdef == 'o' ? 1 : -1;
-      } else {
-        return 0
-      }
+      return set.sortf(d1.key, d2.key);
     });
     d3.select("#chart")
       .selectAll("div")
         .data(myData)
       .enter().append("div")
         .style("width", function(d) {
-          return (d.value[ownopp][offdef][stat] < 0.0 ? 0.0 : d.value[ownopp][offdef][stat]) *
-                  f[stat]['px'] + 75 + "px";
+          var s = set.getTeamStat(d.key);
+          return (s < 0.0 ? 0.0 : s) * f[stat] + 75 + "px";
         })
         .text(function(d, i) {
-          var rank = i + 1;
+          var rank = set.getTeamStat(d.key, true);
+          var prevRank = prevSet.getTeamStat(d.key, true);
           var rankString = rank + '. ';
-          if (prevStat) {
-            var move = prevStat[d.key][ownopp][offdef]['r'+stat] - rank;
+          if (prevRank) {
+            var move = prevRank - rank;
             rankString += '(' + ((move == 0) ? '-' : (move > 0) ? ('+' + move) : move)  + ') ';
           }
-          return rankString + d.key + ' [' + ~~(d.value[ownopp][offdef][stat] * f[stat]['txt']) + ']';
+          return rankString + d.key + ' [' + set.getTeamStat(d.key) + ']';
         });
   </script>
 

@@ -1,6 +1,6 @@
 !function() {
 
-  var homefield = this.homefield || {};
+  var hf = this.hf || {};
 
-  homefield.version = "0.0.1";
+  hf.version = "0.0.1";
 
