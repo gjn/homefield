@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>NFL Powerrankings {{season}} - Week {{week}}</title>
@@ -12,14 +13,13 @@
 <body>
   <!-- style to be put into css/less file -->
   <style>
-    #chart div {
-      font: 15px sans-serif;
-      background-color: steelblue;
-      text-align: right;
-      padding: 3px;
-      margin: 1px;
-      color: white;
-      height: 20px;
+    #chart rect {
+      fill: steelblue;
+    }
+    #chart text {
+      fill: white;
+      text-anchor: end;
+      font: 12px sans-serif;
     }
   </style>
 
@@ -27,8 +27,8 @@
   <time>{{date}}</time>
   {{{contents}}}
 
-  <div id="chart">
-  </div>
+  <svg id="chart">
+  </svg>
 
   <script type="text/javascript">
     var newGraph = new hf.graphs.Bar('#chart');
