@@ -76,6 +76,11 @@ var Bar = function(element) {
     };
 
     update();
+/*
+    setInterval(function() {
+      sort(true);
+    }, 1000);
+    */
   };
   
 };
