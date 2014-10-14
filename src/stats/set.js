@@ -6,8 +6,8 @@ var Set = function(s, w, t, own, off, stat) {
     return new Set(s, w, t, own, off, stat);
   }
   
-  var _season = s || 2014;
-  var _week = w || 5;
+  var _season = s;
+  var _week = w;
   var _type = t || 'average';
   var _ownopp = own || 's';
   var _offdef = off || 'o';
@@ -17,10 +17,16 @@ var Set = function(s, w, t, own, off, stat) {
     return '_' + _season + (_week < 10 ? '0' : '') + _week;
   };
 
-  var _data = hf.stats.data[getStatKey()] || {};
+  var _data = hf.stats.data[getStatKey()];
 
   this.getPreviousWeekSet = function() {
-    return new Set(_season, _week - 1, _type, _ownopp, _offdef, _stat);
+    var newSeason = _season;
+    var newWeek = _week - 1;
+    if (newWeek <= 0) {
+      newSeason = _season - 1;
+      newWeek = 21;
+    }
+    return new Set(newSeason, newWeek, _type, _ownopp, _offdef, _stat);
   };
 
   this.getStatKey = function() {
