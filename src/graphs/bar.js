@@ -71,7 +71,7 @@ var Bar = function(element) {
             var move = prevRank - rank;
             rankString += '(' + ((move == 0) ? '-' : (move > 0) ? ('+' + move) : move)  + ') ';
           }
-          return rankString + d.key + ' [' + set.getTeamStat(d.key) + ']';
+          return rankString + hf.meta.shortToLong(d.key) + ' [' + set.getTeamStat(d.key) + ']';
         });
     };
 
