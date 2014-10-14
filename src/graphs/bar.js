@@ -31,6 +31,7 @@ var Bar = function(element) {
     sort();
 
     var x = d3.scale.linear()
+            //.domain([set.getTeamStat(myData[0].key), set.getTeamStat(myData[myData.length -1].key)])
             .domain([set.getTeamStat(myData[myData.length -1].key), set.getTeamStat(myData[0].key)])
             .range([0, width])
 
