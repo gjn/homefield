@@ -40,7 +40,6 @@ var Bar = function(element) {
       .attr("height", barHeight * myData.length);
 
     var update = function() {
-      console.log('update called', myData[0].key);
       //passing a second parameter allows the persistent
       //binding of the key (team) to the same div element
       var update = el.selectAll("g")
