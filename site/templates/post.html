@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>NFL Powerrankings {{season}} - Week {{week}}</title>
-{{#if debug}}
+{% if debug %}
   <script src="../../../lib/d3.js"></script>
-{{else}}
+{% else %}
   <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.8/d3.min.js"></script>
-{{/if}}
+{% endif %}
   <script src="../../../lib/homefield.js"></script>
   <script src="../../../lib/{{season}}.js"></script>
 </head>
@@ -29,7 +29,7 @@
   <div id="navigation"><a href="../../../">home</a></div>
   <h1>NFL Powerrankings {{season}} - Week {{week}}</h1>
   <!-- <time>{{date}}</time> -->
-  {{{contents}}}
+  {{ contents }}
 
   <svg id="chart">
   </svg>

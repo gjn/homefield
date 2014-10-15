@@ -53,7 +53,7 @@ $(HOMEFIELD_MINJS): $(HOMEFIELD_JS) ms/jsmini/metalsmith.json
 	cd .artefacts/_site/libmin && find . -type f -name '*.js' -not -path '*.min.js' -delete && rename s/min.// *.js
 	touch $@
 
-$(HOMEFIELD_JS): $(ANALYSE) $(JS_FILES) ms/jsbuild/metalsmith.json
+$(HOMEFIELD_JS): $(ANALYSE) $(JS_FILES) ms/jsbuild/metalsmith.json ms/jsbuild/templates/hf.hbt
 	mkdir -p $(TEMPLATE_DIR)
 	cd ms/jsbuild && ../../node_modules/.bin/metalsmith
 	node_modules/.bin/smash src/homefield.js > $(BUILD_DIR)/_site/lib/homefield.js

@@ -2,17 +2,17 @@
   "metadata": {
     "title": "Homefield - The Unopinionated NFL Power Rankings",
     "description": "An algorithm based, un-opinionated NFL power ranking system providing beautiful and exciting graphs for you to disagree with.",
-    "debug": {{{debug}}}
+    "debug": {{debug}}
   },
   "source": "../../_site/src",
-  "destination": "{{{destination}}}",
+  "destination": "{{destination}}",
   "plugins": {
     "metalsmith-markdown": { },
     "metalsmith-permalinks": {
       "pattern": "nfl/:season/:week"
     },
     "metalsmith-templates": {
-      "engine": "handlebars",
+      "engine": "nunjucks",
       "directory": "../../_site/templates"
     },
     "metalsmith-ignore": [
@@ -20,7 +20,7 @@
       "drafts/*"
     ],
     "metalsmith-assets": {
-      "source": "{{{libdirectory}}}",
+      "source": "{{libdirectory}}",
       "destination": "lib"
     }
   }

@@ -4,7 +4,7 @@
 
   hf.stats = hf.stats || {};
 
-  hf.stats.data = {{{contents}}};
+  hf.stats.data = {{ contents }};
 
   this.hf = hf;
 }();

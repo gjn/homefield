@@ -3,7 +3,7 @@
   "destination": "../../.artefacts/_site/lib",
   "plugins": {
     "metalsmith-templates": {
-      "engine": "handlebars",
+      "engine": "nunjucks",
       "directory": "./templates",
       "default": "hf.hbt"
     },
