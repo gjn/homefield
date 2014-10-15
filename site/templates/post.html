@@ -15,6 +15,7 @@
   <style>
     #navigation {
       font-size: 8px;
+      text-align: center;
     }
     #chart rect {
       fill: steelblue;
@@ -26,7 +27,11 @@
     }
   </style>
 
-  <div id="navigation"><a href="../../../">home</a></div>
+  <div id="navigation">
+    <a id="previous" href="../../{{ season if week > 1 else season - 1 }}/{{ week - 1 if week > 1 else 21 }}/">previous - </a>
+    <a id="home"href="../../../">home</a>
+    <a id="next" href="../../{{ season if week != 21 else season + 1 }}/{{ week + 1 if week != 21 else 1 }}/"> - next</a>
+  </div>
   <h1>NFL Powerrankings {{season}} - Week {{week}}</h1>
   <!-- <time>{{date}}</time> -->
   {{ contents }}
