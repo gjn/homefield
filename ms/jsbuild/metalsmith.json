@@ -2,14 +2,14 @@
   "source": "../../.artefacts/res",
   "destination": "../../.artefacts/_site/lib",
   "plugins": {
+    "metalsmith-static": {
+      "src": "../../site/lib",
+      "dest": "."
+    },
     "metalsmith-templates": {
       "engine": "nunjucks",
       "directory": "./templates",
       "default": "hf.hbt"
-    },
-    "metalsmith-assets": {
-      "source": "../../site/lib",
-      "destination": "."
     }
   }
 }

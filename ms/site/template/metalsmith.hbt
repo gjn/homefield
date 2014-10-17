@@ -19,9 +19,9 @@
       "*.swp",
       "drafts/*"
     ],
-    "metalsmith-assets": {
-      "source": "{{libdirectory}}",
-      "destination": "lib"
+    "metalsmith-static": {
+      "src": "{{libdirectory}}",
+      "dest": "lib"
     }
   }
 }
