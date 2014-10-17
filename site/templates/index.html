@@ -23,7 +23,6 @@
     }
     #chart text {
       fill: white;
-      text-anchor: end;
       font: 14px monospace;
     }
   </style>
@@ -39,6 +38,7 @@
   <script type="text/javascript">
     var newGraph = new hf.graphs.Bar('#chart');
     var set = new hf.stats.Set({{indexseason}}, {{indexweek}}, 'average', 's', 'o', 'w');
+    var prevSet = set.getPreviousWeekSet();
     newGraph.create(set, '');
   </script>
 

@@ -7,7 +7,7 @@ var Bar = function(element) {
   }
 
   this.create = function(set, rootPath) {
-    var width = 1000;
+    var width = 500;
     var padleft = 300;
     var barHeight = 30;
     var logowidth = 30;
@@ -62,7 +62,7 @@ var Bar = function(element) {
         .style("fill", function(d) { return hf.meta.teamColor(d.key, 0); });
 
       bar.append("text")
-        .attr("x", function(d) { return x(set.teamStat(d.key)) + padleft - 3;})
+        .attr("x", 0) //function(d) { return x(set.teamStat(d.key)) + padleft - 3;})
         .attr("y", barHeight / 2)
         .attr("dy", ".27em")
         .text(function(d, i) {
