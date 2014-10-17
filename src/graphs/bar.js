@@ -7,7 +7,7 @@ var Bar = function(element) {
   }
 
   this.create = function(set, rootPath) {
-    var width = 500;
+    var width = 700;
     var padleft = 300;
     var barHeight = 30;
     var logowidth = 30;
@@ -73,9 +73,21 @@ var Bar = function(element) {
             var move = prevRank - rank;
             rankString += '(' + ((move == 0) ? '-' : (move > 0) ? ('+' + move) : move)  + ') ';
           }
-          return rankString + hf.meta.shortToLong(d.key) + ' [' + set.teamStat(d.key) + ']';
+          return rankString + hf.meta.shortToLong(d.key);
         })
         .style("fill", function(d) { return hf.meta.teamColor(d.key,1); });
+
+      bar.append("text")
+        .attr("x", function(d) { return x(set.teamStat(d.key)) + padleft - 5;})
+        .attr("y", barHeight / 2)
+        .attr("dy", ".27em")
+        .attr("text-anchor", "end")
+        .text(function(d, i) {
+          return '[' + set.teamStat(d.key) + ']';
+        })
+        .style("fill", function(d) { return hf.meta.teamColor(d.key,1); });
+
+
 
       bar.append("svg:image")
         .attr("x", function(d) { return x(set.teamStat(d.key)) + padleft + 2;})

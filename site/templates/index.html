@@ -36,6 +36,23 @@
   </svg>
 
   <script type="text/javascript">
+    var upComingGames = [
+      ['ATL', 'BAL'],
+      ['NYJ', 'PAT'],
+      ['TEN', 'WAS'],
+      ['SEA', 'STL'],
+      ['CLE', 'JAC'],
+      ['MIN', 'BUF'],
+      ['MIA', 'CHI'],
+      ['NO', 'DET'],
+      ['CAR', 'GB'],
+      ['KC', 'SD'],
+      ['ARI', 'OAK'],
+      ['NYG', 'DAL'],
+      ['SF', 'DEN'],
+      ['HOU', 'PIT']
+    ];
+
     var newGraph = new hf.graphs.Bar('#chart');
     var set = new hf.stats.Set({{indexseason}}, {{indexweek}}, 'average', 's', 'o', 'w');
     var prevSet = set.getPreviousWeekSet();
