@@ -19,10 +19,14 @@
       "*.swp",
       "drafts/*"
     ],
-    "metalsmith-static": {
-      "src": "{{libdirectory}}",
-      "dest": "lib"
-    }
+    "metalsmith-static": [{
+        "src": "{{libdirectory}}",
+        "dest": "lib"
+      },{
+        "src": "../../_site/img",
+        "dest": "img"
+      }
+    ]
   }
 }
 

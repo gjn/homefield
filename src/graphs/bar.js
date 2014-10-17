@@ -6,10 +6,11 @@ var Bar = function(element) {
     return new Bar(element);
   }
 
-  this.create = function(set) {
+  this.create = function(set, rootPath) {
     var width = 1000;
     var padleft = 300;
     var barHeight = 30;
+    var logowidth = 30;
     var prevSet = set.getPreviousWeekSet();
     var myData = d3.entries(set.stats());
     var ascending = true;
@@ -37,7 +38,7 @@ var Bar = function(element) {
 
     el = d3.select(element);
 
-    el.attr("width", width + padleft)
+    el.attr("width", width + padleft + logowidth)
       .attr("height", barHeight * myData.length);
 
     var update = function() {
@@ -75,6 +76,12 @@ var Bar = function(element) {
           return rankString + hf.meta.shortToLong(d.key) + ' [' + set.teamStat(d.key) + ']';
         })
         .style("fill", function(d) { return hf.meta.teamColor(d.key,1); });
+
+      bar.append("svg:image")
+        .attr("x", function(d) { return x(set.teamStat(d.key)) + padleft + 2;})
+        .attr("height", barHeight - 2)
+        .attr("width", barHeight - 2)
+        .attr("xlink:href", function(d) { return rootPath + "img/" + d.key + ".svg";})
     };
 
     update();
