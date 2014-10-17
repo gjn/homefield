@@ -3,11 +3,47 @@
 <head>
   <title>{{title}}</title>
   <meta name="description" content="{{description}}">
+{% if debug %}
+  <script src="lib/d3.js"></script>
+{% else %}
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.8/d3.min.js"></script>
+{% endif %}
+  <script src="lib/homefield.js"></script>
+  <script src="lib/{{indexseason}}.js"></script>
 </head>
 <body>
+  <!-- style to be put into css/less file -->
+  <style>
+    #navigation {
+      font-size: 10px;
+      text-align: center;
+    }
+    #chart rect {
+      fill: steelblue;
+    }
+    #chart text {
+      fill: white;
+      text-anchor: end;
+      font: 14px monospace;
+    }
+  </style>
+
+
   <h1>{{title}}</h1>
   <p>{{description}}</p>
+  {{ contents }}
   <br/>
+  <svg id="chart">
+  </svg>
+
+  <script type="text/javascript">
+    var newGraph = new hf.graphs.Bar('#chart');
+    var set = new hf.stats.Set({{indexseason}}, {{indexweek}}, 'average', 's', 'o', 'w');
+    newGraph.create(set);
+  </script>
+
+  <br/>
+
   <h2>2014 Season</h2>
   <a href="nfl/2014/6/index.html">Week 6</a>
   <a href="nfl/2014/5/index.html">Week 5</a>
