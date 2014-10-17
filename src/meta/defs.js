@@ -156,6 +156,41 @@ var Defs = function () {
       confToTeam = {
           AFC: ['NE', 'MIA', 'NYJ', 'BUF', 'BAL', 'PIT', 'CIN', 'CLE', 'HOU', 'IND', 'TEN', 'JAC', 'DEN', 'SD', 'OAK', 'KC'],
           NFC: ['WAS', 'DAL', 'NYG', 'PHI', 'GB', 'MIN', 'CHI', 'DET', 'ATL', 'CAR', 'NO', 'TB', 'SF', 'SEA', 'STL', 'ARI']
+      },
+      // Colors from http://teamcolors.arc90.com/
+      teamToColor = {
+        ARI: ["870619", "000000", "FFFFFF"],
+        ATL: ["BD0D18", "000000", "FFFFFF", "DCE0E5"],
+        BAL: ["280353", "000000", "D0B240", "FFFFFF"],
+        BUF: ["00338D", "C60C30", "FFFFFF"],
+        CAR: ["000000", "0088CE", "A5ACAF", "FFFFFF"],
+        CHI: ["03202F", "DD4814", "FFFFFF"],
+        CIN: ["000000", "FB4F14", "FFFFFF"],
+        CLE: ["26201E", "E34912", "FFFFFF"],
+        DAL: ["002244", "8C8B8A", "FFFFFF"],
+        DEN: ["FB4F14", "002244", "FFFFFF"],
+        DET: ["006DB0", "C5C7CF", "000000", "FFFFFF"],
+        GB: ["213D30", "FFCC00"],
+        HOU: ["02253A", "B31B34", "FFFFFF"],
+        IND: ["003B7B", "FFFFFF"],
+        JAC: ["000000", "D0B239", "007198", "FFFFFF"],
+        KC: ["B20032", "F2C800"],
+        MIA: ["008d97", "015679", "FFFFFF", "F5811F"],
+        MIN: ["4F2682", "FFC52F", "FFFFFF"],
+        NE: ["0D254C", "D6D6D6", "C80815", "FFFFFF"],
+        NO: ["D2B887", "000000", "FFFFFF"],
+        NYG: ["192F6B", "CA001A", "FFFFFF", "808080"],
+        NYJ: ["0C371D", "FFFFFF"],
+        OAK: ["C4C8CB", "000000", "FFFFFF"],
+        PHI: ["003B48", "000000", "708090", "C0C0C0", "FFFFFF"],
+        PIT: ["000000", "F2C800", "FFFFFF"],
+        SD: ["08214A", "EEC607", "5B92E5", "FFFFFF"],
+        SF: ["AF1E2C", "E6BE8A", "000000"],
+        SEA: ["06192E", "4EAE47", "ACB6BC", "FFFFFF"],
+        STL: ["13264B", "C9AF74", "FFFFFF"],
+        TB: ["D60A0B", "89765F", "000000", "FFFFFF", "FF7A00"],
+        TEN: ["648FCC", "000080", "FF0000", "C0C0C0"],
+        WAS: ["773141", "FFB612", "FFFFFF"]
       };
       /*
       dateRange = function (start, end) {
@@ -225,6 +260,15 @@ var Defs = function () {
           return longToShort[longname];
       }
       throw new Error('No entry for long name ' + longname + ' found');
+  };
+
+  this.teamColor = function (team, level) {
+    if (teamToColor.hasOwnProperty(team)) {
+      var colors = teamToColor[team];
+      level = level < 0 ? 0 : level >= colors.length ? colors.length - 1 : level;
+      return colors[level];
+    }
+    throw new Error('No color defined for ' + team + '.');
   };
 };
 

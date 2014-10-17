@@ -8,10 +8,10 @@ var Bar = function(element) {
 
   this.create = function(set) {
     var width = 1000;
-    var padleft = 120;
-    var barHeight = 20;
+    var padleft = 300;
+    var barHeight = 30;
     var prevSet = set.getPreviousWeekSet();
-    var myData = d3.entries(set.getStats());
+    var myData = d3.entries(set.stats());
     var ascending = true;
 
     var sort = function(doUpdate) {
@@ -31,8 +31,8 @@ var Bar = function(element) {
     sort();
 
     var x = d3.scale.linear()
-            //.domain([set.getTeamStat(myData[0].key), set.getTeamStat(myData[myData.length -1].key)])
-            .domain([set.getTeamStat(myData[myData.length -1].key), set.getTeamStat(myData[0].key)])
+            //.domain([set.teamStat(myData[0].key), set.teamStat(myData[myData.length -1].key)])
+            .domain([set.teamStat(myData[myData.length -1].key), set.teamStat(myData[0].key)])
             .range([0, width])
 
     el = d3.select(element);
@@ -56,23 +56,25 @@ var Bar = function(element) {
       var bar = update.attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
 
       bar.append("rect")
-        .attr("width", function(d) { return x(set.getTeamStat(d.key)) + padleft; })
-        .attr("height", barHeight -1);
+        .attr("width", function(d) { return x(set.teamStat(d.key)) + padleft; })
+        .attr("height", barHeight - 2)
+        .style("fill", function(d) { return hf.meta.teamColor(d.key, 0); });
 
       bar.append("text")
-        .attr("x", function(d) { return x(set.getTeamStat(d.key)) + padleft - 3;})
+        .attr("x", function(d) { return x(set.teamStat(d.key)) + padleft - 3;})
         .attr("y", barHeight / 2)
         .attr("dy", ".27em")
         .text(function(d, i) {
-          var rank = set.getTeamStat(d.key, true);
-          var prevRank = prevSet.getTeamStat(d.key, true);
+          var rank = set.teamStat(d.key, true);
+          var prevRank = prevSet.teamStat(d.key, true);
           var rankString = rank + '. ';
           if (prevRank) {
             var move = prevRank - rank;
             rankString += '(' + ((move == 0) ? '-' : (move > 0) ? ('+' + move) : move)  + ') ';
           }
-          return rankString + hf.meta.shortToLong(d.key) + ' [' + set.getTeamStat(d.key) + ']';
-        });
+          return rankString + hf.meta.shortToLong(d.key) + ' [' + set.teamStat(d.key) + ']';
+        })
+        .style("fill", function(d) { return hf.meta.teamColor(d.key,1); });
     };
 
     update();

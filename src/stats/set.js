@@ -13,11 +13,11 @@ var Set = function(s, w, t, own, off, stat) {
   var _offdef = off || 'o';
   var _stat = stat || 'w';
 
-  var getStatKey = function() {
+  var statKey = function() {
     return '_' + _season + (_week < 10 ? '0' : '') + _week;
   };
 
-  var _data = hf.stats.data[getStatKey()];
+  var _data = hf.stats.data[statKey()];
 
   this.getPreviousWeekSet = function() {
     var newSeason = _season;
@@ -29,26 +29,14 @@ var Set = function(s, w, t, own, off, stat) {
     return new Set(newSeason, newWeek, _type, _ownopp, _offdef, _stat);
   };
 
-  this.getStatKey = function() {
-    return _stat;
-  };
-
-  this.getStats = function() {
-    var sk = getStatKey();
+  this.stats = function() {
     if (!_data) {
       return undefined;
     }
     return _data.stats[_type];
   };
 
-  this.getTeamStats = function(team) {
-    if (!_data) {
-      return undefined;
-    }
-    return this.getStats()[team];
-  };
-
-  this.getTeamStat = function(team, ranking) {
+  this.teamStat = function(team, ranking) {
     if (!_data) {
       return undefined;
     }
@@ -56,15 +44,15 @@ var Set = function(s, w, t, own, off, stat) {
     if (ranking){
       statKey = 'r' + _stat;
     }
-    return this.getTeamStats(team)[_ownopp][_offdef][statKey];
+    return _data.stats[_type][team][_ownopp][_offdef][statKey];
   };
 
-  this.sortf = function(team1, team2) {
+  this.sortf = function(team1, team2, rank) {
     if (!_data) {
       return 0;
     }
-    s1 = this.getTeamStat(team1);
-    s2 = this.getTeamStat(team2);
+    s1 = this.teamStat(team1, rank);
+    s2 = this.teamStat(team2, rank);
     if (s1 > s2) {
       return _offdef == 'o' ? -1 : 1;
     } else if (s1 < s2) {

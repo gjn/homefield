@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NFL Powerrankings {{season}} - Week {{week}}</title>
+  <title>NFL Power Rankings {{season}} - Week {{week}}</title>
 {% if debug %}
   <script src="../../../lib/d3.js"></script>
 {% else %}
@@ -14,7 +14,7 @@
   <!-- style to be put into css/less file -->
   <style>
     #navigation {
-      font-size: 8px;
+      font-size: 10px;
       text-align: center;
     }
     #chart rect {
@@ -23,7 +23,7 @@
     #chart text {
       fill: white;
       text-anchor: end;
-      font: 12px sans-serif;
+      font: 14px monospace;
     }
   </style>
 
@@ -32,7 +32,7 @@
     <a id="home"href="../../../">home</a>
     <a id="next" href="../../{{ season if week != 21 else season + 1 }}/{{ week + 1 if week != 21 else 1 }}/"> - next</a>
   </div>
-  <h1>NFL Powerrankings {{season}} - Week {{week}}</h1>
+  <h1>NFL Power Rankings {{season}} - Week {{week}}</h1>
   <!-- <time>{{date}}</time> -->
   {{ contents }}
 
