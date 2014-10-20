@@ -38,7 +38,7 @@
   <script type="text/javascript">
     var upComingGames = [
       ['ATL', 'BAL'],
-      ['NYJ', 'PAT'],
+      ['NYJ', 'NE'],
       ['TEN', 'WAS'],
       ['SEA', 'STL'],
       ['CLE', 'JAC'],
@@ -52,11 +52,37 @@
       ['SF', 'DEN'],
       ['HOU', 'PIT']
     ];
-
     var newGraph = new hf.graphs.Bar('#chart');
     var set = new hf.stats.Set({{indexseason}}, {{indexweek}}, 'average', 's', 'o', 'w');
-    var prevSet = set.getPreviousWeekSet();
     newGraph.create(set, '');
+    
+    //analysing upcoming games
+    //highest rated
+    var hset = new hf.stats.Set({{indexseason}}, {{indexweek -1}}, 'home', 's', 'o', 'w');
+    var aset = new hf.stats.Set({{indexseason}}, {{indexweek -1}}, 'away', 's', 'o', 'w');
+
+    var refVal, winner;
+    for (var i=0; i<upComingGames.length; i++) {
+      var game = upComingGames[i];
+      var newVal = aset.teamStat(game[0]) + hset.teamStat(game[1]);
+      if (i == 0) {
+        refVal = newVal;
+      }
+      if (newVal >= refVal) {
+        winner = i;
+      }
+    }
+    //console.log('Highest rated game:', upComingGames[winner]);
+  
+    //lowest reated
+    //hightest points
+    //lowest points
+    //closest rated
+    //closest points
+    //loopsided rated
+    //loopsided points
+
+
   </script>
 
   <br/>
@@ -94,6 +120,8 @@
   <a href="nfl/2012/21/index.html">Superbowl</a>
   <a href="nfl/2012/20/index.html">Championships</a>
   <a href="nfl/2012/19/index.html">Divisional</a>
+  <a href="nfl/2012/18/index.html">Wildcard</a>
+  <a href="nfl/2012/17/index.html">Week 17</a>
   <a href="nfl/2012/18/index.html">Wildcard</a>
   <a href="nfl/2012/17/index.html">Week 17</a>
   <a href="nfl/2012/16/index.html">Week 16</a>
@@ -144,5 +172,3 @@
     ga('create', 'UA-51013863-2', 'gjn.ch');
     ga('send', 'pageview');
   </script>
-</body>
-</html>

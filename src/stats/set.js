@@ -12,14 +12,33 @@ var Set = function(s, w, t, own, off, stat) {
   var _ownopp = own || 's';
   var _offdef = off || 'o';
   var _stat = stat || 'w';
+  var _data = hf.stats.data['_' + _season + (_week < 10 ? '0' : '') + _week];
+  var _array = [];
+  //Array only contains the teams. d3 uses it for it's tasks
+  //Sorting is directly applied to this array
+  if (_data) {
+    for (p in _data.stats[_type]) {
+      _array.push(p);
+    }
+  }
 
-  var statKey = function() {
-    return '_' + _season + (_week < 10 ? '0' : '') + _week;
+  this.setOwnOpp = function(o) {
+    _ownopp = o;
+  }
+  
+  this.setOffDef = function(o) {
+    _offdef = o;
+  }
+  
+  this.setStat = function(s) {
+    _stat = s;
+  }
+  
+  this.array = function() {
+    return _array;
   };
 
-  var _data = hf.stats.data[statKey()];
-
-  this.getPreviousWeekSet = function() {
+  this.previousWeek = function() {
     var newSeason = _season;
     var newWeek = _week - 1;
     if (newWeek <= 0) {
@@ -47,19 +66,26 @@ var Set = function(s, w, t, own, off, stat) {
     return _data.stats[_type][team][_ownopp][_offdef][statKey];
   };
 
-  this.sortf = function(team1, team2, rank) {
-    if (!_data) {
+  this.sort = function(ascending) {
+    var that = this;
+    _array.sort(function(t1, t2) {
+      var s1 = that.teamStat(t1);
+      var s2 = that.teamStat(t2);
+      if (ascending) {
+        if (s1 > s2) {
+          return 1;
+        } else if (s1 < s2) {
+          return -1;
+        }
+      } else {
+        if (s1 > s2) {
+          return -1;
+        } else if (s1 < s2) {
+          return 1;
+        }
+      }
       return 0;
-    }
-    s1 = this.teamStat(team1, rank);
-    s2 = this.teamStat(team2, rank);
-    if (s1 > s2) {
-      return _offdef == 'o' ? -1 : 1;
-    } else if (s1 < s2) {
-      return _offdef == 'o' ? 1 : -1;
-    } else {
-      return 0;
-    }
+    });
   };
 
 };
