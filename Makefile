@@ -15,7 +15,7 @@ PUBLISH := $(TOUCH_DIR)/publish
 
 default: all
 publish: $(PUBLISH)
-all: $(SITE) $(SITE_DEBUG)
+all: $(SITE_DEBUG) $(SITE)
 site: $(SITE)
 site_debug: $(SITE_DEBUG)
 jsmin: $(HOMEFIELD_MINJS)
