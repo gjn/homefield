@@ -4,5 +4,5 @@ indexseason: 2014
 indexweek: 7
 ---
 
-Week 7 - After all Sunday games
+Week 7
 
