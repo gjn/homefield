@@ -1,3 +1,9 @@
+- Add other graphic types
+  - Stats over time
+  - Tables
+  - Bubble graph
+- Add possibility to combine stats (weighted rankings based on a
+  specific formula)
 - Integrate knockout.js for data binding
 - Add configuration bar
 - Make the kind of data displayed configurable (winloss, pts, yards, off, def,
@@ -7,13 +13,6 @@
 - Add embed link so anyone can embed his own graphic. Configuration only on
   verified sites
     -> http://www.nczonline.net/blog/2013/04/16/getting-the-url-of-an-iframes-parent/
-- Adapt bar graphic to better reflect d3 example (use SVG)
-- Color the bars according to team colors
-- Add other graphic types
-  - Bubble graph
-  - Stats over time
-- Add possibility to combine stats (weighted rankings based on a
-  specific formula)
 - Make the site beautiful
 - Think about a good catch phrase for the site
 - SEO
