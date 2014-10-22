@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>NFL Power Rankings {{season}} - Week {{week}}</title>
+  <link href="../../../css/homefield.css" rel="stylesheet">
 {% if debug %}
   <script src="../../../lib/d3.js"></script>
 {% else %}
@@ -11,21 +12,6 @@
   <script src="../../../lib/{{season}}.js"></script>
 </head>
 <body>
-  <!-- style to be put into css/less file -->
-  <style>
-    #navigation {
-      font-size: 10px;
-      text-align: center;
-    }
-    #chart rect {
-      fill: steelblue;
-    }
-    #chart text {
-      fill: white;
-      font: 14px monospace;
-    }
-  </style>
-
   <div id="navigation">
     <a id="previous" href="../../{{ season if week > 1 else season - 1 }}/{{ week - 1 if week > 1 else 21 }}/">previous - </a>
     <a id="home"href="../../../">home</a>

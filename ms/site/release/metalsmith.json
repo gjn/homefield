@@ -2,7 +2,8 @@
   "metadata": {
     "debug": "false",
     "destination": "../../site",
-    "libdirectory": "../../_site/libmin"
+    "libdirectory": "../../_site/libmin",
+    "cssdirectory": "../../_site/cssmin"
   },
   "source": "../in",
   "destination": "../../../.artefacts/ms/release",

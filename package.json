@@ -20,6 +20,7 @@
         "metalsmith-ignore": "^0.1.2",
         "metalsmith-static": "^0.0.5",
         "metalsmith-uglify": "^0.0.6",
+        "less": "^1.7.5",
         "nunjucks": "^1.1.0",
         "smash": "^0.0.12",
         "http-server": "^0.6.1"

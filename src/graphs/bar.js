@@ -22,7 +22,8 @@ var Bar = function(element) {
 
     el = d3.select(element);
 
-    el.attr("width", width + padleft + logowidth)
+    el.attr("class", "bar")
+      .attr("width", width + padleft + logowidth)
       .attr("height", barHeight * myData.length);
 
     var update = function() {
@@ -38,12 +39,12 @@ var Bar = function(element) {
       //new and existing nodes
       enter.append("g");
 
-      var bar = update.attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
+      var bar = update.attr("class", function(d) { return d;})
+                      .attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
 
       bar.append("rect")
         .attr("width", function(d) { return x(set.teamStat(d)) + padleft; })
-        .attr("height", barHeight - 2)
-        .style("fill", function(d) { return hf.meta.teamColor(d, 0); });
+        .attr("height", barHeight - 2);
 
       bar.append("text")
         .attr("x", 5)
@@ -58,8 +59,7 @@ var Bar = function(element) {
             rankString += '(' + ((move == 0) ? '-' : (move > 0) ? ('+' + move) : move)  + ') ';
           }
           return rankString + hf.meta.shortToLong(d);
-        })
-        .style("fill", function(d) { return hf.meta.teamColor(d,1); });
+        });
 
       bar.append("text")
         .attr("x", function(d) { return x(set.teamStat(d)) + padleft - 5;})
@@ -68,8 +68,7 @@ var Bar = function(element) {
         .attr("text-anchor", "end")
         .text(function(d, i) {
           return '[' + set.teamStat(d) + ']';
-        })
-        .style("fill", function(d) { return hf.meta.teamColor(d,1); });
+        });
 
 
 

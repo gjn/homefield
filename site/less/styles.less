@@ -1,0 +1,192 @@
+.tcolor(ARI) {
+  @col1: #870619;
+  @col2: #000000;
+}
+.tcolor(ATL) {
+  @col1: #BD0D18;
+  @col2: #000000;
+}
+.tcolor(BAL) {
+  @col1: #280353;
+  @col2: #000000;
+}
+.tcolor(BUF) {
+  @col1: #00338D;
+  @col2: #C60C30;
+}
+.tcolor(CAR) {
+  @col1: #000000;
+  @col2: #0088CE;
+}
+.tcolor(CHI) {
+  @col1: #03202F;
+  @col2: #DD4814;
+}
+.tcolor(CIN) {
+  @col1: #000000;
+  @col2: #FB4F14;
+}
+.tcolor(CLE) {
+  @col1: #26201E;
+  @col2: #E34912;
+}
+.tcolor(DAL) {
+  @col1: #002244;
+  @col2: #8C8B8A;
+}
+.tcolor(DEN) {
+  @col1: #FB4F14;
+  @col2: #002244;
+}
+.tcolor(DET) {
+  @col1: #006DB0;
+  @col2: #C5C7CF;
+}
+.tcolor(GB) {
+  @col1: #213D30;
+  @col2: #FFCC00;
+}
+.tcolor(HOU) {
+  @col1: #02253A;
+  @col2: #B31B34;
+}
+.tcolor(IND) {
+  @col1: #003B7B;
+  @col2: #FFFFFF;
+}
+.tcolor(JAC) {
+  @col1: #000000;
+  @col2: #D0B239;
+}
+.tcolor(KC) {
+  @col1: #B20032;
+  @col2: #F2C800;
+}
+.tcolor(MIA) {
+  @col1: #008d97;
+  @col2: #015679;
+}
+.tcolor(MIN) {
+  @col1: #4F2682;
+  @col2: #FFC52F;
+}
+.tcolor(NE) {
+  @col1: #0D254C;
+  @col2: #D6D6D6;
+}
+.tcolor(NO) {
+  @col1: #D2B887;
+  @col2: #000000;
+}
+.tcolor(NYG) {
+  @col1: #192F6B;
+  @col2: #CA001A;
+}
+.tcolor(NYJ) {
+  @col1: #0C371D;
+  @col2: #FFFFFF;
+}
+.tcolor(OAK) {
+  @col1: #C4C8CB;
+  @col2: #000000;
+}
+.tcolor(PHI) {
+  @col1: #003B48;
+  @col2: #000000;
+}
+.tcolor(PIT) {
+  @col1: #000000;
+  @col2: #F2C800;
+}
+.tcolor(SD) {
+  @col1: #08214A;
+  @col2: #EEC607;
+}
+.tcolor(SF) {
+  @col1: #AF1E2C;
+  @col2: #E6BE8A;
+}
+.tcolor(SEA) {
+  @col1: #06192E;
+  @col2: #4EAE47;
+}
+.tcolor(STL) {
+  @col1: #13264B;
+  @col2: #C9AF74;
+}
+.tcolor(TB) {
+  @col1: #D60A0B;
+  @col2: #89765F;
+}
+.tcolor(TEN) {
+  @col1: #648FCC;
+  @col2: #000080;
+}
+.tcolor(WAS) {
+  @col1: #773141;
+  @col2: #FFB612;
+}
+
+.bar-colors(@team) {
+  .tcolor(@team);
+
+  .@{team} {
+    rect {
+      fill: @col1;
+    }
+    text {
+      fill: @col2;
+    }
+  }
+}
+
+#navigation {
+  font-size: 10px;
+  text-align: center;
+}
+
+.bar {
+  text {
+    font: 14px monospace;
+  }
+  //default values
+  rect {
+    fill: steelblue;
+  }
+  text {
+    fill: white;
+  }
+  .bar-colors(ARI);
+  .bar-colors(ATL);
+  .bar-colors(BAL);
+  .bar-colors(BUF);
+  .bar-colors(CAR);
+  .bar-colors(CHI);
+  .bar-colors(CIN);
+  .bar-colors(CLE);
+  .bar-colors(DAL);
+  .bar-colors(DEN);
+  .bar-colors(DET);
+  .bar-colors(GB);
+  .bar-colors(HOU);
+  .bar-colors(IND);
+  .bar-colors(JAC);
+  .bar-colors(KC);
+  .bar-colors(MIA);
+  .bar-colors(MIN);
+  .bar-colors(NE);
+  .bar-colors(NO);
+  .bar-colors(NYG);
+  .bar-colors(NYJ);
+  .bar-colors(OAK);
+  .bar-colors(PHI);
+  .bar-colors(PIT);
+  .bar-colors(SD);
+  .bar-colors(SF);
+  .bar-colors(SEA);
+  .bar-colors(STL);
+  .bar-colors(TB);
+  .bar-colors(TEN);
+  .bar-colors(WAS);
+}
+

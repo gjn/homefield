@@ -2,7 +2,8 @@
   "metadata": {
     "debug": "true",
     "destination": "../../sitedebug",
-    "libdirectory": "../../_site/lib"
+    "libdirectory": "../../_site/lib",
+    "cssdirectory": "../../_site/css"
   },
   "source": "../in",
   "destination": "../../../.artefacts/ms/debug",

@@ -20,6 +20,9 @@
       "drafts/*"
     ],
     "metalsmith-static": [{
+        "src": "{{cssdirectory}}",
+        "dest": "css"
+      },{
         "src": "{{libdirectory}}",
         "dest": "lib"
       },{
