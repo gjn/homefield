@@ -88,6 +88,34 @@ var Set = function(s, w, t, own, off, stat) {
     });
   };
 
+  this.stat = function(type, team, ownopp, offdef, stat) {
+    return _data.stats[type][team][ownopp][offdef][stat];
+  };
+
+  this.sortstat = function(type, ownopp, offdef, stat, ascending) {
+    var that = this;
+    _array.sort(function(t1, t2) {
+      var s1 = that.stat(type, t1, ownopp, offdef, stat);
+      var s2 = that.stat(type, t2, ownopp, offdef, stat);
+      if (ascending) {
+        if (s1 > s2) {
+          return 1;
+        } else if (s1 < s2) {
+          return -1;
+        }
+      } else {
+        if (s1 > s2) {
+          return -1;
+        } else if (s1 < s2) {
+          return 1;
+        }
+      }
+      return 0;
+    });
+  };
+
+
+
 };
 
 hf.stats.Set = Set;

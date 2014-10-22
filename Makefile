@@ -44,7 +44,7 @@ $(SITE_DEBUG): $(HOMEFIELD_CSS) $(HOMEFIELD_JS) $(SITE_PREPARE)
 	cd $(BUILD_DIR)/ms/debug && ../../../node_modules/.bin/metalsmith
 	touch $@
 
-$(SITE_PREPARE): $(SITE_FILES) ms/site/template/metalsmith.hbt ms/site/debug/metalsmith.json ms/site/release/metalsmith.json
+$(SITE_PREPARE): $(SITE_FILES) ms/site/template/metalsmith.hbt ms/site/debug/metalsmith.json ms/site/release/metalsmith.json site/templates/experimental.html site/templates/index.html site/templates/post.html
 	cd ms/site/debug && ../../../node_modules/.bin/metalsmith
 	cd ms/site/release && ../../../node_modules/.bin/metalsmith
 	cp -r site/* $(BUILD_DIR)/_site

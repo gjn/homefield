@@ -10,7 +10,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.8/d3.min.js"></script>
 {% endif %}
   <script src="lib/homefield.js"></script>
-  <script src="lib/{{indexseason}}.js"></script>
+  <script src="lib/{{season}}.js"></script>
 </head>
 <body>
   <h1>{{title}}</h1>
@@ -21,53 +21,9 @@
   </svg>
 
   <script type="text/javascript">
-    var upComingGames = [
-      ['ATL', 'BAL'],
-      ['NYJ', 'NE'],
-      ['TEN', 'WAS'],
-      ['SEA', 'STL'],
-      ['CLE', 'JAC'],
-      ['MIN', 'BUF'],
-      ['MIA', 'CHI'],
-      ['NO', 'DET'],
-      ['CAR', 'GB'],
-      ['KC', 'SD'],
-      ['ARI', 'OAK'],
-      ['NYG', 'DAL'],
-      ['SF', 'DEN'],
-      ['HOU', 'PIT']
-    ];
     var newGraph = new hf.graphs.Bar('#chart');
-    var set = new hf.stats.Set({{indexseason}}, {{indexweek}}, 'overall', 's', 'o', 'w');
+    var set = new hf.stats.Set({{season}}, {{week}}, 'overall', 's', 'o', 'w');
     newGraph.create(set, '');
-    
-    //analysing upcoming games
-    //highest rated
-    var hset = new hf.stats.Set({{indexseason}}, {{indexweek -1}}, 'home', 's', 'o', 'w');
-    var aset = new hf.stats.Set({{indexseason}}, {{indexweek -1}}, 'away', 's', 'o', 'w');
-
-    var refVal, winner;
-    for (var i=0; i<upComingGames.length; i++) {
-      var game = upComingGames[i];
-      var newVal = aset.teamStat(game[0]) + hset.teamStat(game[1]);
-      if (i == 0) {
-        refVal = newVal;
-      }
-      if (newVal >= refVal) {
-        winner = i;
-      }
-    }
-    //console.log('Highest rated game:', upComingGames[winner]);
-  
-    //lowest reated
-    //hightest points
-    //lowest points
-    //closest rated
-    //closest points
-    //loopsided rated
-    //loopsided points
-
-
   </script>
 
   <br/>
@@ -158,3 +114,11 @@
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-51013863-2', 'gjn.ch');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
+

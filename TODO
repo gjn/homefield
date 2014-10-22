@@ -1,7 +1,9 @@
+- Add preview matchup tables
 - Add other graphic types
   - Stats over time
   - Tables
-  - Bubble graph
+- Add division/conference averages stats
+- Add filters (only teams of nfc/conference)
 - Add possibility to combine stats (weighted rankings based on a
   specific formula)
 - Integrate knockout.js for data binding
