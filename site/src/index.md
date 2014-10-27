@@ -1,9 +1,9 @@
 ---
 template: index.html
 season: 2014
-week: 7
+week: 8
 permalink: false
 ---
 
-Week 7
+Week 8
 
