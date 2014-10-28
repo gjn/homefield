@@ -21,12 +21,25 @@
   <p>{{description}}</p>
   {{ contents }}
   <br/>
+
   <table id="table">
   </table>
+
+  <svg id="timeline">
+  </svg>
+
+
   <script type="text/javascript">
     var set = new hf.stats.Set({{season}}, {{week}}, 'overall', 's', 'o', 'w');
     var anotherGraph = new hf.graphs.Table('#table');
     anotherGraph.create(set, '');
+
+    var timeGraph = new hf.graphs.Timeline('#timeline');
+    var tset = new hf.stats.Timeset({season: {{season}}, week: 1},
+                                   {season: {{season}}, week: {{week}}},
+                                   'overall', 's', 'o', 'w');
+    timeGraph.create(tset, '');
+
   </script>
 
   <br/>

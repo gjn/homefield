@@ -127,7 +127,7 @@
   @col2: #FFB612;
 }
 
-.bar-colors(@team) {
+.team-colors(@team) {
   .tcolor(@team);
 
   .@{team} {
@@ -138,6 +138,16 @@
       fill: @col2;
     }
   }
+
+  path[team="@{team}"] {
+    fill: none;
+    stroke: @col1;
+    stroke-width: 2.5px;
+  }
+  path[team="@{team}"]:hover {
+    stroke-width: 5px;
+  }
+
 }
 
 #navigation {
@@ -156,39 +166,40 @@
   text {
     fill: white;
   }
-  .bar-colors(ARI);
-  .bar-colors(ATL);
-  .bar-colors(BAL);
-  .bar-colors(BUF);
-  .bar-colors(CAR);
-  .bar-colors(CHI);
-  .bar-colors(CIN);
-  .bar-colors(CLE);
-  .bar-colors(DAL);
-  .bar-colors(DEN);
-  .bar-colors(DET);
-  .bar-colors(GB);
-  .bar-colors(HOU);
-  .bar-colors(IND);
-  .bar-colors(JAC);
-  .bar-colors(KC);
-  .bar-colors(MIA);
-  .bar-colors(MIN);
-  .bar-colors(NE);
-  .bar-colors(NO);
-  .bar-colors(NYG);
-  .bar-colors(NYJ);
-  .bar-colors(OAK);
-  .bar-colors(PHI);
-  .bar-colors(PIT);
-  .bar-colors(SD);
-  .bar-colors(SF);
-  .bar-colors(SEA);
-  .bar-colors(STL);
-  .bar-colors(TB);
-  .bar-colors(TEN);
-  .bar-colors(WAS);
 }
+
+.team-colors(ARI);
+.team-colors(ATL);
+.team-colors(BAL);
+.team-colors(BUF);
+.team-colors(CAR);
+.team-colors(CHI);
+.team-colors(CIN);
+.team-colors(CLE);
+.team-colors(DAL);
+.team-colors(DEN);
+.team-colors(DET);
+.team-colors(GB);
+.team-colors(HOU);
+.team-colors(IND);
+.team-colors(JAC);
+.team-colors(KC);
+.team-colors(MIA);
+.team-colors(MIN);
+.team-colors(NE);
+.team-colors(NO);
+.team-colors(NYG);
+.team-colors(NYJ);
+.team-colors(OAK);
+.team-colors(PHI);
+.team-colors(PIT);
+.team-colors(SD);
+.team-colors(SF);
+.team-colors(SEA);
+.team-colors(STL);
+.team-colors(TB);
+.team-colors(TEN);
+.team-colors(WAS);
 
 
 .table {
