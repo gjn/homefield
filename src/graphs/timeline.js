@@ -22,8 +22,6 @@ var Timeline = function(element) {
                                .attr("height", height + margin.left + margin.right);
     
     el.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    console.log(d3.min(set.teams(), function(t) {return d3.min(set.weeks(), function(w) {return set.stat(w,t) ;}); }));
-    console.log(d3.max(set.teams(), function(t) {return d3.max(set.weeks(), function(w) {return set.stat(w,t) ;}); }));
 
     //get y domain values
     y.domain([
