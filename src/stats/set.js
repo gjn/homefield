@@ -5,7 +5,8 @@ var Set = function(s, w, t, own, off, stat) {
   if (!(this instanceof Set)) {
     return new Set(s, w, t, own, off, stat);
   }
-  
+ 
+  var _filter;
   var _season = s;
   var _week = w;
   var _type = t || 'average';
@@ -13,14 +14,31 @@ var Set = function(s, w, t, own, off, stat) {
   var _offdef = off || 'o';
   var _stat = stat || 'w';
   var _data = hf.stats.data['_' + _season + (_week < 10 ? '0' : '') + _week];
-  var _array = [];
-  //Array only contains the teams. d3 uses it for it's tasks
-  //Sorting is directly applied to this array
-  if (_data) {
-    for (p in _data.stats[_type]) {
-      _array.push(p);
+  var _array;
+
+  var updateArray = function() {
+    _array = [];
+    //Array only contains the teams. d3 uses it for it's tasks
+    //Sorting is directly applied to this array
+    if (_data) {
+      for (p in _data.stats[_type]) {
+        if (!_filter || _filter.teamfilter(p)) {
+          _array.push(p);
+        }
+      }
     }
-  }
+  };
+
+  updateArray();
+
+  this.setFilter = function(s) {
+    if (!s) {
+      _filter = undefined;
+    } else {
+      _filter = new hf.stats.Filter(s);
+    }
+    updateArray();
+  };
 
   this.setOwnOpp = function(o) {
     _ownopp = o;

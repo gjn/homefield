@@ -11,9 +11,10 @@ var Timeset = function(start, end, t, own, off, stat) {
       _offdef = off || 'o',
       _stat = stat || 'w',
       _data = hf.stats.data,
-      _teams = [];
-      _weeks = [];
-      _array = [];
+      _teams,
+      _weeks = [],
+      _array,
+      _filter,
       _key = function(season, week) {
         return season + (week < 10 ? '0' : '') + week;
       }
@@ -27,22 +28,40 @@ var Timeset = function(start, end, t, own, off, stat) {
     }
     w = 1;
   }
-  //Get team array with first week
-  if (_data['_' + _weeks[0]]) {
-    for (p in _data['_' + _weeks[0]].stats[_type]) {
-      _teams.push(p);
+
+  updateArrays = function() {
+    _array = [];
+    _teams = [];
+    //Get team array with first week
+    if (_data['_' + _weeks[0]]) {
+      for (p in _data['_' + _weeks[0]].stats[_type]) {
+        if (!_filter || _filter.teamfilter(p)) {
+          _teams.push(p);
+        }
+      }
     }
+
+    //Prepare the array for d3
+    _array = _teams.map(function(t) {
+      return {
+        team: t,
+        values: _weeks.map(function(w) {
+          return { team: t, week: w };
+        })
+      };
+    });
   }
 
-  //Prepare the array for d3
-  _array = _teams.map(function(t) {
-    return {
-      team: t,
-      values: _weeks.map(function(w) {
-        return { team: t, week: w };
-      })
-    };
-  });
+  updateArrays();
+
+  this.setFilter = function(s) {
+    if (!s) {
+      _filter = undefined;
+    } else {
+      _filter = new hf.stats.Filter(s);
+    }
+    updateArrays();
+  };
 
   this.setOwnOpp = function(o) {
     _ownopp = o;
