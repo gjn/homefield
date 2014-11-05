@@ -10,7 +10,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.8/d3.min.js"></script>
 {% endif %}
   <script src="lib/homefield.js"></script>
-  <script src="lib/{{season}}.js"></script>
+  <script src="lib/all.js"></script>
 </head>
 <body>
   <div id="navigation">
@@ -22,24 +22,29 @@
   {{ contents }}
   <br/>
 
+  <h1>Over Time</h1>
+
   <svg id="timeline">
   </svg>
+
+  <h1>Table</h1>
 
   <table id="table">
   </table>
 
   <script type="text/javascript">
-    var filter = '';
-    var set = new hf.stats.Set({{season}}, {{week}}, 'overall', 's', 'o', 'w');
+    var filter = 'NFC';
+    var set = new hf.stats.Set({{season}}, {{week}}, 'overall', 's', 'o',
+    'w').filter(filter);
     var anotherGraph = new hf.graphs.Table('#table');
-    set.setFilter(filter);
     anotherGraph.create(set, '');
 
     var timeGraph = new hf.graphs.Timeline('#timeline');
-    var tset = new hf.stats.Timeset({season: {{season}}, week: 1},
+    var tset = new hf.stats.Timeset({season: 2011, week: 17},
                                    {season: {{season}}, week: {{week}}},
-                                   'overall', 's', 'o', 'w');
-    tset.setFilter(filter);
+                                   'overall', 's', 'o',
+                                   'w').filter(filter);
+                                   //'w').filter(filter).aggregate('divisions');
     timeGraph.create(tset, '');
 
   </script>

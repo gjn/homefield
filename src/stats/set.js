@@ -31,13 +31,14 @@ var Set = function(s, w, t, own, off, stat) {
 
   updateArray();
 
-  this.setFilter = function(s) {
+  this.filter = function(s) {
     if (!s) {
       _filter = undefined;
     } else {
       _filter = new hf.stats.Filter(s);
     }
     updateArray();
+    return this;
   };
 
   this.setOwnOpp = function(o) {
