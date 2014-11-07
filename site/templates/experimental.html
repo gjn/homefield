@@ -33,18 +33,18 @@
   </table>
 
   <script type="text/javascript">
-    var filter = 'NFC';
+    var filter = '';
+    var aggregate = '';
     var set = new hf.stats.Set({{season}}, {{week}}, 'overall', 's', 'o',
     'w').filter(filter);
     var anotherGraph = new hf.graphs.Table('#table');
     anotherGraph.create(set, '');
 
     var timeGraph = new hf.graphs.Timeline('#timeline');
-    var tset = new hf.stats.Timeset({season: 2011, week: 17},
+    var tset = new hf.stats.Timeset({season: 2002, week: 17},
                                    {season: {{season}}, week: {{week}}},
                                    'overall', 's', 'o',
-                                   'w').filter(filter);
-                                   //'w').filter(filter).aggregate('divisions');
+                                   'w').filter(filter).aggregate(aggregate);
     timeGraph.create(tset, '');
 
   </script>

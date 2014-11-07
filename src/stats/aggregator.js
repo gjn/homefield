@@ -12,8 +12,13 @@ var Aggregator = function(s) {
   if (!(this instanceof Aggregator)) {
     return new Aggregator(s);
   }
-  var _s = s; //hf.meta.teamsOfDivision();
-  var _teamsFn = hf.meta.teamsOfDivision;
+
+  var noFunc = function(t) {
+    return t;
+  };
+
+  var _s = s;
+  var _teamsFn = noFunc;
 
   this.aggregate = function() {
     if (_s == 'divisions') {
@@ -29,11 +34,15 @@ var Aggregator = function(s) {
         AFCE: 'AFCE'
       };
     }
-    _teamsFn = hf.meta.teamsOfDivision;
-    return {
-      NFC: 'NFC',
-      AFC: 'AFC'
-    };
+    else if (_s == 'conferences') {
+      _teamsFn = hf.meta.teamsOfConference;
+      return {
+        NFC: 'NFC',
+        AFC: 'AFC'
+      };
+    }
+    _teamsFn = noFunc;
+    return hf.meta.teamsAsObject;
   };
 
   this.teams = function(id) {

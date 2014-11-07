@@ -22,17 +22,13 @@ var Timeset = function(start, end, t, own, off, stat) {
 
   //Get the range into the weeks array
   var w = start.week;
-  console.log(start, end);
   for (var season = start.season; season <= end.season; season++) {
     var endWeek = season == end.season ? end.week : 21;
-    console.log(endWeek);
     for (var week = w; week <= endWeek; week ++) {
       _weeks.push(_key(season, week));
     }
     w = 1;
   }
-
-  console.log(_weeks);
 
   updateArrays = function() {
     _array = [];
@@ -113,7 +109,6 @@ var Timeset = function(start, end, t, own, off, stat) {
       }).reduce(function(v, o) {
         return v + o;
       }, 0) / _aggregator.teams(team).length;
-      console.log(val);
       return val;
     } else {
       return _data['_' + week].stats[_type][team][_ownopp][_offdef][_stat];

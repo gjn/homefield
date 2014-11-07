@@ -8,8 +8,8 @@ var Timeline = function(element) {
 
   this.create = function(set, rootPath) {
     var margin = {top: 20, right: 20, bottom: 20, left: 20},
-        width = 1500 - margin.left - margin.right,
-        height = 700 - margin.top - margin.bottom,
+        width = 1200 - margin.left - margin.right,
+        height = 600 - margin.top - margin.bottom,
         x = d3.scale.ordinal().domain(set.weeks()).rangeRoundBands([0, width], 0.1),
         y = d3.scale.linear().range([height, 0])
         xAxis = d3.svg.axis().scale(x).orient("bottom"),
@@ -54,7 +54,7 @@ var Timeline = function(element) {
     teams.append("path")
         .attr("team", function(d) { return d.team; })
         .attr("d", function(d) { return line(d.values); })
-        .attr("title", function(d) { return d.team; });
+        .attr("title", function(d) { return hf.meta.shortToLong(d.team); });
 
     teams.append("text")
         .datum(function(d) { return {team: d.team, value: d.values[d.values.length - 1]}; })

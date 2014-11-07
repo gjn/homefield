@@ -270,6 +270,10 @@ var Defs = function () {
     }
     throw new Error('No color defined for ' + team + '.');
   };
+
+  this.teamsAsObject = function() {
+    return shortToLong;
+  };
 };
 
 var instance = null;
