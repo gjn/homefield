@@ -22,6 +22,10 @@
   {{ contents }}
   <br/>
 
+  <h1>Bubble Graph</h1>
+  <svg id="bubble">
+  </svg>
+
   <h1>Over Time</h1>
 
   <svg id="timeline">
@@ -41,11 +45,21 @@
     anotherGraph.create(set, '');
 
     var timeGraph = new hf.graphs.Timeline('#timeline');
-    var tset = new hf.stats.Timeset({season: 2002, week: 17},
+    var tset = new hf.stats.Timeset({season: {{season}} - 5, week: {{week}}},
                                    {season: {{season}}, week: {{week}}},
                                    'overall', 's', 'o',
                                    'w').filter(filter).aggregate(aggregate);
     timeGraph.create(tset, '');
+
+    var setX = new hf.stats.Set({{season}}, {{week}}, 'overall', 's', 'd',
+    'p').filter(filter); 
+    var setY = new hf.stats.Set({{season}}, {{week}}, 'overall', 's', 'd',
+    'y').filter(filter); 
+    var setR = new hf.stats.Set({{season}}, {{week}}, 'overall', 's', 'o',
+    'w').filter(filter); 
+
+    var bubbleGraph = new hf.graphs.Bubble('#bubble');
+    bubbleGraph.create(setX, setY, setR, '');
 
   </script>
 
