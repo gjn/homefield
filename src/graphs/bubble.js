@@ -8,12 +8,13 @@ var Bubble = function(element) {
 
   this.create = function(setX, setY, setR, rootPath) {
     var margin = {top: 30, right: 30, bottom: 20, left: 30},
-        bulletsize = 30,
+        bulletsize = 60,
         width = 1000 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom,
         x = d3.scale.linear().range([bulletsize, width - bulletsize]),
         y = d3.scale.linear().range([height - bulletsize, bulletsize]),
-        r = d3.scale.linear().range([5,bulletsize]),
+        //r = d3.scale.linear().range([5,bulletsize]),
+        r = d3.scale.linear().range([20,bulletsize]),
         xAxis = d3.svg.axis().scale(x).orient("bottom"),
         yAxis = d3.svg.axis().scale(y).orient("left"),
         el = d3.select(element).attr("class", "bubble")
@@ -53,18 +54,27 @@ var Bubble = function(element) {
         .attr("y", 6)
         .attr("dy", "0.71em")
         .style("text-anchor", "end")
-        .text("Away");
+        .text("Yards");
 
     //add the lines
     var teams = el.selectAll(".team")
         .data(array)
       .enter().append("g")
-    
+ /*   
     teams.append("circle")
         .attr("team", function(d) { return d; })
         .attr("cx", function(d) { return x(setX.teamStat(d)); })
         .attr("cy", function(d) { return y(setY.teamStat(d)); })
         .attr("r", function(d) { return r(setR.teamStat(d)); })
+        .attr("title", function(d) { return hf.meta.shortToLong(d); });
+        */
+    teams.append("svg:image")
+        .attr("team", function(d) { return d; })
+        .attr("x", function(d) { return x(setX.teamStat(d)); })
+        .attr("y", function(d) { return y(setY.teamStat(d)); })
+        .attr("height", function(d) { return r(setR.teamStat(d)); })
+        .attr("width", function(d) { return r(setR.teamStat(d)); })
+        .attr("xlink:href", function(d) { return rootPath + "img/" + d + ".svg"; })
         .attr("title", function(d) { return hf.meta.shortToLong(d); });
   };
   

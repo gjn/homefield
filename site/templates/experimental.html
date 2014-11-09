@@ -51,9 +51,9 @@
                                    'w').filter(filter).aggregate(aggregate);
     timeGraph.create(tset, '');
 
-    var setX = new hf.stats.Set({{season}}, {{week}}, 'overall', 's', 'd',
+    var setX = new hf.stats.Set({{season}}, {{week}}, 'overall', 's', 'o',
     'p').filter(filter); 
-    var setY = new hf.stats.Set({{season}}, {{week}}, 'overall', 's', 'd',
+    var setY = new hf.stats.Set({{season}}, {{week}}, 'overall', 's', 'o',
     'y').filter(filter); 
     var setR = new hf.stats.Set({{season}}, {{week}}, 'overall', 's', 'o',
     'w').filter(filter); 
