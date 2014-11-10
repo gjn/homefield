@@ -5,13 +5,18 @@ week: 10
 permalink: false
 ---
 
-Thursday's victory catapulted the Browns to 15th place...still behind the Bengals
-who find themselves in 13th place. Are the Browns the better team? It seems
-so after the game but in these rankings, they are not...yet.
+The Browns moved up 7 places with the win at the Bengals but stay behind them
+in these powerrankings. It was the biggest upset of the week as the 7th ranked
+home team lost to the 30th ranked away team.
 
-In terms of rating points won, this has been one of the bigger upsets this
-year. The Bengals played reasonably well at home (7th best home team before the
-TNF game) and the Browns were really
-bad away from home, third to last before the TNF game.
+The 49ers once again provev why they are ranked the best away road team in the by
+winning in New Orleans, breaking the Saints 11 straight wins at home, which ranked
+them the 3rd best home team. The 49ers
+climb to 4th place while the Saints just drop out of the top 10.
 
-Here are the updated rankings after the Thursday night game of Week 10:
+In these Power Rankings a win is a win. And when a very good home team like the
+Packers stomp a very bad away team as the Bears, the rankings just shrug their
+shoulders as Cutler would. The Packers moved up 1 spot while the Bears only
+lost 2.
+
+Here's your week 10 rankings:

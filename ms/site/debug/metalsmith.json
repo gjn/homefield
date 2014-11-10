@@ -8,6 +8,10 @@
   "source": "../in",
   "destination": "../../../.artefacts/ms/debug",
   "plugins": {
+    "metalsmith-ignore": [
+      "*.swp",
+      "drafts/*"
+    ],
     "metalsmith-templates": {
       "engine": "nunjucks",
       "directory": "../template",

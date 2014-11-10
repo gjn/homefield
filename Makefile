@@ -25,6 +25,10 @@ js: $(HOMEFIELD_JS)
 minjs: $(HOMEFIELD_MINJS)
 analyse: $(ANALYSE)
 
+PHONY: cleanswap
+cleanswap:
+	find . -type f -name "*.swp" -exec rm -f {} \;
+
 $(PUBLISH): $(SITE)
 	mkdir -p $(dir $@)
 	cd .artefacts/site; \

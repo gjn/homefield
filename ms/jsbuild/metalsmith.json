@@ -2,6 +2,10 @@
   "source": "../../.artefacts/res",
   "destination": "../../.artefacts/_site/lib",
   "plugins": {
+    "metalsmith-ignore": [
+      "*.swp",
+      "drafts/*"
+    ],
     "metalsmith-static": [{
         "src": "../../site/lib",
         "dest": "."
