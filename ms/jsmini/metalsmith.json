@@ -2,6 +2,10 @@
   "source": "../../.artefacts/_site/lib",
   "destination": "../../.artefacts/_site/libmin",
   "plugins": {
+    "metalsmith-ignore": [
+      "*.swp",
+      "drafts/*"
+    ],
     "metalsmith-uglify": {}
   }
 }
