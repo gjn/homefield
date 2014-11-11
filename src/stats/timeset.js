@@ -33,7 +33,7 @@ var Timeset = function(start, end, t, own, off, stat) {
   updateArrays = function() {
     _array = [];
     _teams = [];
-    unfiltered = _data['_' + _weeks[0]].stats[_type];
+    var unfiltered = _data['_' + _weeks[0]].stats[_type];
     if (_aggregator) {
       unfiltered = _aggregator.aggregate();
     }
@@ -104,12 +104,11 @@ var Timeset = function(start, end, t, own, off, stat) {
       return undefined;
     }
     if (_aggregator) {
-      var val = _aggregator.teams(team).map(function(t) {
+      return _aggregator.teams(team).map(function(t) {
         return _data['_' + week].stats[_type][t][_ownopp][_offdef][_stat];
       }).reduce(function(v, o) {
         return v + o;
       }, 0) / _aggregator.teams(team).length;
-      return val;
     } else {
       return _data['_' + week].stats[_type][team][_ownopp][_offdef][_stat];
     }
