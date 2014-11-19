@@ -1,15 +1,24 @@
 hf.stats = hf.stats || {};
 
-var Timeset = function(start, end, t, own, off, stat) {
+var Timeset = function(start, end, statdef) {
 
   if (!(this instanceof Timeset)) {
-    return new Timeset(s, w, t, own, off, stat);
+    return new Timeset(s, w, statdef);
   }
-  
-  var _type = t || 'average',
-      _ownopp = own || 's',
-      _offdef = off || 'o',
-      _stat = stat || 'w',
+
+  var getType = function(t) {
+    if (t == 'h') {
+      return 'home';
+    } else if (t == 'a') {
+      return 'away';
+    }
+    return 'overall';
+  };
+
+  var _type = statdef[0],
+      _ownopp = statdef[1],
+      _offdef = statdef[2],
+      _stat = statdef[3],
       _data = hf.stats.data,
       _teams,
       _weeks = [],
@@ -33,7 +42,7 @@ var Timeset = function(start, end, t, own, off, stat) {
   updateArrays = function() {
     _array = [];
     _teams = [];
-    var unfiltered = _data['_' + _weeks[0]].stats[_type];
+    var unfiltered = _data['_' + _weeks[0]].stats[getType(_type)];
     if (_aggregator) {
       unfiltered = _aggregator.aggregate();
     }
@@ -105,12 +114,12 @@ var Timeset = function(start, end, t, own, off, stat) {
     }
     if (_aggregator) {
       return _aggregator.teams(team).map(function(t) {
-        return _data['_' + week].stats[_type][t][_ownopp][_offdef][_stat];
+        return _data['_' + week].stats[getType(_type)][t][_ownopp][_offdef][_stat];
       }).reduce(function(v, o) {
         return v + o;
       }, 0) / _aggregator.teams(team).length;
     } else {
-      return _data['_' + week].stats[_type][team][_ownopp][_offdef][_stat];
+      return _data['_' + week].stats[getType(_type)][team][_ownopp][_offdef][_stat];
     }
   };
 

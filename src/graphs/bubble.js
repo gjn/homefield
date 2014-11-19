@@ -13,7 +13,6 @@ var Bubble = function(element) {
         height = 500 - margin.top - margin.bottom,
         x = d3.scale.linear().range([bulletsize, width - bulletsize]),
         y = d3.scale.linear().range([height - bulletsize, bulletsize]),
-        //r = d3.scale.linear().range([5,bulletsize]),
         r = d3.scale.linear().range([20,bulletsize]),
         xAxis = d3.svg.axis().scale(x).orient("bottom"),
         yAxis = d3.svg.axis().scale(y).orient("left"),
@@ -35,8 +34,8 @@ var Bubble = function(element) {
       d3.max(array, function(t) { return setY.teamStat(t); })
     ]);
     r.domain([
-      d3.min(array, function(t) { return setR.teamStat(t); }),
-      d3.max(array, function(t) { return setR.teamStat(t); })
+      d3.min(array, function(t) { return setR ? setR.teamStat(t) : 20; }),
+      d3.max(array, function(t) { return setR ? setR.teamStat(t) : 60; })
     ]);
 
     //add x axis
@@ -65,15 +64,15 @@ var Bubble = function(element) {
         .attr("team", function(d) { return d; })
         .attr("cx", function(d) { return x(setX.teamStat(d)); })
         .attr("cy", function(d) { return y(setY.teamStat(d)); })
-        .attr("r", function(d) { return r(setR.teamStat(d)); })
+        .attr("r", function(d) { return r(setR ? setR.teamStat(d) : bulletsize); })
         .attr("title", function(d) { return hf.meta.shortToLong(d); });
         */
     teams.append("svg:image")
         .attr("team", function(d) { return d; })
         .attr("x", function(d) { return x(setX.teamStat(d)); })
         .attr("y", function(d) { return y(setY.teamStat(d)); })
-        .attr("height", function(d) { return r(setR.teamStat(d)); })
-        .attr("width", function(d) { return r(setR.teamStat(d)); })
+        .attr("height", function(d) { return r(setR ? setR.teamStat(d) : bulletsize); })
+        .attr("width", function(d) { return r(setR ? setR.teamStat(d) : bulletsize); })
         .attr("xlink:href", function(d) { return rootPath + "img/" + d + ".svg"; })
         .attr("title", function(d) { return hf.meta.shortToLong(d); });
   };

@@ -1,26 +1,35 @@
 hf.stats = hf.stats || {};
 
-var Set = function(s, w, t, own, off, stat) {
+var Set = function(s, w, statdef) {
 
   if (!(this instanceof Set)) {
-    return new Set(s, w, t, own, off, stat);
+    return new Set(s, w, statdef);
   }
- 
+
+  var getType = function(t) {
+    if (t == 'h') {
+      return 'home';
+    } else if (t == 'a') {
+      return 'away';
+    }
+    return 'overall';
+  };
+
   var _filter;
   var _aggregator;
   var _season = s;
   var _week = w;
-  var _type = t || 'average';
-  var _ownopp = own || 's';
-  var _offdef = off || 'o';
-  var _stat = stat || 'w';
+  var _type = statdef[0];
+  var _ownopp = statdef[1];
+  var _offdef = statdef[2];
+  var _stat = statdef[3];
   var _data = hf.stats.data['_' + _season + (_week < 10 ? '0' : '') + _week];
   var _array;
 
   var updateArray = function() {
     _array = [];
     if (_data) {
-      var unfiltered = _data.stats[_type];
+      var unfiltered = _data.stats[getType(_type)];
       if (_aggregator) {
         unfiltered = _aggregator.aggregate();
       }
@@ -77,7 +86,7 @@ var Set = function(s, w, t, own, off, stat) {
       newSeason = _season - 1;
       newWeek = 21;
     }
-    return new Set(newSeason, newWeek, _type, _ownopp, _offdef, _stat);
+    return new Set(newSeason, newWeek, _type + _ownopp + _offdef + _stat);
   };
 
   this.teamStat = function(team, ranking) {
@@ -85,7 +94,7 @@ var Set = function(s, w, t, own, off, stat) {
     if (ranking){
       statKey = 'r' + _stat;
     }
-    return this.stat(_type, team, _ownopp, _offdef, statKey);
+    return this.stat(getType(_type), team, _ownopp, _offdef, statKey);
   };
 
   this.stat = function(type, team, ownopp, offdef, stat) {

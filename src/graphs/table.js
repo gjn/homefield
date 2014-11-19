@@ -21,6 +21,12 @@ var Table = function(element) {
     getColumn("overall", "o", "o", "w"),
     getColumn("home", "s", "o", "w"),
     getColumn("away", "s", "o", "w"),
+    getColumn("overall", "s", "o", "pdiff"),
+    getColumn("home", "s", "o", "pdiff"),
+    getColumn("away", "s", "o", "pdiff"),
+    getColumn("overall", "s", "o", "ydiff"),
+    getColumn("home", "s", "o", "ydiff"),
+    getColumn("away", "s", "o", "ydiff"),
     getColumn("overall", "s", "o", "p"),
     getColumn("home", "s", "o", "p"),
     getColumn("away", "s", "o", "p"),
@@ -55,6 +61,7 @@ var Table = function(element) {
     }
     //top header
     addRow("", "colspan", "5");
+    addRow("Differentials", "colspan", "6");
     addRow("Offense", "colspan", "6");
     addRow("Defense", "colspan", "6");
 
@@ -62,6 +69,8 @@ var Table = function(element) {
     row = head.append("tr");
     addRow("", "colspan", "1");
     addRow("Rating", "colspan", "4");
+    addRow("Points", "colspan", "3");
+    addRow("Yards", "colspan", "3");
     addRow("Points", "colspan", "3");
     addRow("Yards", "colspan", "3");
     addRow("Points", "colspan", "3");
@@ -96,6 +105,12 @@ var Table = function(element) {
               team1 = t2;
               team2 = t1;
             }
+            if (d.stat.indexOf('diff') > -1) {
+              return (set.stat(d.type,team2,d.ownopp,'o',d.stat[0]) -
+                     set.stat(d.type,team2,d.ownopp,'d',d.stat[0])) -
+                     (set.stat(d.type,team1,d.ownopp,'o',d.stat[0]) -
+                     set.stat(d.type,team1,d.ownopp,'d',d.stat[0]));
+            }
             return set.stat(d.type,team2,d.ownopp,d.offdef,d.stat) -
                    set.stat(d.type,team1,d.ownopp,d.offdef,d.stat);
           });
@@ -115,28 +130,13 @@ var Table = function(element) {
                     if (c.type == "team") {
                       return d;
                     }
+                    if (c.stat.indexOf('diff') > -1) {
+                      return (set.stat(c.type, d, c.ownopp, 'o', c.stat[0]) -
+                             set.stat(c.type, d, c.ownopp, 'd', c.stat[0])).toFixed(1);
+                    }
                     return set.stat(c.type,d,c.ownopp,c.offdef,c.stat);
                   });
                });
-/*
-      row.append("td")
-           .append("img")
-             .attr("src", function(d) { return rootPath + "img/" + d + ".svg"});
-
-      var appendStat = function(type, ownopp, offdef, stat) {
-        row.append("td")
-              .text(function(d) {return set.stat(type,d,ownopp,offdef,stat);});
-      }
-      appendStat('overall', 's', 'o', 'w');
-      appendStat('overall', 's', 'o', 'p');
-      appendStat('overall', 's', 'o', 'y');
-      appendStat('home', 's', 'o', 'w');
-      appendStat('home', 's', 'o', 'p');
-      appendStat('home', 's', 'o', 'y');
-      appendStat('away', 's', 'o', 'w');
-      appendStat('away', 's', 'o', 'p');
-      appendStat('away', 's', 'o', 'y');
-      */
   };
   
 };
