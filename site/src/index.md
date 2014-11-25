@@ -1,21 +1,9 @@
 ---
 template: index.html
 season: 2014
-week: 11
+week: 12
 permalink: false
 ---
 
-Week 11 featured an unusual 4 matchups between top 10 teams. Top ranked New England
-put on an impressive win against the 8th ranked Colts on their own turf. The hottest
-team right now seems to be the Packers, who had no trouble keeping the Eagles
-at bay. Green Bay keeps rising in our rankings and it will be an incredible
-matchup when they will face the Patriots in a couple of weeks.
-
-Even without Palmer and thanks to probably the best defense in the NFL, the Cardinals
-look extremely tough. As one pundit said: they make other teams look bad. It's what
-they did again to the Lions this week. In the West, Kansas City are prooving everyone
-that last season wasn't a fluke by beating the reigning Champions.
-
-At the bottom of the rankings, the lowly Bucaneers showed everyone in the league
-just what a bad team the Redskins are.
+Week 12
 
