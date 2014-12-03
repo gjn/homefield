@@ -42,7 +42,11 @@ var Bubble = function(element) {
     el.append("g")
         .attr("class", "xaxis")
         .attr("transform", "translate(0," + height + ")")
-        .call(xAxis);
+        .call(xAxis)
+      .append("text")
+        .attr("x", x(x.domain()[1]) + 10)
+        .attr("dy", "0.5em")
+        .text(setX.statName());
 
     //add y axis
     el.append("g")
@@ -53,7 +57,7 @@ var Bubble = function(element) {
         .attr("y", 6)
         .attr("dy", "0.71em")
         .style("text-anchor", "end")
-        .text("Yards");
+        .text(setY.statName());
 
     //add the lines
     var teams = el.selectAll(".team")

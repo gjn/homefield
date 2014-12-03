@@ -89,6 +89,19 @@ var Set = function(s, w, statdef) {
     return new Set(newSeason, newWeek, _type + _ownopp + _offdef + _stat);
   };
 
+  this.statName = function() {
+    if (_stat == 'w') {
+      return 'Win Rate';
+    } else if (_stat == 'p') {
+      return 'Points';
+    } else if (_stat == 'y') {
+      return 'Yards';
+    } else if (_stat == 't') {
+      return 'Turnovers';
+    }
+    return 'Unknown';
+  };
+
   this.teamStat = function(team, ranking) {
     var statKey = _stat;
     if (ranking){
