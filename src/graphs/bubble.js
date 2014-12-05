@@ -65,7 +65,7 @@ var Bubble = function(element) {
         .style("text-anchor", "end")
         .text(setY.statName());
 
-    //add the lines
+    //add the bubbles
     var teams = el.selectAll(".team")
         .data(array)
       .enter().append("g")

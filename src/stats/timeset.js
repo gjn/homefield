@@ -64,6 +64,19 @@ var Timeset = function(start, end, statdef) {
 
   updateArrays();
 
+  this.statName = function() {
+    if (_stat == 'w') {
+      return 'Win Rate';
+    } else if (_stat == 'p') {
+      return 'Points';
+    } else if (_stat == 'y') {
+      return 'Yards';
+    } else if (_stat == 't') {
+      return 'Turnovers';
+    }
+    return 'Unknown';
+  };
+
   this.filter = function(s) {
     if (!s) {
       _filter = undefined;

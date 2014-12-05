@@ -7,10 +7,10 @@ var Timeline = function(element) {
   }
 
   this.create = function(set, rootPath) {
-    var margin = {top: 20, right: 20, bottom: 20, left: 20},
+    var margin = {top: 50, right: 75, bottom: 30, left: 40},
         width = 1200 - margin.left - margin.right,
         height = 600 - margin.top - margin.bottom,
-        x = d3.scale.ordinal().domain(set.weeks()).rangeRoundBands([0, width], 0.1),
+        x = d3.scale.ordinal().domain(set.weeks()).rangeRoundBands([0, width], 2.0),
         y = d3.scale.linear().range([height, 0])
         xAxis = d3.svg.axis().scale(x).orient("bottom"),
         yAxis = d3.svg.axis().scale(y).orient("left")
@@ -33,7 +33,11 @@ var Timeline = function(element) {
     el.append("g")
         .attr("class", "xaxis")
         .attr("transform", "translate(0," + height + ")")
-        .call(xAxis);
+        .call(xAxis)
+      .append("text")
+        .attr("x", x(x.domain()[1]) + 10)
+        .attr("dy", "0.5em")
+        .text("Weeks")
 
     //add y axis
     el.append("g")
@@ -41,10 +45,11 @@ var Timeline = function(element) {
         .call(yAxis)
       .append("text")
         .attr("transform", "rotate(-90)")
-        .attr("y", 6)
-        .attr("dy", "0.71em")
+        .attr("y", -10)
+        .attr("x", 50)
+        .attr("dy", "0.5em")
         .style("text-anchor", "end")
-        .text("Rating");
+        .text(set.statName());
 
     //add the lines
     var teams = el.selectAll(".team")
