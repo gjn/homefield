@@ -7,32 +7,37 @@ var Bubble = function(element) {
   }
 
   this.create = function(setX, setY, setR, rootPath) {
-    var margin = {top: 30, right: 30, bottom: 20, left: 30},
+    var margin = {top: 50, right: 75, bottom: 30, left: 40},
         bulletsize = 60,
+        domainmargin = 0.05,
         width = 1000 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom,
-        x = d3.scale.linear().range([bulletsize, width - bulletsize]),
-        y = d3.scale.linear().range([height - bulletsize, bulletsize]),
+        x = d3.scale.linear().range([0, width]),
+        y = d3.scale.linear().range([height, 0]),
         r = d3.scale.linear().range([20,bulletsize]),
         xAxis = d3.svg.axis().scale(x).orient("bottom"),
-        yAxis = d3.svg.axis().scale(y).orient("left"),
+        yAxis = d3.svg.axis().scale(y).orient("left").ticks(5),
         el = d3.select(element).attr("class", "bubble")
                                .attr("width", width + margin.left + margin.right)
                                .attr("height", height + margin.left + margin.right);
     
-    el.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    el = el.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     var array = setX.array();
-    x.domain([
-      d3.min(array, function(t) { return setX.teamStat(t); }),
-      d3.max(array, function(t) { return setX.teamStat(t); })
-    ]);
+    var min = d3.min(array, function(t) { return setX.teamStat(t); });
+    var max = d3.max(array, function(t) { return setX.teamStat(t); });
+    var range = max - min;
+    var min = min - (domainmargin * range);
+    var max = max + (domainmargin * range);
+    x.domain([min, max]);
 
-    //get y domain values
-    y.domain([
-      d3.min(array, function(t) { return setY.teamStat(t); }),
-      d3.max(array, function(t) { return setY.teamStat(t); })
-    ]);
+    min = d3.min(array, function(t) { return setY.teamStat(t); });
+    max = d3.max(array, function(t) { return setY.teamStat(t); });
+    range = max - min;
+    min = min - (domainmargin * range);
+    max = max + (domainmargin * range);
+    y.domain([min, max]);
+
     r.domain([
       d3.min(array, function(t) { return setR ? setR.teamStat(t) : 20; }),
       d3.max(array, function(t) { return setR ? setR.teamStat(t) : 60; })
@@ -54,8 +59,9 @@ var Bubble = function(element) {
         .call(yAxis)
       .append("text")
         .attr("transform", "rotate(-90)")
-        .attr("y", 6)
-        .attr("dy", "0.71em")
+        .attr("y", -10)
+        .attr("x", 50)
+        .attr("dy", "0.5em")
         .style("text-anchor", "end")
         .text(setY.statName());
 
