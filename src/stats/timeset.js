@@ -114,8 +114,12 @@ var Timeset = function(start, end, statdef) {
 
   var value = function(week, type, team, ownopp, offdef, stat) {
     if (offdef == 'u') {
-      return _data['_' + week].stats[getType(type)][team][ownopp]['o'][stat] -
+      var val = _data['_' + week].stats[getType(type)][team][ownopp]['o'][stat] -
              _data['_' + week].stats[getType(type)][team][ownopp]['d'][stat];
+      if (stat == 't') {
+        val *= -1.0;
+      }
+      return val;
     }
     return _data['_' + week].stats[getType(type)][team][ownopp][offdef][stat];
   };

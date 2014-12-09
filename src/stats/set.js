@@ -103,8 +103,12 @@ var Set = function(s, w, statdef) {
 
   var value = function(type, team, ownopp, offdef, stat) {
     if (offdef == 'u') {
-      return _data.stats[type][team][ownopp]['o'][stat] -
+      var val = _data.stats[type][team][ownopp]['o'][stat] -
              _data.stats[type][team][ownopp]['d'][stat];
+      if (stat == 't') {
+        val *= -1.0;
+      }
+      return val;
     }
     return _data.stats[type][team][ownopp][offdef][stat];
   }
