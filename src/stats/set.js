@@ -90,16 +90,7 @@ var Set = function(s, w, statdef) {
   };
 
   this.statName = function() {
-    if (_stat == 'w') {
-      return 'Win Rate';
-    } else if (_stat == 'p') {
-      return 'Points';
-    } else if (_stat == 'y') {
-      return 'Yards';
-    } else if (_stat == 't') {
-      return 'Turnovers';
-    }
-    return 'Unknown';
+    return hf.meta.statName(_stat, _offdef);
   };
 
   this.teamStat = function(team, ranking) {
@@ -110,18 +101,26 @@ var Set = function(s, w, statdef) {
     return this.stat(getType(_type), team, _ownopp, _offdef, statKey);
   };
 
+  var value = function(type, team, ownopp, offdef, stat) {
+    if (offdef == 'u') {
+      return _data.stats[type][team][ownopp]['o'][stat] -
+             _data.stats[type][team][ownopp]['d'][stat];
+    }
+    return _data.stats[type][team][ownopp][offdef][stat];
+  }
+
   this.stat = function(type, team, ownopp, offdef, stat) {
     if (!_data) {
       return undefined;
     }
     if (_aggregator) {
       return _aggregator.teams(team).map(function(t) {
-        return _data.stats[type][t][ownopp][offdef][stat];
+        return value(type, t, ownopp, offdef, stat);
       }).reduce(function(v, o) {
         return v + o;
       }, 0) / _aggregator.teams(team).length;
     }
-    return _data.stats[type][team][ownopp][offdef][stat];
+    return value(type, team, ownopp, offdef, stat);
   };
 
   this.sort = function(ascending) {

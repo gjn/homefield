@@ -274,6 +274,24 @@ var Defs = function () {
   this.teamsAsObject = function() {
     return shortToLong;
   };
+
+  this.statName = function(s, o) {
+    var name = 'Unknown';
+    if (s == 'w') {
+      name = 'Win Rate';
+    } else if (s == 'p') {
+      name = 'Points';
+    } else if (s == 'y') {
+      name = 'Yards';
+    } else if (s == 't') {
+      name = 'Turnovers';
+    }
+    if (o == 'u') {
+      name += ' Differential';
+    }
+    return name;
+
+  }
 };
 
 var instance = null;

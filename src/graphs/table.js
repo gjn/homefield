@@ -21,12 +21,12 @@ var Table = function(element) {
     getColumn("overall", "o", "o", "w"),
     getColumn("home", "s", "o", "w"),
     getColumn("away", "s", "o", "w"),
-    getColumn("overall", "s", "o", "pdiff"),
-    getColumn("home", "s", "o", "pdiff"),
-    getColumn("away", "s", "o", "pdiff"),
-    getColumn("overall", "s", "o", "ydiff"),
-    getColumn("home", "s", "o", "ydiff"),
-    getColumn("away", "s", "o", "ydiff"),
+    getColumn("overall", "s", "u", "p"),
+    getColumn("home", "s", "u", "p"),
+    getColumn("away", "s", "u", "p"),
+    getColumn("overall", "s", "u", "y"),
+    getColumn("home", "s", "u", "y"),
+    getColumn("away", "s", "u", "y"),
     getColumn("overall", "s", "o", "p"),
     getColumn("home", "s", "o", "p"),
     getColumn("away", "s", "o", "p"),
@@ -105,12 +105,6 @@ var Table = function(element) {
               team1 = t2;
               team2 = t1;
             }
-            if (d.stat.indexOf('diff') > -1) {
-              return (set.stat(d.type,team2,d.ownopp,'o',d.stat[0]) -
-                     set.stat(d.type,team2,d.ownopp,'d',d.stat[0])) -
-                     (set.stat(d.type,team1,d.ownopp,'o',d.stat[0]) -
-                     set.stat(d.type,team1,d.ownopp,'d',d.stat[0]));
-            }
             return set.stat(d.type,team2,d.ownopp,d.offdef,d.stat) -
                    set.stat(d.type,team1,d.ownopp,d.offdef,d.stat);
           });
@@ -129,10 +123,6 @@ var Table = function(element) {
                   col.text(function(c) {
                     if (c.type == "team") {
                       return d;
-                    }
-                    if (c.stat.indexOf('diff') > -1) {
-                      return (set.stat(c.type, d, c.ownopp, 'o', c.stat[0]) -
-                             set.stat(c.type, d, c.ownopp, 'd', c.stat[0])).toFixed(1);
                     }
                     return set.stat(c.type,d,c.ownopp,c.offdef,c.stat);
                   });

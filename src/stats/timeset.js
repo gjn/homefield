@@ -65,16 +65,7 @@ var Timeset = function(start, end, statdef) {
   updateArrays();
 
   this.statName = function() {
-    if (_stat == 'w') {
-      return 'Win Rate';
-    } else if (_stat == 'p') {
-      return 'Points';
-    } else if (_stat == 'y') {
-      return 'Yards';
-    } else if (_stat == 't') {
-      return 'Turnovers';
-    }
-    return 'Unknown';
+    return hf.meta.statName(_stat, _offdef);
   };
 
   this.filter = function(s) {
@@ -121,18 +112,26 @@ var Timeset = function(start, end, statdef) {
     return _array;
   };
 
+  var value = function(week, type, team, ownopp, offdef, stat) {
+    if (offdef == 'u') {
+      return _data['_' + week].stats[getType(type)][team][ownopp]['o'][stat] -
+             _data['_' + week].stats[getType(type)][team][ownopp]['d'][stat];
+    }
+    return _data['_' + week].stats[getType(type)][team][ownopp][offdef][stat];
+  };
+
   this.stat = function(week, team) {
     if (!_data['_' + week]) {
       return undefined;
     }
     if (_aggregator) {
       return _aggregator.teams(team).map(function(t) {
-        return _data['_' + week].stats[getType(_type)][t][_ownopp][_offdef][_stat];
+        return value(week, _type, t, _ownopp, _offdef, _stat);
       }).reduce(function(v, o) {
         return v + o;
       }, 0) / _aggregator.teams(team).length;
     } else {
-      return _data['_' + week].stats[getType(_type)][team][_ownopp][_offdef][_stat];
+      return value(week, _type, team, _ownopp, _offdef, _stat);
     }
   };
 
