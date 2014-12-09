@@ -10,6 +10,7 @@ var Timeline = function(element) {
     var margin = {top: 50, right: 75, bottom: 30, left: 40},
         width = 1200 - margin.left - margin.right,
         height = 600 - margin.top - margin.bottom,
+        domainmargin = 0.05,
         x = d3.scale.ordinal().domain(set.weeks()).rangeRoundBands([0, width], 2.0),
         y = d3.scale.linear().range([height, 0])
         xAxis = d3.svg.axis().scale(x).orient("bottom"),
@@ -21,13 +22,31 @@ var Timeline = function(element) {
                                .attr("width", width + margin.left + margin.right)
                                .attr("height", height + margin.left + margin.right);
     
-    el.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    el = el.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    //get y domain values
-    y.domain([
-      d3.min(set.teams(), function(t) {return d3.min(set.weeks(), function(w) {return set.stat(w,t) ;}); }),
-      d3.max(set.teams(), function(t) {return d3.max(set.weeks(), function(w) {return set.stat(w,t) ;}); })
-    ]);
+    var array = set.teams();
+    var min = d3.min(array, function(t) { return d3.min(set.weeks(), function(w) { return set.stat(w,t); }); });
+    var max = d3.max(array, function(t) { return d3.max(set.weeks(), function(w) { return set.stat(w,t); }); });
+    var range = max - min;
+    var min = min - (domainmargin * range);
+    var max = max + (domainmargin * range);
+    y.domain([min, max]);
+
+    xAxis.tickFormat(function(v) {
+      if (x.domain().length > 21) {
+        if (v.indexOf('01', 4) > -1) {
+          return v[0] + v[1] + v[2] + v[3];
+        }
+        if (v.indexOf('08', 4) > -1) {
+          return '8';
+        }
+        if (v.indexOf('17', 4) > -1) {
+          return '17';
+        }
+      } else {
+        return v[4] + v[5];
+      }
+    });
 
     //add x axis
     el.append("g")
@@ -35,7 +54,7 @@ var Timeline = function(element) {
         .attr("transform", "translate(0," + height + ")")
         .call(xAxis)
       .append("text")
-        .attr("x", x(x.domain()[1]) + 10)
+        .attr("x", x(x.domain()[x.domain().length -1]) + 15)
         .attr("dy", "0.5em")
         .text("Weeks")
 
@@ -46,7 +65,7 @@ var Timeline = function(element) {
       .append("text")
         .attr("transform", "rotate(-90)")
         .attr("y", -10)
-        .attr("x", 50)
+        .attr("x", 70)
         .attr("dy", "0.5em")
         .style("text-anchor", "end")
         .text(set.statName());
