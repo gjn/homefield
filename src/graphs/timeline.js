@@ -73,7 +73,7 @@ var Timeline = function(element) {
     //add the lines
     var teams = el.selectAll(".team")
         .data(set.array())
-      .enter().append("g")
+      .enter().append("g").attr("class", "timelineentry");
     
     teams.append("path")
         .attr("team", function(d) { return d.team; })

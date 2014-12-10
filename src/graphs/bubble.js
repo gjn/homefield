@@ -69,14 +69,7 @@ var Bubble = function(element) {
     var teams = el.selectAll(".team")
         .data(array)
       .enter().append("g")
- /*   
-    teams.append("circle")
-        .attr("team", function(d) { return d; })
-        .attr("cx", function(d) { return x(setX.teamStat(d)); })
-        .attr("cy", function(d) { return y(setY.teamStat(d)); })
-        .attr("r", function(d) { return r(setR ? setR.teamStat(d) : bulletsize); })
-        .attr("title", function(d) { return hf.meta.shortToLong(d); });
-        */
+
     teams.append("svg:image")
         .attr("team", function(d) { return d; })
         .attr("x", function(d) { return x(setX.teamStat(d)); })
