@@ -44,15 +44,15 @@
     anotherGraph.create(set, '');
 
     var timeGraph = new hf.graphs.Timeline('#timeline');
-    var tset = new hf.stats.Timeset({season: {{season}} - 5, week: {{week}}},
-    //var tset = new hf.stats.Timeset({season: {{season}}, week: 1},
+    //var tset = new hf.stats.Timeset({season: {{season}} - 5, week: {{week}}},
+    var tset = new hf.stats.Timeset({season: {{season}} - 1, week: 21},
                                    {season: {{season}}, week: {{week}}},
     //                               'ooow').filter(filter).aggregate(aggregate);
                                    'osow').filter(filter).aggregate(aggregate);
     timeGraph.create(tset, '');
 
-    var setX = new hf.stats.Set({{season}}, {{week}}, 'osut').filter(filter); 
-    var setY = new hf.stats.Set({{season}}, {{week}}, 'osow').filter(filter); 
+    var setX = new hf.stats.Set({{season}}, {{week}}, 'hsow').filter(filter); 
+    var setY = new hf.stats.Set({{season}}, {{week}}, 'asow').filter(filter); 
     var setR = new hf.stats.Set({{season}}, {{week}}, 'osow').filter(filter); 
 
     var bubbleGraph = new hf.graphs.Bubble('#bubble');

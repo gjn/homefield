@@ -16,6 +16,7 @@ var Table = function(element) {
   };
 
   var columns = [
+    getColumn("rank", "s", "o", "w"),
     getColumn("team", "s", "o", "w"),
     getColumn("overall", "s", "o", "w"),
     getColumn("overall", "o", "o", "w"),
@@ -60,13 +61,14 @@ var Table = function(element) {
          .text(header);
     }
     //top header
-    addRow("", "colspan", "5");
+    addRow("", "colspan", "6");
     addRow("Differentials", "colspan", "6");
     addRow("Offense", "colspan", "6");
     addRow("Defense", "colspan", "6");
 
     //second header
     row = head.append("tr");
+    addRow("", "colspan", "1");
     addRow("", "colspan", "1");
     addRow("Rating", "colspan", "4");
     addRow("Points", "colspan", "3");
@@ -84,6 +86,8 @@ var Table = function(element) {
         .text(function(d) {
           if (d.type == "team") {
             return "Team";
+          } else if (d.type == "rank") {
+            return "Rank";
           } else if (d.type == "overall") {
             if (d.ownopp == "s") {
               return "Overall";
@@ -95,7 +99,8 @@ var Table = function(element) {
           }
           return "Away";
         }).on("click", function(d) {
-          if (d.type == "team") {
+          if (d.type == "team" ||
+              d.type == "rank") {
             return;
           }
           row.sort(function(t1, t2) {
@@ -108,6 +113,7 @@ var Table = function(element) {
             return set.stat(d.type,team2,d.ownopp,d.offdef,d.stat) -
                    set.stat(d.type,team1,d.ownopp,d.offdef,d.stat);
           });
+          updateColumns(); //needed for correct ranking
         });
     
     //data rows
@@ -115,18 +121,30 @@ var Table = function(element) {
                        .data(myData, function(d) {return d;})
                        .attr("class", function(d) { return d;});
     row.enter().append("tr")
-               .each(function(d) {
+               .each(function(d, idx) {
                   var col = d3.select(this).selectAll("td")
                                                  .data(columns);
                   col.enter().append("td");
-
-                  col.text(function(c) {
-                    if (c.type == "team") {
-                      return d;
-                    }
-                    return set.stat(c.type,d,c.ownopp,c.offdef,c.stat);
-                  });
                });
+
+    var updateColumns = function() {
+      row.each(function(d, idx) {
+        var col = d3.select(this).selectAll("td")
+                                       .data(columns);
+        col.text(function(c) {
+          window.console.log('update called...');
+          if (c.type == "team") {
+            return d;
+          } else if (c.type == "rank") {
+            return idx + 1 + '';
+          }
+          return set.stat(c.type,d,c.ownopp,c.offdef,c.stat);
+        });
+      });
+    };
+
+    updateColumns();
+
   };
   
 };

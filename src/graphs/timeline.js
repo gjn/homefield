@@ -11,11 +11,12 @@ var Timeline = function(element) {
         width = 1200 - margin.left - margin.right,
         height = 600 - margin.top - margin.bottom,
         domainmargin = 0.05,
-        x = d3.scale.ordinal().domain(set.weeks()).rangeRoundBands([0, width], 2.0),
+        x = d3.scale.ordinal().domain(set.weeks()).rangePoints([0, width]),
         y = d3.scale.linear().range([height, 0])
         xAxis = d3.svg.axis().scale(x).orient("bottom"),
         yAxis = d3.svg.axis().scale(y).orient("left")
-        line = d3.svg.line().interpolate("basis")
+        line = d3.svg.line().interpolate("cardinal")
+        //line = d3.svg.line()
                      .x(function(d) {return x(d.week);})
                      .y(function(d) {return y(set.stat(d.week, d.team));}),
         el = d3.select(element).attr("class", "timeline")
