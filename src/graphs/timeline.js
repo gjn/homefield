@@ -16,7 +16,6 @@ var Timeline = function(element) {
         xAxis = d3.svg.axis().scale(x).orient("bottom"),
         yAxis = d3.svg.axis().scale(y).orient("left")
         line = d3.svg.line().interpolate("cardinal")
-        //line = d3.svg.line()
                      .x(function(d) {return x(d.week);})
                      .y(function(d) {return y(set.stat(d.week, d.team));}),
         el = d3.select(element).attr("class", "timeline")
@@ -34,18 +33,27 @@ var Timeline = function(element) {
     y.domain([min, max]);
 
     xAxis.tickFormat(function(v) {
-      if (x.domain().length > 21) {
-        if (v.indexOf('01', 4) > -1) {
-          return v[0] + v[1] + v[2] + v[3];
+      if (v.indexOf('01', 4) > -1) {
+        return v[0] + v[1] + v[2] + v[3];
+      } else if (x.domain().length <= 22) {
+        if (v.indexOf('18', 4) > -1) {
+          return 'WC';
+        } else if (v.indexOf('19', 4) > -1) {
+          return 'DR';
+        } else if (v.indexOf('20', 4) > -1) {
+          return 'CC';
+        } else if (v.indexOf('21', 4) > -1) {
+          return 'SB';
+        } else {
+          return v[4] + v[5];
         }
+      } else {
         if (v.indexOf('08', 4) > -1) {
           return '8';
         }
         if (v.indexOf('17', 4) > -1) {
           return '17';
         }
-      } else {
-        return v[4] + v[5];
       }
     });
 

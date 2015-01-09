@@ -24,10 +24,23 @@
   <svg id="chart">
   </svg>
 
+  <br/>
+
+  <h2>Developement over the season</h2>
+
+  <svg id="timeline">
+  </svg>
+
+ 
   <script type="text/javascript">
     var newGraph = new hf.graphs.Bar('#chart');
     var set = new hf.stats.Set({{season}}, {{week}}, 'osow');
     newGraph.create(set, '../../../');
+    var timeGraph = new hf.graphs.Timeline('#timeline');
+    var tset = new hf.stats.Timeset({season: {{season}} - 1, week: 21},
+                                   {season: {{season}}, week: {{week}}}, 'osow');
+    timeGraph.create(tset, '../../../');
+
   </script>
 
   <!-- DISQUS -->
