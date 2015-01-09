@@ -9,7 +9,8 @@
   "plugins": {
     "metalsmith-markdown": { },
     "metalsmith-permalinks": {
-      "pattern": "nfl/:season/:week"
+      "pattern": "nfl/:season/:week",
+      "relative": false
     },
     "metalsmith-templates": {
       "engine": "nunjucks",
