@@ -1,9 +1,9 @@
 ---
 template: index.html
 season: 2014
-week: 17
+week: 18
 permalink: false
 ---
 
-Week 17
+After Divisional Round
 
