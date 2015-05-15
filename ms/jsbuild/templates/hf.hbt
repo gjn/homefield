@@ -4,7 +4,15 @@
 
   hf.stats = hf.stats || {};
 
-  hf.stats.data = {{ contents }};
+  hf.stats.data = hf.stats.data || {};
+
+  var newdata = {{ contents }};
+
+  for (var dataset in newdata) {
+    if (newdata.hasOwnProperty(dataset)) {
+      hf.stats.data[dataset] = newdata[dataset];
+    }
+  }
 
   this.hf = hf;
 }();

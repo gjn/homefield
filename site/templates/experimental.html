@@ -10,7 +10,12 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.8/d3.min.js"></script>
 {% endif %}
   <script src="lib/homefield.js"></script>
-  <script src="lib/all.js"></script>
+  <script src="lib/2014.js"></script>
+  <script src="lib/2013.js"></script>
+  <script src="lib/2012.js"></script>
+  <script src="lib/2011.js"></script>
+  <script src="lib/2010.js"></script>
+  <script src="lib/2009.js"></script>
 </head>
 <body>
   <div id="navigation">
@@ -42,7 +47,7 @@
     var set = new hf.stats.Set({{season}}, {{week}}, 'osow').filter(filter);
     var anotherGraph = new hf.graphs.Table('#table');
     anotherGraph.create(set, '');
-
+/*
     var timeGraph = new hf.graphs.Timeline('#timeline');
     //var tset = new hf.stats.Timeset({season: {{season}} - 5, week: {{week}}},
     var tset = new hf.stats.Timeset({season: {{season}} - 1, week: 21},
@@ -57,7 +62,7 @@
 
     var bubbleGraph = new hf.graphs.Bubble('#bubble');
     bubbleGraph.create(setX, setY, setR, '');
-
+*/
   </script>
 
   <br/>

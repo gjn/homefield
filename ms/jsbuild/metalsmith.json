@@ -16,7 +16,7 @@
     ],
     "metalsmith-templates": {
       "engine": "nunjucks",
-      "directory": "./templates",
+      "directory": "templates",
       "default": "hf.hbt"
     }
   }
