@@ -16,6 +16,13 @@
   <script src="lib/2011.js"></script>
   <script src="lib/2010.js"></script>
   <script src="lib/2009.js"></script>
+  <script src="lib/2008.js"></script>
+  <script src="lib/2007.js"></script>
+  <script src="lib/2006.js"></script>
+  <script src="lib/2005.js"></script>
+  <script src="lib/2004.js"></script>
+  <script src="lib/2003.js"></script>
+  <script src="lib/2002.js"></script>
 </head>
 <body>
   <div id="navigation">
@@ -47,22 +54,19 @@
     var set = new hf.stats.Set({{season}}, {{week}}, 'osow').filter(filter);
     var anotherGraph = new hf.graphs.Table('#table');
     anotherGraph.create(set, '');
-/*
     var timeGraph = new hf.graphs.Timeline('#timeline');
-    //var tset = new hf.stats.Timeset({season: {{season}} - 5, week: {{week}}},
-    var tset = new hf.stats.Timeset({season: {{season}} - 1, week: 21},
+    var tset = new hf.stats.Timeset({season: {{season}} - 12, week: {{week}}},
                                    {season: {{season}}, week: {{week}}},
     //                               'ooow').filter(filter).aggregate(aggregate);
-                                   'osow').filter(filter).aggregate(aggregate);
+                                   'osdp').filter(filter).aggregate(aggregate);
     timeGraph.create(tset, '');
 
-    var setX = new hf.stats.Set({{season}}, {{week}}, 'hsow').filter(filter); 
-    var setY = new hf.stats.Set({{season}}, {{week}}, 'asow').filter(filter); 
+    var setX = new hf.stats.Set({{season}}, {{week}}, 'osow').filter(filter); 
+    var setY = new hf.stats.Set({{season}}, {{week}}, 'osdp').filter(filter); 
     var setR = new hf.stats.Set({{season}}, {{week}}, 'osow').filter(filter); 
 
     var bubbleGraph = new hf.graphs.Bubble('#bubble');
     bubbleGraph.create(setX, setY, setR, '');
-*/
   </script>
 
   <br/>
