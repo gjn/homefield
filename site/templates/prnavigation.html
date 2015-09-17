@@ -1,0 +1,13 @@
+<span class="navigation">
+  {% if not noprevious %}
+    <a id="previous" href="{{basepath}}nfl/{{ season if week > 1 else season - 1 }}/{{ week - 1 if week > 1 else 21 }}/">Previous Week</a>
+  {% endif %}
+  {% if not noprevious and not nonext %}
+   - 
+  {% endif %}
+  {% if not nonext %}
+  <a id="next" href="{{basepath}}nfl/{{ season if week != 21 else season + 1
+  }}/{{week + 1 if week != 21 else 1 }}/">Next Week</a>
+  {% endif %}
+</span>
+
