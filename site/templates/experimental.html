@@ -36,7 +36,6 @@
 <script type="text/javascript">
   var filter = '';
   var aggregate = '';
-  var set = new hf.stats.Set({{season}}, {{week}}, 'osow').filter(filter);
   var timeGraph = new hf.graphs.Timeline('#timeline');
   var tset = new hf.stats.Timeset({season: {{season}} - 12, week: {{week}}},
                                  {season: {{season}}, week: {{week}}},

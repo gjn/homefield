@@ -36,7 +36,7 @@ Adapted by Gilbert Jeiziner for homefield.gjn.ch
 <body>
   <div id="header" class="container">
     <div id="logo">
-      <h1><a href="{{basepath}}">Homefield - NFL Power Rankings</a></h1>
+      <h1><a href="{{basepath}}index.html">Homefield - NFL Power Rankings</a></h1>
     </div>
     <div id="menu">
       <ul>
@@ -91,17 +91,6 @@ Adapted by Gilbert Jeiziner for homefield.gjn.ch
       -->
     </div>
   </div>
-
-  <script type="text/javascript">
-    var newGraph = new hf.graphs.Bar('#chart');
-    var set = new hf.stats.Set({{season}}, {{week}}, 'osow');
-    newGraph.create(set, '{{basepath}}');
-
-    var timeGraph = new hf.graphs.Timeline('#timeline');
-    var tset = new hf.stats.Timeset({season: {{season}} - 1, week: 21},
-                                   {season: {{season}}, week: {{week}}}, 'osow');
-    timeGraph.create(tset, '{{basepath}}');
-  </script>
 
   <div id="featured-wrapper">
   <div id="featured" class="container">
