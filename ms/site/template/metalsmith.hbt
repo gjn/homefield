@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Homefield - The Unopinionated NFL Power Rankings",
-    "description": "An algorithm based, un-opinionated NFL power ranking system providing beautiful and exciting graphs for you to disagree with.",
+    "sitetitle": "Homefield - The Unopinionated NFL Power Rankings",
+    "sitedescription": "An algorithm based, un-opinionated NFL power ranking system providing beautiful and exciting graphs for you to disagree with.",
     "debug": {{debug}}
   },
   "source": "../../_site/src",
@@ -26,6 +26,9 @@
       },{
         "src": "{{libdirectory}}",
         "dest": "lib"
+      },{
+        "src": "../../_site/fonts",
+        "dest": "fonts"
       },{
         "src": "../../_site/img",
         "dest": "img"

@@ -12,6 +12,9 @@
       },{
         "src": "../../site/img",
         "dest": "../img"
+      }, {
+        "src": "../../site/fonts",
+        "dest": "../fonts"
       }
     ],
     "metalsmith-templates": {
