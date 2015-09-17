@@ -120,7 +120,6 @@ var Table = function(element) {
     row = body.selectAll("tr")
                        .data(myData, function(d) {return d;});
     row.enter().append("tr")
-               .attr("class", function(d) {return d;})
                .each(function(d, idx) {
                   var col = d3.select(this).selectAll("td")
                                                  .data(columns);
@@ -129,7 +128,15 @@ var Table = function(element) {
 
     var updateColumns = function() {
       row.each(function(d, idx) {
-        var col = d3.select(this).selectAll("td")
+        var r = d3.select(this)
+               .attr("class", function(d) {
+                 evenodd = 'odd ';
+                 if (idx % 2 == 0) {
+                   evenodd = 'even ';
+                 }
+                 return evenodd + d;
+               })
+        var col = r.selectAll("td")
                                        .data(columns);
         col.text(function(c) {
           if (c.type == "team") {
