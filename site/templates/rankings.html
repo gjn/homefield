@@ -1,0 +1,27 @@
+{% extends "../../_site/templates/base.html" %}
+
+{% block pagecontent %}
+<div class="title">
+  <h2>NFL Power Rankings - Week {{week}} {{season}}</h2>
+  <span class="byline">{{description}}</span>
+  {% include "../../_site/templates/prnavigation.html" %}
+</div>
+<p>
+{{ contents }}
+</p>
+<svg id="chart">
+</svg>
+<p>
+</p>
+<h3>Developement over the season</h3>
+<svg id="timeline">
+</svg>
+
+<div>
+{% include "../../_site/templates/prnavigation.html" %}
+</div>
+
+{% include "../../_site/templates/disqus.html" %}
+
+
+{% endblock %}

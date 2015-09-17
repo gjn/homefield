@@ -30,6 +30,8 @@ Adapted by Gilbert Jeiziner for homefield.gjn.ch
 {% endif %}
   <script src="{{basepath}}lib/homefield.js"></script>
   <script src="{{basepath}}lib/{{season}}.js"></script>
+{% block headincludes %}
+{% endblock %}
 </head>
 <body>
   <div id="header" class="container">
@@ -38,8 +40,9 @@ Adapted by Gilbert Jeiziner for homefield.gjn.ch
     </div>
     <div id="menu">
       <ul>
-        <li class="current_page_item"><a href="{{basepath}}" accesskey="1" title="">Home</a></li>
-        <li><a href="{{basepath}}experimental.html" accesskey="2" title="">Experimental</a></li>
+        <li class="current_page_item"><a href="{{basepath}}index.html" accesskey="1" title="">Home</a></li>
+        <li><a href="{{basepath}}table.html" accesskey="2" title="">Full Table</a></li>
+        <li><a href="{{basepath}}experimental.html" accesskey="3" title="">Experimental</a></li>
       </ul>
     </div>
   </div>
@@ -54,42 +57,8 @@ Adapted by Gilbert Jeiziner for homefield.gjn.ch
     </div>
     <div id="page" class="container">
       <div id="content">
-        <div class="title">
-          <h2>NFL Power Rankings - Week {{week}} {{season}}</h2>
-          <span class="byline">{{description}}</span>
-          {% include "../../_site/templates/prnavigation.html" %}
-        </div>
-        <p>
-        {{ contents }}
-        </p>
-        <svg id="chart">
-        </svg>
-        <p>
-        </p>
-        <h3>Developement over the season</h3>
-        <svg id="timeline">
-        </svg>
-
-        <div>
-        {% include "../../_site/templates/prnavigation.html" %}
-        </div>
-
-        <!-- DISQUS -->
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-          var disqus_shortname = 'homefield'; // required: replace example with your forum shortname
-
-          /* * * DON'T EDIT BELOW THIS LINE * * */
-          (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
+        {% block pagecontent %}
+        {% endblock %}
       </div>
       <!-- if you want to include sidebar, put #content width to 790px in css again
       <div id="sidebar">
@@ -209,7 +178,7 @@ Adapted by Gilbert Jeiziner for homefield.gjn.ch
     </ul>
   </div>
   -->
-  <p>&copy; gjn.ch. | Raw Data from <a
+  <p>&copy; gjn.ch | Raw Data from <a
   href="http://www.pro-football-reference.com/">Pro Football Reference</a> |
   Design based on <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
   </div>

@@ -90,7 +90,7 @@ var Table = function(element) {
             return "Rank";
           } else if (d.type == "overall") {
             if (d.ownopp == "s") {
-              return "Overall";
+              return "Total";
             } else {
               return "Schedule";
             }
@@ -138,7 +138,11 @@ var Table = function(element) {
           } else if (c.type == "rank") {
             return idx + 1 + '';
           }
-          return set.stat(c.type,d,c.ownopp,c.offdef,c.stat);
+          retval = set.stat(c.type,d,c.ownopp,c.offdef,c.stat);
+          if (c.offdef == "u" && c.stat == "p") {
+            retval = retval.toFixed(1);
+          }
+          return retval;
         });
       });
     };
