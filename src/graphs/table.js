@@ -118,9 +118,9 @@ var Table = function(element) {
     
     //data rows
     row = body.selectAll("tr")
-                       .data(myData, function(d) {return d;})
-                       .attr("class", function(d) { return d;});
+                       .data(myData, function(d) {return d;});
     row.enter().append("tr")
+               .attr("class", function(d) {return d;})
                .each(function(d, idx) {
                   var col = d3.select(this).selectAll("td")
                                                  .data(columns);
@@ -132,7 +132,6 @@ var Table = function(element) {
         var col = d3.select(this).selectAll("td")
                                        .data(columns);
         col.text(function(c) {
-          window.console.log('update called...');
           if (c.type == "team") {
             return d;
           } else if (c.type == "rank") {
