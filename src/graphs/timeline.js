@@ -8,7 +8,7 @@ var Timeline = function(element) {
 
   this.create = function(set, rootPath) {
     var margin = {top: 50, right: 75, bottom: 30, left: 40},
-        width = 1200 - margin.left - margin.right,
+        width = 790 - margin.left - margin.right,
         height = 600 - margin.top - margin.bottom,
         domainmargin = 0.05,
         x = d3.scale.ordinal().domain(set.weeks()).rangePoints([0, width]),

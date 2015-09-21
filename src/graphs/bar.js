@@ -7,7 +7,7 @@ var Bar = function(element) {
   }
 
   this.create = function(set, rootPath) {
-    var width = 870;
+    var width = 460;
     var padleft = 300;
     var barHeight = 30;
     var logowidth = 30;

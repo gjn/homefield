@@ -35,10 +35,11 @@ Adapted by Gilbert Jeiziner for homefield.gjn.ch
 </head>
 <body>
   <div id="header" class="container">
-    <div id="logo">
-      <h1><a href="{{basepath}}index.html">Homefield - NFL Power Rankings</a></h1>
+    <div id="title">
+      <h1><a href="{{basepath}}index.html">{{sitetitle}}</a></h1>
+      <div class="byline">{{sitedescription}}</div>
     </div>
-    <div id="menu">
+  <div id="menu">
       <ul>
         <li class="current_page_item"><a href="{{basepath}}index.html" accesskey="1" title="">Home</a></li>
         <li><a href="{{basepath}}table.html" accesskey="2" title="">Full Table</a></li>
@@ -49,18 +50,7 @@ Adapted by Gilbert Jeiziner for homefield.gjn.ch
 
   <!-- body and right stuff -->
   <div id="wrapper">
-    <div id="welcome" class="wrapper-style1">
-      <div class="title">
-       <!-- <h2>{{sitetitle}}</h2> -->
-        <span class="byline">{{sitedescription}}</span>
-      </div>
-    </div>
     <div id="page" class="container">
-      <div id="content">
-        {% block pagecontent %}
-        {% endblock %}
-      </div>
-      <!-- if you want to include sidebar, put #content width to 790px in css again
       <div id="sidebar">
         <div id="sbox1">
           <div class="title">
@@ -88,7 +78,11 @@ Adapted by Gilbert Jeiziner for homefield.gjn.ch
           </ul>
         </div>
       </div>
-      -->
+
+      <div id="content">
+        {% block pagecontent %}
+        {% endblock %}
+      </div>
     </div>
   </div>
 
