@@ -1922,34 +1922,19 @@ hr
 
 .title
 {
-	margin: 0 0 0.3em 0;
+	margin: 0em 0 0.3em 0;
 	text-align: center;
-}
-
-#welcome .title
-{
-	margin: 2em 0 1em 0;
-	border-bottom: solid 1px #dbdbdb;
-}
-
-#welcome .title:after
-{
-	content: '';
-	display: block;
-	border-top: solid 1px #dbdbdb;
-	height: 8px;
 }
 
 .title h2
 {
-	margin: 0 0 1em 0;
+	margin: 1em 0 1em 0;
 	font-weight: 700;
 }
 
-.title .byline
+.title,#header .byline
 {
 	position: relative;
-	top: -2em;
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
 	font-weight: 400;
@@ -2116,6 +2101,8 @@ ul.contact li a.icon-rss:before
 #wrapper
 {
 	background: #FFF;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #featured-wrapper
@@ -2157,8 +2144,10 @@ ul.contact li a.icon-rss:before
 
 .container
 {
-	width: 1200px;
+  position: relative;
 	margin: 0px auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .clearfix
@@ -2202,117 +2191,45 @@ ul.contact li a.icon-rss:before
 	width: auto;
 }
 
-/*********************************************************************************/
-/* Header                                                                        */
-/*********************************************************************************/
-
-#header
-{
-	position: relative;
-	height: 4em;
+#header {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-/*********************************************************************************/
-/* Logo                                                                          */
-/*********************************************************************************/
-
-#logo
+#title
 {
-	position: absolute;
-	top: 0.2em;
-	left: 0;
-	width: 100%;
-	margin-top: -0.5em;
-}
-
-#logo h1
-{
-	display: inline-block;
-	padding: 0.4em 0em 0.2em 0.50em;
 	font-size: 2em;
-	text-transform: uppercase;
-	font-weight: 900;
-}
-
-#logo a
-{
-	text-decoration: none;
-	color: #FFF;
-}
-
-/*********************************************************************************/
-/* Menu                                                                           */
-/*********************************************************************************/
-
-	#menu
-{
-	position: absolute;
-	right: 0;
-	top: 1em;
-}
-
-.homepage #menu
-{
-	position: absolute;
-	display: block;
-	top: 0;
-	left: 0;
-	width: 100%;
-	text-align: center;
-}
-
-#menu > ul > li > ul
-{
-	display: none;
-}
-
-#menu ul
-{
-	display: inline-block;
-}
-
-#menu li
-{
-	display: block;
-	float: left;
-	text-align: center;
-}
-
-#menu li a, #menu li span
-{
-	display: block;
-	padding: 0.80em 1.5em;
-	letter-spacing: 0.25em;
-	text-decoration: none;
-	font-size: 0.80em;
+  text-align: center;
 	font-weight: 600;
 	text-transform: uppercase;
-	outline: 0;
+}
+
+#title a
+{
+	text-decoration: none;
 	color: #FFF;
 }
 
-#menu li:hover a, #menu li.active a, #menu li.active span
-{
-}
-
-#menu .current_page_item a
-{
-}
+ #header .byline {
+   margin-top: 0.5em;
+   text-align: center;
+ }
 
 /** PAGE */
 
 #page
 {
 	overflow: hidden;
-	padding: 2em 0em 3em 0em;
 }
 
 /** CONTENT */
 
 #content
 {
-	float: left;
-	width: 1200px;
+  float: left;
+  //display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #page .title
@@ -2335,8 +2252,8 @@ ul.contact li a.icon-rss:before
 
 #sidebar
 {
-	float: right;
-	width: 345px;
+	float: left;
+	width: 200px;
 }
 
 #sbox1
@@ -2355,7 +2272,7 @@ ul.contact li a.icon-rss:before
 	color: #6F6F6F;
 }
 
-#footer header
+#footer
 {
 	/*margin-bottom: 1em;*/
 	text-align: center;
@@ -2391,17 +2308,6 @@ ul.contact li a.icon-rss:before
 	font-weight: 400;
 	font-size: 0.90em;
 	color: #6F6F6F;
-}
-
-#welcome
-{
-}
-
-#welcome p
-{
-	padding: 0em 4em;
-	text-align: center;
-	font-size: 1.1em;
 }
 
 #portfolio
