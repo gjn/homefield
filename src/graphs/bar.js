@@ -7,24 +7,29 @@ var Bar = function(element) {
   }
 
   this.create = function(set, rootPath) {
-    var width = 460;
-    var padleft = 300;
+    var myData = set.array();
+    var width = 790;
     var barHeight = 30;
+    var height = barHeight * myData.length;
+    var padleft = 300; // For text
     var logowidth = 30;
+    var barWidth = width - padleft - logowidth;
     var prevSet = set.previousWeek();
     var ascending = false;
-    var myData = set.array();
+
     set.sort(ascending);
 
     var x = d3.scale.linear()
             .domain([set.teamStat(myData[myData.length -1]), set.teamStat(myData[0])])
-            .range([0, width])
+            .range([0, barWidth])
 
     el = d3.select(element);
 
     el.attr("class", "bar")
-      .attr("width", width + padleft + logowidth)
-      .attr("height", barHeight * myData.length);
+      //.attr("width", width)
+      //.attr("height", barHeight * myData.length)
+      .attr("viewBox", '0 0 ' + width + ' ' + height)
+      .attr("preserveAspectRatio", "none");
 
     var update = function() {
       //passing a second parameter allows the persistent
