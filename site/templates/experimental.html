@@ -39,8 +39,8 @@
   var timeGraph = new hf.graphs.Timeline('#timeline');
   var tset = new hf.stats.Timeset({season: {{season}} - 12, week: {{week}}},
                                  {season: {{season}}, week: {{week}}},
-  //                               'ooow').filter(filter).aggregate(aggregate);
-                                 'osdp').filter(filter).aggregate(aggregate);
+                                 'osow').filter(filter).aggregate(aggregate);
+  //                               'osdp').filter(filter).aggregate(aggregate);
   timeGraph.create(tset, '{{basepath}}');
 
   var setX = new hf.stats.Set({{season}}, {{week}}, 'osow').filter(filter); 
