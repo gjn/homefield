@@ -18,27 +18,31 @@ var Table = function(element) {
   var columns = [
     getColumn("rank", "s", "o", "w"),
     getColumn("team", "s", "o", "w"),
+
     getColumn("overall", "s", "o", "w"),
     getColumn("overall", "o", "o", "w"),
-    getColumn("home", "s", "o", "w"),
-    getColumn("away", "s", "o", "w"),
+
     getColumn("overall", "s", "u", "p"),
-    getColumn("home", "s", "u", "p"),
-    getColumn("away", "s", "u", "p"),
     getColumn("overall", "s", "u", "y"),
-    getColumn("home", "s", "u", "y"),
-    getColumn("away", "s", "u", "y"),
     getColumn("overall", "s", "o", "p"),
-    getColumn("home", "s", "o", "p"),
-    getColumn("away", "s", "o", "p"),
     getColumn("overall", "s", "o", "y"),
-    getColumn("home", "s", "o", "y"),
-    getColumn("away", "s", "o", "y"),
     getColumn("overall", "s", "d", "p"),
-    getColumn("home", "s", "d", "p"),
-    getColumn("away", "s", "d", "p"),
     getColumn("overall", "s", "d", "y"),
+
+    getColumn("home", "s", "o", "w"),
+    getColumn("home", "s", "u", "p"),
+    getColumn("home", "s", "u", "y"),
+    getColumn("home", "s", "o", "p"),
+    getColumn("home", "s", "o", "y"),
+    getColumn("home", "s", "d", "p"),
     getColumn("home", "s", "d", "y"),
+    
+    getColumn("away", "s", "o", "w"),
+    getColumn("away", "s", "u", "p"),
+    getColumn("away", "s", "u", "y"),
+    getColumn("away", "s", "o", "p"),
+    getColumn("away", "s", "o", "y"),
+    getColumn("away", "s", "d", "p"),
     getColumn("away", "s", "d", "y")
   ];
 
@@ -61,22 +65,25 @@ var Table = function(element) {
          .text(header);
     }
     //top header
-    addRow("", "colspan", "6");
-    addRow("Differentials", "colspan", "6");
-    addRow("Offense", "colspan", "6");
-    addRow("Defense", "colspan", "6");
+    addRow("", "colspan", "4");
+    addRow("Overall", "colspan", "6");
+    addRow("Home", "colspan", "7");
+    addRow("Away", "colspan", "7");
 
     //second header
     row = head.append("tr");
+    addRow("", "colspan", "4");
+    addRow("Net", "colspan", "2");
+    addRow("Offense", "colspan", "2");
+    addRow("Defense", "colspan", "2");
     addRow("", "colspan", "1");
+    addRow("Net", "colspan", "2");
+    addRow("Offense", "colspan", "2");
+    addRow("Defense", "colspan", "2");
     addRow("", "colspan", "1");
-    addRow("Rating", "colspan", "4");
-    addRow("Points", "colspan", "3");
-    addRow("Yards", "colspan", "3");
-    addRow("Points", "colspan", "3");
-    addRow("Yards", "colspan", "3");
-    addRow("Points", "colspan", "3");
-    addRow("Yards", "colspan", "3");
+    addRow("Net", "colspan", "2");
+    addRow("Offense", "colspan", "2");
+    addRow("Defense", "colspan", "2");
 
     //third header
     row = head.append("tr");
@@ -88,16 +95,16 @@ var Table = function(element) {
             return "Team";
           } else if (d.type == "rank") {
             return "Rank";
-          } else if (d.type == "overall") {
+          } else if (d.stat == "w") {
             if (d.ownopp == "s") {
-              return "Total";
+              return "W";
             } else {
               return "Schedule";
             }
-          } else if (d.type == "home") {
-            return "Home";
+          } else if (d.stat == "p") {
+            return "Pts";
           }
-          return "Away";
+          return "Yds";
         }).on("click", function(d) {
           if (d.type == "team" ||
               d.type == "rank") {
