@@ -36,7 +36,7 @@ $(PUBLISH): $(SITE)
 	git init .; \
 	git add .; \
 	git commit -m "Publish"; \
-	git push git@github.com:gjn/homefield master:gh-pages --force; \
+	git push https://github.com/gjn/homefield master:gh-pages --force; \
 	rm -rf .git;
 	touch $@
 
