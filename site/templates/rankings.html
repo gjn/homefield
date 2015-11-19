@@ -17,6 +17,38 @@
 <svg id="timeline">
 </svg>
 
+<div data-bind="if: games">
+
+  <h3>Predicting the next week</h3>
+
+  <table>
+    <tbody>
+      <tr data-bind="foreach: games">
+        <td data-bind="if: !$index()"></td>
+        <td><img data-bind="attr: {src: '{{basepath}}img/' + at + '.svg'}" height="28px" width="28px"></img></td>
+      </tr>
+      <tr data-bind="foreach: games">
+        <td data-bind="if: !$index()"></td>
+        <td>@</td>
+      </tr>
+      <tr data-bind="foreach: games">
+        <td data-bind="if: !$index()"></td>
+          <td><img data-bind="attr: {src: '{{basepath}}img/' + ht + '.svg'}" height="28px" width="28px"></img></td>
+      </tr>
+      <tr data-bind="foreach: games">
+        <td data-bind="if: !$index()">Rate Differential</td>
+        <td data-bind="text: ($parent.homeRate(ht) - $parent.awayRate(at)).toFixed(1)"></td>
+      </tr>
+      <tr data-bind="foreach: games">
+        <td data-bind="if: !$index()">Winner</td>
+        <td><img data-bind="attr: {src: '{{basepath}}img/' + (($parent.homeRate(ht) - $parent.awayRate(at)) > 0 ? ht : at) + '.svg'}" height="28px" width="28px"></img></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
 <div>
 {% include "../../_site/templates/prnavigation.html" %}
 </div>
@@ -32,6 +64,23 @@
   timeGraph.create(tset, '{{basepath}}');
 </script>
 
+<script type="text/javascript">
+  var home = new hf.stats.Set({{season}}, {{week}}, 'hsow');
+  var away = new hf.stats.Set({{season}}, {{week}}, 'asow');
+  var key = '_' + {{season}} + (({{week}} + 1) < 10 ? '0' : '') + ({{week}} + 1);
+  var data = hf.stats.data[key];
+  var games = undefined;
+  if (data && data.games && data.games.length) {
+    games = data.games;
+    games.awayRate = function(t) {
+      return away.teamStat(t);
+    };
+    games.homeRate = function(t) {
+      return home.teamStat(t);
+    };
+  }
+  ko.applyBindings(games);
+</script>
 {% include "../../_site/templates/disqus.html" %}
 
 
