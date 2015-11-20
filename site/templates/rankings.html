@@ -17,7 +17,7 @@
 <svg id="timeline">
 </svg>
 
-<div class="predictions" data-bind="if: games">
+<div class="predictions" data-bind="if: results">
 
   <h3>Predicting upcoming games</h3>
 
@@ -25,55 +25,44 @@
   <br>
   <table class="table">
     <tbody>
-      <tr data-bind="foreach: games">
+      <tr data-bind="foreach: results">
         <td data-bind="if: !$index()"></td>
         <td><img data-bind="attr: {src: '{{basepath}}img/' + at + '.svg'}"></img></td>
       </tr>
-      <tr data-bind="foreach: games">
+      <tr data-bind="foreach: results">
         <td data-bind="if: !$index()"></td>
         <td>@</td>
       </tr>
-      <tr class="separation" data-bind="foreach: games">
+      <tr class="separation" data-bind="foreach: results">
         <td data-bind="if: !$index()"></td>
           <td><img data-bind="attr: {src: '{{basepath}}img/' + ht + '.svg'}"></img></td>
       </tr>
-      <tr class="results" data-bind="foreach: games">
+      <tr class="results" data-bind="foreach: results">
         <td data-bind="if: !$index()">Rate</td>
         <td>
-          <div data-bind="text: ($parent.homestat(ht, 'o', 'w') - $parent.awaystat(at, 'o', 'w')).toFixed(1)"></div>
-          <img data-bind="attr: {src: '{{basepath}}img/' + (($parent.homestat(ht, 'o', 'w') - $parent.awaystat(at, 'o', 'w')) > 0 ? ht : at) + '.svg'}"></img>
+          <div data-bind="text: w.toFixed(1)"></div>
+          <img data-bind="attr: {src: '{{basepath}}img/' + wt + '.svg'}"></img>
         </td>
       </tr>
-      <tr data-bind="foreach: games">
+      <tr data-bind="foreach: results">
         <td data-bind="if: !$index()">Points</td>
         <td>
-          <div data-bind="text: (($parent.homestat(ht, 'o', 'p') - $parent.homestat(ht, 'd', 'p')) -
-                                 ($parent.awaystat(at, 'o', 'p') - $parent.awaystat(at, 'd', 'p'))).toFixed(0)"></div>
-          <img data-bind="attr: {src: '{{basepath}}img/' + ((($parent.homestat(ht, 'o', 'p') - $parent.homestat(ht, 'd', 'p')) - ($parent.awaystat(at, 'o', 'p') - $parent.awaystat(at, 'd', 'p'))) > 0 ? ht : at) + '.svg'}"></img>
+          <div data-bind="text: p.toFixed(0)"></div>
+          <img data-bind="attr: {src: '{{basepath}}img/' + pt + '.svg'}"></img>
         </td>
       </tr>
-      <tr data-bind="foreach: games">
+      <tr data-bind="foreach: results">
         <td data-bind="if: !$index()">Yards</td>
         <td>
-          <div data-bind="text: (($parent.homestat(ht, 'o', 'y') -
-          $parent.homestat(ht, 'd', 'y')) -
-                                 ($parent.awaystat(at, 'o', 'y') -
-                                 $parent.awaystat(at, 'd', 'y'))).toFixed(0)"></div>
-          <img data-bind="attr: {src: '{{basepath}}img/' + ((($parent.homestat(ht,
-          'o', 'y') - $parent.homestat(ht, 'd', 'y')) - ($parent.awaystat(at, 'o',
-          'y') - $parent.awaystat(at, 'd', 'y'))) > 0 ? ht : at) + '.svg'}"></img>
+          <div data-bind="text: y.toFixed(0)"></div>
+          <img data-bind="attr: {src: '{{basepath}}img/' + yt + '.svg'}"></img>
         </td>
       </tr>
-      <tr data-bind="foreach: games">
+      <tr data-bind="foreach: results">
         <td data-bind="if: !$index()">Turnovers</td>
         <td>
-          <div data-bind="text: (($parent.homestat(ht, 'o', 't') -
-          $parent.homestat(ht, 'd', 't')) -
-                                 ($parent.awaystat(at, 'o', 't') -
-                                 $parent.awaystat(at, 'd', 't'))).toFixed(1)"></div>
-          <img data-bind="attr: {src: '{{basepath}}img/' + ((($parent.homestat(ht,
-          'o', 't') - $parent.homestat(ht, 'd', 't')) - ($parent.awaystat(at, 'o',
-          't') - $parent.awaystat(at, 'd', 't'))) > 0 ? ht : at) + '.svg'}"></img>
+          <div data-bind="text: t.toFixed(1)"></div>
+          <img data-bind="attr: {src: '{{basepath}}img/' + tt + '.svg'}"></img>
         </td>
       </tr>
 
@@ -106,24 +95,50 @@
   var week = {{week}} < 21 ? {{week}} + 1 : 1;
   var key = '_' + season + (week < 10 ? '0' : '') + week;
   var data = hf.stats.data[key];
-  var home, away, games;
+  var home, away, games, results;
   if (data && data.games && data.games.length) {
-    games = data.games;
     home = hf.stats.data[keystats].stats.home;
     away = hf.stats.data[keystats].stats.away;
-
-    games.homestat = function(t, offdef, s) {
+    var homestat = function(t, offdef, s) {
       // For superbowl prediction, we take away stats for both teams
       if ({{week}} == 20) {
         return away[t].s[offdef][s];
       }
       return home[t].s[offdef][s];
     };
-    games.awaystat = function(t, offdef, s) {
+    var awaystat = function(t, offdef, s) {
       return away[t].s[offdef][s];
     };
+
+    results = [];
+    data.games.forEach(function(g) {
+      var w = homestat(g.ht, 'o', 'w') - awaystat(g.at, 'o', 'w');
+      var wt = w > 0 ? g.ht : g.at;
+      var p = (homestat(g.ht, 'o', 'p') - homestat(g.ht, 'd', 'p')) -
+              (awaystat(g.at, 'o', 'p') - awaystat(g.at, 'd', 'p'));
+      var pt = p > 0 ? g.ht : g.at;
+      var y = (homestat(g.ht, 'o', 'y') - homestat(g.ht, 'd', 'y')) -
+              (awaystat(g.at, 'o', 'y') - awaystat(g.at, 'd', 'y'));
+      var yt = y > 0 ? g.ht : g.at;
+      var t = (homestat(g.ht, 'o', 't') - homestat(g.ht, 'd', 't')) -
+              (awaystat(g.at, 'o', 't') - awaystat(g.at, 'd', 't'));
+      var tt = t > 0 ? g.ht : g.at;
+      results.push({
+        ht: g.ht,
+        at: g.at,
+        w: w,
+        wt: wt,
+        p: p,
+        pt: pt,
+        y: y,
+        yt: yt,
+        t: t,
+        tt: tt
+      });
+    });
+
   }
-  ko.applyBindings(games);
+  ko.applyBindings(results);
 </script>
 {% include "../../_site/templates/disqus.html" %}
 
