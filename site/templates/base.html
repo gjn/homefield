@@ -26,12 +26,14 @@ Adapted by Gilbert Jeiziner for homefield.gjn.ch
 {% if debug %}
   <script src="{{basepath}}lib/d3.js"></script>
   <script src="{{basepath}}lib/knockout.js"></script>
+  <script src="{{basepath}}lib/homefield.js"></script>
+  <script src="{{basepath}}lib/{{season}}.js"></script>
 {% else %}
   <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.8/d3.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+  <script src="{{basepath}}lib/homefield.min.js"></script>
+  <script src="{{basepath}}lib/{{season}}.min.js"></script>
 {% endif %}
-  <script src="{{basepath}}lib/homefield.js"></script>
-  <script src="{{basepath}}lib/{{season}}.js"></script>
 {% block headincludes %}
 {% endblock %}
 </head>
