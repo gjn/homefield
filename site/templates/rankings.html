@@ -101,8 +101,10 @@
 </script>
 
 <script type="text/javascript">
-  var key = '_' + {{season}} + (({{week}} + 1) < 10 ? '0' : '') + ({{week}} + 1);
   var keystats = '_' + {{season}} + ({{week}} < 10 ? '0' : '') + {{week}};
+  var season = {{week}} < 21 ? {{season}} : {{season}} - 1;
+  var week = {{week}} < 21 ? {{week}} + 1 : 1;
+  var key = '_' + season + (week < 10 ? '0' : '') + week;
   var data = hf.stats.data[key];
   var home, away, games;
   if (data && data.games && data.games.length) {
@@ -111,6 +113,10 @@
     away = hf.stats.data[keystats].stats.away;
 
     games.homestat = function(t, offdef, s) {
+      // For superbowl prediction, we take away stats for both teams
+      if ({{week}} == 20) {
+        return away[t].s[offdef][s];
+      }
       return home[t].s[offdef][s];
     };
     games.awaystat = function(t, offdef, s) {
