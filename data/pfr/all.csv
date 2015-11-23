@@ -3616,20 +3616,20 @@ SuperBowl,Sun,February 1,2015,boxscore,New England Patriots,@,Seattle Seahawks,2
 10,Sun,November 15,2015,boxscore,Pittsburgh Steelers,,Cleveland Browns,30,9,459,2,342,3
 10,Sun,November 15,2015,boxscore,Washington Redskins,,New Orleans Saints,47,14,526,0,350,2
 10,Mon,November 16,2015,boxscore,Houston Texans,@,Cincinnati Bengals,10,6,256,1,256,2
-11,Thu,November 19,2015,boxscore,Tennessee Titans,@,Jacksonville Jaguars
-11,Sun,November 22,2015,boxscore,Indianapolis Colts,@,Atlanta Falcons
-11,Sun,November 22,2015,boxscore,Washington Redskins,@,Carolina Panthers
-11,Sun,November 22,2015,boxscore,Denver Broncos,@,Chicago Bears
-11,Sun,November 22,2015,boxscore,Oakland Raiders,@,Detroit Lions
-11,Sun,November 22,2015,boxscore,New York Jets,@,Houston Texans
-11,Sun,November 22,2015,boxscore,Dallas Cowboys,@,Miami Dolphins
-11,Sun,November 22,2015,boxscore,Green Bay Packers,@,Minnesota Vikings
-11,Sun,November 22,2015,boxscore,Tampa Bay Buccaneers,@,Philadelphia Eagles
-11,Sun,November 22,2015,boxscore,St. Louis Rams,@,Baltimore Ravens
-11,Sun,November 22,2015,boxscore,Cincinnati Bengals,@,Arizona Cardinals
-11,Sun,November 22,2015,boxscore,San Francisco 49ers,@,Seattle Seahawks
-11,Sun,November 22,2015,boxscore,Kansas City Chiefs,@,San Diego Chargers
-11,Mon,November 23,2015,boxscore,Buffalo Bills,@,New England Patriots
+11,Thu,November 19,2015,boxscore,Jacksonville Jaguars,,Tennessee Titans,19,13,308,2,316,1
+11,Sun,November 22,2015,boxscore,Denver Broncos,@,Chicago Bears,17,15,389,0,347,2
+11,Sun,November 22,2015,boxscore,Tampa Bay Buccaneers,@,Philadelphia Eagles,45,17,521,1,383,4
+11,Sun,November 22,2015,boxscore,Indianapolis Colts,@,Atlanta Falcons,24,21,276,3,375,4
+11,Sun,November 22,2015,boxscore,Green Bay Packers,@,Minnesota Vikings,30,13,320,0,342,1
+11,Sun,November 22,2015,boxscore,Arizona Cardinals,,Cincinnati Bengals,34,31,383,2,377,1
+11,Sun,November 22,2015,boxscore,Detroit Lions,,Oakland Raiders,18,13,375,0,214,0
+11,Sun,November 22,2015,boxscore,Carolina Panthers,,Washington Redskins,44,16,368,0,186,5
+11,Sun,November 22,2015,boxscore,Baltimore Ravens,,St. Louis Rams,16,13,388,2,213,4
+11,Sun,November 22,2015,boxscore,Houston Texans,,New York Jets,24,17,364,1,267,2
+11,Sun,November 22,2015,boxscore,Dallas Cowboys,@,Miami Dolphins,24,14,386,2,210,1
+11,Sun,November 22,2015,boxscore,Kansas City Chiefs,@,San Diego Chargers,33,3,385,0,201,2
+11,Sun,November 22,2015,boxscore,Seattle Seahawks,,San Francisco 49ers,29,13,508,0,306,0
+11,Mon,November 23,,New England Patriots,,Buffalo Bills,,,,,,
 12,Thu,November 26,2015,boxscore,Philadelphia Eagles,@,Detroit Lions
 12,Thu,November 26,2015,boxscore,Carolina Panthers,@,Dallas Cowboys
 12,Thu,November 26,2015,boxscore,Chicago Bears,@,Green Bay Packers
