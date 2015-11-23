@@ -37,36 +37,41 @@
         <td data-bind="if: !$index()"></td>
           <td><img data-bind="attr: {src: '{{basepath}}img/' + ht + '.svg'}"></img></td>
       </tr>
+      <tr class="separation results" data-bind="foreach: results">
+        <td data-bind="if: !$index()">Winner</td>
+        <td>
+          <img class="winner" data-bind="attr: {src: '{{basepath}}img/' + ot + '.svg'}"></img>
+          <div data-bind="text: o.toFixed(0) + '%'"></div>
+        </td>
+      </tr>
       <tr class="results" data-bind="foreach: results">
         <td data-bind="if: !$index()">Rate</td>
         <td>
-          <div data-bind="text: w.toFixed(1)"></div>
           <img data-bind="attr: {src: '{{basepath}}img/' + wt + '.svg'}"></img>
+          <div data-bind="text: w.toFixed(1)"></div>
         </td>
       </tr>
       <tr data-bind="foreach: results">
         <td data-bind="if: !$index()">Points</td>
         <td>
-          <div data-bind="text: p.toFixed(0)"></div>
           <img data-bind="attr: {src: '{{basepath}}img/' + pt + '.svg'}"></img>
+          <div data-bind="text: p.toFixed(0)"></div>
         </td>
       </tr>
       <tr data-bind="foreach: results">
         <td data-bind="if: !$index()">Yards</td>
         <td>
-          <div data-bind="text: y.toFixed(0)"></div>
           <img data-bind="attr: {src: '{{basepath}}img/' + yt + '.svg'}"></img>
+          <div data-bind="text: y.toFixed(0)"></div>
         </td>
       </tr>
       <tr data-bind="foreach: results">
         <td data-bind="if: !$index()">Turnovers</td>
         <td>
-          <div data-bind="text: t.toFixed(1)"></div>
           <img data-bind="attr: {src: '{{basepath}}img/' + tt + '.svg'}"></img>
+          <div data-bind="text: t.toFixed(1)"></div>
         </td>
       </tr>
-
-
 
     </tbody>
   </table>
@@ -91,7 +96,7 @@
 
 <script type="text/javascript">
   var keystats = '_' + {{season}} + ({{week}} < 10 ? '0' : '') + {{week}};
-  var season = {{week}} < 21 ? {{season}} : {{season}} - 1;
+  var season = {{week}} < 21 ? {{season}} : {{season}} + 1;
   var week = {{week}} < 21 ? {{week}} + 1 : 1;
   var key = '_' + season + (week < 10 ? '0' : '') + week;
   var data = hf.stats.data[key];
@@ -111,6 +116,12 @@
     };
 
     results = [];
+    var mmw = {
+      min: undefined,
+      max: undefined
+    }
+    var maxw, maxp, maxy, maxt;
+    var minw, minp, miny, mint;
     data.games.forEach(function(g) {
       var w = homestat(g.ht, 'o', 'w') - awaystat(g.at, 'o', 'w');
       var wt = w > 0 ? g.ht : g.at;
@@ -135,6 +146,53 @@
         t: t,
         tt: tt
       });
+      maxw = (maxw == undefined || w > maxw) ? w : maxw;
+      maxp = (maxp == undefined || p > maxp) ? p : maxp;
+      maxy = (maxy == undefined || y > maxy) ? y : maxy;
+      maxt = (maxt == undefined || t > maxt) ? t : maxt;
+      minw = (minw == undefined || w < minw) ? w : minw;
+      minp = (minp == undefined || p < minp) ? p : minp;
+      miny = (miny == undefined || y < miny) ? y : miny;
+      mint = (mint == undefined || t < mint) ? t : mint;
+    });
+    console.log(minw, maxw);
+    // symetric values
+    if (Math.abs(maxw) > Math.abs(minw)) {
+      minw = Math.abs(maxw) * (Math.abs(minw)/minw);
+    } else {
+      maxw = Math.abs(minw) * (Math.abs(maxw)/maxw);
+    }
+    if (Math.abs(maxp) > Math.abs(minp)) {
+      minp = Math.abs(maxp) * (Math.abs(minp)/minp);
+    } else {
+      maxp = Math.abs(minp) * (Math.abs(maxp)/maxp);
+    }
+    if (Math.abs(maxy) > Math.abs(miny)) {
+      miny = Math.abs(maxy) * (Math.abs(miny)/miny);
+    } else {
+      maxy = Math.abs(miny) * (Math.abs(maxy)/maxy);
+    }
+    if (Math.abs(maxt) > Math.abs(mint)) {
+      mint = Math.abs(maxt) * (Math.abs(mint)/mint);
+    } else {
+      maxt = Math.abs(mint) * (Math.abs(maxt)/maxt);
+    }
+    var slep = function(v, max, min) {
+      return 100 * ((v - min) / (max - min));
+    }
+    
+    results.forEach(function(r) {
+      r.ww = slep(r.w, maxw, minw);
+      r.pw = slep(r.p, maxp, minp);
+      r.yw = slep(r.y, maxy, miny);
+      r.tw = slep(r.t, maxt, mint);
+
+      r.o = ((6*r.ww) + (3*r.pw) + (2*r.tw) + r.yw) / 12.0;
+      r.ot = r.ht;
+      if (r.o < 50) {
+        r.o = 100 - r.o;
+        r.ot = r.at;
+      }
     });
 
   }
