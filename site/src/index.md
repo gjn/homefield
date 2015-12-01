@@ -8,5 +8,9 @@ title: 2015 - Week 11
 description: The Packers haul in the Vikings
 ---
 
-Here's your week 11 rankings:
+Predictions for this week: 12-2
+
+Overall in 2015 season: 107-53
+
+Here's your rankings after week 11 of 2015:
 
