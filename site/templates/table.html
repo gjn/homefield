@@ -12,8 +12,20 @@
 </table>
 
 <script type="text/javascript">
+  var week = {{week}};
+  var season = {{season}};
+  params = URI.parseQuery(location.search);
+  locweek = parseInt(params.week);
+  if (!isNaN(locweek) && locweek <= 21 && locweek > 0) {
+    week = locweek;
+  }
+  locseason = parseInt(params.season);
+  if (!isNaN(locseason) && locseason <= 2015 && locseason > 2002) {
+    season = locseason;
+  }
+
   var filter = '';
-  var set = new hf.stats.Set({{season}}, {{week}}, 'osow').filter(filter);
+  var set = new hf.stats.Set(season, week, 'osow').filter(filter);
   var tableGraph = new hf.graphs.Table('#stattable');
   tableGraph.create(set, '{{basepath}}');
 </script>

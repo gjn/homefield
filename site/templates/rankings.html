@@ -30,13 +30,20 @@
 </div>
 
 <script type="text/javascript">
+  var dataset = 'osow';
+
+  params = URI.parseQuery(location.search);
+  if (params.dataset && params.dataset.length == 4) {
+    dataset = params.dataset;
+  }
+  window.console.log(dataset);
   var newGraph = new hf.graphs.Bar('#chart');
-  var set = new hf.stats.Set({{season}}, {{week}}, 'osow');
+  var set = new hf.stats.Set({{season}}, {{week}}, dataset);
   newGraph.create(set, '{{basepath}}');
 
   var timeGraph = new hf.graphs.Timeline('#timeline');
   var tset = new hf.stats.Timeset({season: {{season}} - 1, week: 21},
-                                 {season: {{season}}, week: {{week}}}, 'osow');
+                                 {season: {{season}}, week: {{week}}}, dataset);
   timeGraph.create(tset, '{{basepath}}');
 </script>
 
