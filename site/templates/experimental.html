@@ -28,7 +28,7 @@
 <svg id="bubble">
 </svg>
 
-<h3>Over Time</h3>
+<h3>Strenght of schedule over time</h3>
 
 <svg id="timeline">
 </svg>
@@ -37,7 +37,7 @@
   var filter = '';
   var aggregate = '';
   var timeGraph = new hf.graphs.Timeline('#timeline');
-  var tset = new hf.stats.Timeset({season: {{season}} - 12, week: {{week}}},
+  var tset = new hf.stats.Timeset({season: {{season}} - 1, week: 21},
                                  {season: {{season}}, week: {{week}}},
                                  'osow').filter(filter).aggregate(aggregate);
   //                               'osdp').filter(filter).aggregate(aggregate);
