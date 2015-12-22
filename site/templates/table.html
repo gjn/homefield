@@ -8,7 +8,27 @@
 
 <p>{{ contents }}</p>
 
+<h2>Overall Table</h2>
+
 <table id="stattable">
+</table>
+
+</br>
+</br>
+</br>
+
+<h2>Home Table</h2>
+
+<table id="hometable">
+</table>
+
+</br>
+</br>
+</br>
+
+<h2>Away Table</h2>
+
+<table id="awaytable">
 </table>
 
 <script type="text/javascript">
@@ -25,9 +45,18 @@
   }
 
   var filter = '';
-  var set = new hf.stats.Set(season, week, 'osow').filter(filter);
-  var tableGraph = new hf.graphs.Table('#stattable');
+  var set = new hf.stats.Set(season, week, 'osoh').filter(filter);
+  var tableGraph = new hf.graphs.Table('#stattable', 'overall');
   tableGraph.create(set, '{{basepath}}');
+
+  var homeset = new hf.stats.Set(season, week, 'hsoh').filter(filter);
+  var homeTable = new hf.graphs.Table('#hometable', 'home');
+  homeTable.create(homeset, '{{basepath}}');
+
+  var awayset = new hf.stats.Set(season, week, 'asoh').filter(filter);
+  var awayTable = new hf.graphs.Table('#awaytable', 'away');
+  awayTable.create(awayset, '{{basepath}}');
+
 </script>
 
 {% include "../../_site/templates/disqus.html" %}

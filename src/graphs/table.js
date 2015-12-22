@@ -1,6 +1,6 @@
 hf.graphs = hf.graphs || {};
 
-var Table = function(element) {
+var Table = function(element, settype) {
 
   if (!(this instanceof Table)) {
     return new Table(element);
@@ -15,35 +15,44 @@ var Table = function(element) {
     };
   };
 
+  var bigIsGood = function(offdef, stat) {
+    if (stat === 'r' || stat === 'h') {
+      return true;
+    }
+
+    var ret = true;
+    if (stat === 't' && offdef !== 'u') {
+      ret = false;
+    }
+    if (offdef === 'd') {
+      return !ret;
+    }
+    return ret;
+  };
+
   var columns = [
     getColumn("rank", "s", "o", "w"),
     getColumn("team", "s", "o", "w"),
 
-    getColumn("overall", "s", "o", "w"),
-    getColumn("overall", "o", "o", "w"),
+    getColumn(settype, "s", "o", "h"),
+    getColumn(settype, "s", "o", "r"),
+    getColumn(settype, "s", "d", "r"),
+    getColumn(settype, "s", "o", "w"),
 
-    getColumn("overall", "s", "u", "p"),
-    getColumn("overall", "s", "u", "y"),
-    getColumn("overall", "s", "o", "p"),
-    getColumn("overall", "s", "o", "y"),
-    getColumn("overall", "s", "d", "p"),
-    getColumn("overall", "s", "d", "y"),
+    getColumn(settype, "s", "u", "p"),
+    getColumn(settype, "s", "u", "t"),
+    getColumn(settype, "s", "u", "y"),
+    getColumn(settype, "s", "o", "p"),
+    getColumn(settype, "s", "o", "t"),
+    getColumn(settype, "s", "o", "y"),
+    getColumn(settype, "s", "d", "p"),
+    getColumn(settype, "s", "d", "t"),
+    getColumn(settype, "s", "d", "y"),
 
-    getColumn("home", "s", "o", "w"),
-    getColumn("home", "s", "u", "p"),
-    getColumn("home", "s", "u", "y"),
-    getColumn("home", "s", "o", "p"),
-    getColumn("home", "s", "o", "y"),
-    getColumn("home", "s", "d", "p"),
-    getColumn("home", "s", "d", "y"),
-    
-    getColumn("away", "s", "o", "w"),
-    getColumn("away", "s", "u", "p"),
-    getColumn("away", "s", "u", "y"),
-    getColumn("away", "s", "o", "p"),
-    getColumn("away", "s", "o", "y"),
-    getColumn("away", "s", "d", "p"),
-    getColumn("away", "s", "d", "y")
+    getColumn(settype, "o", "o", "h"),
+    getColumn(settype, "o", "o", "r"),
+    getColumn(settype, "o", "d", "r"),
+    getColumn(settype, "o", "o", "w")
   ];
 
   this.create = function(set, rootPath) {
@@ -64,26 +73,16 @@ var Table = function(element) {
          .attr("scope", scope)
          .text(header);
     }
-    //top header
-    addRow("", "colspan", "4");
-    addRow("Overall", "colspan", "6");
-    addRow("Home", "colspan", "7");
-    addRow("Away", "colspan", "7");
 
-    //second header
     row = head.append("tr");
-    addRow("", "colspan", "4");
-    addRow("Net", "colspan", "2");
-    addRow("Offense", "colspan", "2");
-    addRow("Defense", "colspan", "2");
-    addRow("", "colspan", "1");
-    addRow("Net", "colspan", "2");
-    addRow("Offense", "colspan", "2");
-    addRow("Defense", "colspan", "2");
-    addRow("", "colspan", "1");
-    addRow("Net", "colspan", "2");
-    addRow("Offense", "colspan", "2");
-    addRow("Defense", "colspan", "2");
+    addRow("", "colspan", "2");
+    addRow("Ratings", "colspan", "4");
+
+    addRow("Net", "colspan", "3");
+    addRow("Offense", "colspan", "3");
+    addRow("Defense", "colspan", "3");
+
+    addRow("Strenght of Schedule", "colspan", "4");
 
     //third header
     row = head.append("tr");
@@ -95,12 +94,17 @@ var Table = function(element) {
             return "Team";
           } else if (d.type == "rank") {
             return "Rank";
-          } else if (d.stat == "w") {
-            if (d.ownopp == "s") {
-              return "W";
-            } else {
-              return "Schedule";
+          } else if (d.stat == "h") {
+            return "Overall";
+          } else if (d.stat == "r") {
+            if (d.offdef == "o") {
+              return "Offense";
             }
+            return "Defense";
+          } else if (d.stat == "w") {
+            return "Winrate";
+          } else if (d.stat == "t") {
+            return "TO";
           } else if (d.stat == "p") {
             return "Pts";
           }
@@ -113,7 +117,7 @@ var Table = function(element) {
           row.sort(function(t1, t2) {
             var team1 = t1;
             var team2 = t2;
-            if (d.offdef == 'd') {
+            if (!bigIsGood(d.offdef, d.stat)) {
               team1 = t2;
               team2 = t1;
             }
@@ -152,7 +156,7 @@ var Table = function(element) {
             return idx + 1 + '';
           }
           retval = set.stat(c.type,d,c.ownopp,c.offdef,c.stat);
-          if (c.offdef == "u" && c.stat == "p") {
+          if (c.offdef == "u" && (c.stat == "p" || c.stat == "t")) {
             retval = retval.toFixed(1);
           }
           return retval;
