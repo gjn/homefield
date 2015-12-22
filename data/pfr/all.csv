@@ -3678,22 +3678,22 @@ SuperBowl,Sun,February 1,2015,boxscore,New England Patriots,@,Seattle Seahawks,2
 14,Sun,December 13,2015,boxscore,Cleveland Browns,,San Francisco 49ers,24,10,481,2,221,0
 14,Sun,December 13,2015,boxscore,Carolina Panthers,,Atlanta Falcons,38,0,424,0,230,4
 14,Mon,December 14,2015,boxscore,New York Giants,@,Miami Dolphins,31,24,429,1,363,1
-15,Thu,December 17,2015,boxscore,Tampa Bay Buccaneers,@,St. Louis Rams
-15,Sat,December 19,2015,boxscore,New York Jets,@,Dallas Cowboys
-15,Sun,December 20,2015,boxscore,Houston Texans,@,Indianapolis Colts
-15,Sun,December 20,2015,boxscore,Atlanta Falcons,@,Jacksonville Jaguars
-15,Sun,December 20,2015,boxscore,Chicago Bears,@,Minnesota Vikings
-15,Sun,December 20,2015,boxscore,Tennessee Titans,@,New England Patriots
-15,Sun,December 20,2015,boxscore,Carolina Panthers,@,New York Giants
-15,Sun,December 20,2015,boxscore,Arizona Cardinals,@,Philadelphia Eagles
-15,Sun,December 20,2015,boxscore,Kansas City Chiefs,@,Baltimore Ravens
-15,Sun,December 20,2015,boxscore,Buffalo Bills,@,Washington Redskins
-15,Sun,December 20,2015,boxscore,Green Bay Packers,@,Oakland Raiders
-15,Sun,December 20,2015,boxscore,Cleveland Browns,@,Seattle Seahawks
-15,Sun,December 20,2015,boxscore,Denver Broncos,@,Pittsburgh Steelers
-15,Sun,December 20,2015,boxscore,Miami Dolphins,@,San Diego Chargers
-15,Sun,December 20,2015,boxscore,Cincinnati Bengals,@,San Francisco 49ers
-15,Mon,December 21,2015,boxscore,Detroit Lions,@,New Orleans Saints
+15,Thu,December 17,2015,boxscore,St. Louis Rams,,Tampa Bay Buccaneers,31,23,319,0,509,2
+15,Sat,December 19,2015,boxscore,New York Jets,@,Dallas Cowboys,19,16,372,1,309,4
+15,Sun,December 20,2015,boxscore,Minnesota Vikings,,Chicago Bears,38,17,350,0,293,2
+15,Sun,December 20,2015,boxscore,Washington Redskins,,Buffalo Bills,35,25,431,1,452,0
+15,Sun,December 20,2015,boxscore,San Diego Chargers,,Miami Dolphins,30,14,442,2,231,1
+15,Sun,December 20,2015,boxscore,Seattle Seahawks,,Cleveland Browns,30,13,423,0,230,1
+15,Sun,December 20,2015,boxscore,Arizona Cardinals,@,Philadelphia Eagles,40,17,493,0,424,4
+15,Sun,December 20,2015,boxscore,Atlanta Falcons,@,Jacksonville Jaguars,23,17,328,1,357,1
+15,Sun,December 20,2015,boxscore,Green Bay Packers,@,Oakland Raiders,30,20,293,2,372,2
+15,Sun,December 20,2015,boxscore,Cincinnati Bengals,@,San Francisco 49ers,24,14,242,1,318,4
+15,Sun,December 20,2015,boxscore,New England Patriots,,Tennessee Titans,33,16,346,1,282,3
+15,Sun,December 20,2015,boxscore,Houston Texans,@,Indianapolis Colts,16,10,305,2,190,2
+15,Sun,December 20,2015,boxscore,Pittsburgh Steelers,,Denver Broncos,34,27,377,2,385,2
+15,Sun,December 20,2015,boxscore,Kansas City Chiefs,@,Baltimore Ravens,34,14,277,0,366,3
+15,Sun,December 20,2015,boxscore,Carolina Panthers,@,New York Giants,38,35,480,1,406,2
+15,Mon,December 21,2015,boxscore,Detroit Lions,@,New Orleans Saints,35,27,396,1,399,0
 16,Thu,December 24,2015,boxscore,San Diego Chargers,@,Oakland Raiders
 16,Sat,December 26,2015,boxscore,Washington Redskins,@,Philadelphia Eagles
 16,Sun,December 27,2015,boxscore,Carolina Panthers,@,Atlanta Falcons
