@@ -72,7 +72,11 @@ var Bar = function(element) {
         .attr("dy", ".27em")
         .attr("text-anchor", "end")
         .text(function(d, i) {
-          return '[' + set.teamStat(d) + ']';
+          var txt = '' + set.teamStat(d);
+          if (d == 'h' || d == 'r') {
+            txt += '%';
+          }
+          return '[' + txt + ']';
         });
 
 

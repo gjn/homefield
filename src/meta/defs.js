@@ -283,6 +283,8 @@ var Defs = function () {
       name = 'Points';
     } else if (s == 'y') {
       name = 'Yards';
+    } else if (s == 'r' || s == 'h') {
+      name = 'Rating [%]';
     } else if (s == 't') {
       name = 'Turnovers';
     }

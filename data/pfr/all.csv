@@ -3710,19 +3710,23 @@ SuperBowl,Sun,February 1,2015,boxscore,New England Patriots,@,Seattle Seahawks,2
 16,Sun,December 27,2015,boxscore,St. Louis Rams,@,Seattle Seahawks,23,17,207,0,313,3
 16,Sun,December 27,2015,boxscore,Chicago Bears,@,Tampa Bay Buccaneers,26,21,327,0,389,3
 16,Mon,December 28,2015,boxscore,Denver Broncos,,Cincinnati Bengals,20,17,390,1,294,1
-17,Sun,January 3,2016,boxscore,New Orleans Saints,@,Atlanta Falcons
-17,Sun,January 3,2016,boxscore,New York Jets,@,Buffalo Bills
-17,Sun,January 3,2016,boxscore,Tampa Bay Buccaneers,@,Carolina Panthers
-17,Sun,January 3,2016,boxscore,Detroit Lions,@,Chicago Bears
-17,Sun,January 3,2016,boxscore,Baltimore Ravens,@,Cincinnati Bengals
-17,Sun,January 3,2016,boxscore,Pittsburgh Steelers,@,Cleveland Browns
-17,Sun,January 3,2016,boxscore,Tennessee Titans,@,Indianapolis Colts
-17,Sun,January 3,2016,boxscore,Washington Redskins,@,Dallas Cowboys
-17,Sun,January 3,2016,boxscore,Minnesota Vikings,@,Green Bay Packers
-17,Sun,January 3,2016,boxscore,Jacksonville Jaguars,@,Houston Texans
-17,Sun,January 3,2016,boxscore,Oakland Raiders,@,Kansas City Chiefs
-17,Sun,January 3,2016,boxscore,New England Patriots,@,Miami Dolphins
-17,Sun,January 3,2016,boxscore,Philadelphia Eagles,@,New York Giants
-17,Sun,January 3,2016,boxscore,Seattle Seahawks,@,Arizona Cardinals
-17,Sun,January 3,2016,boxscore,San Diego Chargers,@,Denver Broncos
-17,Sun,January 3,2016,boxscore,St. Louis Rams,@,San Francisco 49ers
+17,Sun,January 3,2016,boxscore,Pittsburgh Steelers,@,Cleveland Browns,28,12,379,3,263,4
+17,Sun,January 3,2016,boxscore,New Orleans Saints,@,Atlanta Falcons,20,17,390,1,419,2
+17,Sun,January 3,2016,boxscore,San Francisco 49ers,,St. Louis Rams,19,16,458,1,364,0
+17,Sun,January 3,2016,boxscore,Detroit Lions,@,Chicago Bears,24,20,349,0,342,3
+17,Sun,January 3,2016,boxscore,Carolina Panthers,,Tampa Bay Buccaneers,38,10,366,2,386,3
+17,Sun,January 3,2016,boxscore,Denver Broncos,,San Diego Chargers,27,20,503,5,317,1
+17,Sun,January 3,2016,boxscore,Miami Dolphins,,New England Patriots,20,10,438,0,196,0
+17,Sun,January 3,2016,boxscore,Houston Texans,,Jacksonville Jaguars,30,6,402,1,215,4
+17,Sun,January 3,2016,boxscore,Washington Redskins,@,Dallas Cowboys,34,23,437,0,512,4
+17,Sun,January 3,2016,boxscore,Buffalo Bills,,New York Jets,22,17,295,1,300,3
+17,Sun,January 3,2016,boxscore,Minnesota Vikings,@,Green Bay Packers,20,13,242,2,350,2
+17,Sun,January 3,2016,boxscore,Indianapolis Colts,,Tennessee Titans,30,24,327,1,231,1
+17,Sun,January 3,2016,boxscore,Cincinnati Bengals,,Baltimore Ravens,24,16,292,0,341,2
+17,Sun,January 3,2016,boxscore,Kansas City Chiefs,,Oakland Raiders,23,17,339,2,205,1
+17,Sun,January 3,2016,boxscore,Seattle Seahawks,@,Arizona Cardinals,36,6,354,0,232,3
+17,Sun,January 3,2016,boxscore,Philadelphia Eagles,@,New York Giants,35,30,435,2,502,1
+WildCard,Sat,January 9,2016,boxscore,Kansas City Chiefs,,Houston Texans,,,,,,
+WildCard,Sat,January 9,2016,boxscore,Pittsburgh Steelers,,Cincinnati Bengals,,,,,,
+WildCard,Sun,January 10,2016,boxscore,Seattle Seahawks,,Minnesota Vikings,,,,,,
+WildCard,Sun,January 10,2016,boxscore,Green Bay Packers,,Washington Redskins,,,,,,

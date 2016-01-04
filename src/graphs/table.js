@@ -95,12 +95,12 @@ var Table = function(element, settype) {
           } else if (d.type == "rank") {
             return "Rank";
           } else if (d.stat == "h") {
-            return "Overall";
+            return "Overall [%]";
           } else if (d.stat == "r") {
             if (d.offdef == "o") {
-              return "Offense";
+              return "Offense [%]";
             }
-            return "Defense";
+            return "Defense [%]";
           } else if (d.stat == "w") {
             return "Winrate";
           } else if (d.stat == "t") {
