@@ -3726,7 +3726,11 @@ SuperBowl,Sun,February 1,2015,boxscore,New England Patriots,@,Seattle Seahawks,2
 17,Sun,January 3,2016,boxscore,Kansas City Chiefs,,Oakland Raiders,23,17,339,2,205,1
 17,Sun,January 3,2016,boxscore,Seattle Seahawks,@,Arizona Cardinals,36,6,354,0,232,3
 17,Sun,January 3,2016,boxscore,Philadelphia Eagles,@,New York Giants,35,30,435,2,502,1
-WildCard,Sat,January 9,2016,boxscore,Kansas City Chiefs,,Houston Texans,,,,,,
-WildCard,Sat,January 9,2016,boxscore,Pittsburgh Steelers,,Cincinnati Bengals,,,,,,
-WildCard,Sun,January 10,2016,boxscore,Seattle Seahawks,,Minnesota Vikings,,,,,,
-WildCard,Sun,January 10,2016,boxscore,Green Bay Packers,,Washington Redskins,,,,,,
+WildCard,Sat,January 9,2016,boxscore,Kansas City Chiefs,@,Houston Texans,30,0,314,1,226,5
+WildCard,Sat,January 9,2016,boxscore,Pittsburgh Steelers,@,Cincinnati Bengals,18,16,369,2,279,4
+WildCard,Sun,January 10,2016,boxscore,Seattle Seahawks,@,Minnesota Vikings,10,9,226,1,183,1
+WildCard,Sun,January 10,2016,boxscore,Green Bay Packers,@,Washington Redskins,35,18,346,1,354,1
+Division,Sat,January 16,2016,boxscore,Kansas City Chiefs,,New England Patriots,,,,,,
+Division,Sat,January 16,2016,boxscore,Green Bay Packers,,Arizona Cardinals,,,,,,
+Division,Sun,January 17,2016,boxscore,Seattle Seahawks,,Carolina Panthers,,,,,,
+Division,Sun,January 17,2016,boxscore,Pittsburgh Steelers,,Denver Broncos,,,,,,
