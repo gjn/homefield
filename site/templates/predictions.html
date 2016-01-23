@@ -63,6 +63,8 @@
 </div>
 
 <script type="text/javascript">
+  function sign(x) { return x > 0 ? 1 : x < 0 ? -1 : 0; }
+
   (function () {
   var keystats = '_' + {{season}} + ({{week}} < 10 ? '0' : '') + {{week}};
   var season = {{week}} < 21 ? {{season}} : {{season}} + 1;
@@ -131,27 +133,37 @@
       miny = (miny == undefined || y < miny) ? y : miny;
       mint = (mint == undefined || t < mint) ? t : mint;
     });
-    console.log(minw, maxw);
     // symetric values
-    if (Math.abs(maxw) > Math.abs(minw)) {
-      minw = Math.abs(maxw) * (Math.abs(minw)/minw);
-    } else {
-      maxw = Math.abs(minw) * (Math.abs(maxw)/maxw);
+    if (sign(maxw) != sign(minw)) {
+      if (Math.abs(maxw) > Math.abs(minw)) {
+        minw = Math.abs(maxw) * (Math.abs(minw)/minw);
+      } else {
+        maxw = Math.abs(minw) * (Math.abs(maxw)/maxw);
+      }
     }
-    if (Math.abs(maxp) > Math.abs(minp)) {
-      minp = Math.abs(maxp) * (Math.abs(minp)/minp);
-    } else {
-      maxp = Math.abs(minp) * (Math.abs(maxp)/maxp);
+
+    if (sign(maxp) != sign(minp)) {
+      if (Math.abs(maxp) > Math.abs(minp)) {
+        minp = Math.abs(maxp) * (Math.abs(minp)/minp);
+      } else {
+        maxp = Math.abs(minp) * (Math.abs(maxp)/maxp);
+      }
     }
-    if (Math.abs(maxy) > Math.abs(miny)) {
-      miny = Math.abs(maxy) * (Math.abs(miny)/miny);
-    } else {
-      maxy = Math.abs(miny) * (Math.abs(maxy)/maxy);
+
+    if (sign(maxy) != sign(miny)) {
+      if (Math.abs(maxy) > Math.abs(miny)) {
+        miny = Math.abs(maxy) * (Math.abs(miny)/miny);
+      } else {
+        maxy = Math.abs(miny) * (Math.abs(maxy)/maxy);
+      }
     }
-    if (Math.abs(maxt) > Math.abs(mint)) {
-      mint = Math.abs(maxt) * (Math.abs(mint)/mint);
-    } else {
-      maxt = Math.abs(mint) * (Math.abs(maxt)/maxt);
+
+    if (sign(maxt) != sign(mint)) {
+      if (Math.abs(maxt) > Math.abs(mint)) {
+        mint = Math.abs(maxt) * (Math.abs(mint)/mint);
+      } else {
+        maxt = Math.abs(mint) * (Math.abs(maxt)/maxt);
+      }
     }
     var slep = function(v, max, min) {
       return 100 * ((v - min) / (max - min));
