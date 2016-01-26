@@ -3734,5 +3734,6 @@ Division,Sat,January 16,2016,boxscore,Arizona Cardinals,,Green Bay Packers,26,20
 Division,Sat,January 16,2016,boxscore,New England Patriots,,Kansas City Chiefs,27,20,340,0,378,1
 Division,Sun,January 17,2016,boxscore,Denver Broncos,,Pittsburgh Steelers,23,16,324,0,396,1
 Division,Sun,January 17,2016,boxscore,Carolina Panthers,,Seattle Seahawks,31,24,295,0,403,2
-ConfChamp,Sun,January 24,2016,boxscore,New England Patriots,,Denver Broncos,,,,,,
-ConfChamp,Sun,January 24,2016,boxscore,Arizona Cardinals,,Carolina Panthers,,,,,,
+ConfChamp,Sun,January 24,2016,boxscore,Carolina Panthers,,Arizona Cardinals,49,15,476,1,287,7
+ConfChamp,Sun,January 24,2016,boxscore,Denver Broncos,,New England Patriots,20,18,244,1,336,2
+SuperBowl,Sun,February 7,2016,boxscore,Carolina Panthers,,Denver Broncos,,,,,,

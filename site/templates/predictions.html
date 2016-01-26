@@ -78,18 +78,23 @@
 
   var key = '_' + season + (week < 10 ? '0' : '') + week;
   var data = hf.stats.data[key];
-  var home, away, games, results;
+  var home, away, games, overall, results;
   if (data && data.games && data.games.length) {
     home = hf.stats.data[keystats].stats.home;
     away = hf.stats.data[keystats].stats.away;
+    overall = hf.stats.data[keystats].stats.overall;
     var homestat = function(t, offdef, s) {
-      // For superbowl prediction, we take away stats for both teams
+      // For superbowl prediction, we take overall stats for both teams
       if ({{week}} == 20) {
-        return away[t].s[offdef][s];
+        return overall[t].s[offdef][s];
       }
       return home[t].s[offdef][s];
     };
     var awaystat = function(t, offdef, s) {
+      // For superbowl prediction, we take overall stats for both teams
+      if ({{week}} == 20) {
+        return overall[t].s[offdef][s];
+      }
       return away[t].s[offdef][s];
     };
 
@@ -166,6 +171,9 @@
       }
     }
     var slep = function(v, max, min) {
+      if (max == min) {
+        return 100.0;
+      }
       return 100 * ((v - min) / (max - min));
     }
     
