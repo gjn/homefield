@@ -3,16 +3,12 @@ var cmds = require('commander');
 var launcher = require('./lib/launcher')()
 
 cmds
-    .version('0.0.1')
-    .option('-f, --file <file>', 'Add the file of games to use')
-    .option('-t, --type <type>', 'Type of parsing [latest, all]', 'latest')
+    .version('0.0.2')
+    .option('-p, --path <path>', 'Path to game files (per year)')
+    .option('-s, --season <season>', 'Season to analyse')
     .parse(process.argv);
 
-if (fs.existsSync(cmds.file) === false) {
-    console.log('No file provided or it does not exists.');
-} else {
-    launcher.start(cmds.file, cmds.type);
-}
+launcher.start(cmds.path, cmds.season);
 
 
 

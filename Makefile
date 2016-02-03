@@ -73,11 +73,65 @@ $(HOMEFIELD_JS): $(ANALYSE) $(JS_FILES) ms/jsbuild/metalsmith.json ms/jsbuild/te
 	node_modules/.bin/smash src/homefield.js > $(BUILD_DIR)/_site/lib/homefield.js
 	touch $@
 
-$(ANALYSE): node_modules data/pfr/all.csv $(ANALYSE_FILES) index.js
-	mkdir -p $(ANALYSE_TARGET_DIR)
-	node index.js -f data/pfr/all.csv -t all
+$(ANALYSE): $(ANALYSE_TARGET_DIR)/2015.js $(ANALYSE_TARGET_DIR)/2014.js $(ANALYSE_TARGET_DIR)/2013.js $(ANALYSE_TARGET_DIR)/2012.js $(ANALYSE_TARGET_DIR)/2011.js $(ANALYSE_TARGET_DIR)/2010.js $(ANALYSE_TARGET_DIR)/2009.js $(ANALYSE_TARGET_DIR)/2008.js $(ANALYSE_TARGET_DIR)/2007.js $(ANALYSE_TARGET_DIR)/2006.js $(ANALYSE_TARGET_DIR)/2005.js $(ANALYSE_TARGET_DIR)/2004.js $(ANALYSE_TARGET_DIR)/2003.js $(ANALYSE_TARGET_DIR)/2002.js
 	mkdir -p $(TOUCH_DIR)
 	touch $@
+
+$(ANALYSE_TARGET_DIR)/2015.js: node_modules data/pfr/2015.csv data/pfr/2014.csv data/pfr/2013.csv data/pfr/2012.csv $(ANALYSE_FILES) index.js
+	mkdir -p $(ANALYSE_TARGET_DIR)
+	node index.js -p data/pfr/ -s 2015
+
+$(ANALYSE_TARGET_DIR)/2014.js: node_modules data/pfr/2014.csv data/pfr/2013.csv data/pfr/2012.csv data/pfr/2011.csv $(ANALYSE_FILES) index.js
+	mkdir -p $(ANALYSE_TARGET_DIR)
+	node index.js -p data/pfr/ -s 2014
+
+$(ANALYSE_TARGET_DIR)/2013.js: node_modules data/pfr/2013.csv data/pfr/2012.csv data/pfr/2011.csv data/pfr/2010.csv $(ANALYSE_FILES) index.js
+	mkdir -p $(ANALYSE_TARGET_DIR)
+	node index.js -p data/pfr/ -s 2013
+
+$(ANALYSE_TARGET_DIR)/2012.js: node_modules data/pfr/2012.csv data/pfr/2011.csv data/pfr/2010.csv data/pfr/2009.csv $(ANALYSE_FILES) index.js
+	mkdir -p $(ANALYSE_TARGET_DIR)
+	node index.js -p data/pfr/ -s 2012
+
+$(ANALYSE_TARGET_DIR)/2011.js: node_modules data/pfr/2011.csv data/pfr/2010.csv data/pfr/2009.csv data/pfr/2008.csv $(ANALYSE_FILES) index.js
+	mkdir -p $(ANALYSE_TARGET_DIR)
+	node index.js -p data/pfr/ -s 2011
+
+$(ANALYSE_TARGET_DIR)/2010.js: node_modules data/pfr/2010.csv data/pfr/2009.csv data/pfr/2008.csv data/pfr/2007.csv $(ANALYSE_FILES) index.js
+	mkdir -p $(ANALYSE_TARGET_DIR)
+	node index.js -p data/pfr/ -s 2010
+
+$(ANALYSE_TARGET_DIR)/2009.js: node_modules data/pfr/2009.csv data/pfr/2008.csv data/pfr/2007.csv data/pfr/2006.csv $(ANALYSE_FILES) index.js
+	mkdir -p $(ANALYSE_TARGET_DIR)
+	node index.js -p data/pfr/ -s 2009
+
+$(ANALYSE_TARGET_DIR)/2008.js: node_modules data/pfr/2008.csv data/pfr/2007.csv data/pfr/2006.csv data/pfr/2005.csv $(ANALYSE_FILES) index.js
+	mkdir -p $(ANALYSE_TARGET_DIR)
+	node index.js -p data/pfr/ -s 2008
+
+$(ANALYSE_TARGET_DIR)/2007.js: node_modules data/pfr/2007.csv data/pfr/2006.csv data/pfr/2005.csv data/pfr/2004.csv $(ANALYSE_FILES) index.js
+	mkdir -p $(ANALYSE_TARGET_DIR)
+	node index.js -p data/pfr/ -s 2007
+
+$(ANALYSE_TARGET_DIR)/2006.js: node_modules data/pfr/2006.csv data/pfr/2005.csv data/pfr/2004.csv data/pfr/2003.csv $(ANALYSE_FILES) index.js
+	mkdir -p $(ANALYSE_TARGET_DIR)
+	node index.js -p data/pfr/ -s 2006
+
+$(ANALYSE_TARGET_DIR)/2005.js: node_modules data/pfr/2005.csv data/pfr/2004.csv data/pfr/2003.csv data/pfr/2002.csv $(ANALYSE_FILES) index.js
+	mkdir -p $(ANALYSE_TARGET_DIR)
+	node index.js -p data/pfr/ -s 2005
+
+$(ANALYSE_TARGET_DIR)/2004.js: node_modules data/pfr/2004.csv data/pfr/2003.csv data/pfr/2002.csv $(ANALYSE_FILES) index.js
+	mkdir -p $(ANALYSE_TARGET_DIR)
+	node index.js -p data/pfr/ -s 2004
+
+$(ANALYSE_TARGET_DIR)/2003.js: node_modules data/pfr/2003.csv data/pfr/2002.csv $(ANALYSE_FILES) index.js
+	mkdir -p $(ANALYSE_TARGET_DIR)
+	node index.js -p data/pfr/ -s 2003
+
+$(ANALYSE_TARGET_DIR)/2002.js: node_modules data/pfr/2002.csv $(ANALYSE_FILES) index.js
+	mkdir -p $(ANALYSE_TARGET_DIR)
+	node index.js -p data/pfr/ -s 2002
 
 node_modules: package.json
 	npm install
