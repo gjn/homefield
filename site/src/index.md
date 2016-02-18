@@ -5,11 +5,7 @@ week: 21
 nonext: true
 permalink: false
 title: 2015 - Suberbowl
-description: Defense wins Championshipts
+description: Defense wins Championships
 ---
-
-Predictions for this week: 0-1
-
-Overall in 2015 season: 177-90.
 
 Here's your rankings after the Superbowl 2015:

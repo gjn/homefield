@@ -1,51 +1,62 @@
-<div id="{{results}}">
+<div id="record">
+  <div class="record" data-bind="if: record">
+    Prediction record: <span data-bind="text: record.correct"></span> - <span
+    data-bind="text: record.wrong"></span>
+  </div>
+  </b>
+  </b>
+  </b>
+</div>
 
-  <div class="predictions" data-bind="if: {{results}}">
+
+<div id="predictions">
+
+  <div class="predictions" data-bind="if: predictions && predictions.length">
 
     <h3>Predicting upcoming games</h3>
     <table class="table">
       <tbody>
-        <tr data-bind="foreach: {{results}}">
+        <tr data-bind="foreach: predictions">
           <td data-bind="if: !$index()"></td>
           <td><img data-bind="attr: {src: '{{basepath}}img/' + at + '.svg'}"></img></td>
         </tr>
-        <tr data-bind="foreach: {{results}}">
+        <tr data-bind="foreach: predictions">
           <td data-bind="if: !$index()"></td>
           <td>@</td>
         </tr>
-        <tr class="separation" data-bind="foreach: {{results}}">
+        <tr class="separation" data-bind="foreach: predictions">
           <td data-bind="if: !$index()"></td>
             <td><img data-bind="attr: {src: '{{basepath}}img/' + ht + '.svg'}"></img></td>
         </tr>
-        <tr class="separation results" data-bind="foreach: {{results}}">
+        <tr class="separation results" data-bind="foreach: predictions">
           <td data-bind="if: !$index()">Winner</td>
           <td>
             <img class="winner" data-bind="attr: {src: '{{basepath}}img/' + ot + '.svg'}"></img>
             <div data-bind="text: o.toFixed(0) + '%'"></div>
           </td>
         </tr>
-        <tr class="results" data-bind="foreach: {{results}}">
+        <tr class="results" data-bind="foreach: predictions">
           <td data-bind="if: !$index()">Rate</td>
           <td>
             <img data-bind="attr: {src: '{{basepath}}img/' + wt + '.svg'}"></img>
             <div data-bind="text: w.toFixed(1)"></div>
           </td>
         </tr>
-        <tr data-bind="foreach: {{results}}">
+        <tr data-bind="foreach: predictions">
           <td data-bind="if: !$index()">Points</td>
           <td>
             <img data-bind="attr: {src: '{{basepath}}img/' + pt + '.svg'}"></img>
             <div data-bind="text: p.toFixed(0)"></div>
           </td>
         </tr>
-        <tr data-bind="foreach: {{results}}">
+        <tr data-bind="foreach: predictions">
           <td data-bind="if: !$index()">Yards</td>
           <td>
             <img data-bind="attr: {src: '{{basepath}}img/' + yt + '.svg'}"></img>
             <div data-bind="text: y.toFixed(0)"></div>
           </td>
         </tr>
-        <tr data-bind="foreach: {{results}}">
+        <tr data-bind="foreach: predictions">
           <td data-bind="if: !$index()">Turnovers</td>
           <td>
             <img data-bind="attr: {src: '{{basepath}}img/' + tt + '.svg'}"></img>
@@ -63,12 +74,11 @@
 </div>
 
 <script type="text/javascript">
-  (function () {
   var keystats = '_' + {{season}} + ({{week}} < 10 ? '0' : '') + {{week}};
   var data = hf.stats.data[keystats];
-  {{results}} = data.predictions.nextweek;
-
-  }());
-  ko.applyBindings({{results}}, document.getElementById('{{results}}'));
+  var predictions = data.predictions.nextweek;
+  var record = data.predictions.record;
+  ko.applyBindings(predictions, document.getElementById('predictions'));
+  ko.applyBindings(record, document.getElementById('record'));
 </script>
 
