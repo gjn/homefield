@@ -1,41 +1,7 @@
 
 var Defs = function () {
   'use strict';
-  var longToShort = {
-          'Dallas Cowboys': 'DAL',
-          'New York Giants': 'NYG',
-          'Denver Broncos': 'DEN',
-          'Pittsburgh Steelers': 'PIT',
-          'Arizona Cardinals': 'ARI',
-          'Seattle Seahawks': 'SEA',
-          'Washington Redskins': 'WAS',
-          'New Orleans Saints': 'NO',
-          'Minnesota Vikings': 'MIN',
-          'Jacksonville Jaguars': 'JAC',
-          'Houston Texans': 'HOU',
-          'Miami Dolphins': 'MIA',
-          'Philadelphia Eagles': 'PHI',
-          'Cleveland Browns': 'CLE',
-          'Chicago Bears': 'CHI',
-          'Indianapolis Colts': 'IND',
-          'Atlanta Falcons': 'ATL',
-          'Kansas City Chiefs': 'KC',
-          'New England Patriots': 'NE',
-          'Tennessee Titans': 'TEN',
-          'New York Jets': 'NYJ',
-          'Buffalo Bills': 'BUF',
-          'San Francisco 49ers': 'SF',
-          'Green Bay Packers': 'GB',
-          'Tampa Bay Buccaneers': 'TB',
-          'Carolina Panthers': 'CAR',
-          'Detroit Lions': 'DET',
-          'St. Louis Rams': 'STL',
-          'San Diego Chargers': 'SD',
-          'Oakland Raiders': 'OAK',
-          'Baltimore Ravens': 'BAL',
-          'Cincinnati Bengals': 'CIN'
-      },
-      shortToLong = {
+  var shortToLong = {
           DAL: 'Dallas Cowboys',
           NYG: 'New York Giants',
           DEN: 'Denver Broncos',
@@ -63,7 +29,7 @@ var Defs = function () {
           TB: 'Tampa Bay Buccaneers',
           CAR: 'Carolina Panthers',
           DET: 'Detroit Lions',
-          STL: 'St. Louis Rams',
+          LA: 'Los Angeles Rams',
           SD: 'San Diego Chargers',
           OAK: 'Oakland Raiders',
           BAL: 'Baltimore Ravens',
@@ -97,7 +63,7 @@ var Defs = function () {
           TB: 'NFCS',
           CAR: 'NFCS',
           DET: 'NFCN',
-          STL: 'NFCW',
+          LA: 'NFCW',
           SD: 'AFCW',
           OAK: 'AFCW',
           BAL: 'AFCN',
@@ -131,7 +97,8 @@ var Defs = function () {
           TB: 'NFC',
           CAR: 'NFC',
           DET: 'NFC',
-          STL: 'NFC',
+          LA: 'NFC',
+          LA: 'NFC',
           SD: 'AFC',
           OAK: 'AFC',
           BAL: 'AFC',
@@ -151,11 +118,11 @@ var Defs = function () {
           NFCE: ['WAS', 'DAL', 'NYG', 'PHI'],
           NFCN: ['GB', 'MIN', 'CHI', 'DET'],
           NFCS: ['ATL', 'CAR', 'NO', 'TB'],
-          NFCW: ['SF', 'SEA', 'STL', 'ARI']
+          NFCW: ['SF', 'SEA', 'LA', 'ARI']
       },
       confToTeam = {
           AFC: ['NE', 'MIA', 'NYJ', 'BUF', 'BAL', 'PIT', 'CIN', 'CLE', 'HOU', 'IND', 'TEN', 'JAC', 'DEN', 'SD', 'OAK', 'KC'],
-          NFC: ['WAS', 'DAL', 'NYG', 'PHI', 'GB', 'MIN', 'CHI', 'DET', 'ATL', 'CAR', 'NO', 'TB', 'SF', 'SEA', 'STL', 'ARI']
+          NFC: ['WAS', 'DAL', 'NYG', 'PHI', 'GB', 'MIN', 'CHI', 'DET', 'ATL', 'CAR', 'NO', 'TB', 'SF', 'SEA', 'LA', 'ARI']
       },
       // Colors from http://teamcolors.arc90.com/
       teamToColor = {
@@ -187,7 +154,7 @@ var Defs = function () {
         SD: ["08214A", "EEC607", "5B92E5", "FFFFFF"],
         SF: ["AF1E2C", "E6BE8A", "000000"],
         SEA: ["06192E", "4EAE47", "ACB6BC", "FFFFFF"],
-        STL: ["13264B", "C9AF74", "FFFFFF"],
+        LA: ["13264B", "C9AF74", "FFFFFF"],
         TB: ["D60A0B", "89765F", "000000", "FFFFFF", "FF7A00"],
         TEN: ["648FCC", "000080", "FF0000", "C0C0C0"],
         WAS: ["773141", "FFB612", "FFFFFF"]
@@ -253,13 +220,6 @@ var Defs = function () {
           return shortToLong[shortname];
       }
       throw new Error('No entry for short name ' + shortname + ' found');
-  };
-
-  this.longToShort = function (longname) {
-      if (longToShort.hasOwnProperty(longname)) {
-          return longToShort[longname];
-      }
-      throw new Error('No entry for long name ' + longname + ' found');
   };
 
   this.teamColor = function (team, level) {
