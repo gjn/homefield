@@ -8,6 +8,12 @@
   "destination": "{{destination}}",
   "plugins": {
     "metalsmith-markdown": { },
+    "metalsmith-collections": {
+      "articles": {
+        "sortBy": "date",
+        "reverse": true
+      }
+    },
     "metalsmith-permalinks": {
       "pattern": "nfl/:season/:week",
       "relative": false
