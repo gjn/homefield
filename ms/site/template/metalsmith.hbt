@@ -10,8 +10,7 @@
     "metalsmith-markdown": { },
     "metalsmith-collections": {
       "articles": {
-        "sortBy": "date",
-        "reverse": true
+        "sortBy": "date"
       }
     },
     "metalsmith-permalinks": {
