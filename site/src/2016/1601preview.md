@@ -2,6 +2,7 @@
 season: 2016
 week: 1
 date: 2016-05-03
+type: preview
 collection: articles
 template: post.html
 ---

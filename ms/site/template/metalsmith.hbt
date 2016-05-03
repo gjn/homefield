@@ -14,7 +14,7 @@
       }
     },
     "metalsmith-permalinks": {
-      "pattern": "nfl/:season/:week",
+      "pattern": "nfl/:season/:week:type",
       "relative": false
     },
     "metalsmith-templates": {
