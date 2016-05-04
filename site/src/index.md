@@ -1,12 +1,13 @@
 ---
 template: index.html
-season: 2015
-week: 21
-date: 2016-02-02
+season: 2016
+week: 1
+date: 2016-05-04
+type: preview
 collection: articles
 permalink: false
-title: 2015 - Suberbowl
-description: Defense wins Championships
+title: Preview of the NFL 2016 season - Strength of Schedule
+description: The Jets have it tough
 ---
 
-Here's your rankings after the Superbowl 2015:
+Preview for week 1 of 2016:

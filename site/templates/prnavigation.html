@@ -1,12 +1,20 @@
 <span class="navigation">
   {% if previous %}
-    <a id="previous" href="{{basepath}}{{previous.path }}/">Previous</a>
+    {% if previous.path == '' %}
+      <a id="previous" href="{{basepath}}">Previous</a>
+    {% else %}
+      <a id="previous" href="{{basepath}}{{previous.path }}/">Previous</a>
+    {% endif %}
   {% endif %}
   {% if previous and next %}
    - 
   {% endif %}
   {% if next %}
-  <a id="next" href="{{basepath}}{{next.path}}/">Next</a>
+    {% if next.path == '' %}
+      <a id="next" href="{{basepath}}">Next</a>
+    {% else %}
+      <a id="next" href="{{basepath}}{{next.path}}/">Next</a>
+    {% endif %}
   {% endif %}
 </span>
 
