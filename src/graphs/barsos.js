@@ -1,9 +1,9 @@
 hf.graphs = hf.graphs || {};
 
-var Bar = function(element) {
+var BarSOS = function(element) {
 
-  if (!(this instanceof Bar)) {
-    return new Bar(element);
+  if (!(this instanceof BarSOS)) {
+    return new BarSOS(element);
   }
 
   this.create = function(set, rootPath) {
@@ -93,5 +93,5 @@ var Bar = function(element) {
   
 };
 
-hf.graphs.Bar = Bar;
+hf.graphs.BarSOS = BarSOS;
 

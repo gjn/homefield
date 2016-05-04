@@ -11,6 +11,8 @@ var Set = function(s, w, statdef) {
       return 'home';
     } else if (t == 'a') {
       return 'away';
+    } else if (t == 's') {
+      return 'SOS';
     }
     return 'overall';
   };
@@ -24,12 +26,15 @@ var Set = function(s, w, statdef) {
   var _offdef = statdef[2];
   var _stat = statdef[3];
   var _data = hf.stats.data['_' + _season + (_week < 10 ? '0' : '') + _week];
+  if (_type != 's' && _data) {
+    _data = _data.stats;
+  }
   var _array;
 
   var updateArray = function() {
     _array = [];
     if (_data) {
-      var unfiltered = _data.stats[getType(_type)];
+      var unfiltered = _data[getType(_type)];
       if (_aggregator) {
         unfiltered = _aggregator.aggregate();
       }
@@ -102,15 +107,19 @@ var Set = function(s, w, statdef) {
   };
 
   var value = function(type, team, ownopp, offdef, stat) {
+    if (type == 'SOS') {
+      return _data[type][team];
+    }
+
     if (offdef == 'u') {
-      var val = _data.stats[type][team][ownopp]['o'][stat] -
-             _data.stats[type][team][ownopp]['d'][stat];
+      var val = _data[type][team][ownopp]['o'][stat] -
+             _data[type][team][ownopp]['d'][stat];
       if (stat == 't') {
         val *= -1.0;
       }
       return val;
     }
-    return _data.stats[type][team][ownopp][offdef][stat];
+    return _data[type][team][ownopp][offdef][stat];
   }
 
   this.stat = function(type, team, ownopp, offdef, stat) {

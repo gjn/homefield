@@ -1,0 +1,59 @@
+{% extends "../../_site/templates/base.html" %}
+
+{% block pagecontent %}
+<div class="title">
+  <h2>NFL Preview for Week {{week}} of the {{season}} season</h2>
+  <span class="byline">{{description}}</span>
+  {% include "../../_site/templates/prnavigation.html" %}
+</div>
+
+{% if week == 1 %}
+
+{% set week = 21 %}
+{% set season = season - 1 %}
+
+{% else %}
+
+{% set week = week -1 %}
+
+{% endif %}
+
+
+<p>
+{{ contents }}
+</p>
+
+<div>
+{% include "../../_site/templates/predictions.html" %}
+</div>
+
+<h1>Strength of remaining schedule</h1>
+
+
+<svg id="chart">
+</svg>
+<p>
+</p>
+
+<div>
+{% include "../../_site/templates/prnavigation.html" %}
+</div>
+
+<script type="text/javascript">
+  var dataset = 'ssoh';
+
+  params = URI.parseQuery(location.search);
+  if (params.dataset && params.dataset.length == 4) {
+    dataset = params.dataset;
+  }
+  window.console.log(dataset);
+  var newGraph = new hf.graphs.Bar('#chart');
+  var set = new hf.stats.Set({{season}}, {{week}}, dataset);
+  newGraph.create(set, '{{basepath}}');
+
+</script>
+
+{% include "../../_site/templates/disqus.html" %}
+
+
+{% endblock %}
