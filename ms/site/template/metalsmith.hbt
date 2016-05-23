@@ -23,7 +23,8 @@
     },
     "metalsmith-ignore": [
       "*.swp",
-      "drafts/*"
+      "drafts/*",
+      "*.draft"
     ],
     "metalsmith-static": [{
         "src": "{{cssdirectory}}",
