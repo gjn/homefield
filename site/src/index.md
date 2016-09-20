@@ -1,13 +1,14 @@
 ---
 template: index.html
 season: 2016
-week: 1
-date: 2016-05-04
+week: 2
+date: 2016-09-15
 type: preview
 collection: articles
 permalink: false
-title: Preview of the NFL 2016 season - Strength of Schedule
-description: The Jets have it tough
+title: Week 2 Preview of the NFL 2016 season
+description: The matchups
 ---
 
-Preview for week 1 of 2016:
+Predictions for week 2 of 2016:
+
