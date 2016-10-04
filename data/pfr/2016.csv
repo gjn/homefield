@@ -31,22 +31,22 @@ Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TO
 2,Sun,September 18,2016,4:25PM,Denver Broncos,,Indianapolis Colts,34,20,400,1,253,2
 2,Sun,September 18,2016,8:32PM,Minnesota Vikings,,Green Bay Packers,17,14,284,1,263,3
 2,Mon,September 19,2016,8:30PM,Philadelphia Eagles,@,Chicago Bears,29,14,280,0,284,3
-3,Thu,September 22,2016,boxscore,Houston Texans,@,New England Patriots,,,,,,
-3,Sun,September 25,2016,boxscore,Arizona Cardinals,@,Buffalo Bills,,,,,,
-3,Sun,September 25,2016,boxscore,Minnesota Vikings,@,Carolina Panthers,,,,,,
-3,Sun,September 25,2016,boxscore,Denver Broncos,@,Cincinnati Bengals,,,,,,
-3,Sun,September 25,2016,boxscore,Detroit Lions,@,Green Bay Packers,,,,,,
-3,Sun,September 25,2016,boxscore,Baltimore Ravens,@,Jacksonville Jaguars,,,,,,
-3,Sun,September 25,2016,boxscore,Cleveland Browns,@,Miami Dolphins,,,,,,
-3,Sun,September 25,2016,boxscore,Washington Redskins,@,New York Giants,,,,,,
-3,Sun,September 25,2016,boxscore,Oakland Raiders,@,Tennessee Titans,,,,,,
-3,Sun,September 25,2016,boxscore,San Francisco 49ers,@,Seattle Seahawks,,,,,,
-3,Sun,September 25,2016,boxscore,Los Angeles Rams,@,Tampa Bay Buccaneers,,,,,,
-3,Sun,September 25,2016,boxscore,San Diego Chargers,@,Indianapolis Colts,,,,,,
-3,Sun,September 25,2016,boxscore,New York Jets,@,Kansas City Chiefs,,,,,,
-3,Sun,September 25,2016,boxscore,Pittsburgh Steelers,@,Philadelphia Eagles,,,,,,
-3,Sun,September 25,2016,boxscore,Chicago Bears,@,Dallas Cowboys,,,,,,
-3,Mon,September 26,2016,boxscore,Atlanta Falcons,@,New Orleans Saints,,,,,,
+3,Thu,September 22,2016,8:26PM,New England Patriots,,Houston Texans,27,0,282,0,284,3
+3,Sun,September 25,2016,1:02PM,Miami Dolphins,,Cleveland Browns,30,24,426,3,430,1
+3,Sun,September 25,2016,1:02PM,Denver Broncos,@,Cincinnati Bengals,29,17,355,1,332,2
+3,Sun,September 25,2016,1:02PM,Buffalo Bills,,Arizona Cardinals,33,18,296,1,348,5
+3,Sun,September 25,2016,1:02PM,Baltimore Ravens,@,Jacksonville Jaguars,19,17,283,3,216,3
+3,Sun,September 25,2016,1:02PM,Minnesota Vikings,@,Carolina Panthers,22,10,211,0,306,3
+3,Sun,September 25,2016,1:02PM,Washington Redskins,@,New York Giants,29,27,403,1,457,3
+3,Sun,September 25,2016,1:02PM,Oakland Raiders,@,Tennessee Titans,17,10,368,1,393,3
+3,Sun,September 25,2016,1:02PM,Green Bay Packers,,Detroit Lions,34,27,324,0,418,1
+3,Sun,September 25,2016,4:05PM,Seattle Seahawks,,San Francisco 49ers,37,18,418,2,254,1
+3,Sun,September 25,2016,4:05PM,Los Angeles Rams,@,Tampa Bay Buccaneers,37,32,320,2,472,2
+3,Sun,September 25,2016,4:25PM,Philadelphia Eagles,,Pittsburgh Steelers,34,3,426,0,251,2
+3,Sun,September 25,2016,4:25PM,Indianapolis Colts,,San Diego Chargers,26,22,410,2,356,3
+3,Sun,September 25,2016,4:26PM,Kansas City Chiefs,,New York Jets,24,3,293,1,305,8
+3,Sun,September 25,2016,8:31PM,Dallas Cowboys,,Chicago Bears,31,17,447,1,390,2
+3,Mon,September 26,2016,8:30PM,Atlanta Falcons,@,New Orleans Saints,45,32,442,0,474,2
 4,Thu,September 29,2016,boxscore,Miami Dolphins,@,Cincinnati Bengals,,,,,,
 4,Sun,October 2,2016,boxscore,Carolina Panthers,@,Atlanta Falcons,,,,,,
 4,Sun,October 2,2016,boxscore,Detroit Lions,@,Chicago Bears,,,,,,
