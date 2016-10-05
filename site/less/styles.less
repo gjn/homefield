@@ -2298,6 +2298,32 @@ ul.contact li a.icon-rss:before
 #sbox1
 {
 	margin-bottom: 4em;
+
+  .separator {
+    display: none;
+  }
+}
+
+@media (max-width: 1111px) {
+  #sidebar {
+    width: 100%;
+  }
+  #sbox1 {
+    ul li {
+      display: inline;
+    }
+    .separator {
+      display: inline;
+    }
+
+    margin-bottom: 0.1em;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #sbox2 {
+    display: none;
+  }
 }
 
 /* Footer */
