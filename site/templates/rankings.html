@@ -30,19 +30,39 @@
 
 <script type="text/javascript">
   var dataset = 'osoh';
+  var aggregator, filter;
 
   params = URI.parseQuery(location.search);
   if (params.dataset && params.dataset.length == 4) {
     dataset = params.dataset;
   }
-  window.console.log(dataset);
+  if (params.aggregator) {
+    aggregator = params.aggregator;
+  }
+  if (params.filter) {
+    filter = params.filter;
+  }
+  window.console.log(dataset, filter, aggregator);
   var newGraph = new hf.graphs.Bar('#chart');
   var set = new hf.stats.Set({{season}}, {{week}}, dataset);
+  if (filter) {
+    set = set.filter(filter);
+  }
+  if (aggregator) {
+    set = set.aggregate(aggregator);
+  }
+  
   newGraph.create(set, '{{basepath}}');
 
   var timeGraph = new hf.graphs.Timeline('#timeline');
   var tset = new hf.stats.Timeset({season: {{season}} - 1, week: 21},
                                  {season: {{season}}, week: {{week}}}, dataset);
+  if (filter) {
+    tset = tset.filter(filter);
+  }
+  if (aggregator) {
+    tset = tset.aggregate(aggregator);
+  }
   timeGraph.create(tset, '{{basepath}}');
 </script>
 
