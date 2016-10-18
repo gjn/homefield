@@ -76,21 +76,21 @@ Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TO
 5,Sun,October 9,2016,4:25PM,Oakland Raiders,,San Diego Chargers,34,31,389,1,423,4
 5,Sun,October 9,2016,8:30PM,Green Bay Packers,,New York Giants,23,16,406,2,219,1
 5,Mon,October 10,2016,8:30PM,Tampa Bay Buccaneers,@,Carolina Panthers,17,14,315,0,414,4
-6,Thu,October 13,2016,boxscore,Denver Broncos,@,San Diego Chargers,,,,,,
-6,Sun,October 16,2016,boxscore,San Francisco 49ers,@,Buffalo Bills,,,,,,
-6,Sun,October 16,2016,boxscore,Jacksonville Jaguars,@,Chicago Bears,,,,,,
-6,Sun,October 16,2016,boxscore,Los Angeles Rams,@,Detroit Lions,,,,,,
-6,Sun,October 16,2016,boxscore,Pittsburgh Steelers,@,Miami Dolphins,,,,,,
-6,Sun,October 16,2016,boxscore,Carolina Panthers,@,New Orleans Saints,,,,,,
-6,Sun,October 16,2016,boxscore,Cincinnati Bengals,@,New England Patriots,,,,,,
-6,Sun,October 16,2016,boxscore,Baltimore Ravens,@,New York Giants,,,,,,
-6,Sun,October 16,2016,boxscore,Cleveland Browns,@,Tennessee Titans,,,,,,
-6,Sun,October 16,2016,boxscore,Philadelphia Eagles,@,Washington Redskins,,,,,,
-6,Sun,October 16,2016,boxscore,Kansas City Chiefs,@,Oakland Raiders,,,,,,
-6,Sun,October 16,2016,boxscore,Dallas Cowboys,@,Green Bay Packers,,,,,,
-6,Sun,October 16,2016,boxscore,Atlanta Falcons,@,Seattle Seahawks,,,,,,
-6,Sun,October 16,2016,boxscore,Indianapolis Colts,@,Houston Texans,,,,,,
-6,Mon,October 17,2016,boxscore,New York Jets,@,Arizona Cardinals,,,,,,
+6,Thu,October 13,2016,8:25PM,San Diego Chargers,,Denver Broncos,21,13,265,2,304,2
+6,Sun,October 16,2016,1:00PM,Washington Redskins,,Philadelphia Eagles,27,20,493,1,239,0
+6,Sun,October 16,2016,1:00PM,Jacksonville Jaguars,@,Chicago Bears,17,16,317,2,389,0
+6,Sun,October 16,2016,1:00PM,New Orleans Saints,,Carolina Panthers,41,38,523,1,406,2
+6,Sun,October 16,2016,1:00PM,Tennessee Titans,,Cleveland Browns,28,26,407,1,341,0
+6,Sun,October 16,2016,1:00PM,Miami Dolphins,,Pittsburgh Steelers,30,15,474,0,297,2
+6,Sun,October 16,2016,1:00PM,New England Patriots,,Cincinnati Bengals,35,17,437,0,357,0
+6,Sun,October 16,2016,1:00PM,Detroit Lions,,Los Angeles Rams,31,28,348,0,387,1
+6,Sun,October 16,2016,1:00PM,Buffalo Bills,,San Francisco 49ers,45,16,491,2,300,1
+6,Sun,October 16,2016,1:00PM,New York Giants,,Baltimore Ravens,27,23,435,3,391,0
+6,Sun,October 16,2016,4:05PM,Kansas City Chiefs,@,Oakland Raiders,26,10,406,0,286,2
+6,Sun,October 16,2016,4:25PM,Seattle Seahawks,,Atlanta Falcons,26,24,333,0,362,2
+6,Sun,October 16,2016,4:25PM,Dallas Cowboys,@,Green Bay Packers,30,16,424,2,372,4
+6,Sun,October 16,2016,8:30PM,Houston Texans,,Indianapolis Colts,26,23,414,1,392,1
+6,Mon,October 17,2016,8:30PM,Arizona Cardinals,,New York Jets,28,3,396,0,230,2
 7,Thu,October 20,2016,boxscore,Chicago Bears,@,Green Bay Packers,,,,,,
 7,Sun,October 23,2016,boxscore,Cleveland Browns,@,Cincinnati Bengals,,,,,,
 7,Sun,October 23,2016,boxscore,Washington Redskins,@,Detroit Lions,,,,,,
