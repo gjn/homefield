@@ -91,21 +91,21 @@ Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TO
 6,Sun,October 16,2016,4:25PM,Dallas Cowboys,@,Green Bay Packers,30,16,424,2,372,4
 6,Sun,October 16,2016,8:30PM,Houston Texans,,Indianapolis Colts,26,23,414,1,392,1
 6,Mon,October 17,2016,8:30PM,Arizona Cardinals,,New York Jets,28,3,396,0,230,2
-7,Thu,October 20,2016,boxscore,Chicago Bears,@,Green Bay Packers,,,,,,
-7,Sun,October 23,2016,boxscore,Cleveland Browns,@,Cincinnati Bengals,,,,,,
-7,Sun,October 23,2016,boxscore,Washington Redskins,@,Detroit Lions,,,,,,
-7,Sun,October 23,2016,boxscore,Oakland Raiders,@,Jacksonville Jaguars,,,,,,
-7,Sun,October 23,2016,boxscore,New Orleans Saints,@,Kansas City Chiefs,,,,,,
-7,Sun,October 23,2016,boxscore,Buffalo Bills,@,Miami Dolphins,,,,,,
-7,Sun,October 23,2016,boxscore,Baltimore Ravens,@,New York Jets,,,,,,
-7,Sun,October 23,2016,boxscore,Indianapolis Colts,@,Tennessee Titans,,,,,,
-7,Sun,October 23,2016,boxscore,Minnesota Vikings,@,Philadelphia Eagles,,,,,,
-7,Sun,October 23,2016,boxscore,San Diego Chargers,@,Atlanta Falcons,,,,,,
-7,Sun,October 23,2016,boxscore,Tampa Bay Buccaneers,@,San Francisco 49ers,,,,,,
-7,Sun,October 23,2016,boxscore,New England Patriots,@,Pittsburgh Steelers,,,,,,
-7,Sun,October 23,2016,boxscore,Seattle Seahawks,@,Arizona Cardinals,,,,,,
-7,Sun,October 23,2016,boxscore,New York Giants,@,Los Angeles Rams,,,,,,
-7,Mon,October 24,2016,boxscore,Houston Texans,@,Denver Broncos,,,,,,
+7,Thu,October 20,2016,8:26PM,Green Bay Packers,,Chicago Bears,26,10,406,1,189,2
+7,Sun,October 23,2016,9:31AM,New York Giants,@,Los Angeles Rams,17,10,232,1,345,4
+7,Sun,October 23,2016,1:02PM,Oakland Raiders,@,Jacksonville Jaguars,33,16,344,0,351,3
+7,Sun,October 23,2016,1:02PM,Philadelphia Eagles,,Minnesota Vikings,21,10,239,4,282,4
+7,Sun,October 23,2016,1:02PM,Miami Dolphins,,Buffalo Bills,28,25,454,0,267,0
+7,Sun,October 23,2016,1:02PM,Indianapolis Colts,@,Tennessee Titans,34,26,422,0,331,1
+7,Sun,October 23,2016,1:02PM,Cincinnati Bengals,,Cleveland Browns,31,17,579,1,362,2
+7,Sun,October 23,2016,1:02PM,Detroit Lions,,Washington Redskins,20,17,360,0,435,2
+7,Sun,October 23,2016,1:03PM,Kansas City Chiefs,,New Orleans Saints,27,21,326,0,463,2
+7,Sun,October 23,2016,1:04PM,New York Jets,,Baltimore Ravens,24,16,370,2,254,3
+7,Sun,October 23,2016,4:05PM,Tampa Bay Buccaneers,@,San Francisco 49ers,34,17,513,1,273,3
+7,Sun,October 23,2016,4:05PM,San Diego Chargers,@,Atlanta Falcons,33,30,426,2,386,1
+7,Sun,October 23,2016,4:25PM,New England Patriots,@,Pittsburgh Steelers,27,16,362,2,375,1
+7,Sun,October 23,2016,7:30PM,Seattle Seahawks,@,Arizona Cardinals,6,6,257,0,443,0
+7,Mon,October 24,2016,8:30PM,Denver Broncos,,Houston Texans,27,9,347,0,271,2
 8,Thu,October 27,2016,boxscore,Jacksonville Jaguars,@,Tennessee Titans,,,,,,
 8,Sun,October 30,2016,boxscore,Green Bay Packers,@,Atlanta Falcons,,,,,,
 8,Sun,October 30,2016,boxscore,New England Patriots,@,Buffalo Bills,,,,,,

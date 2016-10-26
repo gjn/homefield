@@ -1,14 +1,14 @@
 ---
 template: index.html
 season: 2016
-week: 7
-date: 2016-10-20
+week: 8
+date: 2016-10-27
 type: preview
 collection: articles
 permalink: false
-title: Week 7 Preview of the NFL 2016 season
+title: Week 8 Preview of the NFL 2016 season
 description: The matchups
 ---
 
-Predictions for week 6 of 2016:
+Predictions for week 8 of 2016:
 
