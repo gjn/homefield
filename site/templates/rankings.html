@@ -16,12 +16,17 @@
 </svg>
 <p>
 </p>
+
 <h3>Developement over the season</h3>
 <svg id="timeline">
 </svg>
 
 <h3>Offensive and Defensive Ratings</h3>
 <svg id="bubble">
+</svg>
+
+<h3>Strength of schedule faced during season</h3>
+<svg id="sosseason">
 </svg>
 
 <div>
@@ -76,6 +81,17 @@
 
   var bubbleGraph = new hf.graphs.Bubble('#bubble');
   bubbleGraph.create(setX, setY, setR, '{{basepath}}');
+
+  var sosSeasonGraph = new hf.graphs.Timeline('#sosseason');
+  var sosSeasontset = new hf.stats.Timeset({season: {{season}} - 1, week: 21},
+                                 {season: {{season}}, week: {{week}}}, 'oooh');
+  if (filter) {
+    sosSeasontset = sosSeasontset.filter(filter);
+  }
+  if (aggregator) {
+    sosSeasontset = sosSeasontset.aggregate(aggregator);
+  }
+  sosSeasonGraph.create(sosSeasontset, '{{basepath}}');
 
 </script>
 

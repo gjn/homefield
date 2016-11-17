@@ -120,7 +120,6 @@ var Timeset = function(start, end, statdef) {
 
   var value = function(week, type, team, ownopp, offdef, stat) {
     var statType = getType(type);
-    console.log(type, statType);
     if (statType == 'SOS') {
       return _data['_' + week][statType][team];
     }
