@@ -20,6 +20,10 @@
 <svg id="timeline">
 </svg>
 
+<h3>Offensive and Defensive Ratings</h3>
+<svg id="bubble">
+</svg>
+
 <div>
 {% include "../../_site/templates/predictions.html" %}
 </div>
@@ -64,6 +68,15 @@
     tset = tset.aggregate(aggregator);
   }
   timeGraph.create(tset, '{{basepath}}');
+
+
+  var setX = new hf.stats.Set({{season}}, {{week}}, 'osor').filter(filter); 
+  var setY = new hf.stats.Set({{season}}, {{week}}, 'osdr').filter(filter); 
+  var setR = new hf.stats.Set({{season}}, {{week}}, 'osow').filter(filter); 
+
+  var bubbleGraph = new hf.graphs.Bubble('#bubble');
+  bubbleGraph.create(setX, setY, setR, '{{basepath}}');
+
 </script>
 
 {% include "../../_site/templates/disqus.html" %}

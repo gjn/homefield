@@ -40,13 +40,13 @@
   var timeGraph = new hf.graphs.Timeline('#timeline');
   var tset = new hf.stats.Timeset({season: {{season}} - 1, week: 21},
                                  {season: {{season}}, week: {{week}}},
-                                 'osow').filter(filter).aggregate(aggregate);
+                                 'oooh').filter(filter).aggregate(aggregate);
   //                               'osdp').filter(filter).aggregate(aggregate);
   timeGraph.create(tset, '{{basepath}}');
 
-  var setX = new hf.stats.Set({{season}}, {{week}}, 'osow').filter(filter); 
-  var setY = new hf.stats.Set({{season}}, {{week}}, 'osdp').filter(filter); 
-  var setR = new hf.stats.Set({{season}}, {{week}}, 'osow').filter(filter); 
+  var setX = new hf.stats.Set({{season}}, {{week}}, 'osor').filter(filter); 
+  var setY = new hf.stats.Set({{season}}, {{week}}, 'osdr').filter(filter); 
+  var setR = new hf.stats.Set({{season}}, {{week}}, 'osoh').filter(filter); 
 
   var bubbleGraph = new hf.graphs.Bubble('#bubble');
   bubbleGraph.create(setX, setY, setR, '{{basepath}}');

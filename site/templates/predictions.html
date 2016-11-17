@@ -72,6 +72,16 @@
 
 </div>
 
+
+<h3>Strenght of remaining schedule over season.</h3>
+<svg id="scheduletimeline">
+</svg>
+
+<p>
+</p>
+
+
+
 <script type="text/javascript">
   var keystats = '_' + {{season}} + ({{week}} < 10 ? '0' : '') + {{week}};
   var data = hf.stats.data[keystats];
@@ -79,5 +89,16 @@
   var record = data.predictions.record;
   ko.applyBindings(predictions, document.getElementById('predictions'));
   ko.applyBindings(record, document.getElementById('record'));
+
+
+  var scheduledataset = 'ssoh';
+
+  var scheduleTimeGraph = new hf.graphs.Timeline('#scheduletimeline');
+  var scheduletset = new hf.stats.Timeset({season: {{season}} - 1, week: 21},
+                                 {season: {{season}}, week: {{week}}}, scheduledataset);
+  scheduleTimeGraph.create(scheduletset, '{{basepath}}');
+
+
+
 </script>
 

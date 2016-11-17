@@ -11,6 +11,8 @@ var Timeset = function(start, end, statdef) {
       return 'home';
     } else if (t == 'a') {
       return 'away';
+    } else if (t == 's') {
+      return 'SOS';
     }
     return 'overall';
   };
@@ -43,6 +45,10 @@ var Timeset = function(start, end, statdef) {
     _array = [];
     _teams = [];
     var unfiltered = _data['_' + _weeks[0]].stats[getType(_type)];
+    if (_type == 's') {
+      unfiltered = _data['_' + _weeks[0]][getType(_type)];
+    }
+
     if (_aggregator) {
       unfiltered = _aggregator.aggregate();
     }
@@ -113,15 +119,20 @@ var Timeset = function(start, end, statdef) {
   };
 
   var value = function(week, type, team, ownopp, offdef, stat) {
+    var statType = getType(type);
+    console.log(type, statType);
+    if (statType == 'SOS') {
+      return _data['_' + week][statType][team];
+    }
     if (offdef == 'u') {
-      var val = _data['_' + week].stats[getType(type)][team][ownopp]['o'][stat] -
-             _data['_' + week].stats[getType(type)][team][ownopp]['d'][stat];
+      var val = _data['_' + week].stats[statType][team][ownopp]['o'][stat] -
+             _data['_' + week].stats[statType][team][ownopp]['d'][stat];
       if (stat == 't') {
         val *= -1.0;
       }
       return val;
     }
-    return _data['_' + week].stats[getType(type)][team][ownopp][offdef][stat];
+    return _data['_' + week].stats[statType][team][ownopp][offdef][stat];
   };
 
   this.stat = function(week, team) {

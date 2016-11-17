@@ -243,7 +243,15 @@ var Defs = function () {
       name = 'Points';
     } else if (s == 'y') {
       name = 'Yards';
-    } else if (s == 'r' || s == 'h') {
+    } else if (s == 'r') {
+      if (o == 'o') {
+        name = 'Off Rating [%]';
+      } else if (o == 'd') {
+        name = 'Def Rating [%]';
+      } else {
+        name = 'Net Rating [%]';
+      }
+    } else if (s == 'h') {
       name = 'Rating [%]';
     } else if (s == 't') {
       name = 'Turnovers';
