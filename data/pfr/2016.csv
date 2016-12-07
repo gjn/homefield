@@ -146,51 +146,53 @@ Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TO
 10,Sun,November 13,2016,4:25PM,Dallas Cowboys,@,Pittsburgh Steelers,35,30,422,1,448,0
 10,Sun,November 13,2016,8:30PM,Seattle Seahawks,@,New England Patriots,31,24,420,0,385,2
 10,Mon,November 14,2016,8:30PM,New York Giants,,Cincinnati Bengals,21,20,351,2,264,1
-11,Thu,November 17,2016,boxscore,New Orleans Saints,@,Carolina Panthers,,,,,,
-11,Sun,November 20,2016,boxscore,Buffalo Bills,@,Cincinnati Bengals,,,,,,
-11,Sun,November 20,2016,boxscore,Pittsburgh Steelers,@,Cleveland Browns,,,,,,
-11,Sun,November 20,2016,boxscore,Tennessee Titans,@,Indianapolis Colts,,,,,,
-11,Sun,November 20,2016,boxscore,Baltimore Ravens,@,Dallas Cowboys,,,,,,
-11,Sun,November 20,2016,boxscore,Jacksonville Jaguars,@,Detroit Lions,,,,,,
-11,Sun,November 20,2016,boxscore,Tampa Bay Buccaneers,@,Kansas City Chiefs,,,,,,
-11,Sun,November 20,2016,boxscore,Arizona Cardinals,@,Minnesota Vikings,,,,,,
-11,Sun,November 20,2016,boxscore,Chicago Bears,@,New York Giants,,,,,,
-11,Sun,November 20,2016,boxscore,Miami Dolphins,@,Los Angeles Rams,,,,,,
-11,Sun,November 20,2016,boxscore,Philadelphia Eagles,@,Seattle Seahawks,,,,,,
-11,Sun,November 20,2016,boxscore,New England Patriots,@,San Francisco 49ers,,,,,,
-11,Sun,November 20,2016,boxscore,Green Bay Packers,@,Washington Redskins,,,,,,
-11,Mon,November 21,2016,boxscore,Houston Texans,@,Oakland Raiders,,,,,,
-12,Thu,November 24,2016,boxscore,Minnesota Vikings,@,Detroit Lions,,,,,,
-12,Thu,November 24,2016,boxscore,Washington Redskins,@,Dallas Cowboys,,,,,,
-12,Thu,November 24,2016,boxscore,Pittsburgh Steelers,@,Indianapolis Colts,,,,,,
-12,Sun,November 27,2016,boxscore,Arizona Cardinals,@,Atlanta Falcons,,,,,,
-12,Sun,November 27,2016,boxscore,Jacksonville Jaguars,@,Buffalo Bills,,,,,,
-12,Sun,November 27,2016,boxscore,Tennessee Titans,@,Chicago Bears,,,,,,
-12,Sun,November 27,2016,boxscore,New York Giants,@,Cleveland Browns,,,,,,
-12,Sun,November 27,2016,boxscore,San Diego Chargers,@,Houston Texans,,,,,,
-12,Sun,November 27,2016,boxscore,San Francisco 49ers,@,Miami Dolphins,,,,,,
-12,Sun,November 27,2016,boxscore,Los Angeles Rams,@,New Orleans Saints,,,,,,
-12,Sun,November 27,2016,boxscore,Cincinnati Bengals,@,Baltimore Ravens,,,,,,
-12,Sun,November 27,2016,boxscore,Seattle Seahawks,@,Tampa Bay Buccaneers,,,,,,
-12,Sun,November 27,2016,boxscore,Kansas City Chiefs,@,Denver Broncos,,,,,,
-12,Sun,November 27,2016,boxscore,Carolina Panthers,@,Oakland Raiders,,,,,,
-12,Sun,November 27,2016,boxscore,New England Patriots,@,New York Jets,,,,,,
-12,Mon,November 28,2016,boxscore,Green Bay Packers,@,Philadelphia Eagles,,,,,,
-13,Thu,December 1,2016,boxscore,Dallas Cowboys,@,Minnesota Vikings,,,,,,
-13,Sun,December 4,2016,boxscore,Kansas City Chiefs,@,Atlanta Falcons,,,,,,
-13,Sun,December 4,2016,boxscore,San Francisco 49ers,@,Chicago Bears,,,,,,
-13,Sun,December 4,2016,boxscore,Philadelphia Eagles,@,Cincinnati Bengals,,,,,,
-13,Sun,December 4,2016,boxscore,Houston Texans,@,Green Bay Packers,,,,,,
-13,Sun,December 4,2016,boxscore,Denver Broncos,@,Jacksonville Jaguars,,,,,,
-13,Sun,December 4,2016,boxscore,Detroit Lions,@,New Orleans Saints,,,,,,
-13,Sun,December 4,2016,boxscore,Los Angeles Rams,@,New England Patriots,,,,,,
-13,Sun,December 4,2016,boxscore,Miami Dolphins,@,Baltimore Ravens,,,,,,
-13,Sun,December 4,2016,boxscore,Buffalo Bills,@,Oakland Raiders,,,,,,
-13,Sun,December 4,2016,boxscore,Washington Redskins,@,Arizona Cardinals,,,,,,
-13,Sun,December 4,2016,boxscore,New York Giants,@,Pittsburgh Steelers,,,,,,
-13,Sun,December 4,2016,boxscore,Tampa Bay Buccaneers,@,San Diego Chargers,,,,,,
-13,Sun,December 4,2016,boxscore,Carolina Panthers,@,Seattle Seahawks,,,,,,
-13,Mon,December 5,2016,boxscore,Indianapolis Colts,@,New York Jets,,,,,,
+11,Thu,November 17,2016,8:25PM,Carolina Panthers,,New Orleans Saints,23,20,223,0,371,2
+11,Sun,November 20,2016,1:00PM,Indianapolis Colts,,Tennessee Titans,24,17,327,1,351,0
+11,Sun,November 20,2016,1:00PM,Minnesota Vikings,,Arizona Cardinals,30,24,217,1,290,2
+11,Sun,November 20,2016,1:00PM,New York Giants,,Chicago Bears,22,16,329,0,315,1
+11,Sun,November 20,2016,1:00PM,Dallas Cowboys,,Baltimore Ravens,27,17,417,0,368,0
+11,Sun,November 20,2016,1:00PM,Detroit Lions,,Jacksonville Jaguars,26,19,277,2,285,3
+11,Sun,November 20,2016,1:00PM,Tampa Bay Buccaneers,@,Kansas City Chiefs,19,17,442,1,343,2
+11,Sun,November 20,2016,1:00PM,Buffalo Bills,@,Cincinnati Bengals,16,12,342,1,300,2
+11,Sun,November 20,2016,1:00PM,Pittsburgh Steelers,@,Cleveland Browns,24,9,313,0,209,2
+11,Sun,November 20,2016,4:05PM,Miami Dolphins,@,Los Angeles Rams,14,10,240,1,227,1
+11,Sun,November 20,2016,4:25PM,Seattle Seahawks,,Philadelphia Eagles,26,15,439,0,308,2
+11,Sun,November 20,2016,4:25PM,New England Patriots,@,San Francisco 49ers,30,17,444,0,299,0
+11,Sun,November 20,2016,8:30PM,Washington Redskins,,Green Bay Packers,42,24,515,0,424,2
+11,Mon,November 21,2016,8:30PM,Oakland Raiders,,Houston Texans,27,20,325,1,354,2
+11,Mon,November 21,2016,8:30PM,Oakland Raiders,,Houston Texans,27,20,325,1,354,2
+11,Mon,November 21,2016,8:30PM,Oakland Raiders,,Houston Texans,27,20,325,1,354,2
+12,Thu,November 24,2016,12:30PM,Detroit Lions,,Minnesota Vikings,16,13,308,0,306,1
+12,Thu,November 24,2016,4:30PM,Dallas Cowboys,,Washington Redskins,31,26,353,0,505,0
+12,Thu,November 24,2016,8:30PM,Pittsburgh Steelers,@,Indianapolis Colts,28,7,369,0,310,2
+12,Sun,November 27,2016,1:00PM,Baltimore Ravens,,Cincinnati Bengals,19,14,311,1,325,2
+12,Sun,November 27,2016,1:00PM,Tennessee Titans,@,Chicago Bears,27,21,375,0,411,2
+12,Sun,November 27,2016,1:00PM,Miami Dolphins,,San Francisco 49ers,31,24,358,0,475,2
+12,Sun,November 27,2016,1:00PM,Atlanta Falcons,,Arizona Cardinals,38,19,360,1,332,1
+12,Sun,November 27,2016,1:00PM,San Diego Chargers,@,Houston Texans,21,13,302,1,353,4
+12,Sun,November 27,2016,1:00PM,Buffalo Bills,,Jacksonville Jaguars,28,21,304,0,301,0
+12,Sun,November 27,2016,1:00PM,New Orleans Saints,,Los Angeles Rams,49,21,555,1,247,2
+12,Sun,November 27,2016,1:00PM,New York Giants,@,Cleveland Browns,27,13,296,1,343,3
+12,Sun,November 27,2016,4:05PM,Tampa Bay Buccaneers,,Seattle Seahawks,14,5,338,2,245,3
+12,Sun,November 27,2016,4:25PM,New England Patriots,@,New York Jets,22,17,377,0,333,2
+12,Sun,November 27,2016,4:25PM,Oakland Raiders,,Carolina Panthers,35,32,366,2,358,2
+12,Sun,November 27,2016,8:30PM,Kansas City Chiefs,@,Denver Broncos,30,27,273,0,464,1
+12,Mon,November 28,2016,8:30PM,Green Bay Packers,@,Philadelphia Eagles,27,13,387,0,292,1
+13,Thu,December 1,2016,8:25PM,Dallas Cowboys,@,Minnesota Vikings,17,15,264,2,318,1
+13,Sun,December 4,2016,1:00PM,Chicago Bears,,San Francisco 49ers,26,6,326,1,147,0
+13,Sun,December 4,2016,1:00PM,Baltimore Ravens,,Miami Dolphins,38,6,496,2,277,3
+13,Sun,December 4,2016,1:00PM,New England Patriots,,Los Angeles Rams,26,10,402,0,162,2
+13,Sun,December 4,2016,1:00PM,Kansas City Chiefs,@,Atlanta Falcons,29,28,389,1,418,1
+13,Sun,December 4,2016,1:00PM,Cincinnati Bengals,,Philadelphia Eagles,32,14,412,2,359,3
+13,Sun,December 4,2016,1:00PM,Green Bay Packers,,Houston Texans,21,13,309,1,307,1
+13,Sun,December 4,2016,1:00PM,Denver Broncos,@,Jacksonville Jaguars,20,10,206,0,333,3
+13,Sun,December 4,2016,1:00PM,Detroit Lions,@,New Orleans Saints,28,13,422,0,369,3
+13,Sun,December 4,2016,4:05PM,Oakland Raiders,,Buffalo Bills,38,24,399,0,382,2
+13,Sun,December 4,2016,4:25PM,Pittsburgh Steelers,,New York Giants,24,14,389,2,234,2
+13,Sun,December 4,2016,4:25PM,Arizona Cardinals,,Washington Redskins,31,23,369,0,333,2
+13,Sun,December 4,2016,4:25PM,Tampa Bay Buccaneers,@,San Diego Chargers,28,21,349,1,330,2
+13,Sun,December 4,2016,8:30PM,Seattle Seahawks,,Carolina Panthers,40,7,534,1,271,2
+13,Mon,December 5,2016,8:30PM,Indianapolis Colts,@,New York Jets,41,10,421,1,250,3
 14,Thu,December 8,2016,boxscore,Oakland Raiders,@,Kansas City Chiefs,,,,,,
 14,Sun,December 11,2016,boxscore,Pittsburgh Steelers,@,Buffalo Bills,,,,,,
 14,Sun,December 11,2016,boxscore,San Diego Chargers,@,Carolina Panthers,,,,,,
