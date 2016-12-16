@@ -30,7 +30,6 @@ cleanswap:
 	find . -type f -name "*.swp" -exec rm -f {} \;
 
 $(PUBLISH): $(SITE)
-	mkdir -p $(dir $@)
 	cd .artefacts/site; \
 	rm -rf .git; \
 	git init .; \
@@ -56,16 +55,14 @@ $(SITE_PREPARE): $(SITE_FILES) ms/site/template/metalsmith.hbt ms/site/debug/met
 
 $(HOMEFIELD_MINJS): $(HOMEFIELD_JS) ms/jsmini/metalsmith.json
 	cd ms/jsmini && ../../node_modules/.bin/metalsmith
-	cd .artefacts/_site/libmin && find . -type f -name '*.js' -not -path '*.min.js' -delete && rename s/min.// *.js
+	cd .artefacts/_site/libmin && find . -type f -name '*.js' -not -path '*.min.js' -delete && renamex -s/min.// *.js
 	touch $@
 
 $(HOMEFIELD_MINCSS): site/less/styles.less
-	mkdir -p $(dir $@)
-	./node_modules/.bin/lessc -x $< > $@
+	./node_modules/.bin/lessc -x site/less/styles.less > $@
 
 $(HOMEFIELD_CSS): site/less/styles.less
-	mkdir -p $(dir $@)
-	./node_modules/.bin/lessc $< > $@
+	./node_modules/.bin/lessc site/less/styles.less > $@
 
 $(HOMEFIELD_JS): $(ANALYSE) $(JS_FILES) ms/jsbuild/metalsmith.json ms/jsbuild/templates/hf.hbt
 	mkdir -p $(TEMPLATE_DIR)
