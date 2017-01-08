@@ -2,7 +2,7 @@
 template: index.html
 season: 2016
 week: 17
-date: 2016-01-04
+date: 2017-01-04
 type: ''
 collection: articles
 permalink: false
