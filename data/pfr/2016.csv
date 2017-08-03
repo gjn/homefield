@@ -255,7 +255,14 @@ Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TO
 17,Sun,January 1,2017,4:25PM,New York Giants,@,Washington Redskins,19,10,332,0,284,3
 17,Sun,January 1,2017,4:25PM,Arizona Cardinals,@,Los Angeles Rams,44,6,344,2,123,3
 17,Sun,January 1,2017,8:30PM,Green Bay Packers,@,Detroit Lions,31,24,448,0,408,1
-18,Sat,January 7,2017,4:35PM,Oakland Raiders,@,Houston Texans,,,,,,
-18,Sat,January 7,2017,8:15PM,Detroit Lions,@,Seattle Seahawks,,,,,,
-18,Sun,January 8,2017,1:05PM,Miami Dolphins,@,Pittsburgh Steelers,,,,,,
-18,Sun,January 8,2017,4:40PM,New York Giants,@,Green Bay Packers,,,,,,
+WildCard,Sat,January 7,2017,4:35PM,Houston Texans,,Oakland Raiders,27,14,291,0,203,3
+WildCard,Sat,January 7,2017,8:15PM,Seattle Seahawks,,Detroit Lions,26,6,387,0,231,0
+WildCard,Sun,January 8,2017,1:05PM,Pittsburgh Steelers,,Miami Dolphins,30,12,367,2,305,3
+WildCard,Sun,January 8,2017,4:40PM,Green Bay Packers,,New York Giants,38,13,406,0,365,2
+Division,Sat,January 14,2017,4:35PM,Atlanta Falcons,,Seattle Seahawks,36,20,422,0,309,2
+Division,Sat,January 14,2017,8:15PM,New England Patriots,,Houston Texans,34,16,377,3,302,3
+Division,Sun,January 15,2017,4:40PM,Green Bay Packers,@,Dallas Cowboys,34,31,413,1,429,1
+Division,Sun,January 15,2017,8:20PM,Pittsburgh Steelers,@,Kansas City Chiefs,18,16,389,1,227,2
+ConfChamp,Sun,January 22,2017,3:05PM,Atlanta Falcons,,Green Bay Packers,44,21,493,0,367,2
+ConfChamp,Sun,January 22,2017,6:40PM,New England Patriots,,Pittsburgh Steelers,36,17,431,0,368,2
+SuperBowl,Sun,February 5,2017,6:30PM,New England Patriots,@,Atlanta Falcons,34,28,546,2,344,1
