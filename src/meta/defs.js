@@ -29,8 +29,8 @@ var Defs = function () {
           TB: 'Tampa Bay Buccaneers',
           CAR: 'Carolina Panthers',
           DET: 'Detroit Lions',
-          LA: 'Los Angeles Rams',
-          SD: 'San Diego Chargers',
+          LAR: 'Los Angeles Rams',
+          LAC: 'San Diego Chargers',
           OAK: 'Oakland Raiders',
           BAL: 'Baltimore Ravens',
           CIN: 'Cincinnati Bengals'
@@ -63,8 +63,8 @@ var Defs = function () {
           TB: 'NFCS',
           CAR: 'NFCS',
           DET: 'NFCN',
-          LA: 'NFCW',
-          SD: 'AFCW',
+          LAR: 'NFCW',
+          LAC: 'AFCW',
           OAK: 'AFCW',
           BAL: 'AFCN',
           CIN: 'AFCN'
@@ -97,9 +97,8 @@ var Defs = function () {
           TB: 'NFC',
           CAR: 'NFC',
           DET: 'NFC',
-          LA: 'NFC',
-          LA: 'NFC',
-          SD: 'AFC',
+          LAR: 'NFC',
+          LAC: 'AFC',
           OAK: 'AFC',
           BAL: 'AFC',
           CIN: 'AFC'
@@ -114,15 +113,15 @@ var Defs = function () {
           AFCE: ['NE', 'MIA', 'NYJ', 'BUF'],
           AFCN: ['BAL', 'PIT', 'CIN', 'CLE'],
           AFCS: ['HOU', 'IND', 'TEN', 'JAC'],
-          AFCW: ['DEN', 'SD', 'OAK', 'KC'],
+          AFCW: ['DEN', 'LAC', 'OAK', 'KC'],
           NFCE: ['WAS', 'DAL', 'NYG', 'PHI'],
           NFCN: ['GB', 'MIN', 'CHI', 'DET'],
           NFCS: ['ATL', 'CAR', 'NO', 'TB'],
-          NFCW: ['SF', 'SEA', 'LA', 'ARI']
+          NFCW: ['SF', 'SEA', 'LAR', 'ARI']
       },
       confToTeam = {
-          AFC: ['NE', 'MIA', 'NYJ', 'BUF', 'BAL', 'PIT', 'CIN', 'CLE', 'HOU', 'IND', 'TEN', 'JAC', 'DEN', 'SD', 'OAK', 'KC'],
-          NFC: ['WAS', 'DAL', 'NYG', 'PHI', 'GB', 'MIN', 'CHI', 'DET', 'ATL', 'CAR', 'NO', 'TB', 'SF', 'SEA', 'LA', 'ARI']
+          AFC: ['NE', 'MIA', 'NYJ', 'BUF', 'BAL', 'PIT', 'CIN', 'CLE', 'HOU', 'IND', 'TEN', 'JAC', 'DEN', 'LAC', 'OAK', 'KC'],
+          NFC: ['WAS', 'DAL', 'NYG', 'PHI', 'GB', 'MIN', 'CHI', 'DET', 'ATL', 'CAR', 'NO', 'TB', 'SF', 'SEA', 'LAR', 'ARI']
       },
       // Colors from http://teamcolors.arc90.com/
       teamToColor = {
@@ -151,10 +150,10 @@ var Defs = function () {
         OAK: ["C4C8CB", "000000", "FFFFFF"],
         PHI: ["003B48", "000000", "708090", "C0C0C0", "FFFFFF"],
         PIT: ["000000", "F2C800", "FFFFFF"],
-        SD: ["08214A", "EEC607", "5B92E5", "FFFFFF"],
+        LAC: ["08214A", "EEC607", "5B92E5", "FFFFFF"],
         SF: ["AF1E2C", "E6BE8A", "000000"],
         SEA: ["06192E", "4EAE47", "ACB6BC", "FFFFFF"],
-        LA: ["13264B", "C9AF74", "FFFFFF"],
+        LAR: ["13264B", "C9AF74", "FFFFFF"],
         TB: ["D60A0B", "89765F", "000000", "FFFFFF", "FF7A00"],
         TEN: ["648FCC", "000080", "FF0000", "C0C0C0"],
         WAS: ["773141", "FFB612", "FFFFFF"]

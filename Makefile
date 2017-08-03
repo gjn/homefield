@@ -55,13 +55,15 @@ $(SITE_PREPARE): $(SITE_FILES) ms/site/template/metalsmith.hbt ms/site/debug/met
 
 $(HOMEFIELD_MINJS): $(HOMEFIELD_JS) ms/jsmini/metalsmith.json
 	cd ms/jsmini && ../../node_modules/.bin/metalsmith
-	cd .artefacts/_site/libmin && find . -type f -name '*.js' -not -path '*.min.js' -delete && renamex -s/min.// *.js
+	cd .artefacts/_site/libmin && find . -type f -name '*.js' -not -path '*.min.js' -delete && rename s/min.// *.js
 	touch $@
 
 $(HOMEFIELD_MINCSS): site/less/styles.less
+	mkdir -p $(dir $@)
 	./node_modules/.bin/lessc -x site/less/styles.less > $@
 
 $(HOMEFIELD_CSS): site/less/styles.less
+	mkdir -p $(dir $@)
 	./node_modules/.bin/lessc site/less/styles.less > $@
 
 $(HOMEFIELD_JS): $(ANALYSE) $(JS_FILES) ms/jsbuild/metalsmith.json ms/jsbuild/templates/hf.hbt
@@ -70,9 +72,13 @@ $(HOMEFIELD_JS): $(ANALYSE) $(JS_FILES) ms/jsbuild/metalsmith.json ms/jsbuild/te
 	node_modules/.bin/smash src/homefield.js > $(BUILD_DIR)/_site/lib/homefield.js
 	touch $@
 
-$(ANALYSE): $(ANALYSE_TARGET_DIR)/2016.js $(ANALYSE_TARGET_DIR)/2015.js $(ANALYSE_TARGET_DIR)/2014.js $(ANALYSE_TARGET_DIR)/2013.js $(ANALYSE_TARGET_DIR)/2012.js $(ANALYSE_TARGET_DIR)/2011.js $(ANALYSE_TARGET_DIR)/2010.js $(ANALYSE_TARGET_DIR)/2009.js $(ANALYSE_TARGET_DIR)/2008.js $(ANALYSE_TARGET_DIR)/2007.js $(ANALYSE_TARGET_DIR)/2006.js $(ANALYSE_TARGET_DIR)/2005.js $(ANALYSE_TARGET_DIR)/2004.js $(ANALYSE_TARGET_DIR)/2003.js $(ANALYSE_TARGET_DIR)/2002.js
+$(ANALYSE): $(ANALYSE_TARGET_DIR)/2017.js $(ANALYSE_TARGET_DIR)/2016.js $(ANALYSE_TARGET_DIR)/2015.js $(ANALYSE_TARGET_DIR)/2014.js $(ANALYSE_TARGET_DIR)/2013.js $(ANALYSE_TARGET_DIR)/2012.js $(ANALYSE_TARGET_DIR)/2011.js $(ANALYSE_TARGET_DIR)/2010.js $(ANALYSE_TARGET_DIR)/2009.js $(ANALYSE_TARGET_DIR)/2008.js $(ANALYSE_TARGET_DIR)/2007.js $(ANALYSE_TARGET_DIR)/2006.js $(ANALYSE_TARGET_DIR)/2005.js $(ANALYSE_TARGET_DIR)/2004.js $(ANALYSE_TARGET_DIR)/2003.js $(ANALYSE_TARGET_DIR)/2002.js
 	mkdir -p $(TOUCH_DIR)
 	touch $@
+
+$(ANALYSE_TARGET_DIR)/2017.js: node_modules data/pfr/2017.csv data/pfr/2016.csv data/pfr/2015.csv data/pfr/2014.csv $(ANALYSE_FILES) index.js
+	mkdir -p $(ANALYSE_TARGET_DIR)
+	node index.js -p data/pfr/ -s 2017
 
 $(ANALYSE_TARGET_DIR)/2016.js: node_modules data/pfr/2016.csv data/pfr/2015.csv data/pfr/2014.csv data/pfr/2013.csv $(ANALYSE_FILES) index.js
 	mkdir -p $(ANALYSE_TARGET_DIR)
