@@ -2,7 +2,11 @@
 
 {% block pagecontent %}
 <div class="title">
+{% if week != 0 %}
   <h2>NFL Power Rankings - Week {{week}} {{season}}</h2>
+{% else %}
+  <h2>NFL {{season}} season preview</h2>
+{% endif %}
   <span class="byline">{{description}}</span>
   {% include "../../_site/templates/prnavigation.html" %}
 </div>
@@ -11,7 +15,7 @@
 {{ contents }}
 </p>
 
-
+{% if week != 0 %}
 <svg id="chart">
 </svg>
 <p>
@@ -29,9 +33,26 @@
 <svg id="sosseason">
 </svg>
 
+{% endif %}
+
 <div>
 {% include "../../_site/templates/predictions.html" %}
 </div>
+
+{% if week == 0 %}
+<h3>Powerrankings after last season</h3>
+
+<svg id="chart">
+</svg>
+<p>
+</p>
+
+<h3>Offensive and Defensive Ratings</h3>
+<svg id="bubble">
+</svg>
+
+{% endif %}
+
 
 <div>
 {% include "../../_site/templates/prnavigation.html" %}
@@ -52,46 +73,55 @@
     filter = params.filter;
   }
   window.console.log(dataset, filter, aggregator);
+  var week = {{week}};
+  var season = {{season}};
+  if (week == 0) {
+    season -= 1;
+    week = 21;
+  }
   var newGraph = new hf.graphs.Bar('#chart');
-  var set = new hf.stats.Set({{season}}, {{week}}, dataset);
+  var set = new hf.stats.Set(season, week, dataset);
   if (filter) {
     set = set.filter(filter);
   }
   if (aggregator) {
     set = set.aggregate(aggregator);
   }
-  
+ 
   newGraph.create(set, '{{basepath}}');
 
-  var timeGraph = new hf.graphs.Timeline('#timeline');
-  var tset = new hf.stats.Timeset({season: {{season}} - 1, week: 21},
-                                 {season: {{season}}, week: {{week}}}, dataset);
-  if (filter) {
-    tset = tset.filter(filter);
+  if ({{week}} != 0) {
+    var timeGraph = new hf.graphs.Timeline('#timeline');
+    var tset = new hf.stats.Timeset({season: season - 1, week: 21},
+                                 {season: season, week: week}, dataset);
+    if (filter) {
+      tset = tset.filter(filter);
+    }
+    if (aggregator) {
+      tset = tset.aggregate(aggregator);
+    }
+    timeGraph.create(tset, '{{basepath}}');
   }
-  if (aggregator) {
-    tset = tset.aggregate(aggregator);
-  }
-  timeGraph.create(tset, '{{basepath}}');
 
-
-  var setX = new hf.stats.Set({{season}}, {{week}}, 'osor').filter(filter); 
-  var setY = new hf.stats.Set({{season}}, {{week}}, 'osdr').filter(filter); 
-  var setR = new hf.stats.Set({{season}}, {{week}}, 'osow').filter(filter); 
+  var setX = new hf.stats.Set(season, week, 'osor').filter(filter); 
+  var setY = new hf.stats.Set(season, week, 'osdr').filter(filter); 
+  var setR = new hf.stats.Set(season, week, 'osow').filter(filter); 
 
   var bubbleGraph = new hf.graphs.Bubble('#bubble');
   bubbleGraph.create(setX, setY, setR, '{{basepath}}');
 
-  var sosSeasonGraph = new hf.graphs.Timeline('#sosseason');
-  var sosSeasontset = new hf.stats.Timeset({season: {{season}} - 1, week: 21},
-                                 {season: {{season}}, week: {{week}}}, 'oooh');
-  if (filter) {
-    sosSeasontset = sosSeasontset.filter(filter);
+  if ({{week}} != 0) {
+    var sosSeasonGraph = new hf.graphs.Timeline('#sosseason');
+    var sosSeasontset = new hf.stats.Timeset({season: season - 1, week: 21},
+                                 {season: season, week: week}, 'oooh');
+    if (filter) {
+      sosSeasontset = sosSeasontset.filter(filter);
+    }
+    if (aggregator) {
+      sosSeasontset = sosSeasontset.aggregate(aggregator);
+    }
+    sosSeasonGraph.create(sosSeasontset, '{{basepath}}');
   }
-  if (aggregator) {
-    sosSeasontset = sosSeasontset.aggregate(aggregator);
-  }
-  sosSeasonGraph.create(sosSeasontset, '{{basepath}}');
 
 </script>
 

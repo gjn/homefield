@@ -30,7 +30,7 @@ var Defs = function () {
           CAR: 'Carolina Panthers',
           DET: 'Detroit Lions',
           LAR: 'Los Angeles Rams',
-          LAC: 'San Diego Chargers',
+          LAC: 'Los Angeles Chargers',
           OAK: 'Oakland Raiders',
           BAL: 'Baltimore Ravens',
           CIN: 'Cincinnati Bengals'
@@ -244,11 +244,11 @@ var Defs = function () {
       name = 'Yards';
     } else if (s == 'r') {
       if (o == 'o') {
-        name = 'Off Rating [%]';
+        name = 'Offense [%]';
       } else if (o == 'd') {
-        name = 'Def Rating [%]';
+        name = 'Defense [%]';
       } else {
-        name = 'Net Rating [%]';
+        name = 'Net [%]';
       }
     } else if (s == 'h') {
       name = 'Rating [%]';

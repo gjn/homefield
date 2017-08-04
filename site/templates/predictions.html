@@ -1,3 +1,4 @@
+{% if week > 0 %}
 <div id="record">
   <div class="record" data-bind="if: record">
     Prediction record: <span data-bind="text: record.correct"></span> - <span
@@ -6,7 +7,7 @@
   <p></p>
   <p></p>
 </div>
-
+{% endif %}
 
 <div id="predictions">
 
@@ -72,6 +73,7 @@
 
 </div>
 
+{% if week < 21 %}
 
 <h1>Strength of remaining schedule</h1>
 
@@ -80,19 +82,31 @@
 <p>
 </p>
 
+{% endif %}
 
 
 <script type="text/javascript">
-  var keystats = '_' + {{season}} + ({{week}} < 10 ? '0' : '') + {{week}};
+  var season = {{season}};
+  var week = {{week}};
+  if (week == 0) {
+    season -= 1;
+    week = 21;
+  }
+  var keystats = '_' + season + (week < 10 ? '0' : '') + week;
   var data = hf.stats.data[keystats];
   var predictions = data.predictions.nextweek;
   var record = data.predictions.record;
   ko.applyBindings(predictions, document.getElementById('predictions'));
-  ko.applyBindings(record, document.getElementById('record'));
+  if ({{week}} > 0) {
+    ko.applyBindings(record, document.getElementById('record'));
+  }
 
-  var sosRemainGraph = new hf.graphs.Bar('#sosRemain');
-  var sosRemainset = new hf.stats.Set({{season}}, {{week}}, 'ssoh');
-  sosRemainGraph.create(sosRemainset, '{{basepath}}');
+  if ({{week}} < 21) {
+
+    var sosRemainGraph = new hf.graphs.Bar('#sosRemain');
+    var sosRemainset = new hf.stats.Set(season, week, 'ssoh');
+    sosRemainGraph.create(sosRemainset, '{{basepath}}');
+  }
 
 
 
