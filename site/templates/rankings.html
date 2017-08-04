@@ -111,16 +111,28 @@
   bubbleGraph.create(setX, setY, setR, '{{basepath}}');
 
   if ({{week}} != 0) {
-    var sosSeasonGraph = new hf.graphs.Timeline('#sosseason');
-    var sosSeasontset = new hf.stats.Timeset({season: season - 1, week: 21},
-                                 {season: season, week: week}, 'oooh');
+    var sosSeasonGraph = new hf.graphs.Bar('#sosseason');
+    var sosSeasonSet = new hf.stats.Set(season, week, 'psoh');
     if (filter) {
-      sosSeasontset = sosSeasontset.filter(filter);
+      sosSeasonSet = sosSeasonSet.filter(filter);
     }
     if (aggregator) {
-      sosSeasontset = sosSeasontset.aggregate(aggregator);
+      sosSeasonSet = sosSeasonSet.aggregate(aggregator);
     }
-    sosSeasonGraph.create(sosSeasontset, '{{basepath}}');
+    sosSeasonGraph.create(sosSeasonSet, '{{basepath}}');
+		/*
+		var sosSeasonGraph = new hf.graphs.Timeline('#sosseason');
+		var sosSeasontset = new hf.stats.Timeset({season: season, week: 1},
+                              {season: season, week: week}, 'psoh');
+		if (filter) {
+			sosSeasontset = sosSeasontset.filter(filter);
+		}
+		if (aggregator) {
+			sosSeasonSet = sosSeasonSet.aggregate(aggregator);
+		}
+		sosSeasonGraph.create(sosSeasontset, '{{basepath}}');
+	 */
+
   }
 
 </script>

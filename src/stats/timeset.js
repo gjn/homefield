@@ -13,6 +13,8 @@ var Timeset = function(start, end, statdef) {
       return 'away';
     } else if (t == 's') {
       return 'SOS';
+    } else if (t == 'p') {
+      return 'SOSPlayed';
     }
     return 'overall';
   };
@@ -45,7 +47,7 @@ var Timeset = function(start, end, statdef) {
     _array = [];
     _teams = [];
     var unfiltered = _data['_' + _weeks[0]].stats[getType(_type)];
-    if (_type == 's') {
+    if (_type == 's' || _type == 'p') {
       unfiltered = _data['_' + _weeks[0]][getType(_type)];
     }
 
@@ -121,6 +123,8 @@ var Timeset = function(start, end, statdef) {
   var value = function(week, type, team, ownopp, offdef, stat) {
     var statType = getType(type);
     if (statType == 'SOS') {
+      return _data['_' + week][statType][team];
+    } else if (statType == 'SOSPlayed') {
       return _data['_' + week][statType][team];
     }
     if (offdef == 'u') {

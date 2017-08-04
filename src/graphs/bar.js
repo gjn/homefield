@@ -59,7 +59,7 @@ var Bar = function(element) {
           var rank = i + 1;
           var prevRank = prevSet ? prevSet.teamStat(d, true) : prevSet;
           var rankString = rank + '. ';
-          if (prevRank) {
+          if (prevRank && prevSet.hasRanking()) {
             var move = prevRank - rank;
             rankString += '(' + ((move == 0) ? '-' : (move > 0) ? ('+' + move) : move)  + ') ';
           }
