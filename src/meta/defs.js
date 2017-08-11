@@ -33,7 +33,17 @@ var Defs = function () {
           LAC: 'Los Angeles Chargers',
           OAK: 'Oakland Raiders',
           BAL: 'Baltimore Ravens',
-          CIN: 'Cincinnati Bengals'
+          CIN: 'Cincinnati Bengals',
+          NFCE: 'NFC East',
+          NFCN: 'NFC North',
+          NFCS: 'NFC South',
+          NFCW: 'NFC West',
+          AFCE: 'AFC East',
+          AFCN: 'AFC North',
+          AFCS: 'AFC South',
+          AFCW: 'AFC West',
+          AFC: 'American Football Conference',
+          NFC: 'National Football Conference'
       },
       teamToDiv = {
           DAL: 'NFCE',

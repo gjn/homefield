@@ -60,6 +60,14 @@ var Set = function(s, w, statdef) {
     return this;
   };
 
+  this.isAggregate = function() {
+    return !!_aggregator;
+  };
+
+  this.hasFilter = function() {
+    return !!_filter;
+  };
+
   this.aggregate = function(s) {
     if (!s) {
       _aggregator = undefined;
@@ -87,6 +95,9 @@ var Set = function(s, w, statdef) {
   };
 
   this.previousWeek = function() {
+    if (_aggregator || _filter) {
+      return undefined;
+    }
     var newSeason = _season;
     var newWeek = _week - 1;
     if (newWeek <= 0) {

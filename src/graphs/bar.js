@@ -72,7 +72,7 @@ var Bar = function(element) {
         .attr("dy", ".27em")
         .attr("text-anchor", "end")
         .text(function(d, i) {
-          var txt = '' + set.teamStat(d);
+          var txt = '' + set.teamStat(d).toFixed(1);
           if (d == 'h' || d == 'r') {
             txt += '%';
           }
@@ -80,12 +80,13 @@ var Bar = function(element) {
         });
 
 
-
-      bar.append("svg:image")
-        .attr("x", function(d) { return x(set.teamStat(d)) + padleft + 2;})
-        .attr("height", barHeight - 2)
-        .attr("width", barHeight - 2)
-        .attr("xlink:href", function(d) { return rootPath + "img/" + d + ".svg";})
+      if (!set.isAggregate()) {
+        bar.append("svg:image")
+          .attr("x", function(d) { return x(set.teamStat(d)) + padleft + 2;})
+          .attr("height", barHeight - 2)
+          .attr("width", barHeight - 2)
+          .attr("xlink:href", function(d) { return rootPath + "img/" + d + ".svg";})
+      }
     };
 
     update();
