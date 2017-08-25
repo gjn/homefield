@@ -15,21 +15,6 @@ var Table = function(element, settype) {
     };
   };
 
-  var bigIsGood = function(offdef, stat) {
-    if (stat === 'r' || stat === 'h') {
-      return true;
-    }
-
-    var ret = true;
-    if (stat === 't' && offdef !== 'u') {
-      ret = false;
-    }
-    if (offdef === 'd') {
-      return !ret;
-    }
-    return ret;
-  };
-
   var columns = [
     getColumn("rank", "s", "o", "w"),
     getColumn("team", "s", "o", "w"),
@@ -117,7 +102,7 @@ var Table = function(element, settype) {
           row.sort(function(t1, t2) {
             var team1 = t1;
             var team2 = t2;
-            if (!bigIsGood(d.offdef, d.stat)) {
+            if (!hf.meta.biggerIsBetter(d.offdef, d.stat)) {
               team1 = t2;
               team2 = t1;
             }

@@ -81,14 +81,22 @@ var Set = function(s, w, statdef) {
   this.setOwnOpp = function(o) {
     _ownopp = o;
   }
+
+  this.getOffDef = function() {
+    return _offdef;
+  };
   
   this.setOffDef = function(o) {
     _offdef = o;
   }
+
+  this.getStat = function() {
+    return _stat;
+  };
   
   this.setStat = function(s) {
     _stat = s;
-  }
+  };
   
   this.array = function() {
     return _array;

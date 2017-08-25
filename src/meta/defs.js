@@ -244,6 +244,21 @@ var Defs = function () {
     return shortToLong;
   };
 
+  this.biggerIsBetter = function(offdef, stat) {
+    if (stat === 'r' || stat === 'h') {
+      return true;
+    }
+
+    var ret = true;
+    if (stat === 't' && offdef !== 'u') {
+      ret = false;
+    }
+    if (offdef === 'd') {
+      return !ret;
+    }
+    return ret;
+  };
+
   this.statName = function(s, o) {
     var name = 'Unknown';
     if (s == 'w') {

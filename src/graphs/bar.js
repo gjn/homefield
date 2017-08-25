@@ -15,13 +15,17 @@ var Bar = function(element) {
     var logowidth = 30;
     var barWidth = width - padleft - logowidth;
     var prevSet = set.previousWeek();
-    var ascending = false;
+    var ascending = !hf.meta.biggerIsBetter(set.getOffDef(), set.getStat());
 
     set.sort(ascending);
 
-    var x = d3.scale.linear()
-            .domain([set.teamStat(myData[myData.length -1]), set.teamStat(myData[0])])
-            .range([0, barWidth])
+    var x = d3.scale.linear();
+    if (!ascending) {
+      x = x.domain([set.teamStat(myData[myData.length -1]), set.teamStat(myData[0])])
+    } else {
+      x = x.domain([set.teamStat(myData[0]), set.teamStat(myData[myData.length - 1])])
+    }
+    x = x.range([0, barWidth])
 
     el = d3.select(element);
 
