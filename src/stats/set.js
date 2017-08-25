@@ -120,7 +120,11 @@ var Set = function(s, w, statdef) {
   };
 
 	this.hasRanking = function() {
-    if (_type != 's' && _type != 'p') {
+    if (_offdef == 'u') {
+      return false;
+    }
+    if (_type == 'w' || _type == 'p' || _type == 'y' ||
+        _type == 't' || _type == 'r' || _type == 'h') {
 			return true;
 		}
 		return false;
