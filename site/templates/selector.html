@@ -1,0 +1,26 @@
+<div id="selector">
+
+<select data-bind="options: offdefs,
+                  optionsText: 'name',
+                  value: sel_offdef,
+                  optionsCaption: 'Choose...'"></select>
+
+</div>
+
+<script type="text/javascript">
+    var Option = function(name, value) {
+      this.name = name;
+      this.value = value;
+    };
+
+    var viewModel = {
+      offdefs: ko.observableArray([
+        new Option('Offense', 'o'),
+        new Option('Defense', 'd'),
+        new Option('Differential', 'u')
+      ]),
+      sel_offdef: ko.observable()
+    };
+  
+
+</script>
