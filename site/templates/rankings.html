@@ -15,6 +15,23 @@
 {{ contents }}
 </p>
 
+<script type="text/javascript">
+  var dataset = 'osoh';
+  var aggregator, filter;
+
+  params = URI.parseQuery(location.search);
+  if (params.dataset && params.dataset.length == 4) {
+    dataset = params.dataset;
+  }
+  if (params.aggregator) {
+    aggregator = params.aggregator;
+  }
+  if (params.filter) {
+    filter = params.filter;
+  }
+  window.console.log(dataset, filter, aggregator);
+</script>
+
 {% if week != 0 %}
 
 <div>
@@ -66,20 +83,6 @@
 </div>
 
 <script type="text/javascript">
-  var dataset = 'osoh';
-  var aggregator, filter;
-
-  params = URI.parseQuery(location.search);
-  if (params.dataset && params.dataset.length == 4) {
-    dataset = params.dataset;
-  }
-  if (params.aggregator) {
-    aggregator = params.aggregator;
-  }
-  if (params.filter) {
-    filter = params.filter;
-  }
-  window.console.log(dataset, filter, aggregator);
   var week = {{week}};
   var season = {{season}};
   if (week == 0) {

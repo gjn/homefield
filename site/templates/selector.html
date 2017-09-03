@@ -1,26 +1,103 @@
 <div id="selector">
-
-<select data-bind="options: offdefs,
+<span>Games: </span><select data-bind="options: homeaway.options,
                   optionsText: 'name',
-                  value: sel_offdef,
-                  optionsCaption: 'Choose...'"></select>
+                  optionsValue: 'value',
+                  value: homeaway.sel"></select>
+
+<span>Unit: </span><select data-bind="options: offdef.options,
+                  optionsText: 'name',
+                  optionsValue: 'value',
+                  value: offdef.sel"></select>
+<span>Statistic: </span><select data-bind="options: stat.options,
+                  optionsText: 'name',
+                  optionsValue: 'value',
+                  value: stat.sel"></select>
+<span>Selection: </span><select data-bind="options: aggfil.options,
+                  optionsText: 'name',
+                  optionsValue: 'value',
+                  value: aggfil.sel"></select>
+<button data-bind="click: update">Go!</button>
 
 </div>
 
 <script type="text/javascript">
+    var _chAt  = function(str,index,chr) {
+       if(index > str.length-1) return str;
+           return str.substr(0,index) + chr + str.substr(index+1);
+    };
+
     var Option = function(name, value) {
       this.name = name;
       this.value = value;
     };
 
     var viewModel = {
-      offdefs: ko.observableArray([
-        new Option('Offense', 'o'),
-        new Option('Defense', 'd'),
-        new Option('Differential', 'u')
-      ]),
-      sel_offdef: ko.observable()
+      offdef: {
+        options: ko.observableArray([
+          new Option('Overall', 'u'),
+          new Option('Offense', 'o'),
+          new Option('Defense', 'd')
+        ]),
+        sel: ko.observable(dataset[3] == 'h' ? 'u' : dataset[2])
+      },
+      homeaway: {
+        options: ko.observableArray([
+          new Option('All', 'o'),
+          new Option('Home', 'h'),
+          new Option('Away', 'a')
+        ]),
+        sel: ko.observable(dataset[0])
+      },
+      stat: {
+        options: ko.observableArray([
+          new Option('Homefield Power Rating', 'r'),
+          new Option('Win Rate', 'w'),
+          new Option('Points', 'p'),
+          new Option('Turnovers', 't'),
+          new Option('Yards', 'y')
+        ]),
+        sel: ko.observable(dataset[3] == 'h' ? 'r' : dataset[3])
+      },
+      aggfil: {
+        options: ko.observableArray([
+          new Option('All Teams', 'a'),
+          new Option('Divisions', 'divisions'),
+          new Option('Conferences', 'conferences'),
+          new Option('AFC East', 'AFCE'),
+          new Option('AFC North', 'AFCN'),
+          new Option('AFC South', 'AFCS'),
+          new Option('AFC West', 'AFCW'),
+          new Option('NFC East', 'NFCE'),
+          new Option('NFC North', 'NFCN'),
+          new Option('NFC South', 'NFCS'),
+          new Option('NFC West', 'NFCW')
+        ]),
+        sel: ko.observable(aggregator ? aggregator : filter ? filter: 'a')
+      },
+      update: function() {
+        var newDataset = this.homeaway.sel() + 's' + this.offdef.sel() + this.stat.sel();
+        if (this.offdef.sel() == 'u' && this.stat.sel() == 'r') {
+          newDataset = _chAt(newDataset, 2, 'o');
+          newDataset = _chAt(newDataset, 3, 'h');
+        }
+        if (this.stat.sel() == 'w') {
+          newDataset = _chAt(newDataset, 2, 'o');
+        }
+        var search = new URI(location.search);
+        search.setSearch('dataset', newDataset);
+        
+        search.removeSearch('aggregator');
+        search.removeSearch('filter');
+        if (this.aggfil.sel() == 'divisions' ||
+            this.aggfil.sel() == 'conferences') {
+          search.setSearch('aggregator', this.aggfil.sel());
+        } else if (this.aggfil.sel() != 'a') {
+          search.setSearch('filter', this.aggfil.sel());
+        }
+
+        location.search = search.search();
+      }
     };
-  
+    ko.applyBindings(viewModel);
 
 </script>
