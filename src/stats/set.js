@@ -120,7 +120,10 @@ var Set = function(s, w, statdef) {
   };
 
 	this.hasRanking = function() {
-    if (_offdef == 'u' || _type == 'p' || _type == 's') {
+    if (_type == 'p' || _type == 's') {
+      return false;
+    }
+    if (_offdef == 'u' && _stat != 'p' || _stat == 'y' ||  _stat == 't') {
       return false;
     }
     if (_stat == 'w' || _stat == 'p' || _stat == 'y' ||
@@ -145,7 +148,7 @@ var Set = function(s, w, statdef) {
       return _data[type][team];
     }
 
-    if (offdef == 'u') {
+    if (offdef == 'u' && stat != 'rp' && stat!= 'ry' && stat != 'rt') {
       var val = _data[type][team][ownopp]['o'][stat] -
              _data[type][team][ownopp]['d'][stat];
       if (stat == 't') {
