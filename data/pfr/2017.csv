@@ -1,19 +1,19 @@
 Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TOL
-1,Thu,September 7,2017,8:30 PM,Kansas City Chiefs,@,New England Patriots,,,,,,
-1,Sun,September 10,2017,1:00 PM,New York Jets,@,Buffalo Bills,,,,,,
-1,Sun,September 10,2017,1:00 PM,Atlanta Falcons,@,Chicago Bears,,,,,,
-1,Sun,September 10,2017,1:00 PM,Baltimore Ravens,@,Cincinnati Bengals,,,,,,
-1,Sun,September 10,2017,1:00 PM,Pittsburgh Steelers,@,Cleveland Browns,,,,,,
-1,Sun,September 10,2017,1:00 PM,Arizona Cardinals,@,Detroit Lions,,,,,,
-1,Sun,September 10,2017,1:00 PM,Jacksonville Jaguars,@,Houston Texans,,,,,,
-1,Sun,September 10,2017,1:00 PM,Oakland Raiders,@,Tennessee Titans,,,,,,
-1,Sun,September 10,2017,1:00 PM,Philadelphia Eagles,@,Washington Redskins,,,,,,
-1,Sun,September 10,2017,4:05 PM,Indianapolis Colts,@,Los Angeles Rams,,,,,,
-1,Sun,September 10,2017,4:25 PM,Seattle Seahawks,@,Green Bay Packers,,,,,,
-1,Sun,September 10,2017,4:25 PM,Carolina Panthers,@,San Francisco 49ers,,,,,,
-1,Sun,September 10,2017,8:30 PM,New York Giants,@,Dallas Cowboys,,,,,,
-1,Mon,September 11,2017,7:10 PM,New Orleans Saints,@,Minnesota Vikings,,,,,,
-1,Mon,September 11,2017,10:20 PM,Los Angeles Chargers,@,Denver Broncos,,,,,,
+1,,September 7,2017,8:30PM,Kansas City Chiefs,@,New England Patriots,42,27,537,1,371,0
+1,,September 10,2017,1:00PM,Buffalo Bills,,New York Jets,21,12,408,1,214,2
+1,,September 10,2017,1:00PM,Oakland Raiders,@,Tennessee Titans,26,16,359,0,350,0
+1,,September 10,2017,1:00PM,Detroit Lions,,Arizona Cardinals,35,23,367,1,309,4
+1,,September 10,2017,1:00PM,Jacksonville Jaguars,@,Houston Texans,29,7,280,0,203,4
+1,,September 10,2017,1:00PM,Baltimore Ravens,@,Cincinnati Bengals,20,0,268,1,221,5
+1,,September 10,2017,1:00PM,Philadelphia Eagles,@,Washington Redskins,30,17,356,2,264,4
+1,,September 10,2017,1:00PM,Atlanta Falcons,@,Chicago Bears,23,17,372,0,301,0
+1,,September 10,2017,1:00PM,Pittsburgh Steelers,@,Cleveland Browns,21,18,290,1,237,1
+1,,September 10,2017,4:05PM,Los Angeles Rams,,Indianapolis Colts,46,9,373,1,225,3
+1,,September 10,2017,4:25PM,Green Bay Packers,,Seattle Seahawks,17,9,370,1,225,1
+1,,September 10,2017,4:25PM,Carolina Panthers,@,San Francisco 49ers,23,3,287,2,217,2
+1,,September 10,2017,8:30PM,Dallas Cowboys,,New York Giants,19,3,392,0,233,1
+1,,September 11,2017,7:10PM,Minnesota Vikings,,New Orleans Saints,29,19,470,0,344,0
+1,,September 11,2017,10:20PM,Denver Broncos,,Los Angeles Chargers,24,21,321,2,249,1
 2,Thu,September 14,2017,8:25 PM,Houston Texans,@,Cincinnati Bengals,,,,,,
 2,Sun,September 17,2017,1:00 PM,Buffalo Bills,@,Carolina Panthers,,,,,,
 2,Sun,September 17,2017,1:00 PM,Arizona Cardinals,@,Indianapolis Colts,,,,,,

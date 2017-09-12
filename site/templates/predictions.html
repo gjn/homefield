@@ -22,9 +22,8 @@
 
   <h4>Categories</h4>
   HR: Homefield Rating</br>
-  WR: Winrate</br>
-  O: Offense Rating</br>
-  D: Defense Rating</br>
+  O: Offensive Rating</br>
+  D: Defensive Rating</br>
   PTS: Point Differentials</br>
   TO: Turnover Differentials</br>
   Y: Yard Differentials</br>
@@ -42,12 +41,6 @@
             <div  data-bind="attr: {class: at}">
               <div class="predictionbar" data-bind="style: { height:
               2*(32 + 1 - data.stats['overall'][at]['s']['o']['rh']) + 'px'}"></div>
-            </div>
-        </td>
-        <td><div data-bind="text: data.stats['overall'][at]['s']['o']['rw']"></div>
-            <div  data-bind="attr: {class: at}">
-              <div class="predictionbar" data-bind="style: { height:
-              2*(32 + 1 - data.stats['overall'][at]['s']['o']['rw']) + 'px'}"></div>
             </div>
         </td>
         <td><div data-bind="text: data.stats['overall'][at]['s']['o']['rr']"></div>
@@ -88,7 +81,6 @@
       <tr class="row-middle">
         <td>@</td>
         <td>HR</td>
-        <td>W</td>
         <td>O</td>
         <td>D</td>
         <td>PTS</td>
@@ -104,14 +96,6 @@
             </div>
             <div data-bind="text: data.stats['overall'][ht]['s']['o']['rh']"></div>
         </td>
-        <td>
-            <div  data-bind="attr: {class: ht}">
-              <div class="predictionbar" data-bind="style: { height:
-              2*(32 + 1 - data.stats['overall'][ht]['s']['o']['rw']) + 'px'}"></div>
-            </div>
-            <div data-bind="text: data.stats['overall'][ht]['s']['o']['rw']"></div>
-        </td>
-
         <td>
             <div  data-bind="attr: {class: ht}">
               <div class="predictionbar" data-bind="style: { height:
