@@ -2,208 +2,204 @@
 <p></p>
 <p></p>
 <h2>Predictions</h2>
-{% if week > 0 %}
-<div id="record">
-  <div class="record" data-bind="if: record">
-    <h4>Prediction record: <span data-bind="text: record.correct"></span> - <span
-    data-bind="text: record.wrong"></span></h4>
-  </div>
-  <p></p>
-  <p></p>
-</div>
-{% endif %}
-
 <div id="predictiondata">
-  <div class="predictions" data-bind="if: data.predictions.nextweek && data.predictions.nextweek.length">
-  <h3>Predicting upcoming games</h3>
-  Bars indicate the league ranking of each team in the given categroy.
-<p></p>
+{% if week > 0 %}
 
-
-  <h4>Categories</h4>
-  HR: Homefield Rating</br>
-  O: Offensive Rating</br>
-  D: Defensive Rating</br>
-  PTS: Point Differentials</br>
-  TO: Turnover Differentials</br>
-  Y: Yard Differentials</br>
-
-<p></p>
-  The last column shows the predicted winner with the probability of the win.
-<p></p>
-<p></p>
-  <table class="table">
-    <tbody data-bind="foreach: data.predictions.nextweek">
-      <tr class="row-awayteam" style="border-top-style: solid; border-left-style:
-      solid; border-right-style: solid">
-        <td class="teamflag"><img data-bind="attr: {src: '{{basepath}}img/' + at + '.svg'}"></img></td>
-        <td><div data-bind="text: data.stats['overall'][at]['s']['o']['rh']"></div>
-            <div  data-bind="attr: {class: at}">
-              <div class="predictionbar" data-bind="style: { height:
-              2*(32 + 1 - data.stats['overall'][at]['s']['o']['rh']) + 'px'}"></div>
-            </div>
-        </td>
-        <td><div data-bind="text: data.stats['overall'][at]['s']['o']['rr']"></div>
-            <div  data-bind="attr: {class: at}">
-              <div class="predictionbar" data-bind="style: { height:
-              2*(32 + 1 - data.stats['overall'][at]['s']['o']['rr']) + 'px'}"></div>
-            </div>
-        </td>
-        <td><div data-bind="text: data.stats['overall'][at]['s']['d']['rr']"></div>
-            <div  data-bind="attr: {class: at}">
-              <div class="predictionbar" data-bind="style: { height:
-              2*(32 + 1 - data.stats['overall'][at]['s']['d']['rr']) + 'px'}"></div>
-            </div>
-        </td>
-        <td><div data-bind="text: data.stats['overall'][at]['s']['u']['rp']"></div>
-            <div  data-bind="attr: {class: at}">
-              <div class="predictionbar" data-bind="style: { height:
-              2*(32 + 1 - data.stats['overall'][at]['s']['u']['rp']) + 'px'}"></div>
-            </div>
-        </td>
-        <td><div data-bind="text: data.stats['overall'][at]['s']['u']['rt']"></div>
-            <div  data-bind="attr: {class: at}">
-              <div class="predictionbar" data-bind="style: { height:
-              2*(32 + 1 - data.stats['overall'][at]['s']['u']['rt']) + 'px'}"></div>
-            </div>
-        </td>
-        <td><div data-bind="text: data.stats['overall'][at]['s']['u']['ry']"></div>
-            <div  data-bind="attr: {class: at}">
-              <div class="predictionbar" data-bind="style: { height:
-              2*(32 + 1 - data.stats['overall'][at]['s']['u']['ry']) + 'px'}"></div>
-            </div>
-        </td>
-        <td class="winner" data-bind="css: { last: $index() == data.predictions.nextweek.length - 1 }" rowspan="3">
-          <img data-bind="attr: {src: '{{basepath}}img/' + ot + '.svg'}"></img>
-          <div data-bind="text: o.toFixed(0) + '%'"></div>
-        </td>
-      </tr>
-      <tr class="row-middle">
-        <td>@</td>
-        <td>HR</td>
-        <td>O</td>
-        <td>D</td>
-        <td>PTS</td>
-        <td>TO</td>
-        <td>Y</td>
-      </tr>
-      <tr class="row-hometeam">
-        <td class="teamflag"><img data-bind="attr: {src: '{{basepath}}img/' + ht + '.svg'}"></img></td>
-        <td>
-            <div  data-bind="attr: {class: ht}">
-              <div class="predictionbar" data-bind="style: { height:
-              2*(32 + 1 - data.stats['overall'][ht]['s']['o']['rh']) + 'px'}"></div>
-            </div>
-            <div data-bind="text: data.stats['overall'][ht]['s']['o']['rh']"></div>
-        </td>
-        <td>
-            <div  data-bind="attr: {class: ht}">
-              <div class="predictionbar" data-bind="style: { height:
-              2*(32 + 1 - data.stats['overall'][ht]['s']['o']['rr']) + 'px'}"></div>
-            </div>
-            <div data-bind="text: data.stats['overall'][ht]['s']['o']['rr']"></div>
-        </td>
-        <td>
-            <div  data-bind="attr: {class: ht}">
-              <div class="predictionbar" data-bind="style: { height:
-              2*(32 + 1 - data.stats['overall'][ht]['s']['d']['rr']) + 'px'}"></div>
-            </div>
-            <div data-bind="text: data.stats['overall'][ht]['s']['d']['rr']"></div>
-        </td>
-        <td>
-            <div  data-bind="attr: {class: ht}">
-              <div class="predictionbar" data-bind="style: { height:
-              2*(32 + 1 - data.stats['overall'][ht]['s']['u']['rp']) + 'px'}"></div>
-            </div>
-            <div data-bind="text: data.stats['overall'][ht]['s']['u']['rp']"></div>
-        </td>
-        <td>
-            <div  data-bind="attr: {class: ht}">
-              <div class="predictionbar" data-bind="style: { height:
-              2*(32 + 1 - data.stats['overall'][ht]['s']['u']['rt']) + 'px'}"></div>
-            </div>
-            <div data-bind="text: data.stats['overall'][ht]['s']['u']['rt']"></div>
-        </td>
-        <td>
-            <div  data-bind="attr: {class: ht}">
-              <div class="predictionbar" data-bind="style: { height:
-              2*(32 + 1 - data.stats['overall'][ht]['s']['u']['ry']) + 'px'}"></div>
-            </div>
-            <div data-bind="text: data.stats['overall'][ht]['s']['u']['ry']"></div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="record" data-bind="if: data.predictions.record">
+    <h4>Prediction record: <span data-bind="text: data.predictions.record.correct"></span> - <span
+    data-bind="text: data.predictions.record.wrong"></span></h4>
   </div>
-</div>
-
-{% if false %}
-<div id="predictions">
-
-  <div class="predictions" data-bind="if: predictions && predictions.length">
-
-    <h3>Predicting upcoming games</h3>
-    <table class="table">
-      <tbody>
-        <tr data-bind="foreach: predictions">
-          <td data-bind="if: !$index()"></td>
-          <td><img data-bind="attr: {src: '{{basepath}}img/' + at + '.svg'}"></img></td>
-        </tr>
-        <tr data-bind="foreach: predictions">
-          <td data-bind="if: !$index()"></td>
-          <td>@</td>
-        </tr>
-        <tr class="separation" data-bind="foreach: predictions">
-          <td data-bind="if: !$index()"></td>
-            <td><img data-bind="attr: {src: '{{basepath}}img/' + ht + '.svg'}"></img></td>
-        </tr>
-        <tr class="separation results" data-bind="foreach: predictions">
-          <td data-bind="if: !$index()">Winner</td>
-          <td>
-            <img class="winner" data-bind="attr: {src: '{{basepath}}img/' + ot + '.svg'}"></img>
-            <div data-bind="text: o.toFixed(0) + '%'"></div>
-          </td>
-        </tr>
-        <tr class="results" data-bind="foreach: predictions">
-          <td data-bind="if: !$index()">Rate</td>
-          <td>
-            <img data-bind="attr: {src: '{{basepath}}img/' + wt + '.svg'}"></img>
-            <div data-bind="text: w.toFixed(1)"></div>
-          </td>
-        </tr>
-        <tr data-bind="foreach: predictions">
-          <td data-bind="if: !$index()">Points</td>
-          <td>
-            <img data-bind="attr: {src: '{{basepath}}img/' + pt + '.svg'}"></img>
-            <div data-bind="text: p.toFixed(0)"></div>
-          </td>
-        </tr>
-        <tr data-bind="foreach: predictions">
-          <td data-bind="if: !$index()">Yards</td>
-          <td>
-            <img data-bind="attr: {src: '{{basepath}}img/' + yt + '.svg'}"></img>
-            <div data-bind="text: y.toFixed(0)"></div>
-          </td>
-        </tr>
-        <tr data-bind="foreach: predictions">
-          <td data-bind="if: !$index()">Turnovers</td>
-          <td>
-            <img data-bind="attr: {src: '{{basepath}}img/' + tt + '.svg'}"></img>
-            <div data-bind="text: t.toFixed(1)"></div>
-          </td>
-        </tr>
-
-      </tbody>
-    </table>
-    <div class="explanations">Positive numbers indicates advantage for home team.</div>
-    <br>
-
-  </div>
-
-</div>
-
+  <p></p>
+  <p></p>
 {% endif %}
 
+  <div class="predictions" data-bind="if: data.predictions.nextweek && data.predictions.nextweek.length">
+    <h3>Predicting upcoming games</h3>
+    Bars indicate the league ranking of each team in the given categroy.
+    <p></p>
+
+
+    <h4>Categories</h4>
+    HR: Homefield Rating</br>
+    O: Offensive Rating</br>
+    D: Defensive Rating</br>
+    PTS: Point Differentials</br>
+    TO: Turnover Differentials</br>
+    Y: Yard Differentials</br>
+
+    <p></p>
+    The last column shows the predicted winner with the probability of the win.
+    <p></p>
+    <p></p>
+
+    <div class="predictions" data-bind="if: data.predictions.nextweek && data.predictions.nextweek.length">
+
+      <h3>Predicting upcoming games</h3>
+        <table class="table">
+          <tbody>
+            <tr data-bind="foreach: data.predictions.nextweek">
+              <td data-bind="if: !$index()"></td>
+              <td><img data-bind="attr: {src: '{{basepath}}img/' + at + '.svg'}"></img></td>
+            </tr>
+            <tr data-bind="foreach: data.predictions.nextweek">
+              <td data-bind="if: !$index()"></td>
+              <td>@</td>
+            </tr>
+            <tr class="separation" data-bind="foreach: data.predictions.nextweek">
+              <td data-bind="if: !$index()"></td>
+                <td><img data-bind="attr: {src: '{{basepath}}img/' + ht + '.svg'}"></img></td>
+            </tr>
+            <tr class="results" data-bind="foreach: data.predictions.nextweek">
+              <td data-bind="if: !$index()">Winner</td>
+              <td>
+                <img class="winner" data-bind="attr: {src: '{{basepath}}img/' + ot + '.svg'}"></img>
+                <div data-bind="text: o.toFixed(0) + '%'"></div>
+              </td>
+            </tr>
+            <!--
+            <tr class="results" data-bind="foreach: data.predictions.nextweek">
+              <td data-bind="if: !$index()">Rate</td>
+              <td>
+                <img data-bind="attr: {src: '{{basepath}}img/' + wt + '.svg'}"></img>
+                <div data-bind="text: w.toFixed(1)"></div>
+              </td>
+            </tr>
+            <tr data-bind="foreach: data.predictions.nextweek">
+              <td data-bind="if: !$index()">Points</td>
+              <td>
+                <img data-bind="attr: {src: '{{basepath}}img/' + pt + '.svg'}"></img>
+                <div data-bind="text: p.toFixed(0)"></div>
+              </td>
+            </tr>
+            <tr data-bind="foreach: data.predictions.nextweek">
+              <td data-bind="if: !$index()">Yards</td>
+              <td>
+                <img data-bind="attr: {src: '{{basepath}}img/' + yt + '.svg'}"></img>
+                <div data-bind="text: y.toFixed(0)"></div>
+              </td>
+            </tr>
+            <tr data-bind="foreach: data.predictions.nextweek">
+              <td data-bind="if: !$index()">Turnovers</td>
+              <td>
+                <img data-bind="attr: {src: '{{basepath}}img/' + tt + '.svg'}"></img>
+                <div data-bind="text: t.toFixed(1)"></div>
+              </td>
+            </tr>
+      -->
+          </tbody>
+        </table>
+<!--  <div class="explanations">Positive numbers indicates advantage for home
+      team.</div>-->
+      <br>
+      <p></p>
+      <p></p>
+        <table class="table">
+          <tbody data-bind="foreach: data.predictions.nextweek">
+            <tr class="row-awayteam" style="border-top-style: solid; border-left-style:
+            solid; border-right-style: solid">
+              <td class="teamflag"><img data-bind="attr: {src: '{{basepath}}img/' + at + '.svg'}"></img></td>
+              <td><div data-bind="text: data.stats['overall'][at]['s']['o']['rh']"></div>
+                  <div  data-bind="attr: {class: at}">
+                    <div class="predictionbar" data-bind="style: { height:
+                    2*(32 + 1 - data.stats['overall'][at]['s']['o']['rh']) + 'px'}"></div>
+                  </div>
+              </td>
+              <td><div data-bind="text: data.stats['overall'][at]['s']['o']['rr']"></div>
+                  <div  data-bind="attr: {class: at}">
+                    <div class="predictionbar" data-bind="style: { height:
+                    2*(32 + 1 - data.stats['overall'][at]['s']['o']['rr']) + 'px'}"></div>
+                  </div>
+              </td>
+              <td><div data-bind="text: data.stats['overall'][at]['s']['d']['rr']"></div>
+                  <div  data-bind="attr: {class: at}">
+                    <div class="predictionbar" data-bind="style: { height:
+                    2*(32 + 1 - data.stats['overall'][at]['s']['d']['rr']) + 'px'}"></div>
+                  </div>
+              </td>
+              <td><div data-bind="text: data.stats['overall'][at]['s']['u']['rp']"></div>
+                  <div  data-bind="attr: {class: at}">
+                    <div class="predictionbar" data-bind="style: { height:
+                    2*(32 + 1 - data.stats['overall'][at]['s']['u']['rp']) + 'px'}"></div>
+                  </div>
+              </td>
+              <td><div data-bind="text: data.stats['overall'][at]['s']['u']['rt']"></div>
+                  <div  data-bind="attr: {class: at}">
+                    <div class="predictionbar" data-bind="style: { height:
+                    2*(32 + 1 - data.stats['overall'][at]['s']['u']['rt']) + 'px'}"></div>
+                  </div>
+              </td>
+              <td><div data-bind="text: data.stats['overall'][at]['s']['u']['ry']"></div>
+                  <div  data-bind="attr: {class: at}">
+                    <div class="predictionbar" data-bind="style: { height:
+                    2*(32 + 1 - data.stats['overall'][at]['s']['u']['ry']) + 'px'}"></div>
+                  </div>
+              </td>
+              <td class="winner" data-bind="css: { last: $index() == data.predictions.nextweek.length - 1 }" rowspan="3">
+                <img data-bind="attr: {src: '{{basepath}}img/' + ot + '.svg'}"></img>
+                <div data-bind="text: o.toFixed(0) + '%'"></div>
+              </td>
+            </tr>
+            <tr class="row-middle">
+              <td>@</td>
+              <td>HR</td>
+              <td>O</td>
+              <td>D</td>
+              <td>PTS</td>
+              <td>TO</td>
+              <td>Y</td>
+            </tr>
+            <tr class="row-hometeam">
+              <td class="teamflag"><img data-bind="attr: {src: '{{basepath}}img/' + ht + '.svg'}"></img></td>
+              <td>
+                  <div  data-bind="attr: {class: ht}">
+                    <div class="predictionbar" data-bind="style: { height:
+                    2*(32 + 1 - data.stats['overall'][ht]['s']['o']['rh']) + 'px'}"></div>
+                  </div>
+                  <div data-bind="text: data.stats['overall'][ht]['s']['o']['rh']"></div>
+              </td>
+              <td>
+                  <div  data-bind="attr: {class: ht}">
+                    <div class="predictionbar" data-bind="style: { height:
+                    2*(32 + 1 - data.stats['overall'][ht]['s']['o']['rr']) + 'px'}"></div>
+                  </div>
+                  <div data-bind="text: data.stats['overall'][ht]['s']['o']['rr']"></div>
+              </td>
+              <td>
+                  <div  data-bind="attr: {class: ht}">
+                    <div class="predictionbar" data-bind="style: { height:
+                    2*(32 + 1 - data.stats['overall'][ht]['s']['d']['rr']) + 'px'}"></div>
+                  </div>
+                  <div data-bind="text: data.stats['overall'][ht]['s']['d']['rr']"></div>
+              </td>
+              <td>
+                  <div  data-bind="attr: {class: ht}">
+                    <div class="predictionbar" data-bind="style: { height:
+                    2*(32 + 1 - data.stats['overall'][ht]['s']['u']['rp']) + 'px'}"></div>
+                  </div>
+                  <div data-bind="text: data.stats['overall'][ht]['s']['u']['rp']"></div>
+              </td>
+              <td>
+                  <div  data-bind="attr: {class: ht}">
+                    <div class="predictionbar" data-bind="style: { height:
+                    2*(32 + 1 - data.stats['overall'][ht]['s']['u']['rt']) + 'px'}"></div>
+                  </div>
+                  <div data-bind="text: data.stats['overall'][ht]['s']['u']['rt']"></div>
+              </td>
+              <td>
+                  <div  data-bind="attr: {class: ht}">
+                    <div class="predictionbar" data-bind="style: { height:
+                    2*(32 + 1 - data.stats['overall'][ht]['s']['u']['ry']) + 'px'}"></div>
+                  </div>
+                  <div data-bind="text: data.stats['overall'][ht]['s']['u']['ry']"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+    </div>
+  </div>
+
+</div>
 {% if week < 21 %}
 
 <h1>Strength of remaining schedule</h1>
@@ -225,14 +221,7 @@
   }
   var keystats = '_' + season + (week < 10 ? '0' : '') + week;
   var data = hf.stats.data[keystats];
-  var predictions = data.predictions.nextweek;
-  var record = data.predictions.record;
-  //ko.applyBindings(predictions, document.getElementById('predictions'));
   ko.applyBindings(data, document.getElementById('predictiondata'));
-  if ({{week}} > 0) {
-    ko.applyBindings(record, document.getElementById('record'));
-  }
-
   if ({{week}} < 21) {
 
     var sosRemainGraph = new hf.graphs.Bar('#sosRemain');
