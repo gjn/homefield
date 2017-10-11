@@ -62,20 +62,20 @@ Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TO
 4,Sun,October 1,2017,4:25PM,Denver Broncos,,Oakland Raiders,16,10,298,0,254,1
 4,Sun,October 1,2017,8:30PM,Seattle Seahawks,,Indianapolis Colts,46,18,477,2,237,2
 4,Mon,October 2,2017,8:30PM,Kansas City Chiefs,,Washington Redskins,29,20,429,0,331,1
-5,Thu,October 5,2017,8:25 PM,New England Patriots,@,Tampa Bay Buccaneers,,,,,,
-5,Sun,October 8,2017,1:00 PM,Buffalo Bills,@,Cincinnati Bengals,,,,,,
-5,Sun,October 8,2017,1:00 PM,New York Jets,@,Cleveland Browns,,,,,,
-5,Sun,October 8,2017,1:00 PM,San Francisco 49ers,@,Indianapolis Colts,,,,,,
-5,Sun,October 8,2017,1:00 PM,Carolina Panthers,@,Detroit Lions,,,,,,
-5,Sun,October 8,2017,1:00 PM,Tennessee Titans,@,Miami Dolphins,,,,,,
-5,Sun,October 8,2017,1:00 PM,Los Angeles Chargers,@,New York Giants,,,,,,
-5,Sun,October 8,2017,1:00 PM,Arizona Cardinals,@,Philadelphia Eagles,,,,,,
-5,Sun,October 8,2017,1:00 PM,Jacksonville Jaguars,@,Pittsburgh Steelers,,,,,,
-5,Sun,October 8,2017,4:05 PM,Baltimore Ravens,@,Oakland Raiders,,,,,,
-5,Sun,October 8,2017,4:05 PM,Seattle Seahawks,@,Los Angeles Rams,,,,,,
-5,Sun,October 8,2017,4:25 PM,Green Bay Packers,@,Dallas Cowboys,,,,,,
-5,Sun,October 8,2017,8:30 PM,Kansas City Chiefs,@,Houston Texans,,,,,,
-5,Mon,October 9,2017,8:30 PM,Minnesota Vikings,@,Chicago Bears,,,,,,
+5,Thu,October 5,2017,8:25PM,New England Patriots,@,Tampa Bay Buccaneers,19,14,402,2,409,0
+5,Sun,October 8,2017,1:00PM,Miami Dolphins,,Tennessee Titans,16,10,178,2,188,2
+5,Sun,October 8,2017,1:00PM,New York Jets,@,Cleveland Browns,17,14,212,1,419,3
+5,Sun,October 8,2017,1:00PM,Jacksonville Jaguars,@,Pittsburgh Steelers,30,9,313,1,371,5
+5,Sun,October 8,2017,1:00PM,Indianapolis Colts,,San Francisco 49ers,26,23,447,1,402,0
+5,Sun,October 8,2017,1:00PM,Philadelphia Eagles,,Arizona Cardinals,34,7,419,1,307,1
+5,Sun,October 8,2017,1:00PM,Cincinnati Bengals,,Buffalo Bills,20,16,388,3,221,1
+5,Sun,October 8,2017,1:00PM,Los Angeles Chargers,@,New York Giants,27,22,382,1,335,2
+5,Sun,October 8,2017,1:00PM,Carolina Panthers,@,Detroit Lions,27,24,362,0,242,1
+5,Sun,October 8,2017,4:05PM,Seattle Seahawks,@,Los Angeles Rams,16,10,241,2,375,5
+5,Sun,October 8,2017,4:05PM,Baltimore Ravens,@,Oakland Raiders,30,17,365,0,245,1
+5,Sun,October 8,2017,4:25PM,Green Bay Packers,@,Dallas Cowboys,35,31,342,1,408,3
+5,Sun,October 8,2017,8:30PM,Kansas City Chiefs,@,Houston Texans,42,34,450,0,392,1
+5,Mon,October 9,2017,8:30PM,Minnesota Vikings,@,Chicago Bears,20,17,300,0,274,2
 6,Thu,October 12,2017,8:25 PM,Philadelphia Eagles,@,Carolina Panthers,,,,,,
 6,Sun,October 15,2017,1:00 PM,Miami Dolphins,@,Atlanta Falcons,,,,,,
 6,Sun,October 15,2017,1:00 PM,Cleveland Browns,@,Houston Texans,,,,,,
