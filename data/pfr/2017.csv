@@ -76,20 +76,20 @@ Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TO
 5,Sun,October 8,2017,4:25PM,Green Bay Packers,@,Dallas Cowboys,35,31,342,1,408,3
 5,Sun,October 8,2017,8:30PM,Kansas City Chiefs,@,Houston Texans,42,34,450,0,392,1
 5,Mon,October 9,2017,8:30PM,Minnesota Vikings,@,Chicago Bears,20,17,300,0,274,2
-6,Thu,October 12,2017,8:25 PM,Philadelphia Eagles,@,Carolina Panthers,,,,,,
-6,Sun,October 15,2017,1:00 PM,Miami Dolphins,@,Atlanta Falcons,,,,,,
-6,Sun,October 15,2017,1:00 PM,Cleveland Browns,@,Houston Texans,,,,,,
-6,Sun,October 15,2017,1:00 PM,Green Bay Packers,@,Minnesota Vikings,,,,,,
-6,Sun,October 15,2017,1:00 PM,Detroit Lions,@,New Orleans Saints,,,,,,
-6,Sun,October 15,2017,1:00 PM,New England Patriots,@,New York Jets,,,,,,
-6,Sun,October 15,2017,1:00 PM,Chicago Bears,@,Baltimore Ravens,,,,,,
-6,Sun,October 15,2017,1:00 PM,San Francisco 49ers,@,Washington Redskins,,,,,,
-6,Sun,October 15,2017,4:05 PM,Tampa Bay Buccaneers,@,Arizona Cardinals,,,,,,
-6,Sun,October 15,2017,4:05 PM,Los Angeles Rams,@,Jacksonville Jaguars,,,,,,
-6,Sun,October 15,2017,4:25 PM,Pittsburgh Steelers,@,Kansas City Chiefs,,,,,,
-6,Sun,October 15,2017,4:25 PM,Los Angeles Chargers,@,Oakland Raiders,,,,,,
-6,Sun,October 15,2017,8:30 PM,New York Giants,@,Denver Broncos,,,,,,
-6,Mon,October 16,2017,8:30 PM,Indianapolis Colts,@,Tennessee Titans,,,,,,
+6,Thu,October 12,2017,8:25PM,Philadelphia Eagles,@,Carolina Panthers,28,23,310,1,305,3
+6,Sun,October 15,2017,1:00PM,Miami Dolphins,@,Atlanta Falcons,20,17,289,1,339,1
+6,Sun,October 15,2017,1:00PM,Chicago Bears,@,Baltimore Ravens,27,24,342,2,291,3
+6,Sun,October 15,2017,1:00PM,New England Patriots,@,New York Jets,24,17,375,2,408,3
+6,Sun,October 15,2017,1:00PM,Minnesota Vikings,,Green Bay Packers,23,10,351,2,227,3
+6,Sun,October 15,2017,1:00PM,Houston Texans,,Cleveland Browns,33,17,340,1,247,3
+6,Sun,October 15,2017,1:00PM,New Orleans Saints,,Detroit Lions,52,38,379,3,347,5
+6,Sun,October 15,2017,1:00PM,Washington Redskins,,San Francisco 49ers,26,24,419,2,335,1
+6,Sun,October 15,2017,4:05PM,Arizona Cardinals,,Tampa Bay Buccaneers,38,33,432,2,414,2
+6,Sun,October 15,2017,4:05PM,Los Angeles Rams,@,Jacksonville Jaguars,27,17,249,1,389,1
+6,Sun,October 15,2017,4:25PM,Pittsburgh Steelers,@,Kansas City Chiefs,19,13,439,1,251,0
+6,Sun,October 15,2017,4:25PM,Los Angeles Chargers,@,Oakland Raiders,17,16,343,1,274,2
+6,Sun,October 15,2017,8:30PM,New York Giants,@,Denver Broncos,23,10,266,0,412,3
+6,Mon,October 16,2017,8:30PM,Tennessee Titans,,Indianapolis Colts,36,22,473,1,297,1
 7,Thu,October 19,2017,8:25 PM,Kansas City Chiefs,@,Oakland Raiders,,,,,,
 7,Sun,October 22,2017,1:00 PM,Tampa Bay Buccaneers,@,Buffalo Bills,,,,,,
 7,Sun,October 22,2017,1:00 PM,Carolina Panthers,@,Chicago Bears,,,,,,
