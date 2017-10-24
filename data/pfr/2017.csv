@@ -90,21 +90,21 @@ Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TO
 6,Sun,October 15,2017,4:25PM,Los Angeles Chargers,@,Oakland Raiders,17,16,343,1,274,2
 6,Sun,October 15,2017,8:30PM,New York Giants,@,Denver Broncos,23,10,266,0,412,3
 6,Mon,October 16,2017,8:30PM,Tennessee Titans,,Indianapolis Colts,36,22,473,1,297,1
-7,Thu,October 19,2017,8:25 PM,Kansas City Chiefs,@,Oakland Raiders,,,,,,
-7,Sun,October 22,2017,1:00 PM,Tampa Bay Buccaneers,@,Buffalo Bills,,,,,,
-7,Sun,October 22,2017,1:00 PM,Carolina Panthers,@,Chicago Bears,,,,,,
-7,Sun,October 22,2017,1:00 PM,Tennessee Titans,@,Cleveland Browns,,,,,,
-7,Sun,October 22,2017,1:00 PM,Jacksonville Jaguars,@,Indianapolis Colts,,,,,,
-7,Sun,October 22,2017,1:00 PM,New Orleans Saints,@,Green Bay Packers,,,,,,
-7,Sun,October 22,2017,1:00 PM,New York Jets,@,Miami Dolphins,,,,,,
-7,Sun,October 22,2017,1:00 PM,Baltimore Ravens,@,Minnesota Vikings,,,,,,
-7,Sun,October 22,2017,1:00 PM,Cincinnati Bengals,@,Pittsburgh Steelers,,,,,,
-7,Sun,October 22,2017,1:00 PM,Arizona Cardinals,@,Los Angeles Rams,,,,,,
-7,Sun,October 22,2017,4:05 PM,Dallas Cowboys,@,San Francisco 49ers,,,,,,
-7,Sun,October 22,2017,4:25 PM,Seattle Seahawks,@,New York Giants,,,,,,
-7,Sun,October 22,2017,4:25 PM,Denver Broncos,@,Los Angeles Chargers,,,,,,
-7,Sun,October 22,2017,8:30 PM,Atlanta Falcons,@,New England Patriots,,,,,,
-7,Mon,October 23,2017,8:30 PM,Washington Redskins,@,Philadelphia Eagles,,,,,,
+7,Thu,October 19,2017,8:25PM,Oakland Raiders,,Kansas City Chiefs,31,30,505,0,425,0
+7,Sun,October 22,2017,1:00PM,Miami Dolphins,,New York Jets,31,28,357,2,272,2
+7,Sun,October 22,2017,1:00PM,Buffalo Bills,,Tampa Bay Buccaneers,30,27,434,1,447,3
+7,Sun,October 22,2017,1:00PM,Minnesota Vikings,,Baltimore Ravens,24,16,357,1,208,0
+7,Sun,October 22,2017,1:00PM,Los Angeles Rams,,Arizona Cardinals,33,0,425,1,193,2
+7,Sun,October 22,2017,1:00PM,Chicago Bears,,Carolina Panthers,17,3,153,0,293,3
+7,Sun,October 22,2017,1:00PM,New Orleans Saints,@,Green Bay Packers,26,17,485,2,260,1
+7,Sun,October 22,2017,1:00PM,Jacksonville Jaguars,@,Indianapolis Colts,27,0,518,2,232,0
+7,Sun,October 22,2017,1:00PM,Tennessee Titans,@,Cleveland Browns,12,9,269,1,284,3
+7,Sun,October 22,2017,4:05PM,Dallas Cowboys,@,San Francisco 49ers,40,10,501,0,290,3
+7,Sun,October 22,2017,4:25PM,Pittsburgh Steelers,,Cincinnati Bengals,29,14,420,0,179,2
+7,Sun,October 22,2017,4:25PM,Los Angeles Chargers,,Denver Broncos,21,0,242,0,251,3
+7,Sun,October 22,2017,4:25PM,Seattle Seahawks,@,New York Giants,24,7,425,1,177,1
+7,Sun,October 22,2017,8:30PM,New England Patriots,,Atlanta Falcons,23,7,403,0,343,0
+7,Mon,October 23,2017,8:30PM,Philadelphia Eagles,,Washington Redskins,34,24,371,1,344,1
 8,Thu,October 26,2017,8:25 PM,Miami Dolphins,@,Baltimore Ravens,,,,,,
 8,Sun,October 29,2017,9:30 AM,Minnesota Vikings,@,Cleveland Browns,,,,,,
 8,Sun,October 29,2017,1:00 PM,Oakland Raiders,@,Buffalo Bills,,,,,,
