@@ -105,19 +105,19 @@ Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TO
 7,Sun,October 22,2017,4:25PM,Seattle Seahawks,@,New York Giants,24,7,425,1,177,1
 7,Sun,October 22,2017,8:30PM,New England Patriots,,Atlanta Falcons,23,7,403,0,343,0
 7,Mon,October 23,2017,8:30PM,Philadelphia Eagles,,Washington Redskins,34,24,371,1,344,1
-8,Thu,October 26,2017,8:25 PM,Miami Dolphins,@,Baltimore Ravens,,,,,,
-8,Sun,October 29,2017,9:30 AM,Minnesota Vikings,@,Cleveland Browns,,,,,,
-8,Sun,October 29,2017,1:00 PM,Oakland Raiders,@,Buffalo Bills,,,,,,
-8,Sun,October 29,2017,1:00 PM,Indianapolis Colts,@,Cincinnati Bengals,,,,,,
-8,Sun,October 29,2017,1:00 PM,Chicago Bears,@,New Orleans Saints,,,,,,
-8,Sun,October 29,2017,1:00 PM,Los Angeles Chargers,@,New England Patriots,,,,,,
-8,Sun,October 29,2017,1:00 PM,Atlanta Falcons,@,New York Jets,,,,,,
-8,Sun,October 29,2017,1:00 PM,San Francisco 49ers,@,Philadelphia Eagles,,,,,,
-8,Sun,October 29,2017,1:00 PM,Carolina Panthers,@,Tampa Bay Buccaneers,,,,,,
-8,Sun,October 29,2017,4:05 PM,Houston Texans,@,Seattle Seahawks,,,,,,
-8,Sun,October 29,2017,4:25 PM,Dallas Cowboys,@,Washington Redskins,,,,,,
-8,Sun,October 29,2017,8:30 PM,Pittsburgh Steelers,@,Detroit Lions,,,,,,
-8,Mon,October 30,2017,8:30 PM,Denver Broncos,@,Kansas City Chiefs,,,,,,
+8,Thu,October 26,2017,8:25PM,Baltimore Ravens,,Miami Dolphins,40,0,295,0,196,2
+8,Sun,October 29,2017,9:30AM,Minnesota Vikings,@,Cleveland Browns,33,16,375,1,276,2
+8,Sun,October 29,2017,1:00PM,Atlanta Falcons,@,New York Jets,25,20,386,2,279,1
+8,Sun,October 29,2017,1:00PM,Cincinnati Bengals,,Indianapolis Colts,24,23,276,2,331,1
+8,Sun,October 29,2017,1:00PM,Buffalo Bills,,Oakland Raiders,34,14,331,0,367,4
+8,Sun,October 29,2017,1:00PM,New Orleans Saints,,Chicago Bears,20,12,387,2,307,1
+8,Sun,October 29,2017,1:00PM,New England Patriots,,Los Angeles Chargers,21,13,414,0,349,1
+8,Sun,October 29,2017,1:00PM,Carolina Panthers,@,Tampa Bay Buccaneers,17,3,254,1,279,3
+8,Sun,October 29,2017,1:00PM,Philadelphia Eagles,,San Francisco 49ers,33,10,304,1,238,2
+8,Sun,October 29,2017,4:05PM,Seattle Seahawks,,Houston Texans,41,38,479,1,509,3
+8,Sun,October 29,2017,4:25PM,Dallas Cowboys,@,Washington Redskins,33,19,307,1,285,3
+8,Sun,October 29,2017,8:30PM,Pittsburgh Steelers,@,Detroit Lions,20,15,392,2,482,1
+8,Mon,October 30,2017,8:30 PM,Kansas City Chiefs,,Denver Broncos,29,19,276,2,364,5
 9,Thu,November 2,2017,8:25 PM,Buffalo Bills,@,New York Jets,,,,,,
 9,Sun,November 5,2017,1:00 PM,Atlanta Falcons,@,Carolina Panthers,,,,,,
 9,Sun,November 5,2017,1:00 PM,Indianapolis Colts,@,Houston Texans,,,,,,
