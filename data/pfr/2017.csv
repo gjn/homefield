@@ -118,19 +118,19 @@ Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TO
 8,Sun,October 29,2017,4:25PM,Dallas Cowboys,@,Washington Redskins,33,19,307,1,285,3
 8,Sun,October 29,2017,8:30PM,Pittsburgh Steelers,@,Detroit Lions,20,15,392,2,482,1
 8,Mon,October 30,2017,8:30 PM,Kansas City Chiefs,,Denver Broncos,29,19,276,2,364,5
-9,Thu,November 2,2017,8:25 PM,Buffalo Bills,@,New York Jets,,,,,,
-9,Sun,November 5,2017,1:00 PM,Atlanta Falcons,@,Carolina Panthers,,,,,,
-9,Sun,November 5,2017,1:00 PM,Indianapolis Colts,@,Houston Texans,,,,,,
-9,Sun,November 5,2017,1:00 PM,Cincinnati Bengals,@,Jacksonville Jaguars,,,,,,
-9,Sun,November 5,2017,1:00 PM,Tampa Bay Buccaneers,@,New Orleans Saints,,,,,,
-9,Sun,November 5,2017,1:00 PM,Los Angeles Rams,@,New York Giants,,,,,,
-9,Sun,November 5,2017,1:00 PM,Baltimore Ravens,@,Tennessee Titans,,,,,,
-9,Sun,November 5,2017,1:00 PM,Denver Broncos,@,Philadelphia Eagles,,,,,,
-9,Sun,November 5,2017,4:05 PM,Washington Redskins,@,Seattle Seahawks,,,,,,
-9,Sun,November 5,2017,4:05 PM,Arizona Cardinals,@,San Francisco 49ers,,,,,,
-9,Sun,November 5,2017,4:25 PM,Kansas City Chiefs,@,Dallas Cowboys,,,,,,
-9,Sun,November 5,2017,8:30 PM,Oakland Raiders,@,Miami Dolphins,,,,,,
-9,Mon,November 6,2017,8:30 PM,Detroit Lions,@,Green Bay Packers,,,,,,
+9,Thu,November 2,2017,8:25PM,New York Jets,,Buffalo Bills,34,21,331,0,307,3
+9,Sun,November 5,2017,1:00PM,Carolina Panthers,,Atlanta Falcons,20,17,330,2,355,1
+9,Sun,November 5,2017,1:00PM,Philadelphia Eagles,,Denver Broncos,51,23,419,1,226,2
+9,Sun,November 5,2017,1:00PM,New Orleans Saints,,Tampa Bay Buccaneers,30,10,407,2,200,1
+9,Sun,November 5,2017,1:00PM,Los Angeles Rams,@,New York Giants,51,17,473,0,319,3
+9,Sun,November 5,2017,1:00PM,Jacksonville Jaguars,,Cincinnati Bengals,23,7,407,1,148,0
+9,Sun,November 5,2017,1:00PM,Tennessee Titans,,Baltimore Ravens,23,20,257,1,341,2
+9,Sun,November 5,2017,1:00PM,Indianapolis Colts,@,Houston Texans,20,14,371,1,288,1
+9,Sun,November 5,2017,4:05PM,Washington Redskins,@,Seattle Seahawks,17,14,244,1,437,2
+9,Sun,November 5,2017,4:05PM,Arizona Cardinals,@,San Francisco 49ers,20,10,368,2,329,2
+9,Sun,November 5,2017,4:25PM,Dallas Cowboys,,Kansas City Chiefs,28,17,375,0,323,1
+9,Sun,November 5,2017,8:30PM,Oakland Raiders,@,Miami Dolphins,27,24,379,2,395,1
+9,Mon,November 6,2017,8:30 PM,Detroit Lions,@,Green Bay Packers,30,17,417,1,311,0
 10,Thu,November 9,2017,8:25 PM,Seattle Seahawks,@,Arizona Cardinals,,,,,,
 10,Sun,November 12,2017,1:00 PM,New Orleans Saints,@,Buffalo Bills,,,,,,
 10,Sun,November 12,2017,1:00 PM,Green Bay Packers,@,Chicago Bears,,,,,,

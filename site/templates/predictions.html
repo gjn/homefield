@@ -98,40 +98,40 @@
             <tr class="row-awayteam" style="border-top-style: solid; border-left-style:
             solid; border-right-style: solid">
               <td class="teamflag"><img data-bind="attr: {src: '{{basepath}}img/' + at + '.svg'}"></img></td>
-              <td><div data-bind="text: data.stats['overall'][at]['s']['o']['rh']"></div>
+              <td><div data-bind="text: data.stats['away'][at]['s']['o']['rh']"></div>
                   <div  data-bind="attr: {class: at}">
                     <div class="predictionbar" data-bind="style: { height:
-                    2*(32 + 1 - data.stats['overall'][at]['s']['o']['rh']) + 'px'}"></div>
+                    2*(32 + 1 - data.stats['away'][at]['s']['o']['rh']) + 'px'}"></div>
                   </div>
               </td>
-              <td><div data-bind="text: data.stats['overall'][at]['s']['o']['rr']"></div>
+              <td><div data-bind="text: data.stats['away'][at]['s']['o']['rr']"></div>
                   <div  data-bind="attr: {class: at}">
                     <div class="predictionbar" data-bind="style: { height:
-                    2*(32 + 1 - data.stats['overall'][at]['s']['o']['rr']) + 'px'}"></div>
+                    2*(32 + 1 - data.stats['away'][at]['s']['o']['rr']) + 'px'}"></div>
                   </div>
               </td>
-              <td><div data-bind="text: data.stats['overall'][at]['s']['d']['rr']"></div>
+              <td><div data-bind="text: data.stats['away'][at]['s']['d']['rr']"></div>
                   <div  data-bind="attr: {class: at}">
                     <div class="predictionbar" data-bind="style: { height:
-                    2*(32 + 1 - data.stats['overall'][at]['s']['d']['rr']) + 'px'}"></div>
+                    2*(32 + 1 - data.stats['away'][at]['s']['d']['rr']) + 'px'}"></div>
                   </div>
               </td>
-              <td><div data-bind="text: data.stats['overall'][at]['s']['u']['rp']"></div>
+              <td><div data-bind="text: data.stats['away'][at]['s']['u']['rp']"></div>
                   <div  data-bind="attr: {class: at}">
                     <div class="predictionbar" data-bind="style: { height:
-                    2*(32 + 1 - data.stats['overall'][at]['s']['u']['rp']) + 'px'}"></div>
+                    2*(32 + 1 - data.stats['away'][at]['s']['u']['rp']) + 'px'}"></div>
                   </div>
               </td>
-              <td><div data-bind="text: data.stats['overall'][at]['s']['u']['rt']"></div>
+              <td><div data-bind="text: data.stats['away'][at]['s']['u']['rt']"></div>
                   <div  data-bind="attr: {class: at}">
                     <div class="predictionbar" data-bind="style: { height:
-                    2*(32 + 1 - data.stats['overall'][at]['s']['u']['rt']) + 'px'}"></div>
+                    2*(32 + 1 - data.stats['away'][at]['s']['u']['rt']) + 'px'}"></div>
                   </div>
               </td>
-              <td><div data-bind="text: data.stats['overall'][at]['s']['u']['ry']"></div>
+              <td><div data-bind="text: data.stats['away'][at]['s']['u']['ry']"></div>
                   <div  data-bind="attr: {class: at}">
                     <div class="predictionbar" data-bind="style: { height:
-                    2*(32 + 1 - data.stats['overall'][at]['s']['u']['ry']) + 'px'}"></div>
+                    2*(32 + 1 - data.stats['away'][at]['s']['u']['ry']) + 'px'}"></div>
                   </div>
               </td>
               <td class="winner" data-bind="css: { last: $index() == data.predictions.nextweek.length - 1 }" rowspan="3">
@@ -153,44 +153,44 @@
               <td>
                   <div  data-bind="attr: {class: ht}">
                     <div class="predictionbar" data-bind="style: { height:
-                    2*(32 + 1 - data.stats['overall'][ht]['s']['o']['rh']) + 'px'}"></div>
+                    2*(32 + 1 - data.stats['home'][ht]['s']['o']['rh']) + 'px'}"></div>
                   </div>
-                  <div data-bind="text: data.stats['overall'][ht]['s']['o']['rh']"></div>
+                  <div data-bind="text: data.stats['home'][ht]['s']['o']['rh']"></div>
               </td>
               <td>
                   <div  data-bind="attr: {class: ht}">
                     <div class="predictionbar" data-bind="style: { height:
-                    2*(32 + 1 - data.stats['overall'][ht]['s']['o']['rr']) + 'px'}"></div>
+                    2*(32 + 1 - data.stats['home'][ht]['s']['o']['rr']) + 'px'}"></div>
                   </div>
-                  <div data-bind="text: data.stats['overall'][ht]['s']['o']['rr']"></div>
+                  <div data-bind="text: data.stats['home'][ht]['s']['o']['rr']"></div>
               </td>
               <td>
                   <div  data-bind="attr: {class: ht}">
                     <div class="predictionbar" data-bind="style: { height:
-                    2*(32 + 1 - data.stats['overall'][ht]['s']['d']['rr']) + 'px'}"></div>
+                    2*(32 + 1 - data.stats['home'][ht]['s']['d']['rr']) + 'px'}"></div>
                   </div>
-                  <div data-bind="text: data.stats['overall'][ht]['s']['d']['rr']"></div>
+                  <div data-bind="text: data.stats['home'][ht]['s']['d']['rr']"></div>
               </td>
               <td>
                   <div  data-bind="attr: {class: ht}">
                     <div class="predictionbar" data-bind="style: { height:
-                    2*(32 + 1 - data.stats['overall'][ht]['s']['u']['rp']) + 'px'}"></div>
+                    2*(32 + 1 - data.stats['home'][ht]['s']['u']['rp']) + 'px'}"></div>
                   </div>
-                  <div data-bind="text: data.stats['overall'][ht]['s']['u']['rp']"></div>
+                  <div data-bind="text: data.stats['home'][ht]['s']['u']['rp']"></div>
               </td>
               <td>
                   <div  data-bind="attr: {class: ht}">
                     <div class="predictionbar" data-bind="style: { height:
-                    2*(32 + 1 - data.stats['overall'][ht]['s']['u']['rt']) + 'px'}"></div>
+                    2*(32 + 1 - data.stats['home'][ht]['s']['u']['rt']) + 'px'}"></div>
                   </div>
-                  <div data-bind="text: data.stats['overall'][ht]['s']['u']['rt']"></div>
+                  <div data-bind="text: data.stats['home'][ht]['s']['u']['rt']"></div>
               </td>
               <td>
                   <div  data-bind="attr: {class: ht}">
                     <div class="predictionbar" data-bind="style: { height:
-                    2*(32 + 1 - data.stats['overall'][ht]['s']['u']['ry']) + 'px'}"></div>
+                    2*(32 + 1 - data.stats['home'][ht]['s']['u']['ry']) + 'px'}"></div>
                   </div>
-                  <div data-bind="text: data.stats['overall'][ht]['s']['u']['ry']"></div>
+                  <div data-bind="text: data.stats['home'][ht]['s']['u']['ry']"></div>
               </td>
             </tr>
           </tbody>
@@ -211,6 +211,50 @@
 
 {% endif %}
 
+{% if week < 17 %}
+
+<p>
+</p>
+<p>
+</p>
+
+<h1>Remaingin Schedule Details</h1>
+<p>
+</p>
+
+<div id='remainingSchedule'>
+
+  <div data-bind="foreach: { data: remainingSchedule.divisions, as: 'division' }">
+<p>
+</p>
+<p>
+</p>
+    <h3 data-bind="text: division.name"></h3>
+    <table class="schedule">
+      <tbody data-bind="foreach: { data: division.teams, as: 'team' }">
+        <tr data-bind="foreach: remainingSchedule.tschedule[team].games">
+            <td data-bind="if: $index() === 0" class="winner" rowspan="2">
+              <img data-bind="attr: {src: '{{basepath}}img/' + team + '.svg'}"></img>
+              <div data-bind="text: remainingSchedule.tschedule[team].avg"></div>
+            </td>
+            <td class="schedulebar">
+              <div data-bind="text: (home ? '' : '@ ') + opp"></div>
+              <div data-bind="attr: {class: opp}">
+                <div data-bind="style: { height:
+                    or + 'px'}"></div>
+              </div>
+            </td>
+        </tr>
+        <tr>
+        </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+
+{% endif %}
+
 
 <script type="text/javascript">
   var season = {{season}};
@@ -222,14 +266,75 @@
   var keystats = '_' + season + (week < 10 ? '0' : '') + week;
   var data = hf.stats.data[keystats];
   ko.applyBindings(data, document.getElementById('predictiondata'));
+  var sosRemainset = new hf.stats.Set(season, week, 'ssoh');
   if ({{week}} < 21) {
 
     var sosRemainGraph = new hf.graphs.Bar('#sosRemain');
-    var sosRemainset = new hf.stats.Set(season, week, 'ssoh');
     sosRemainGraph.create(sosRemainset, '{{basepath}}');
   }
 
 
+  var divisions = [
+      {key: 'AFCE', name: "AFC East", teams: ['BUF', 'MIA', 'NE', 'NYJ']},
+      {key: 'AFCN', name: "AFC North", teams: ['BAL', 'CIN', 'CLE', 'PIT']},
+      {key: 'AFCS', name: "AFC South", teams: ['HOU', 'IND', 'JAC', 'TEN']},
+      {key: 'AFCW', name: "AFC West", teams: ['DEN', 'KC', 'LAC', 'OAK']},
+      {key: 'NFCE', name: "NFC East", teams: ['DAL', 'NYG', 'PHI', 'WAS']},
+      {key: 'NFCN', name: "NFC North", teams: ['CHI', 'DET', 'GB', 'MIN']},
+      {key: 'NFCS', name: "NFC South", teams: ['ATL', 'CAR', 'NO', 'TB']},
+      {key: 'NFCW', name: "NFC West", teams: ['ARI', 'LAR', 'SEA', 'SF']}
+  ];
+  
+  var wg = [];
+  for (var ww = week + 1; ww <= 17; ww++) {
+    var keynext = '_' + season + (ww < 10 ? '0' : '') + ww;
+    wg.push(hf.stats.data[keynext].games);
+  }
+
+  var tschedule = {};
+
+  for (var dd = 0; dd < divisions.length; dd++) {
+    var division = divisions[dd];
+    for (var tt = 0; tt < division.teams.length; tt++) {
+      var curteam = division.teams[tt];
+      var curgames = [];
+      for (ww = 0; ww < wg.length; ww++) {
+        var weekgameentry = {
+          opp: 'BYE',
+          or: 0.0,
+          home: true
+        };
+        for (gg = 0; gg < wg[ww].length; gg++) {
+          var game = wg[ww][gg];
+          if (game.ht == curteam || game.at == curteam) {
+            if (game.ht == curteam) {
+              weekgameentry.opp = game.at;
+              weekgameentry.or = data.stats.away[game.at].s.o.h;
+              weekgameentry.home = true;
+            } else {
+              weekgameentry.opp = game.ht;
+              weekgameentry.or = data.stats.home[game.ht].s.o.h;
+              weekgameentry.home = false;
+            }
+          }
+        }
+        curgames.push(weekgameentry);
+      }
+      tschedule[curteam] = {
+        games: curgames,
+        avg: sosRemainset.teamStat(curteam)
+      }
+    }
+  }
+
+  var remainingSchedule = {
+    divisions: divisions,
+    tschedule: tschedule
+  };
+  
+  ko.applyBindings(remainingSchedule, document.getElementById('remainingSchedule'));
+
+  console.log(remainingSchedule);
 
 </script>
 

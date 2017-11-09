@@ -120,14 +120,14 @@ var Defs = function () {
       },
       */
       divToTeam = {
-          AFCE: ['NE', 'MIA', 'NYJ', 'BUF'],
-          AFCN: ['BAL', 'PIT', 'CIN', 'CLE'],
-          AFCS: ['HOU', 'IND', 'TEN', 'JAC'],
-          AFCW: ['DEN', 'LAC', 'OAK', 'KC'],
-          NFCE: ['WAS', 'DAL', 'NYG', 'PHI'],
-          NFCN: ['GB', 'MIN', 'CHI', 'DET'],
+          AFCE: ['BUF', 'MIA', 'NE', 'NYJ'],
+          AFCN: ['BAL', 'CIN', 'CLE', 'PIT'],
+          AFCS: ['HOU', 'IND', 'JAC', 'TEN'],
+          AFCW: ['DEN', 'KC', 'LAC', 'OAK'],
+          NFCE: ['DAL', 'NYG', 'PHI', 'WAS'],
+          NFCN: ['CHI', 'DET', 'GB', 'MIN'],
           NFCS: ['ATL', 'CAR', 'NO', 'TB'],
-          NFCW: ['SF', 'SEA', 'LAR', 'ARI']
+          NFCW: ['ARI', 'LAR', 'SEA', 'SF']
       },
       confToTeam = {
           AFC: ['NE', 'MIA', 'NYJ', 'BUF', 'BAL', 'PIT', 'CIN', 'CLE', 'HOU', 'IND', 'TEN', 'JAC', 'DEN', 'LAC', 'OAK', 'KC'],
