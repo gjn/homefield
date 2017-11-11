@@ -76,10 +76,8 @@ var Bar = function(element) {
         .attr("dy", ".27em")
         .attr("text-anchor", "end")
         .text(function(d, i) {
-          var txt = '' + set.teamStat(d).toFixed(1);
-          if (d == 'h' || d == 'r') {
-            txt += '%';
-          }
+          var txt = '' + set.teamStat(d).toFixed(set.precision());
+          txt += set.addendum();
           return '[' + txt + ']';
         });
 

@@ -50,6 +50,26 @@ var Set = function(s, w, statdef) {
 
   updateArray();
 
+  this.precision = function() {
+    //SOS
+    if (_type == 's' || _type == 'p' ||
+        _stat == 'w' || _stat == 't') {
+      return 2;
+    }
+    if (_stat == 'y') {
+      return 0;
+    }
+    return 1;
+  };
+
+  this.addendum = function() {
+    if ((_stat == 'h' || _stat == 'r') &&
+       (_type != 's' && _type != 'p')) {
+      return '%';
+    }
+    return '';
+  };
+
   this.filter = function(s) {
     if (!s) {
       _filter = undefined;

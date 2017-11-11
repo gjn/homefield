@@ -192,6 +192,7 @@
     }
     div {
       background-color: @col1;
+      color: @col2;
     }
   }
 
@@ -359,6 +360,10 @@
 
 .schedule {
 
+  .schedulerow {
+    height: 190px;
+  }
+
   td {
     img {
       height: 45px;
@@ -367,8 +372,38 @@
     text-align: center;
   }
 
+  .currentteam {
+    width: 80px;
+  }
+
   .schedulebar {
+    
+    height: 140px;
+
+    img {
+      height: 28px;
+      width: 28px;
+    }
+ 
     vertical-align: bottom;
+
+    .schedulebartext {
+      display: table;
+      
+      img {
+        vertical-align: middle;
+        display: table-cell;
+      }
+
+      span {
+        vertical-align: middle;
+        display: table-cell;
+      }
+    }
+
+    .bartext {
+      margin-top: 8px;
+    }
   }
 }
 

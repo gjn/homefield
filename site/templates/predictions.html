@@ -232,16 +232,26 @@
     <h3 data-bind="text: division.name"></h3>
     <table class="schedule">
       <tbody data-bind="foreach: { data: division.teams, as: 'team' }">
-        <tr data-bind="foreach: remainingSchedule.tschedule[team].games">
-            <td data-bind="if: $index() === 0" class="winner" rowspan="2">
+        <tr class=schedulerow data-bind="foreach: remainingSchedule.tschedule[team].games">
+            <td data-bind="if: $index() === 0, css: { currentteam:
+            $index() === 0 }" rowspan="2">
               <img data-bind="attr: {src: '{{basepath}}img/' + team + '.svg'}"></img>
               <div data-bind="text: remainingSchedule.tschedule[team].avg"></div>
             </td>
             <td class="schedulebar">
-              <div data-bind="text: (home ? '' : '@ ') + opp"></div>
+              <div data-bind="if: opp == 'BYE'">
+              BYE
+              </div>
+              <div data-bind="if: opp != 'BYE'" class="schedulebartext">
+                <span data-bind="text: (home ? '' : '@ ')"></span>
+                <span><img  data-bind="attr: {src: '{{basepath}}img/' + opp +
+                '.svg'}, style: { paddingLeft: (home ? '8px':'0px')}"></img></span>
+              </div>
               <div data-bind="attr: {class: opp}">
-                <div data-bind="style: { height:
-                    or + 'px'}"></div>
+                <div class= "bartext" data-bind="style: { height:
+                    25 +
+                    ((or-remainingSchedule.min)*120/(remainingSchedule.max-remainingSchedule.min))
+                    + 'px'}, text: or"></div>
               </div>
             </td>
         </tr>
@@ -292,6 +302,8 @@
   }
 
   var tschedule = {};
+  var min = 100.0
+  var max = -100.0;
 
   for (var dd = 0; dd < divisions.length; dd++) {
     var division = divisions[dd];
@@ -309,12 +321,18 @@
           if (game.ht == curteam || game.at == curteam) {
             if (game.ht == curteam) {
               weekgameentry.opp = game.at;
-              weekgameentry.or = data.stats.away[game.at].s.o.h;
+              weekgameentry.or = data.stats.away[game.at].s.o.w;
               weekgameentry.home = true;
             } else {
               weekgameentry.opp = game.ht;
-              weekgameentry.or = data.stats.home[game.ht].s.o.h;
+              weekgameentry.or = data.stats.home[game.ht].s.o.w;
               weekgameentry.home = false;
+            }
+            if (weekgameentry.or > max) {
+              max = weekgameentry.or;
+            }
+            if (weekgameentry.or < min) {
+              min = weekgameentry.or;
             }
           }
         }
@@ -329,12 +347,12 @@
 
   var remainingSchedule = {
     divisions: divisions,
-    tschedule: tschedule
+    tschedule: tschedule,
+    min: min,
+    max: max
   };
   
   ko.applyBindings(remainingSchedule, document.getElementById('remainingSchedule'));
-
-  console.log(remainingSchedule);
 
 </script>
 
