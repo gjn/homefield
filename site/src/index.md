@@ -1,11 +1,11 @@
 ---
 template: index.html
 season: 2017
-week: 10
-date: 2017-11-14
+week: 12
+date: 2017-11-28
 type: ''
 collection: articles
 permalink: false
-title: Week 10 of the NFL 2017 season - PowerRankings
-description: Cowboys fall out of Top 10 after loss in fist game without Zeke
+title: Week 12 of the NFL 2017 season - PowerRankings
+description: Cowboys in free fall - Both Los Angeles Teams in Top 10
 

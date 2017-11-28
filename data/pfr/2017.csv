@@ -145,36 +145,36 @@ Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TO
 10,Sun,November 12,2017,4:25PM,Atlanta Falcons,,Dallas Cowboys,27,7,336,1,233,2
 10,Sun,November 12,2017,8:30PM,New England Patriots,@,Denver Broncos,41,16,396,0,339,2
 10,Mon,November 13,2017,8:30 PM,Carolina Panthers,,Miami Dolphins,45,21,548,0,313,1
-11,Thu,November 16,2017,8:25 PM,Tennessee Titans,@,Pittsburgh Steelers,,,,,,
-11,Sun,November 19,2017,1:00 PM,Tampa Bay Buccaneers,@,Miami Dolphins,,,,,,
-11,Sun,November 19,2017,1:00 PM,Detroit Lions,@,Chicago Bears,,,,,,
-11,Sun,November 19,2017,1:00 PM,Jacksonville Jaguars,@,Cleveland Browns,,,,,,
-11,Sun,November 19,2017,1:00 PM,Baltimore Ravens,@,Green Bay Packers,,,,,,
-11,Sun,November 19,2017,1:00 PM,Arizona Cardinals,@,Houston Texans,,,,,,
-11,Sun,November 19,2017,1:00 PM,Los Angeles Rams,@,Minnesota Vikings,,,,,,
-11,Sun,November 19,2017,1:00 PM,Washington Redskins,@,New Orleans Saints,,,,,,
-11,Sun,November 19,2017,1:00 PM,Kansas City Chiefs,@,New York Giants,,,,,,
-11,Sun,November 19,2017,4:05 PM,Buffalo Bills,@,Los Angeles Chargers,,,,,,
-11,Sun,November 19,2017,4:25 PM,Cincinnati Bengals,@,Denver Broncos,,,,,,
-11,Sun,November 19,2017,4:25 PM,New England Patriots,@,Oakland Raiders,,,,,,
-11,Sun,November 19,2017,8:30 PM,Philadelphia Eagles,@,Dallas Cowboys,,,,,,
-11,Mon,November 20,2017,8:30 PM,Atlanta Falcons,@,Seattle Seahawks,,,,,,
-12,Thu,November 23,2017,12:30 PM,Minnesota Vikings,@,Detroit Lions,,,,,,
-12,Thu,November 23,2017,4:30 PM,Los Angeles Chargers,@,Dallas Cowboys,,,,,,
-12,Thu,November 23,2017,8:30 PM,New York Giants,@,Washington Redskins,,,,,,
-12,Sun,November 26,2017,1:00 PM,Tampa Bay Buccaneers,@,Atlanta Falcons,,,,,,
-12,Sun,November 26,2017,1:00 PM,Cleveland Browns,@,Cincinnati Bengals,,,,,,
-12,Sun,November 26,2017,1:00 PM,Tennessee Titans,@,Indianapolis Colts,,,,,,
-12,Sun,November 26,2017,1:00 PM,Buffalo Bills,@,Kansas City Chiefs,,,,,,
-12,Sun,November 26,2017,1:00 PM,Miami Dolphins,@,New England Patriots,,,,,,
-12,Sun,November 26,2017,1:00 PM,Carolina Panthers,@,New York Jets,,,,,,
-12,Sun,November 26,2017,1:00 PM,Chicago Bears,@,Philadelphia Eagles,,,,,,
-12,Sun,November 26,2017,4:05 PM,New Orleans Saints,@,Los Angeles Rams,,,,,,
-12,Sun,November 26,2017,4:05 PM,Seattle Seahawks,@,San Francisco 49ers,,,,,,
-12,Sun,November 26,2017,4:25 PM,Jacksonville Jaguars,@,Arizona Cardinals,,,,,,
-12,Sun,November 26,2017,4:25 PM,Denver Broncos,@,Oakland Raiders,,,,,,
-12,Sun,November 26,2017,8:30 PM,Green Bay Packers,@,Pittsburgh Steelers,,,,,,
-12,Mon,November 27,2017,8:30 PM,Houston Texans,@,Baltimore Ravens,,,,,,
+11,Thu,November 16,2017,8:25PM,Pittsburgh Steelers,,Tennessee Titans,40,17,349,0,316,4
+11,Sun,November 19,2017,1:00PM,Houston Texans,,Arizona Cardinals,31,21,357,2,292,2
+11,Sun,November 19,2017,1:00PM,Minnesota Vikings,,Los Angeles Rams,24,7,451,0,254,1
+11,Sun,November 19,2017,1:00PM,New York Giants,,Kansas City Chiefs,12,9,317,1,363,3
+11,Sun,November 19,2017,1:00PM,Detroit Lions,@,Chicago Bears,27,24,352,1,398,1
+11,Sun,November 19,2017,1:00PM,Jacksonville Jaguars,@,Cleveland Browns,19,7,284,1,184,5
+11,Sun,November 19,2017,1:00PM,Baltimore Ravens,@,Green Bay Packers,23,0,219,1,265,5
+11,Sun,November 19,2017,1:00PM,New Orleans Saints,,Washington Redskins,34,31,535,1,456,0
+11,Sun,November 19,2017,1:00PM,Tampa Bay Buccaneers,@,Miami Dolphins,30,20,321,0,448,5
+11,Sun,November 19,2017,4:05PM,Los Angeles Chargers,,Buffalo Bills,54,24,429,0,393,6
+11,Sun,November 19,2017,4:25PM,New England Patriots,@,Oakland Raiders,33,8,420,0,344,2
+11,Sun,November 19,2017,4:25PM,Cincinnati Bengals,@,Denver Broncos,20,17,190,0,341,2
+11,Sun,November 19,2017,8:30PM,Philadelphia Eagles,@,Dallas Cowboys,37,9,383,0,225,4
+11,Mon,November 20,2017,8:30PM,Atlanta Falcons,@,Seattle Seahawks,34,31,279,1,360,2
+12,Thu,November 23,2017,12:30PM,Minnesota Vikings,@,Detroit Lions,30,23,408,0,289,2
+12,Thu,November 23,2017,4:30PM,Los Angeles Chargers,@,Dallas Cowboys,28,6,515,0,247,2
+12,Thu,November 23,2017,8:30PM,Washington Redskins,,New York Giants,20,10,323,1,170,1
+12,Sun,November 26,2017,1:00PM,Carolina Panthers,@,New York Jets,35,27,299,0,391,1
+12,Sun,November 26,2017,1:00PM,Cincinnati Bengals,,Cleveland Browns,30,16,361,0,405,0
+12,Sun,November 26,2017,1:00PM,Tennessee Titans,@,Indianapolis Colts,20,16,276,2,254,1
+12,Sun,November 26,2017,1:00PM,Buffalo Bills,@,Kansas City Chiefs,16,10,268,0,236,1
+12,Sun,November 26,2017,1:00PM,Philadelphia Eagles,,Chicago Bears,31,3,420,3,140,2
+12,Sun,November 26,2017,1:00PM,Atlanta Falcons,,Tampa Bay Buccaneers,34,20,516,1,373,0
+12,Sun,November 26,2017,1:00PM,New England Patriots,,Miami Dolphins,35,17,417,2,221,3
+12,Sun,November 26,2017,4:05PM,Seattle Seahawks,@,San Francisco 49ers,24,13,318,1,280,1
+12,Sun,November 26,2017,4:25PM,Oakland Raiders,,Denver Broncos,21,14,348,1,219,1
+12,Sun,November 26,2017,4:25PM,Arizona Cardinals,,Jacksonville Jaguars,27,24,344,2,219,3
+12,Sun,November 26,2017,4:25PM,Los Angeles Rams,,New Orleans Saints,26,20,415,1,346,0
+12,Sun,November 26,2017,8:30PM,Pittsburgh Steelers,,Green Bay Packers,31,28,462,3,307,0
+12,Mon,November 27,2017,8:30PM,Baltimore Ravens,,Houston Texans,23,16,294,0,303,3
 13,Thu,November 30,2017,8:25 PM,Washington Redskins,@,Dallas Cowboys,,,,,,
 13,Sun,December 3,2017,1:00 PM,Minnesota Vikings,@,Atlanta Falcons,,,,,,
 13,Sun,December 3,2017,1:00 PM,New England Patriots,@,Buffalo Bills,,,,,,
