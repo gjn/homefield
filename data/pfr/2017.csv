@@ -175,22 +175,22 @@ Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TO
 12,Sun,November 26,2017,4:25PM,Los Angeles Rams,,New Orleans Saints,26,20,415,1,346,0
 12,Sun,November 26,2017,8:30PM,Pittsburgh Steelers,,Green Bay Packers,31,28,462,3,307,0
 12,Mon,November 27,2017,8:30PM,Baltimore Ravens,,Houston Texans,23,16,294,0,303,3
-13,Thu,November 30,2017,8:25 PM,Washington Redskins,@,Dallas Cowboys,,,,,,
-13,Sun,December 3,2017,1:00 PM,Minnesota Vikings,@,Atlanta Falcons,,,,,,
-13,Sun,December 3,2017,1:00 PM,New England Patriots,@,Buffalo Bills,,,,,,
-13,Sun,December 3,2017,1:00 PM,San Francisco 49ers,@,Chicago Bears,,,,,,
-13,Sun,December 3,2017,1:00 PM,Tampa Bay Buccaneers,@,Green Bay Packers,,,,,,
-13,Sun,December 3,2017,1:00 PM,Indianapolis Colts,@,Jacksonville Jaguars,,,,,,
-13,Sun,December 3,2017,1:00 PM,Denver Broncos,@,Miami Dolphins,,,,,,
-13,Sun,December 3,2017,1:00 PM,Carolina Panthers,@,New Orleans Saints,,,,,,
-13,Sun,December 3,2017,1:00 PM,Kansas City Chiefs,@,New York Jets,,,,,,
-13,Sun,December 3,2017,1:00 PM,Houston Texans,@,Tennessee Titans,,,,,,
-13,Sun,December 3,2017,1:00 PM,Detroit Lions,@,Baltimore Ravens,,,,,,
-13,Sun,December 3,2017,4:05 PM,Cleveland Browns,@,Los Angeles Chargers,,,,,,
-13,Sun,December 3,2017,4:25 PM,Los Angeles Rams,@,Arizona Cardinals,,,,,,
-13,Sun,December 3,2017,4:25 PM,New York Giants,@,Oakland Raiders,,,,,,
-13,Sun,December 3,2017,8:30 PM,Philadelphia Eagles,@,Seattle Seahawks,,,,,,
-13,Mon,December 4,2017,8:30 PM,Pittsburgh Steelers,@,Cincinnati Bengals,,,,,,
+13,Thu,November 30,2017,8:25PM,Dallas Cowboys,,Washington Redskins,38,14,275,0,280,4
+13,Sun,December 3,2017,1:00PM,Jacksonville Jaguars,,Indianapolis Colts,30,10,426,0,290,2
+13,Sun,December 3,2017,1:00PM,Green Bay Packers,,Tampa Bay Buccaneers,26,20,276,1,395,1
+13,Sun,December 3,2017,1:00PM,New York Jets,,Kansas City Chiefs,38,31,488,0,474,0
+13,Sun,December 3,2017,1:00PM,Tennessee Titans,,Houston Texans,24,13,344,1,384,1
+13,Sun,December 3,2017,1:00PM,Baltimore Ravens,,Detroit Lions,44,20,370,0,372,3
+13,Sun,December 3,2017,1:00PM,Miami Dolphins,,Denver Broncos,35,9,367,3,270,3
+13,Sun,December 3,2017,1:00PM,San Francisco 49ers,@,Chicago Bears,15,14,388,1,147,0
+13,Sun,December 3,2017,1:00PM,Minnesota Vikings,@,Atlanta Falcons,14,9,312,0,275,0
+13,Sun,December 3,2017,1:00PM,New England Patriots,@,Buffalo Bills,23,3,435,1,268,1
+13,Sun,December 3,2017,4:05PM,Los Angeles Chargers,,Cleveland Browns,19,10,429,0,291,2
+13,Sun,December 3,2017,4:25PM,Oakland Raiders,,New York Giants,24,17,401,1,265,2
+13,Sun,December 3,2017,4:25PM,Los Angeles Rams,@,Arizona Cardinals,32,16,303,1,312,2
+13,Sun,December 3,2017,4:25PM,New Orleans Saints,,Carolina Panthers,31,21,400,1,279,1
+13,Sun,December 3,2017,8:30PM,Seattle Seahawks,,Philadelphia Eagles,24,10,310,0,425,2
+13,Mon,December 4,2017,8:30 PM,Pittsburgh Steelers,@,Cincinnati Bengals,23,20,374,1,353,0
 14,Thu,December 7,2017,8:25 PM,New Orleans Saints,@,Atlanta Falcons,,,,,,
 14,Sun,December 10,2017,1:00 PM,Indianapolis Colts,@,Buffalo Bills,,,,,,
 14,Sun,December 10,2017,1:00 PM,Minnesota Vikings,@,Carolina Panthers,,,,,,
