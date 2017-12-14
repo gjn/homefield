@@ -191,22 +191,22 @@ Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TO
 13,Sun,December 3,2017,4:25PM,New Orleans Saints,,Carolina Panthers,31,21,400,1,279,1
 13,Sun,December 3,2017,8:30PM,Seattle Seahawks,,Philadelphia Eagles,24,10,310,0,425,2
 13,Mon,December 4,2017,8:30 PM,Pittsburgh Steelers,@,Cincinnati Bengals,23,20,374,1,353,0
-14,Thu,December 7,2017,8:25 PM,New Orleans Saints,@,Atlanta Falcons,,,,,,
-14,Sun,December 10,2017,1:00 PM,Indianapolis Colts,@,Buffalo Bills,,,,,,
-14,Sun,December 10,2017,1:00 PM,Minnesota Vikings,@,Carolina Panthers,,,,,,
-14,Sun,December 10,2017,1:00 PM,Chicago Bears,@,Cincinnati Bengals,,,,,,
-14,Sun,December 10,2017,1:00 PM,Green Bay Packers,@,Cleveland Browns,,,,,,
-14,Sun,December 10,2017,1:00 PM,San Francisco 49ers,@,Houston Texans,,,,,,
-14,Sun,December 10,2017,1:00 PM,Seattle Seahawks,@,Jacksonville Jaguars,,,,,,
-14,Sun,December 10,2017,1:00 PM,Oakland Raiders,@,Kansas City Chiefs,,,,,,
-14,Sun,December 10,2017,1:00 PM,Detroit Lions,@,Tampa Bay Buccaneers,,,,,,
-14,Sun,December 10,2017,4:05 PM,Tennessee Titans,@,Arizona Cardinals,,,,,,
-14,Sun,December 10,2017,4:05 PM,New York Jets,@,Denver Broncos,,,,,,
-14,Sun,December 10,2017,4:05 PM,Washington Redskins,@,Los Angeles Chargers,,,,,,
-14,Sun,December 10,2017,4:25 PM,Dallas Cowboys,@,New York Giants,,,,,,
-14,Sun,December 10,2017,4:25 PM,Philadelphia Eagles,@,Los Angeles Rams,,,,,,
-14,Sun,December 10,2017,8:30 PM,Baltimore Ravens,@,Pittsburgh Steelers,,,,,,
-14,Mon,December 11,2017,8:30 PM,New England Patriots,@,Miami Dolphins,,,,,,
+14,Thu,December 7,2017,8:25PM,Atlanta Falcons,,New Orleans Saints,20,17,343,3,306,1
+14,Sun,December 10,2017,1:00PM,Buffalo Bills,,Indianapolis Colts,13,7,319,2,227,0
+14,Sun,December 10,2017,1:00PM,Carolina Panthers,,Minnesota Vikings,31,24,345,1,356,3
+14,Sun,December 10,2017,1:00PM,Chicago Bears,@,Cincinnati Bengals,33,7,482,0,234,2
+14,Sun,December 10,2017,1:00PM,Green Bay Packers,@,Cleveland Browns,27,21,341,0,345,2
+14,Sun,December 10,2017,1:00PM,Kansas City Chiefs,,Oakland Raiders,26,15,408,1,268,3
+14,Sun,December 10,2017,1:00PM,Dallas Cowboys,@,New York Giants,30,10,454,0,330,2
+14,Sun,December 10,2017,1:00PM,Detroit Lions,@,Tampa Bay Buccaneers,24,21,434,3,400,5
+14,Sun,December 10,2017,1:00PM,San Francisco 49ers,@,Houston Texans,26,16,416,1,311,1
+14,Sun,December 10,2017,4:05PM,Los Angeles Chargers,,Washington Redskins,30,13,488,1,201,1
+14,Sun,December 10,2017,4:05PM,Denver Broncos,,New York Jets,23,0,273,0,100,2
+14,Sun,December 10,2017,4:05PM,Arizona Cardinals,,Tennessee Titans,12,7,261,0,204,2
+14,Sun,December 10,2017,4:25PM,Philadelphia Eagles,@,Los Angeles Rams,43,35,455,1,307,2
+14,Sun,December 10,2017,4:25PM,Jacksonville Jaguars,,Seattle Seahawks,30,24,424,1,401,3
+14,Sun,December 10,2017,8:30PM,Pittsburgh Steelers,,Baltimore Ravens,39,38,545,0,413,1
+14,Mon,December 11,2017,8:30PM,Miami Dolphins,,New England Patriots,27,20,362,0,248,2
 15,Thu,December 14,2017,8:25 PM,Denver Broncos,@,Indianapolis Colts,,,,,,
 15,Sat,December 16,2017,4:30 PM,Chicago Bears,@,Detroit Lions,,,,,,
 15,Sat,December 16,2017,8:25 PM,Los Angeles Chargers,@,Kansas City Chiefs,,,,,,
