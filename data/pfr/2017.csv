@@ -207,22 +207,22 @@ Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TO
 14,Sun,December 10,2017,4:25PM,Jacksonville Jaguars,,Seattle Seahawks,30,24,424,1,401,3
 14,Sun,December 10,2017,8:30PM,Pittsburgh Steelers,,Baltimore Ravens,39,38,545,0,413,1
 14,Mon,December 11,2017,8:30PM,Miami Dolphins,,New England Patriots,27,20,362,0,248,2
-15,Thu,December 14,2017,8:25 PM,Denver Broncos,@,Indianapolis Colts,,,,,,
-15,Sat,December 16,2017,4:30 PM,Chicago Bears,@,Detroit Lions,,,,,,
-15,Sat,December 16,2017,8:25 PM,Los Angeles Chargers,@,Kansas City Chiefs,,,,,,
-15,Sun,December 17,2017,1:00 PM,Miami Dolphins,@,Buffalo Bills,,,,,,
-15,Sun,December 17,2017,1:00 PM,Green Bay Packers,@,Carolina Panthers,,,,,,
-15,Sun,December 17,2017,1:00 PM,Baltimore Ravens,@,Cleveland Browns,,,,,,
-15,Sun,December 17,2017,1:00 PM,Houston Texans,@,Jacksonville Jaguars,,,,,,
-15,Sun,December 17,2017,1:00 PM,Cincinnati Bengals,@,Minnesota Vikings,,,,,,
-15,Sun,December 17,2017,1:00 PM,New York Jets,@,New Orleans Saints,,,,,,
-15,Sun,December 17,2017,1:00 PM,Philadelphia Eagles,@,New York Giants,,,,,,
-15,Sun,December 17,2017,1:00 PM,Arizona Cardinals,@,Washington Redskins,,,,,,
-15,Sun,December 17,2017,4:05 PM,Los Angeles Rams,@,Seattle Seahawks,,,,,,
-15,Sun,December 17,2017,4:25 PM,New England Patriots,@,Pittsburgh Steelers,,,,,,
-15,Sun,December 17,2017,4:25 PM,Tennessee Titans,@,San Francisco 49ers,,,,,,
-15,Sun,December 17,2017,8:30 PM,Dallas Cowboys,@,Oakland Raiders,,,,,,
-15,Mon,December 18,2017,8:30 PM,Atlanta Falcons,@,Tampa Bay Buccaneers,,,,,,
+15,Thu,December 14,2017,8:25PM,Denver Broncos,@,Indianapolis Colts,25,13,462,1,228,0
+15,Sat,December 16,2017,4:30PM,Detroit Lions,,Chicago Bears,20,10,293,1,349,3
+15,Sat,December 16,2017,8:25PM,Kansas City Chiefs,,Los Angeles Chargers,30,13,397,0,307,4
+15,Sun,December 17,2017,1:00PM,Philadelphia Eagles,@,New York Giants,34,29,341,0,504,1
+15,Sun,December 17,2017,1:00PM,New Orleans Saints,,New York Jets,31,19,412,3,294,2
+15,Sun,December 17,2017,1:00PM,Buffalo Bills,,Miami Dolphins,24,16,328,0,349,3
+15,Sun,December 17,2017,1:00PM,Minnesota Vikings,,Cincinnati Bengals,34,7,346,1,161,2
+15,Sun,December 17,2017,1:00PM,Jacksonville Jaguars,,Houston Texans,45,7,464,0,186,1
+15,Sun,December 17,2017,1:00PM,Washington Redskins,,Arizona Cardinals,20,15,218,1,286,2
+15,Sun,December 17,2017,1:00PM,Carolina Panthers,,Green Bay Packers,31,24,387,0,384,4
+15,Sun,December 17,2017,1:00PM,Baltimore Ravens,@,Cleveland Browns,27,10,376,0,266,4
+15,Sun,December 17,2017,4:05PM,Los Angeles Rams,@,Seattle Seahawks,42,7,352,1,149,2
+15,Sun,December 17,2017,4:25PM,San Francisco 49ers,,Tennessee Titans,25,23,414,0,328,1
+15,Sun,December 17,2017,4:25PM,New England Patriots,@,Pittsburgh Steelers,27,24,360,1,413,1
+15,Sun,December 17,2017,8:30PM,Dallas Cowboys,@,Oakland Raiders,20,17,330,2,293,1
+15,Mon,December 18,2017,8:30PM,Atlanta Falcons,@,Tampa Bay Buccaneers,24,21,410,0,373,1
 16,Sat,December 23,2017,4:30 PM,Indianapolis Colts,@,Baltimore Ravens,,,,,,
 16,Sat,December 23,2017,8:30 PM,Minnesota Vikings,@,Green Bay Packers,,,,,,
 16,Sun,December 24,2017,1:00 PM,Tampa Bay Buccaneers,@,Carolina Panthers,,,,,,
