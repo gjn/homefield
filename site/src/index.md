@@ -7,5 +7,4 @@ type: ''
 collection: articles
 permalink: false
 title: Week 17 of the NFL 2017 season - PowerRankings
-description: 
-
+description: This looks like it's going to be a Vikings-Patriots Superbowl
