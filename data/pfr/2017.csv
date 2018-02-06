@@ -255,7 +255,14 @@ Week,Day,Date,Year,ignore,Winner,WinnerAwayTeam,Loser,PtsW,PtsL,YdsW,TOW,YdsL,TO
 17,Sun,December 31,2017,4:25PM,Cincinnati Bengals,@,Baltimore Ravens,31,27,359,1,312,1
 17,Sun,December 31,2017,4:25PM,Atlanta Falcons,,Carolina Panthers,22,10,371,0,248,3
 17,Sun,December 31,2017,4:25PM,Tampa Bay Buccaneers,,New Orleans Saints,31,24,455,3,323,1
-WildCard,Sat,January 6,2018,4:35PM,Tennessee Titans,@,Kansas City Chiefs,,,,,,
-WildCard,Sat,January 6,2018,8:15PM,Atlanta Falcons,@,Los Angeles Rams,,,,,,
-WildCard,Sun,January 7,2018,1:05PM,Buffalo Bills,@,Jacksonville Jaguars,,,,,,
-WildCard,Sun,January 7,2018,4:40PM,Carolina Panthers,@,New Orleans Saints,,,,,,
+WildCard,Sat,January 6,2018,4:35PM,Tennessee Titans,@,Kansas City Chiefs,22,21,397,2,325,0
+WildCard,Sat,January 6,2018,8:15PM,Atlanta Falcons,@,Los Angeles Rams,26,13,322,0,361,2
+WildCard,Sun,January 7,2018,1:05PM,Jacksonville Jaguars,,Buffalo Bills,10,3,230,0,263,2
+WildCard,Sun,January 7,2018,4:40PM,New Orleans Saints,,Carolina Panthers,31,26,410,1,413,0
+Division,Sat,January 13,2018,4:35PM,Philadelphia Eagles,,Atlanta Falcons,15,10,334,2,281,0
+Division,Sat,January 13,2018,8:15PM,New England Patriots,,Tennessee Titans,35,14,438,0,267,0
+Division,Sun,January 14,2018,1:05PM,Jacksonville Jaguars,@,Pittsburgh Steelers,45,42,378,0,545,2
+Division,Sun,January 14,2018,4:40PM,Minnesota Vikings,,New Orleans Saints,29,24,403,1,358,2
+ConfChamp,Sun,January 21,2018,3:05PM,New England Patriots,,Jacksonville Jaguars,24,20,344,1,374,0
+ConfChamp,Sun,January 21,2018,6:40PM,Philadelphia Eagles,,Minnesota Vikings,38,7,456,0,333,3
+SuperBowl,Sun,February 4,2018,6:30PM,Philadelphia Eagles,@,New England Patriots,41,33,538,1,613,1

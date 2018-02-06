@@ -1,7 +1,7 @@
 ---
 template: table.html
 season: 2017
-week: 17
+week: 21
 permalink: false
 title: Complete Statistics Table
 description: All the stats you'll ever need
