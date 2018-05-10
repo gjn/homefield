@@ -1,10 +1,10 @@
 ---
 template: index.html
-season: 2017
-week: 21
-date: 2018-02-05
+season: 2018
+week: 0
+date: 2018-05-10
 type: ''
 collection: articles
 permalink: false
-title: End of the NFL 2017 season - PowerRankings
-description: The Eagles fly home with the Superbowl
+title: Preview of the NFL 2018 season
+description: Looking at the 2018 season
